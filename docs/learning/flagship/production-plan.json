@@ -1,0 +1,146 @@
+{
+  "narration": [
+    "Thousands of interconnected systems. What stays, retires, moves, transforms, or gets replaced\u2014and in what order? Fragmented evidence makes that difficult. EMOS connects the entire modernization journey, from enterprise context and governed decisions to execution, outcomes, and learning.",
+    "Start with the real estate. Inspect the portfolio, Enterprise DNA, and missing evidence. Compare Retain, Retire, Rehost, Replatform, Refactor, and Repurchase\u2014with rationale, evidence, and alternatives.",
+    "Through Ask EMOS, a deterministic orchestrator routes questions to exactly two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. The orchestrator is not a third agent.",
+    "AI cannot self-approve. Evidence rules validate readiness; humans retain authority. The chosen six R continues into wave planning and its own execution playbook. EMOS tracks governed work; it does not perform live migrations.",
+    "Measure compares representative outcomes against baselines. Learn captures session-only lessons, without autonomous retraining. V2 proves the connected workflow. Workload characteristics, dependencies, risk, and business objectives drive the direction\u2014not a predetermined cloud.",
+    "Google Cloud powers today's reference implementation. The broader vendor-agnostic vision spans retained environments, private infrastructure, public clouds, and replacement platforms. Enterprise-controlled deployment and managed SaaS remain target vision. One operating system for the modernization lifecycle."
+  ],
+  "audio": [
+    {
+      "index": 0,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "Thousands of interconnected systems. What stays, retires, moves, transforms, or gets replaced\u2014and in what order? Fragmented evidence makes that difficult. EMOS connects the entire modernization journey, from enterprise context and governed decisions to execution, outcomes, and learning.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    },
+    {
+      "index": 1,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "Start with the real estate. Inspect the portfolio, Enterprise DNA, and missing evidence. Compare Retain, Retire, Rehost, Replatform, Refactor, and Repurchase\u2014with rationale, evidence, and alternatives.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    },
+    {
+      "index": 2,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "Through Ask EMOS, a deterministic orchestrator routes questions to exactly two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. The orchestrator is not a third agent.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    },
+    {
+      "index": 3,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "AI cannot self-approve. Evidence rules validate readiness; humans retain authority. The chosen six R continues into wave planning and its own execution playbook. EMOS tracks governed work; it does not perform live migrations.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    },
+    {
+      "index": 4,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "Measure compares representative outcomes against baselines. Learn captures session-only lessons, without autonomous retraining. V2 proves the connected workflow. Workload characteristics, dependencies, risk, and business objectives drive the direction\u2014not a predetermined cloud.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    },
+    {
+      "index": 5,
+      "params": {
+        "model": "seed_audio",
+        "prompt": "Google Cloud powers today's reference implementation. The broader vendor-agnostic vision spans retained environments, private infrastructure, public clouds, and replacement platforms. Enterprise-controlled deployment and managed SaaS remain target vision. One operating system for the modernization lifecycle.",
+        "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+        "voice_type": "preset",
+        "format": "wav",
+        "sample_rate": 48000,
+        "speech_rate": 0,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+      }
+    }
+  ],
+  "video": {
+    "model": "seedance_2_5",
+    "mode": "t2v",
+    "duration": 10,
+    "resolution": "1080p",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "count": 1,
+    "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+    "prompt": "Premium enterprise documentary launch film, 10 seconds, restrained photorealistic architectural cinematography. One slow continuous lateral dolly through a sunlit contemporary enterprise campus: layered glass office facades, a quiet industrial logistics building in the distance, clean stone and warm neutral daylight. Soft lavender-gray reflections, realistic materials, gentle parallax, natural contrast. Human scale and credible enterprise context. No computer screens, no user interfaces, no dashboards, no letters, no logos, no titles, no visible personal data. No robots, circuitry, particles, glow, neon or science fiction. Elegant understated camera movement, no dramatic action. Leave the bottom safe area visually quiet for subsequent captions. This is contextual footage only, not software or a product demonstration."
+  },
+  "estimatedCredits": 170.1,
+  "proposedCap": 175,
+  "durationTargetSeconds": 85,
+  "realLightUiTargetPercent": 80,
+  "status": "rendered_quality_gate_passed",
+  "storyboard": [
+    {
+      "seconds": "0\u20136",
+      "visual": "Brief enterprise-context motion; fragmented modernization questions"
+    },
+    {
+      "seconds": "6\u201324",
+      "visual": "Real light-mode Command Center, portfolio, DNA and six-R decision details"
+    },
+    {
+      "seconds": "24\u201337",
+      "visual": "Real Ask EMOS drawer; restrained labels for exactly two specialists"
+    },
+    {
+      "seconds": "37\u201354",
+      "visual": "Real evidence gate, human approval, wave plan and contrasting execution playbooks"
+    },
+    {
+      "seconds": "54\u201369",
+      "visual": "Real Measure and Learn; representative/session-only disclosures; workload evidence"
+    },
+    {
+      "seconds": "69\u201374",
+      "visual": "Real product; current Google Cloud implementation qualified separately from targets"
+    },
+    {
+      "seconds": "74\u201385",
+      "visual": "Short contextual vision close, clearly labeled TARGET VISION: enterprise-controlled and managed SaaS"
+    }
+  ],
+  "approvedCap": 175,
+  "actualCredits": 172.1,
+  "balanceBefore": 273.8,
+  "balanceAfter": 101.7
+}

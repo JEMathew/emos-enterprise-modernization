@@ -1,11 +1,12 @@
 import React, { useEffect, useId, useRef, useState } from 'react';
-import { Clock3, Maximize2, X } from 'lucide-react';
+import { Maximize2, X } from 'lucide-react';
 import type { LearningVideo } from '../data/learningVideos';
 
 interface LearningVideoModalProps {
   video: LearningVideo;
   onClose: () => void;
   returnFocusTo: HTMLElement | null;
+  autoPlay?: boolean;
 }
 
 const FOCUSABLE_SELECTOR = [
@@ -19,16 +20,18 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
   video,
   onClose,
   returnFocusTo,
+  autoPlay = false,
 }) => {
   const titleId = useId();
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLVideoElement>(null);
+  const [expanded, setExpanded] = useState(false);
   const [playbackState, setPlaybackState] = useState<'loading' | 'ready' | 'error'>('loading');
 
   useEffect(() => {
-    setPlaybackState('loading');
+    setPlaybackState((mediaRef.current?.readyState ?? 0) >= 2 ? 'ready' : 'loading');
   }, [video.mediaUrl]);
 
   useEffect(() => {
@@ -75,16 +78,31 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
     };
   }, [onClose, returnFocusTo]);
 
-  const enterFullscreen = () => {
-    const requestFullscreen = playerContainerRef.current?.requestFullscreen;
-    if (requestFullscreen) {
-      void requestFullscreen.call(playerContainerRef.current).catch(() => undefined);
+  const enterFullscreen = async () => {
+    if (expanded) {
+      setExpanded(false);
+      return;
     }
+    const container = playerContainerRef.current;
+    if (container?.requestFullscreen) {
+      try {
+        await container.requestFullscreen();
+        return;
+      } catch { /* Embedded browsers may reject native fullscreen. */ }
+    }
+    const safariPlayer = mediaRef.current as (HTMLVideoElement & { webkitEnterFullscreen?: () => void }) | null;
+    if (safariPlayer?.webkitEnterFullscreen) {
+      try {
+        safariPlayer.webkitEnterFullscreen();
+        return;
+      } catch { /* Keep an accessible viewport-sized fallback. */ }
+    }
+    setExpanded(true);
   };
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 backdrop-blur-sm sm:p-6"
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm ${expanded ? 'p-0' : 'p-2 sm:p-5'}`}
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}
@@ -94,50 +112,27 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="flex max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/15 bg-[#08111f] text-white shadow-2xl"
+        className={`flex w-full flex-col overflow-hidden border border-white/15 bg-[#08111f] text-white shadow-2xl ${expanded ? 'h-dvh max-w-none' : 'max-h-[95vh] max-w-7xl rounded-2xl'}`}
       >
-        <div className="flex items-start justify-between gap-4 border-b border-white/10 px-4 py-4 sm:px-6">
-          <div className="min-w-0">
-            <div className="mb-2 flex flex-wrap items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-slate-300">
-              <span className="rounded-full border border-amber-300/30 bg-amber-300/10 px-2 py-1 text-amber-100">
-                {video.sequence}
-              </span>
-              <span className="rounded-full border border-white/15 bg-white/5 px-2 py-1">
-                EMOS V2
-              </span>
-              {video.duration && (
-                <span className="inline-flex items-center gap-1">
-                  <Clock3 className="h-3 w-3" aria-hidden="true" />
-                  {video.duration}
-                </span>
-              )}
-            </div>
-            <h2 id={titleId} className="font-serif text-lg font-bold leading-snug sm:text-2xl">
-              {video.title}
-            </h2>
-            <p className="mt-1 text-xs text-slate-400 sm:text-sm">{video.category}</p>
-          </div>
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={onClose}
-            aria-label={`Close video: ${video.title}`}
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-slate-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            <X className="h-5 w-5" aria-hidden="true" />
+        <div className="flex shrink-0 items-center gap-3 px-4 py-3 sm:px-5">
+          <h2 id={titleId} className="min-w-0 flex-1 text-sm font-semibold leading-snug sm:text-base">{video.title}</h2>
+          <button type="button" aria-label={expanded ? 'Exit full screen' : 'Full screen'} onClick={() => { void enterFullscreen(); }} className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-lg px-3 text-xs text-slate-300 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-white">
+            <Maximize2 className="h-4 w-4" aria-hidden="true" /><span className="hidden sm:inline" aria-hidden="true">{expanded ? 'Exit full screen' : 'Full screen'}</span>
           </button>
+          <button ref={closeButtonRef} type="button" onClick={onClose} aria-label={`Close video: ${video.title}`} className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-300 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-white"><X className="h-5 w-5" aria-hidden="true" /></button>
         </div>
 
-        <div className="overflow-y-auto">
-          <div ref={playerContainerRef} className="relative aspect-video w-full bg-black">
+        <div className={`min-h-0 ${expanded ? 'flex-1' : 'overflow-y-auto'}`}>
+          <div ref={playerContainerRef} className={`relative mx-auto w-full bg-black [&:fullscreen]:h-screen [&:fullscreen]:max-h-none [&:fullscreen]:w-screen ${expanded ? 'h-full' : 'aspect-video max-h-[calc(95dvh-68px)]'}`}>
             {video.mediaUrl ? (
               <>
                 <video
                   ref={mediaRef}
                   src={video.mediaUrl}
                   poster={video.thumbnailUrl}
-                  aria-label={`${video.sequence}: ${video.title} video player`}
+                  aria-label={`${video.title} video player`}
                   controls
+                  autoPlay={autoPlay}
                   tabIndex={0}
                   playsInline
                   preload="metadata"
@@ -162,6 +157,7 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
                   onLoadedData={() => setPlaybackState('ready')}
                   onCanPlay={() => setPlaybackState('ready')}
                   onPlaying={() => setPlaybackState('ready')}
+                  onTimeUpdate={(event) => { if (event.currentTarget.readyState >= 2) setPlaybackState('ready'); }}
                   onWaiting={() => setPlaybackState('loading')}
                   onError={() => setPlaybackState('error')}
                 />
@@ -189,23 +185,6 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
             ) : (
               <p role="alert" className="p-6 text-center">This video is temporarily unavailable.</p>
             )}
-          </div>
-
-          <div className="flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-5">
-            <p className="max-w-2xl text-sm leading-relaxed text-slate-300">{video.description}</p>
-            <div className="flex shrink-0 flex-wrap gap-2">
-              <button
-                type="button"
-                onClick={enterFullscreen}
-                className="inline-flex min-h-10 items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-4 text-xs font-bold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                <Maximize2 className="h-4 w-4" aria-hidden="true" />
-                Full screen
-              </button>
-              {video.burnedInCaptions && (
-                <span className="inline-flex min-h-10 items-center text-xs text-slate-300">Captions in video · Cillian narration</span>
-              )}
-            </div>
           </div>
         </div>
       </div>

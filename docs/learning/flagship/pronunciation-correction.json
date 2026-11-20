@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "index": 6,
+      "job_id": "c4ef064a-a284-4731-818c-4547c55ab148",
+      "status": "completed",
+      "type": "audio",
+      "model": "seed_audio",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JEVTCrX56NXzvJUn52TpgJj8TI/hf_20261120_232953_c4ef064a-a284-4731-818c-4547c55ab148.wav"
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "completed": 1,
+    "failed": 0,
+    "active": 0,
+    "errors": 0
+  },
+  "all_terminal": true
+}

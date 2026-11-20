@@ -1,0 +1,189 @@
+{
+  "durationSeconds": 87.5,
+  "realLightUiPercent": 84.0,
+  "conceptualPercent": 16.0,
+  "voice": "Cillian",
+  "voiceId": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 1,
+  "captionUiCollision": false,
+  "realProductShots": [
+    {
+      "start": 6,
+      "end": 14.549808429118775,
+      "name": "command",
+      "stage": "UNDERSTAND",
+      "realLightUi": true
+    },
+    {
+      "start": 14.549808429118775,
+      "end": 17.669669428851467,
+      "name": "portfolio",
+      "stage": "UNDERSTAND",
+      "realLightUi": true
+    },
+    {
+      "start": 17.669669428851467,
+      "end": 19.06662211529894,
+      "name": "dna",
+      "stage": "UNDERSTAND",
+      "realLightUi": true
+    },
+    {
+      "start": 19.06662211529894,
+      "end": 20.199705960973002,
+      "name": "dna-structured",
+      "stage": "UNDERSTAND",
+      "realLightUi": true
+    },
+    {
+      "start": 20.199705960973002,
+      "end": 22.79182927915887,
+      "name": "decision",
+      "stage": "DECIDE",
+      "realLightUi": true
+    },
+    {
+      "start": 22.79182927915887,
+      "end": 25.678864831150317,
+      "name": "alternatives",
+      "stage": "DECIDE",
+      "realLightUi": true
+    },
+    {
+      "start": 25.678864831150317,
+      "end": 27.82861979862782,
+      "name": "evidence",
+      "stage": "DECIDE",
+      "realLightUi": true
+    },
+    {
+      "start": 27.82861979862782,
+      "end": 33.525082420030294,
+      "name": "ask",
+      "stage": "ASK EMOS",
+      "realLightUi": true
+    },
+    {
+      "start": 33.525082420030294,
+      "end": 37.90996168582376,
+      "name": "ask-evidence",
+      "stage": "ASK EMOS",
+      "realLightUi": true
+    },
+    {
+      "start": 37.90996168582376,
+      "end": 43.66851109329057,
+      "name": "governance",
+      "stage": "GOVERN",
+      "realLightUi": true
+    },
+    {
+      "start": 43.66851109329057,
+      "end": 46.04333066025127,
+      "name": "plan",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 46.04333066025127,
+      "end": 46.83235023315216,
+      "name": "retain-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 46.83235023315216,
+      "end": 47.621369806053046,
+      "name": "retire-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 47.621369806053046,
+      "end": 48.41038937895394,
+      "name": "rehost-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 48.41038937895394,
+      "end": 49.19940895185483,
+      "name": "replatform-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 49.19940895185483,
+      "end": 49.98842852475571,
+      "name": "execute-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 49.98842852475571,
+      "end": 50.7774480976566,
+      "name": "repurchase-detail",
+      "stage": "TRANSFORM",
+      "realLightUi": true
+    },
+    {
+      "start": 50.7774480976566,
+      "end": 54.84413258487036,
+      "name": "measure-detail",
+      "stage": "OUTCOMES",
+      "realLightUi": true
+    },
+    {
+      "start": 54.84413258487036,
+      "end": 55.65902165196472,
+      "name": "learn",
+      "stage": "LEARN",
+      "realLightUi": true
+    },
+    {
+      "start": 55.65902165196472,
+      "end": 58.802165196471535,
+      "name": "learn-recorded",
+      "stage": "LEARN",
+      "realLightUi": true
+    },
+    {
+      "start": 58.802165196471535,
+      "end": 61.13041967388399,
+      "name": "command",
+      "stage": "V2 TODAY",
+      "realLightUi": true
+    },
+    {
+      "start": 61.13041967388399,
+      "end": 67.47103270070392,
+      "name": "dna-structured",
+      "stage": "WORKLOAD-FIRST",
+      "realLightUi": true
+    },
+    {
+      "start": 67.47103270070392,
+      "end": 79.5,
+      "name": "command",
+      "stage": "CURRENT REFERENCE IMPLEMENTATION",
+      "realLightUi": true
+    }
+  ],
+  "sourceCaptureManifest": "capture-manifest.json",
+  "narrationTempo": 1.2885189437428244,
+  "sha256": "c30c06fb2c0e14122de27160c34c5af4d83016b441e303e2ef2ee60220fbf206",
+  "reviewStatus": "PASS",
+  "videoProductTaste": "PASS",
+  "consistentLightMode": true,
+  "darkProductUi": false,
+  "fakeGeneratedUi": false,
+  "fullLifecycle": true,
+  "twoGeminiSpecialists": true,
+  "humanAuthority": true,
+  "workloadFirst": true,
+  "vendorAgnosticVisionQualified": true,
+  "reviewMethod": "Decoded complete H.264/AAC file without errors; visually inspected final encoded midpoint of every shot and reviewed word-aligned narration against both speech transcriptions. Actual UI recordings and restrained focus movement dominate; contextual opening and explicitly qualified target-vision close only.",
+  "creditSpend": 172.1,
+  "creditCap": 175
+}

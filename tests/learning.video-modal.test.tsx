@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import '@testing-library/jest-dom/vitest';
 import React from 'react';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { LearningCenterPage } from '../src/components/LearningCenterPage';
 import { LearningVideoModal } from '../src/components/LearningVideoModal';
@@ -68,7 +68,7 @@ describe('EMOS Learning Center embedded video playback', () => {
     const video = LEARNING_VIDEOS[3];
     fireEvent.click(screen.getByRole('button', { name: `Play ${video.sequence}: ${video.title} in EMOS` }));
     expect(screen.getByRole('dialog', { name: video.title })).toHaveAttribute('aria-modal', 'true');
-    expect(screen.getByLabelText(`${video.sequence}: ${video.title} video player`)).toHaveAttribute('src', video.mediaUrl);
+    expect(screen.getByLabelText(`${video.title} video player`)).toHaveAttribute('src', video.mediaUrl);
     expect(document.querySelector('iframe')).toBeNull();
   });
 
@@ -98,14 +98,16 @@ describe('EMOS Learning Center embedded video playback', () => {
     );
 
     const closeButton = screen.getByRole('button', { name: `Close video: ${video.title}` });
-    const finalButton = screen.getByRole('button', { name: 'Full screen' });
+    const firstButton = screen.getByRole('button', { name: 'Full screen' });
+    const finalButton = screen.getByLabelText(`${video.title} video player`);
     expect(closeButton).toHaveFocus();
+    firstButton.focus();
 
     fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
     expect(finalButton).toHaveFocus();
 
     fireEvent.keyDown(document, { key: 'Tab' });
-    expect(closeButton).toHaveFocus();
+    expect(firstButton).toHaveFocus();
   });
 
   it('offers an explicit full-screen action for the embedded player', () => {
@@ -123,6 +125,19 @@ describe('EMOS Learning Center embedded video playback', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Full screen' }));
 
     expect(requestFullscreen).toHaveBeenCalledTimes(1);
+  });
+
+  it('expands the player when the browser rejects fullscreen and allows returning', async () => {
+    Object.defineProperty(HTMLElement.prototype, 'requestFullscreen', {
+      configurable: true,
+      value: vi.fn().mockRejectedValue(new Error('Not supported in embedded browser')),
+    });
+    render(<LearningVideoModal video={LEARNING_VIDEOS[0]} onClose={vi.fn()} returnFocusTo={null} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Full screen' }));
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Exit full screen' })).toBeInTheDocument());
+    expect(screen.getByRole('dialog')).toHaveClass('h-dvh');
+    fireEvent.click(screen.getByRole('button', { name: 'Exit full screen' }));
+    expect(screen.getByRole('dialog')).not.toHaveClass('h-dvh');
   });
 
   it('marks a video without a verified media URL as unavailable and creates no iframe', () => {
@@ -151,7 +166,7 @@ describe('EMOS Learning Center embedded video playback', () => {
     };
     renderLearningCenter([video]);
     fireEvent.click(screen.getByRole('button', { name: 'Start Guided Journey' }));
-    const player = screen.getByLabelText(`${video.sequence}: ${video.title} video player`);
+    const player = screen.getByLabelText(`${video.title} video player`);
     expect(player.tagName).toBe('VIDEO');
     expect(player).toHaveAttribute('controls');
     expect(player).toHaveAttribute('playsinline');
@@ -169,6 +184,21 @@ describe('EMOS Learning Center embedded video playback', () => {
     fireEvent.canPlay(player);
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     expect(screen.queryByRole('status')).not.toBeInTheDocument();
+  });
+
+  it('clears a stale loading indicator as decoded playback advances and keeps chrome minimal', () => {
+    const video = LEARNING_VIDEOS[0];
+    render(<LearningVideoModal video={video} onClose={vi.fn()} returnFocusTo={null} autoPlay />);
+    const player = screen.getByLabelText(`${video.title} video player`);
+    expect(player).toHaveAttribute('autoplay');
+    fireEvent.waiting(player);
+    Object.defineProperty(player, 'readyState', { configurable: true, value: 3 });
+    fireEvent.timeUpdate(player);
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { name: video.title })).toHaveLength(1);
+    expect(screen.queryByText(video.sequence)).not.toBeInTheDocument();
+    expect(screen.queryByText('Cillian')).not.toBeInTheDocument();
+    expect(screen.queryByText('Burned-in captions')).not.toBeInTheDocument();
   });
 
   it('unmounts direct media and restores trigger focus when closed', () => {

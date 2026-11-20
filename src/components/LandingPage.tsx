@@ -6,14 +6,14 @@ import {
 } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { signInWithGoogle, getFriendlyAuthErrorMessage } from '../lib/firebase';
-import { LEARNING_VIDEOS, type LearningVideo } from '../data/learningVideos';
+import type { LearningVideo } from '../data/learningVideos';
+import { FLAGSHIP_VIDEO } from '../data/flagshipVideo';
 import { SAMPLE_PORTFOLIO } from '../data/samplePortfolio';
 import { CAPABILITY_HORIZON, EMOS_FACTS, EMOS_POSITIONING, LANDING_NAVIGATION } from '../config/productFacts';
 import { evaluateEvidenceReadiness } from '../lib/readiness';
 import { downloadSampleDecisionBrief } from '../lib/sampleDecisionBrief';
 import { ThemeSelector } from './ThemeSelector';
 import { EmosProductVisuals } from './EmosVisuals';
-import { BuilderVideo } from './BuilderVideo';
 import { LearningVideoModal } from './LearningVideoModal';
 
 interface LandingPageProps {
@@ -57,16 +57,6 @@ const EVIDENCE_DIMENSIONS = [
 
 const SCENARIO_WORKLOAD = SAMPLE_PORTFOLIO[0];
 const SCENARIO_READINESS = evaluateEvidenceReadiness(SCENARIO_WORKLOAD.dna);
-
-const FEATURED_VIDEOS = ['00', 'F08', 'F19']
-  .map((sequence) => LEARNING_VIDEOS.find((video) => video.sequence === sequence))
-  .filter((video): video is (typeof LEARNING_VIDEOS)[number] => Boolean(video));
-
-const FEATURED_VIDEO_TITLES: Record<string, string> = {
-  '00': 'What is EMOS V2?',
-  F08: 'Preserve Cloud-Platform Neutrality',
-  F19: 'Plan and Mobilize the Modernization Program',
-};
 
 const STATUS_STYLES: Record<string, string> = {
   SHIPPED: 'border-emerald-500/35 bg-emerald-500/12 text-emerald-700 dark:text-emerald-300',
@@ -321,6 +311,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenWalkthrough, onN
                 </a>
               </div>
 
+              <section aria-labelledby="flagship-video-title" className="mt-10 text-left sm:mt-12">
+                <h2 id="flagship-video-title" className="text-center font-serif text-2xl font-semibold sm:text-3xl">See EMOS in 90 seconds</h2>
+                <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-[var(--emos-text-secondary)]">From enterprise evidence to governed decisions, execution, outcomes and learning.</p>
+                <button type="button" aria-label="Watch the EMOS flagship vision video" onClick={(event) => setActiveLesson({ video: FLAGSHIP_VIDEO, trigger: event.currentTarget })} className="group relative mt-6 block aspect-video w-full overflow-hidden rounded-2xl border border-white/15 bg-white shadow-2xl shadow-black/20 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--emos-accent)]">
+                  <img src={FLAGSHIP_VIDEO.thumbnailUrl} alt="Real light-mode EMOS decision workspace with recommendation, evidence and rationale" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.015]" fetchPriority="high" />
+                  <span className="absolute inset-0 bg-black/10 transition-colors group-hover:bg-black/5" />
+                  <span className="absolute inset-0 flex items-center justify-center"><span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#4648D4] text-white shadow-xl transition-transform group-hover:scale-105 sm:h-20 sm:w-20"><CirclePlay className="h-8 w-8 sm:h-10 sm:w-10" aria-hidden="true" /></span></span>
+                  <span className="absolute bottom-4 left-4 rounded-full bg-[#08111f]/90 px-4 py-2 text-xs font-semibold text-white">Watch the vision film</span>
+                </button>
+              </section>
+
               {/* Compact Secondary Utility Links */}
               <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs">
                 <button
@@ -565,19 +566,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenWalkthrough, onN
 
         {activeSection === 'scenario' && <div className="mx-auto max-w-[88rem] px-4 pb-14 sm:px-6 lg:px-8"><EmosProductVisuals /></div>}
 
-        {activeSection === 'home' && <section className="landing-scene landing-video border-t border-[var(--emos-border-subtle)] bg-[var(--emos-bg-secondary)]">
-          <div className="mx-auto max-w-[88rem] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
-            <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-              <Reveal className="max-w-3xl"><StageMarker number="▶" label="See the Beta in Motion" /><h2 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl">Watch the Evidence Become a Decision.</h2><p className="mt-4 max-w-2xl text-base leading-7 text-[var(--emos-text-secondary)]">The {EMOS_FACTS.learningLibraryLabel} library shows the real beta behavior—without requiring sign-in.</p></Reveal>
-              <Reveal><a href="/learn" onClick={(event) => navigate(event, '/learn')} className="inline-flex min-h-[46px] items-center gap-2 rounded-xl border border-[var(--emos-border-strong)] bg-[var(--emos-surface)] px-4 text-sm font-semibold transition-all hover:-translate-y-0.5">Browse All Walkthroughs <ArrowRight className="h-4 w-4" /></a></Reveal>
-            </div>
-            <div className="-mx-4 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:grid lg:grid-cols-3 lg:overflow-visible lg:px-0 lg:pb-0">
-              {FEATURED_VIDEOS.map((video, index) => {
-                return <Reveal key={video.sequence} delay={index * 0.08} className="w-[82vw] shrink-0 snap-start sm:w-[22rem] lg:w-auto"><motion.button type="button" onClick={(event) => setActiveLesson({ video, trigger: event.currentTarget })} aria-label={`Watch ${FEATURED_VIDEO_TITLES[video.sequence] || video.title}`} whileHover={reduceMotion ? undefined : { y: -6 }} className="group grid h-full w-full text-left overflow-hidden rounded-2xl border border-[var(--emos-border-subtle)] bg-[var(--emos-surface)] shadow-sm hover:shadow-xl sm:grid-rows-[auto_1fr]"><div className="relative aspect-[16/8] overflow-hidden bg-[var(--emos-bg-tertiary)]"><img src={video.thumbnailUrl} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.025]" /><div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent" /><span className="absolute bottom-3 left-3 flex h-9 w-9 items-center justify-center rounded-full bg-white text-black shadow-xl"><CirclePlay className="h-4 w-4" /></span><span className="absolute bottom-3 right-3 rounded-full bg-black/70 px-2 py-1 font-mono text-[10px] text-white">{video.duration || video.sequence}</span></div><div className="p-4 sm:p-5"><p className="text-xs font-semibold text-[var(--emos-accent-text)]">{video.category}</p><h3 className="mt-1 font-serif text-lg font-semibold leading-snug">{FEATURED_VIDEO_TITLES[video.sequence] || video.title}</h3><span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold">Watch Video <CirclePlay className="h-3.5 w-3.5" /></span></div></motion.button></Reveal>;
-              })}
-            </div>
-          </div>
-        </section>}
 
         {activeSection === 'vision' && <section id="vision" className="landing-scene">
           <div className="mx-auto max-w-[88rem] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
@@ -602,7 +590,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenWalkthrough, onN
               ['Autodesk · 1+ year', 'Leading data products supporting product-led growth and GTM initiatives'],
               ['Community', 'Established the first product management communities of practice at Tally and Boeing India'],
             ].map(([label, value]) => <div key={label}><dt className="text-sm font-semibold text-[var(--emos-accent-text)]">{label}</dt><dd className="mt-1 text-sm leading-6 text-[var(--emos-text-secondary)]">{value}</dd></div>)}</dl></div></Reveal>
-            <Reveal delay={0.1}><div><h2 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl">Why EMOS exists</h2><div className="mt-5 space-y-4 text-base leading-8 text-[var(--emos-text-secondary)]"><p>At Boeing, the hard part of modernization wasn&apos;t executing a 6R disposition once it was chosen. It was establishing whether the evidence justified committing millions of dollars and years to changing a system.</p><p className="font-serif text-3xl font-semibold leading-tight text-[var(--emos-text-primary)]">EMOS grew from that problem.</p></div><div className="mt-8"><BuilderVideo /></div><div className="mt-6 space-y-4 text-base leading-8 text-[var(--emos-text-secondary)]"><p>EMOS helps enterprises assess modernization options against evidence, make governed decisions and carry those decisions into execution.</p><p>Hyperscaler tools are built to move workloads onto their own clouds. EMOS is vendor-agnostic: the evidence decides the destination, including whether to move at all.</p><p className="text-sm leading-7">Design partners work directly with me to shape the operating model and set the roadmap.</p></div><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jeasom@gmail.com&su=EMOS%20Design%20Partner%20Interest&body=Hi%20Jincen%2C%0A%0AI%27m%20interested%20in%20becoming%20an%20EMOS%20design%20partner." target="_blank" rel="noreferrer" aria-label="Become an EMOS design partner by email" className="group mt-7 inline-flex min-h-[46px] items-center justify-center gap-2 rounded-lg bg-[#4648D4] hover:bg-[#3B3DC2] px-6 text-sm font-semibold text-white shadow-sm transition-all">Become a Design Partner <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a></div></Reveal>
+            <Reveal delay={0.1}><div><h2 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl">Why EMOS exists</h2><div className="mt-5 space-y-4 text-base leading-8 text-[var(--emos-text-secondary)]"><p>At Boeing, the hard part of modernization wasn&apos;t executing a 6R disposition once it was chosen. It was establishing whether the evidence justified committing millions of dollars and years to changing a system.</p><p className="font-serif text-3xl font-semibold leading-tight text-[var(--emos-text-primary)]">EMOS grew from that problem.</p></div><div className="mt-6 space-y-4 text-base leading-8 text-[var(--emos-text-secondary)]"><p>EMOS helps enterprises assess modernization options against evidence, make governed decisions and carry those decisions into execution.</p><p>Hyperscaler tools are built to move workloads onto their own clouds. EMOS is vendor-agnostic: the evidence decides the destination, including whether to move at all.</p><p className="text-sm leading-7">Design partners work directly with me to shape the operating model and set the roadmap.</p></div><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jeasom@gmail.com&su=EMOS%20Design%20Partner%20Interest&body=Hi%20Jincen%2C%0A%0AI%27m%20interested%20in%20becoming%20an%20EMOS%20design%20partner." target="_blank" rel="noreferrer" aria-label="Become an EMOS design partner by email" className="group mt-7 inline-flex min-h-[46px] items-center justify-center gap-2 rounded-lg bg-[#4648D4] hover:bg-[#3B3DC2] px-6 text-sm font-semibold text-white shadow-sm transition-all">Become a Design Partner <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a></div></Reveal>
           </div>
         </section>}
 
@@ -633,7 +621,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenWalkthrough, onN
           </div>
         </div>
       </footer>
-      {activeLesson && <LearningVideoModal video={activeLesson.video} onClose={closeLesson} returnFocusTo={activeLesson.trigger} />}
+      {activeLesson && <LearningVideoModal autoPlay video={activeLesson.video} onClose={closeLesson} returnFocusTo={activeLesson.trigger} />}
     </div>
   );
 };

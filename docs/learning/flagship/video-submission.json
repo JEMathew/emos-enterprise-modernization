@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "id": "e2515776-5b7a-4c2a-b244-7b1016b84949",
+      "type": "video",
+      "status": "pending",
+      "model": "seedance_2_5",
+      "params": {
+        "prompt": "Premium enterprise documentary launch film, 10 seconds, restrained photorealistic architectural cinematography. One slow continuous lateral dolly through a sunlit contemporary enterprise campus: layered glass office facades, a quiet industrial logistics building in the distance, clean stone and warm neutral daylight. Soft lavender-gray reflections, realistic materials, gentle parallax, natural contrast. Human scale and credible enterprise context. No computer screens, no user interfaces, no dashboards, no letters, no logos, no titles, no visible personal data. No robots, circuitry, particles, glow, neon or science fiction. Elegant understated camera movement, no dramatic action. Leave the bottom safe area visually quiet for subsequent captions. This is contextual footage only, not software or a product demonstration.",
+        "aspect_ratio": "16:9",
+        "duration": 10,
+        "mode": "t2v",
+        "resolution": "1080p",
+        "generate_audio": false
+      }
+    }
+  ]
+}

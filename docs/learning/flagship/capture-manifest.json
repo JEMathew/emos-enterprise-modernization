@@ -1,0 +1,170 @@
+[
+  {
+    "name": "command",
+    "path": "/tmp/emos-flagship/screens/command.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "portfolio",
+    "path": "/tmp/emos-flagship/screens/portfolio.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "dna",
+    "path": "/tmp/emos-flagship/screens/dna.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "dna-structured",
+    "path": "/tmp/emos-flagship/screens/dna-structured.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "decision",
+    "path": "/tmp/emos-flagship/screens/decision.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "evidence",
+    "path": "/tmp/emos-flagship/screens/evidence.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "alternatives",
+    "path": "/tmp/emos-flagship/screens/alternatives.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "ask",
+    "path": "/tmp/emos-flagship/screens/ask.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "ask-evidence",
+    "path": "/tmp/emos-flagship/screens/ask-evidence.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "governance",
+    "path": "/tmp/emos-flagship/screens/governance.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "plan",
+    "path": "/tmp/emos-flagship/screens/plan.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-refactor",
+    "path": "/tmp/emos-flagship/screens/execute-refactor.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-retain",
+    "path": "/tmp/emos-flagship/screens/execute-retain.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-retire",
+    "path": "/tmp/emos-flagship/screens/execute-retire.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-rehost",
+    "path": "/tmp/emos-flagship/screens/execute-rehost.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-replatform",
+    "path": "/tmp/emos-flagship/screens/execute-replatform.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-repurchase",
+    "path": "/tmp/emos-flagship/screens/execute-repurchase.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "measure",
+    "path": "/tmp/emos-flagship/screens/measure.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "measure-detail",
+    "path": "/tmp/emos-flagship/screens/measure-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "learn",
+    "path": "/tmp/emos-flagship/screens/learn.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "learn-note",
+    "path": "/tmp/emos-flagship/screens/learn-note.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "learn-recorded",
+    "path": "/tmp/emos-flagship/screens/learn-recorded.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "execute-detail",
+    "path": "/tmp/emos-flagship/screens/execute-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "retain-detail",
+    "path": "/tmp/emos-flagship/screens/retain-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "retire-detail",
+    "path": "/tmp/emos-flagship/screens/retire-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "rehost-detail",
+    "path": "/tmp/emos-flagship/screens/rehost-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "replatform-detail",
+    "path": "/tmp/emos-flagship/screens/replatform-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  },
+  {
+    "name": "repurchase-detail",
+    "path": "/tmp/emos-flagship/screens/repurchase-detail.jpg",
+    "theme": "light",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app/workspace"
+  }
+]

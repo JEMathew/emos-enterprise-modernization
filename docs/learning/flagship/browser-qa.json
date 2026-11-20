@@ -1,0 +1,24 @@
+{
+  "localProductionBuild": "PASS",
+  "nativePlayback": {
+    "duration": 87.5,
+    "readyState": 4,
+    "paused": false,
+    "resolution": "1920x1080"
+  },
+  "loadingClears": true,
+  "singleModalTitle": true,
+  "noTechnicalMetadata": true,
+  "escapeAndReturnFocus": "PASS",
+  "fullscreen": "Native API requested when available; verified viewport-filling fallback in embedded browser without fullscreen API; unit-tested native request and rejection fallback.",
+  "mobile": {
+    "viewport": "390x844",
+    "horizontalOverflow": false,
+    "videoDimensions": "372x209.25"
+  },
+  "learningCenter": "20 lessons plus full lifecycle reference remain intact",
+  "playerProductTaste": "PASS",
+  "lint": "PASS",
+  "build": "PASS",
+  "vitest": "310 passed"
+}

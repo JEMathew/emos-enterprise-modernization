@@ -291,6 +291,25 @@ describe('Public Governance Routes (/privacy & /terms)', () => {
     expect(document.title).toBe('EMOS | Enterprise Modernization and 6R Planning');
   });
 
+  it('features one flagship immediately after the hero actions and opens a minimal native player', () => {
+    renderWithTheme(<LandingPage onOpenWalkthrough={vi.fn()} onNavigate={vi.fn()} />);
+    const triggers = screen.getAllByRole('button', { name: /Watch .*video/i });
+    expect(triggers).toHaveLength(1);
+    expect(screen.queryByRole('button', { name: /Watch What is EMOS V2/i })).not.toBeInTheDocument();
+    const heroAction = screen.getByRole('link', { name: /Explore Without Sign-In/i });
+    expect(heroAction.compareDocumentPosition(triggers[0]) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    fireEvent.click(triggers[0]);
+    const dialog = screen.getByRole('dialog', { name: 'EMOS — Enterprise Modernization Operating System' });
+    expect(within(dialog).getAllByRole('heading')).toHaveLength(1);
+    const video = within(dialog).getByLabelText(/video player/i);
+    expect(video).toHaveAttribute('src', '/media/flagship/emos-v2-vision.mp4');
+    expect(video).toHaveAttribute('autoplay');
+    expect(within(dialog).getByRole('button', { name: 'Full screen' })).toBeInTheDocument();
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(triggers[0]).toHaveFocus();
+  });
+
   it('renders updated user-facing product copy and excludes absolute or ungrounded claims on the Landing Page', () => {
     const onOpenWalkthrough = vi.fn();
     renderWithTheme(<LandingPage onOpenWalkthrough={onOpenWalkthrough} onNavigate={vi.fn()} />);
@@ -315,7 +334,7 @@ describe('Public Governance Routes (/privacy & /terms)', () => {
     expect(screen.getByText('One Lifecycle. Three Honest Delivery States.')).toBeInTheDocument();
     expect(screen.getAllByText(/^SHIPPED$/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/Trust, Security, Governance and Human Accountability Throughout/i)).toBeInTheDocument();
-    expect(screen.getByText(/Watch the evidence become a decision\./i)).toBeInTheDocument();
+    expect(screen.getByText(/See EMOS in 90 seconds/i)).toBeInTheDocument();
 
     chooseMenuItem('EMOS', /^How It Works$/i);
     expect(screen.getAllByText(/Evidence Before Action\./i).length).toBeGreaterThan(0);
@@ -352,13 +371,8 @@ describe('Public Governance Routes (/privacy & /terms)', () => {
     expect(screen.getByText(/Business value & opportunity validation/i)).toBeInTheDocument();
     expect(screen.getByText(/Owned a 0→1 modernization-governance product end to end/i)).toBeInTheDocument();
     expect(screen.getByText(/EMOS grew from that problem/i)).toBeInTheDocument();
-    const whyEmosVideo = screen.getByLabelText(/Why EMOS exists narrated video/i);
-    expect(whyEmosVideo).toHaveAttribute('preload', 'none');
-    expect(whyEmosVideo).toHaveAttribute('poster', '/assets/emos/emos-why-exists-poster.webp');
-    expect(whyEmosVideo.querySelector('source[type="video/webm"]')).toHaveAttribute('src', '/assets/emos/emos-why-exists.webm');
-    expect(whyEmosVideo.querySelector('source[type="video/mp4"]')).toHaveAttribute('src', '/assets/emos/emos-why-exists.mp4');
-    expect(whyEmosVideo.querySelector('track[kind="captions"]')).toHaveAttribute('src', '/assets/emos/emos-why-captions.en.vtt');
-    expect(whyEmosVideo.querySelector('track[kind="captions"]')).toHaveAttribute('default');
+    expect(screen.queryByLabelText(/Why EMOS exists narrated video/i)).not.toBeInTheDocument();
+    expect(document.querySelector('video')).toBeNull();
     expect(screen.getByRole('link', { name: /Connect With Jincen E Mathew on LinkedIn/i })).toHaveAttribute(
       'href',
       'https://www.linkedin.com/in/jincenmathew/',

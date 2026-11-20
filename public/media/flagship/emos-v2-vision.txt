@@ -1,0 +1,11 @@
+Thousands of interconnected systems. What stays, retires, moves, transforms, or gets replaced—and in what order? Fragmented evidence makes that difficult. EMOS connects the entire modernization journey, from enterprise context and governed decisions to execution, outcomes, and learning.
+
+Start with the real estate. Inspect the portfolio, Enterprise DNA, and missing evidence. Compare Retain, Retire, Rehost, Replatform, Refactor, and Repurchase—with rationale, evidence, and alternatives.
+
+Through Ask EMOS, a deterministic orchestrator routes questions to exactly two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. The orchestrator is not a third agent.
+
+AI cannot self-approve. Evidence rules validate readiness; humans retain authority. The chosen six R continues into wave planning and its own execution playbook. EMOS tracks governed work; it does not perform live migrations.
+
+Measure compares representative outcomes against baselines. Learn captures session-only lessons, without autonomous retraining. V2 proves the connected workflow. Workload characteristics, dependencies, risk, and business objectives drive the direction—not a predetermined cloud.
+
+Google Cloud powers today's reference implementation. The broader vendor-agnostic vision spans retained environments, private infrastructure, public clouds, and replacement platforms. Enterprise-controlled deployment and managed SaaS remain target vision. One operating system for the modernization lifecycle.
