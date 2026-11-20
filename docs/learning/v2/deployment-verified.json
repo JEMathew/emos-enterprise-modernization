@@ -1,0 +1,31 @@
+{
+  "revision": "emos-modernization-00004-lch",
+  "traffic": [
+    {
+      "latestRevision": true,
+      "percent": 100,
+      "revisionName": "emos-modernization-00004-lch"
+    }
+  ],
+  "runtimeConfigurationUnchanged": true,
+  "htmlCacheChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "no-store",
+      "etag": null
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "cacheControl": "no-store",
+      "etag": null
+    },
+    {
+      "path": "/learn",
+      "status": 200,
+      "cacheControl": "no-store",
+      "etag": null
+    }
+  ]
+}

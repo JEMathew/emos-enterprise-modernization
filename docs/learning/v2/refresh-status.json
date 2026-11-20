@@ -32,36 +32,58 @@
     "lint": "PASS",
     "build": "PASS",
     "tests": {
-      "passed": 292,
-      "total": 292
+      "passed": 294,
+      "total": 294
     },
     "liveGeminiSuite": "not_run",
     "technicalMedia": "18/18 PASS",
     "sampledVisualFrames": "18/18 PASS",
     "localNativePlayback": "PASS",
     "mobile390": "PASS",
-    "keyboardAndFocus": "PASS"
+    "keyboardAndFocus": "PASS",
+    "githubReleaseGate": {
+      "status": "PASS",
+      "softwareTests": 294,
+      "firestoreTests": 8,
+      "url": "https://github.com/JEMathew/emos-enterprise-modernization/actions/runs/44833660288"
+    },
+    "productionMediaHashes": "54/54 PASS",
+    "productionPlacements": "41/41 PASS on emos-modernization-00004-lch",
+    "coreSmoke": "PASS: sandbox, workspace, DNA, governance blocked state, Transform plan, representative Outcomes",
+    "homepageEntryPoints": "3/3 PASS",
+    "runtimeConfigurationUnchanged": true,
+    "htmlCacheRegression": "PASS: current HTML returns 200/no-store for stale validators"
   },
   "hostingPlan": "Use existing Vite public assets and Express static serving under /media/learning/; same-origin HTTPS on existing Cloud Run service, no new hosting service or security policy change.",
   "production": {
-    "observedRevision": "emos-modernization-00002-nnw",
+    "observedRevision": "emos-modernization-00004-lch",
     "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app",
     "inventoryInspected": true,
-    "newLibraryDeployed": false
+    "newLibraryDeployed": true,
+    "verified": true,
+    "trafficPercent": 100
   },
   "movebooks": {
     "source": "/Users/jincenmathew/.codex/worktrees/evergreen-landing/movebooks-audit-main/apps/web/components/academy/AcademyPlayer.tsx",
     "pattern": "Native inline player in modal; controls, poster, metadata preload, keyboard play/mute/seek, Escape/focus return, loading and retry."
   },
   "git": {
-    "baseCommit": "6af718f",
-    "taskCommitted": false,
-    "taskPushed": false
+    "baseCommit": "038ad53",
+    "taskCommitted": true,
+    "taskPushed": true,
+    "contentCommit": "453504249591768424928e095eaae119fb306168",
+    "deploymentCommit": "ec94d9ecbb9e027156aefe7518049d7dc24f01b0"
   },
-  "remaining": [
-    "Commit and push",
-    "Deploy existing service",
-    "Verify every production placement and all master assets"
-  ],
-  "readyForSubmission": false
+  "remaining": [],
+  "readyForSubmission": true,
+  "totals": {
+    "updatedLearningCenterPlacements": 41,
+    "updatedHomepageEntryPoints": 3,
+    "uniqueMasters": 18,
+    "burnedInCaptions": 18,
+    "missingSubtitles": 0,
+    "staleV1Videos": 0,
+    "brokenVideoLinks": 0,
+    "unresolvedGenerationFailures": 0
+  }
 }

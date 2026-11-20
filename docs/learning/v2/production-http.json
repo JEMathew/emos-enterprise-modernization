@@ -1,0 +1,402 @@
+{
+  "base": "https://emos-modernization-1027874783780.asia-southeast1.run.app",
+  "checkedAssets": 54,
+  "results": [
+    {
+      "asset": "emos-v2-import.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2312973,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-outcomes.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 836
+    },
+    {
+      "asset": "emos-v2-orientation.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 104593
+    },
+    {
+      "asset": "emos-v2-workspace.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 789
+    },
+    {
+      "asset": "emos-v2-repurchase.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1603069,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-governance.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2850661,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-privacy-history.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 120200
+    },
+    {
+      "asset": "emos-v2-rehost.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 122674
+    },
+    {
+      "asset": "emos-v2-decision.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 917
+    },
+    {
+      "asset": "emos-v2-retire.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 487
+    },
+    {
+      "asset": "emos-v2-discovery.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 803
+    },
+    {
+      "asset": "emos-v2-refactor.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 100458
+    },
+    {
+      "asset": "emos-v2-orientation.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 1082
+    },
+    {
+      "asset": "emos-v2-dna.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1774045,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-outcomes.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 108912
+    },
+    {
+      "asset": "emos-v2-workspace.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 113114
+    },
+    {
+      "asset": "emos-v2-rehost.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 506
+    },
+    {
+      "asset": "emos-v2-retain.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1727569,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-privacy-history.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 838
+    },
+    {
+      "asset": "emos-v2-discovery.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 130959
+    },
+    {
+      "asset": "emos-v2-retire.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 133482
+    },
+    {
+      "asset": "emos-v2-replatform.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1604274,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-refactor.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 519
+    },
+    {
+      "asset": "emos-v2-ask.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 3678437,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-decision.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 107450
+    },
+    {
+      "asset": "emos-v2-execution.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2033613,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-security.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2048934,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-workspace.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2322725,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-outcomes.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2574778,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-import.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 753
+    },
+    {
+      "asset": "emos-v2-dna.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 108938
+    },
+    {
+      "asset": "emos-v2-ask.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 106538
+    },
+    {
+      "asset": "emos-v2-retire.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1278087,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-discovery.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 3156235,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-replatform.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 111784
+    },
+    {
+      "asset": "emos-v2-execution.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 110507
+    },
+    {
+      "asset": "emos-v2-security.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 97012
+    },
+    {
+      "asset": "emos-v2-decision.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 2880126,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-retain.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 97421
+    },
+    {
+      "asset": "emos-v2-governance.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 821
+    },
+    {
+      "asset": "emos-v2-repurchase.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 509
+    },
+    {
+      "asset": "emos-v2-dna.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 853
+    },
+    {
+      "asset": "emos-v2-import.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 113333
+    },
+    {
+      "asset": "emos-v2-orientation.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 3764075,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-security.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 821
+    },
+    {
+      "asset": "emos-v2-execution.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 802
+    },
+    {
+      "asset": "emos-v2-refactor.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1297853,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-ask.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 865
+    },
+    {
+      "asset": "emos-v2-replatform.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 509
+    },
+    {
+      "asset": "emos-v2-retain.txt",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "text/plain; charset=UTF-8",
+      "bytes": 489
+    },
+    {
+      "asset": "emos-v2-privacy-history.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1929076,
+      "rangeStatus": 206
+    },
+    {
+      "asset": "emos-v2-repurchase.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 100001
+    },
+    {
+      "asset": "emos-v2-governance.jpg",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "image/jpeg",
+      "bytes": 114685
+    },
+    {
+      "asset": "emos-v2-rehost.mp4",
+      "status": 200,
+      "sha256Matches": true,
+      "contentType": "video/mp4",
+      "bytes": 1205030,
+      "rangeStatus": 206
+    }
+  ]
+}

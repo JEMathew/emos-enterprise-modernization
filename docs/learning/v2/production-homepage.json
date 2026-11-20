@@ -1,0 +1,29 @@
+{
+  "revision": "emos-modernization-00004-lch",
+  "checks": [
+    {
+      "name": "Watch What is EMOS V2?",
+      "error": null,
+      "paused": false,
+      "ready": 3,
+      "src": "https://emos-modernization-1027874783780.asia-southeast1.run.app/media/learning/emos-v2-orientation.mp4",
+      "time": 0.007641
+    },
+    {
+      "name": "Watch Preserve Cloud-Platform Neutrality",
+      "error": null,
+      "paused": false,
+      "ready": 3,
+      "src": "https://emos-modernization-1027874783780.asia-southeast1.run.app/media/learning/emos-v2-decision.mp4",
+      "time": 0.006769
+    },
+    {
+      "name": "Watch Plan and Mobilize the Modernization Program",
+      "error": null,
+      "paused": false,
+      "ready": 3,
+      "src": "https://emos-modernization-1027874783780.asia-southeast1.run.app/media/learning/emos-v2-execution.mp4",
+      "time": 0.022871
+    }
+  ]
+}
