@@ -1,0 +1,530 @@
+import React, { useState, useRef } from 'react';
+import {
+  UploadCloud,
+  FileSpreadsheet,
+  FileText,
+  AlertTriangle,
+  CheckCircle2,
+  XCircle,
+  Download,
+  X,
+  ArrowRight,
+  ShieldCheck,
+} from 'lucide-react';
+import type { ImportValidationResult, EnterpriseWorkload } from '../types';
+import { MAX_FILE_SIZE_LABEL, MAX_IMPORT_WORKLOADS, parseAndValidatePortfolioFile } from '../utils/portfolioImporter';
+import { EMOS_FIELD_GUIDE, EMOS_TEMPLATE_CSV, SAMPLE_DATASETS, type SampleCsvDataset } from '../data/sampleCsvs';
+
+interface ImportPortfolioModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onImportSuccess: (workloads: EnterpriseWorkload[]) => Promise<void>;
+  userId: string;
+}
+
+export const ImportPortfolioModal: React.FC<ImportPortfolioModalProps> = ({
+  isOpen,
+  onClose,
+  onImportSuccess,
+  userId,
+}) => {
+  const [activeTab, setActiveTab] = useState<'upload' | 'samples'>('upload');
+  const [dragOver, setDragOver] = useState(false);
+  const [isParsing, setIsParsing] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [validationResult, setValidationResult] = useState<ImportValidationResult | null>(null);
+  const [showDetailedTable, setShowDetailedTable] = useState(false);
+
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  if (!isOpen) return null;
+
+  const resetState = () => {
+    setErrorMessage(null);
+    setValidationResult(null);
+    setShowDetailedTable(false);
+    setIsParsing(false);
+    setIsSubmitting(false);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleClose = () => {
+    resetState();
+    onClose();
+  };
+
+  const handleFileProcess = async (file: File) => {
+    setErrorMessage(null);
+    setValidationResult(null);
+    setIsParsing(true);
+
+    try {
+      const result = await parseAndValidatePortfolioFile(file, userId);
+      setValidationResult(result);
+    } catch (err: any) {
+      setErrorMessage(err?.message || 'Failed to parse and validate file.');
+    } finally {
+      setIsParsing(false);
+    }
+  };
+
+  const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      handleFileProcess(file);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setDragOver(false);
+    const file = e.dataTransfer.files?.[0];
+    if (file) {
+      handleFileProcess(file);
+    }
+  };
+
+  const handleConfirmImport = async () => {
+    if (!validationResult || validationResult.validRecords.length === 0) return;
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      await onImportSuccess(validationResult.validRecords);
+      handleClose();
+    } catch (err: any) {
+      setErrorMessage(err?.message || 'Failed to save imported workloads.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleDownloadSample = (dataset: SampleCsvDataset) => {
+    const blob = new Blob([dataset.csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', dataset.filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleDownloadTemplate = () => {
+    const blob = new Blob([EMOS_TEMPLATE_CSV], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'emos-portfolio-template.csv');
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/70 backdrop-blur-xs animate-fadeIn">
+      <div className="bg-[var(--emos-surface-modal)] border border-[var(--emos-border-subtle)] rounded-2xl w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+        {/* Modal Header */}
+        <div className="px-5 sm:px-6 py-4 sm:py-5 border-b border-[var(--emos-border-subtle)] flex items-center justify-between bg-[var(--emos-bg-secondary)]">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-xl bg-[var(--emos-accent-subtle)] border border-[var(--emos-accent-border)] flex items-center justify-center text-[var(--emos-accent)]">
+              <UploadCloud className="w-5 h-5" />
+            </div>
+            <div>
+              <h2 className="text-base sm:text-lg font-semibold text-[var(--emos-text-primary)] tracking-wide flex items-center gap-2">
+                Import Enterprise Portfolio
+                <span className="text-[11px] font-mono font-normal uppercase tracking-wider px-2 py-0.5 rounded bg-[var(--emos-bg-tertiary)] text-[var(--emos-accent-text)] border border-[var(--emos-border-subtle)]">
+                  CSV / JSON
+                </span>
+              </h2>
+              <p className="text-xs text-[var(--emos-text-secondary)]">
+                Bring your own enterprise workloads to generate structured Enterprise DNA and run 6R modernization assessments.
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={handleClose}
+            className="text-[var(--emos-text-muted)] hover:text-[var(--emos-text-primary)] p-2 rounded-lg hover:bg-[var(--emos-surface-hover)] transition-colors cursor-pointer"
+            aria-label="Close modal"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Navigation Tabs */}
+        <div className="flex items-center px-4 sm:px-6 border-b border-[var(--emos-border-subtle)] bg-[var(--emos-bg-tertiary)] text-xs font-medium overflow-x-auto">
+          <button
+            onClick={() => setActiveTab('upload')}
+            className={`py-3 px-3 sm:px-4 border-b-2 transition-colors flex items-center gap-2 whitespace-nowrap cursor-pointer ${
+              activeTab === 'upload'
+                ? 'border-[var(--emos-accent)] text-[var(--emos-text-primary)] font-semibold'
+                : 'border-transparent text-[var(--emos-text-muted)] hover:text-[var(--emos-text-secondary)]'
+            }`}
+          >
+            <FileSpreadsheet className="w-4 h-4" />
+            Upload & Validate Portfolio
+          </button>
+          <button
+            onClick={() => setActiveTab('samples')}
+            className={`py-3 px-3 sm:px-4 border-b-2 transition-colors flex items-center gap-2 whitespace-nowrap cursor-pointer ${
+              activeTab === 'samples'
+                ? 'border-[var(--emos-accent)] text-[var(--emos-text-primary)] font-semibold'
+                : 'border-transparent text-[var(--emos-text-muted)] hover:text-[var(--emos-text-secondary)]'
+            }`}
+          >
+            <Download className="w-4 h-4" />
+            Templates & Sample Data
+          </button>
+        </div>
+
+        {/* Modal Body */}
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5 sm:space-y-6">
+          {activeTab === 'upload' && (
+            <>
+              {/* File Dropzone */}
+              {!validationResult && (
+                <div
+                  onDragOver={(e) => {
+                    e.preventDefault();
+                    setDragOver(true);
+                  }}
+                  onDragLeave={() => setDragOver(false)}
+                  onDrop={handleDrop}
+                  className={`border-2 border-dashed rounded-2xl p-6 sm:p-8 text-center transition-all cursor-pointer ${
+                    dragOver
+                      ? 'border-[var(--emos-accent)] bg-[var(--emos-accent-subtle)]'
+                      : 'border-[var(--emos-border-subtle)] hover:border-[var(--emos-border-strong)] bg-[var(--emos-surface)]'
+                  }`}
+                  onClick={() => fileInputRef.current?.click()}
+                >
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept=".csv, .json, text/csv, application/json"
+                    onChange={handleFileInputChange}
+                    className="hidden"
+                  />
+                  <div className="w-12 h-12 mx-auto rounded-full bg-[var(--emos-bg-tertiary)] border border-[var(--emos-border-subtle)] flex items-center justify-center text-[var(--emos-accent)] mb-3">
+                    <UploadCloud className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-sm font-semibold text-[var(--emos-text-primary)] mb-1">
+                    Start With What You Have
+                  </h3>
+                  <p className="mx-auto mb-4 max-w-2xl text-xs leading-5 text-[var(--emos-text-secondary)]">
+                    Upload an EMOS-formatted <span className="font-medium text-[var(--emos-accent-text)]">.csv</span> or <span className="font-medium text-[var(--emos-accent-text)]">.json</span> portfolio. Only Workload ID, Workload Name and Workload Type are required; partial evidence is accepted so EMOS can show what is missing. Maximum {MAX_FILE_SIZE_LABEL} and {MAX_IMPORT_WORKLOADS} workloads.
+                  </p>
+                  <p className="mb-4 text-xs font-semibold text-[var(--emos-text-primary)]">Click to browse or drag and drop your portfolio file</p>
+                  <div className="inline-flex items-center gap-2 text-[11px] text-[var(--emos-text-muted)] bg-[var(--emos-bg-tertiary)] px-3 py-1.5 rounded-full border border-[var(--emos-border-subtle)]">
+                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+                    Formula injection protection & input sanitization enforced
+                  </div>
+                </div>
+              )}
+
+              {/* Parsing Indicator */}
+              {isParsing && (
+                <div className="p-8 text-center bg-[var(--emos-surface)] rounded-xl border border-[var(--emos-border-subtle)]">
+                  <div className="w-8 h-8 border-2 border-[var(--emos-accent)] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+                  <p className="text-sm text-[var(--emos-text-primary)] font-medium">Validating file & calculating Enterprise DNA...</p>
+                  <p className="text-xs text-[var(--emos-text-muted)] mt-1">Checking required headers, unique keys, and evidence gaps</p>
+                </div>
+              )}
+
+              {/* Error Banner */}
+              {errorMessage && (
+                <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-700 dark:text-rose-300 text-xs flex items-start gap-3">
+                  <XCircle className="w-5 h-5 shrink-0 mt-0.5 text-rose-500" />
+                  <div>
+                    <div className="font-semibold text-rose-800 dark:text-rose-200">Validation Error</div>
+                    <div className="mt-1">{errorMessage}</div>
+                  </div>
+                </div>
+              )}
+
+              {/* Validation Result Preview: HERE'S WHAT EMOS UNDERSTOOD */}
+              {validationResult && (() => {
+                const valid = validationResult.validRecords;
+                const capabilities = new Set(valid.map((w) => w.businessCapability)).size;
+                const avgCompleteness = valid.length > 0
+                  ? Math.round(valid.reduce((acc, w) => acc + w.evidenceCompleteness, 0) / valid.length)
+                  : 0;
+                const readyCount = valid.filter((w) => w.evidenceCompleteness >= 70).length;
+                const needsEvidenceCount = valid.length - readyCount;
+
+                return (
+                <div className="space-y-5">
+                  <div className="p-5 rounded-2xl bg-[var(--emos-surface)] border border-[var(--emos-accent-border)] space-y-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <div>
+                        <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[var(--emos-accent-text)] font-bold">
+                          Here&apos;s What EMOS Understood
+                        </span>
+                        <h3 className="text-base sm:text-lg font-serif font-semibold text-[var(--emos-text-primary)] mt-0.5">
+                          {validationResult.fileName} — Portfolio Discovery Summary
+                        </h3>
+                      </div>
+                      <button
+                        onClick={resetState}
+                        className="text-[var(--emos-accent)] hover:underline text-xs font-medium cursor-pointer self-start sm:self-auto"
+                      >
+                        Upload Different File
+                      </button>
+                    </div>
+
+                    {/* 5 Key Understanding Metrics */}
+                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                      <div className="p-3 bg-[var(--emos-bg-tertiary)] rounded-xl border border-[var(--emos-border-subtle)]">
+                        <div className="text-[10px] text-[var(--emos-text-muted)] uppercase font-mono">Systems Discovered</div>
+                        <div className="text-xl font-bold text-[var(--emos-text-primary)] mt-1">{valid.length}</div>
+                      </div>
+
+                      <div className="p-3 bg-[var(--emos-bg-tertiary)] rounded-xl border border-[var(--emos-border-subtle)]">
+                        <div className="text-[10px] text-[var(--emos-text-muted)] uppercase font-mono">Business Capabilities</div>
+                        <div className="text-xl font-bold text-[var(--emos-text-primary)] mt-1">{capabilities}</div>
+                      </div>
+
+                      <div className="p-3 bg-[var(--emos-bg-tertiary)] rounded-xl border border-[var(--emos-border-subtle)]">
+                        <div className="text-[10px] text-[var(--emos-text-muted)] uppercase font-mono">Evidence Completeness</div>
+                        <div className="text-xl font-bold text-[var(--emos-accent-text)] mt-1">{avgCompleteness}%</div>
+                      </div>
+
+                      <div className="p-3 bg-[var(--emos-bg-tertiary)] rounded-xl border border-[var(--emos-border-subtle)]">
+                        <div className="text-[10px] text-[var(--emos-text-muted)] uppercase font-mono">Ready for Assessment</div>
+                        <div className="text-xl font-bold text-emerald-600 dark:text-emerald-400 mt-1 flex items-center gap-1.5">
+                          <CheckCircle2 className="w-4 h-4" />
+                          {readyCount}
+                        </div>
+                      </div>
+
+                      <div className="p-3 bg-[var(--emos-bg-tertiary)] rounded-xl border border-[var(--emos-border-subtle)] col-span-2 sm:col-span-1">
+                        <div className="text-[10px] text-[var(--emos-text-muted)] uppercase font-mono">Need More Evidence</div>
+                        <div className="text-xl font-bold text-amber-600 dark:text-amber-400 mt-1 flex items-center gap-1.5">
+                          <AlertTriangle className="w-4 h-4" />
+                          {needsEvidenceCount}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-[var(--emos-border-subtle)]">
+                      <p className="text-xs text-[var(--emos-text-secondary)]">
+                        EMOS extracted 18 Enterprise DNA attributes per system and identified <strong>{validationResult.totalEvidenceGaps}</strong> evidence gaps. No pre-assigned 6R dispositions were assumed.
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => setShowDetailedTable((prev) => !prev)}
+                        className="px-3.5 py-1.5 rounded-xl border border-[var(--emos-border-strong)] bg-[var(--emos-surface-elevated)] hover:bg-[var(--emos-surface-hover)] text-xs font-semibold text-[var(--emos-text-primary)] cursor-pointer transition-colors"
+                      >
+                        {showDetailedTable ? 'Hide System Table' : 'Inspect Discovered Systems'}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Warnings if any */}
+                  {validationResult.warnings.length > 0 && (
+                    <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4 shrink-0 text-amber-500" />
+                      <span>{validationResult.warnings.join(' ')}</span>
+                    </div>
+                  )}
+
+                  {/* Invalid rows detail */}
+                  {validationResult.invalidRecords.length > 0 && (
+                    <div className="p-4 bg-rose-500/10 border border-rose-500/30 rounded-xl space-y-2">
+                      <div className="text-xs font-semibold text-rose-700 dark:text-rose-300 flex items-center gap-2">
+                        <XCircle className="w-4 h-4 text-rose-500" />
+                        Invalid Rows Identified ({validationResult.invalidRecords.length})
+                      </div>
+                      <div className="max-h-32 overflow-y-auto space-y-1 text-[11px] text-rose-800 dark:text-rose-200">
+                        {validationResult.invalidRecords.map((inv, idx) => (
+                          <div key={idx} className="bg-[var(--emos-surface)] p-2 rounded-lg border border-rose-500/20">
+                            <span className="font-mono text-rose-600 dark:text-rose-400">Row {inv.rowNumber}:</span>{' '}
+                            {inv.errors.join('; ')}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Progressive Disclosure: Workload Preview Table */}
+                  {showDetailedTable && (
+                    <div className="border border-[var(--emos-border-subtle)] rounded-xl overflow-x-auto max-h-64">
+                      <table className="w-full text-left text-xs border-collapse">
+                        <thead className="bg-[var(--emos-bg-tertiary)] text-[var(--emos-text-muted)] font-mono text-[11px] border-b border-[var(--emos-border-subtle)] sticky top-0">
+                          <tr>
+                            <th className="p-2.5">Workload ID</th>
+                            <th className="p-2.5">Name</th>
+                            <th className="p-2.5">Type</th>
+                            <th className="p-2.5">Criticality</th>
+                            <th className="p-2.5">Stack</th>
+                            <th className="p-2.5">Hosting</th>
+                            <th className="p-2.5 text-right">DNA Completeness</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-[var(--emos-border-subtle)] bg-[var(--emos-surface)]">
+                          {validationResult.validRecords.map((w) => (
+                            <tr key={w.id} className="hover:bg-[var(--emos-surface-hover)] transition-colors">
+                              <td className="p-2.5 font-mono text-[var(--emos-accent-text)] font-semibold">{w.id}</td>
+                              <td className="p-2.5 font-medium text-[var(--emos-text-primary)]">{w.name}</td>
+                              <td className="p-2.5">
+                                <span className={`px-2 py-0.5 rounded text-[10px] font-mono uppercase ${
+                                  w.type === 'Data Platform'
+                                    ? 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border border-purple-500/30'
+                                    : 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border border-sky-500/30'
+                                }`}>
+                                  {w.type}
+                                </span>
+                              </td>
+                              <td className="p-2.5">
+                                <span className={`text-[11px] ${
+                                  w.businessCriticality === 'High'
+                                    ? 'text-rose-600 dark:text-rose-400 font-semibold'
+                                    : w.businessCriticality === 'Medium'
+                                    ? 'text-amber-600 dark:text-amber-400'
+                                    : 'text-[var(--emos-text-muted)]'
+                                }`}>
+                                  {w.businessCriticality}
+                                </span>
+                              </td>
+                              <td className="p-2.5 text-[var(--emos-text-secondary)] max-w-[140px] truncate" title={w.currentStack}>
+                                {w.currentStack}
+                              </td>
+                              <td className="p-2.5 text-[var(--emos-text-muted)] max-w-[120px] truncate" title={w.hosting}>
+                                {w.hosting}
+                              </td>
+                              <td className="p-2.5 text-right">
+                                <span className="font-mono font-semibold text-[var(--emos-accent-text)]">
+                                  {w.evidenceCompleteness}%
+                                </span>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </div>
+                );
+              })()}
+            </>
+          )}
+
+          {activeTab === 'samples' && (
+            <div className="space-y-4">
+              <div className="flex flex-col gap-4 rounded-xl border border-[var(--emos-accent-border)] bg-[var(--emos-accent-subtle)] p-4 sm:flex-row sm:items-center sm:justify-between">
+                <div><h3 className="text-sm font-semibold text-[var(--emos-text-primary)]">Blank EMOS Portfolio Template</h3><p className="mt-1 max-w-2xl text-xs leading-5 text-[var(--emos-text-secondary)]">Preserve the headers, replace the example row and provide only the evidence you have. Missing optional attributes become visible evidence gaps—not import failures.</p></div>
+                <button onClick={handleDownloadTemplate} className="inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-xl bg-[#A88554] px-4 text-xs font-semibold text-black"><Download className="h-4 w-4" />Download Blank Template</button>
+              </div>
+
+              <details className="group rounded-xl border border-[var(--emos-border-subtle)] bg-[var(--emos-surface)] p-4">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold"><span>View Field Guide</span><span className="text-[var(--emos-accent)] transition-transform group-open:rotate-45">+</span></summary>
+                <div className="mt-4 overflow-x-auto border-t border-[var(--emos-border-subtle)] pt-4"><table className="w-full min-w-[36rem] text-left text-xs"><thead className="text-[var(--emos-text-muted)]"><tr><th className="pb-2 pr-3">Type</th><th className="pb-2 pr-3">Field</th><th className="pb-2">Purpose</th></tr></thead><tbody className="divide-y divide-[var(--emos-border-subtle)]">{EMOS_FIELD_GUIDE.map(([type, field, purpose]) => <tr key={field}><td className="py-2 pr-3 font-semibold text-[var(--emos-accent-text)]">{type}</td><td className="py-2 pr-3 font-mono">{field}</td><td className="py-2 text-[var(--emos-text-secondary)]">{purpose}</td></tr>)}</tbody></table></div>
+              </details>
+
+              <div className="bg-[var(--emos-surface)] p-4 rounded-xl border border-[var(--emos-border-subtle)]">
+                <h3 className="text-sm font-semibold text-[var(--emos-text-primary)] mb-1">
+                  Ready-to-Use Enterprise Portfolio Datasets
+                </h3>
+                <p className="text-xs text-[var(--emos-text-secondary)]">
+                  Each sample dataset is a fictional enterprise portfolio tailored to an industry archetype.
+                  Collectively, they contain candidates for all 6 canonical 6R dispositions (Retain, Retire, Rehost, Replatform, Refactor, Repurchase).
+                  Use these to understand the schema before adapting a sanitized export from your own inventory.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                {SAMPLE_DATASETS.map((ds) => (
+                  <div
+                    key={ds.id}
+                    className="p-4 bg-[var(--emos-surface)] border border-[var(--emos-border-subtle)] hover:border-[var(--emos-border-strong)] rounded-xl flex flex-col justify-between transition-all"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-[var(--emos-accent-text)] bg-[var(--emos-accent-subtle)] px-2 py-0.5 rounded border border-[var(--emos-accent-border)]">
+                          {ds.industry}
+                        </span>
+                        <span className="text-xs text-[var(--emos-text-muted)] font-mono">
+                          {ds.workloadCount} Workloads
+                        </span>
+                      </div>
+                      <h4 className="text-sm font-semibold text-[var(--emos-text-primary)] mb-1">{ds.title}</h4>
+                      <p className="text-xs text-[var(--emos-text-secondary)] leading-relaxed mb-4">{ds.description}</p>
+                    </div>
+
+                    <div className="flex items-center justify-between pt-3 border-t border-[var(--emos-border-subtle)]">
+                      <span className="text-[11px] font-mono text-[var(--emos-text-muted)]">{ds.filename}</span>
+                      <button
+                        onClick={() => handleDownloadSample(ds)}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--emos-surface-elevated)] hover:bg-[var(--emos-surface-hover)] text-[var(--emos-text-primary)] text-xs font-medium transition-colors border border-[var(--emos-border-subtle)] cursor-pointer"
+                      >
+                        <Download className="w-3.5 h-3.5 text-[var(--emos-accent)]" />
+                        Download CSV
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Guidance note */}
+              <div className="p-3.5 bg-[var(--emos-surface)] rounded-xl border border-[var(--emos-border-subtle)] text-xs text-[var(--emos-text-secondary)] flex items-start gap-2.5">
+                <FileText className="w-4 h-4 text-[var(--emos-accent)] shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-[var(--emos-text-primary)] font-medium">Evidence-Only Input Contract:</span> Sample CSVs contain strictly factual enterprise evidence (technology stack, dependencies, costs, risks, and target constraints). EMOS never reads pre-labeled dispositions from input files; it derives the 6R recommendation from the evidence.
+                </div>
+              </div>
+              <div className="rounded-xl border border-[var(--emos-border-subtle)] bg-[var(--emos-bg-secondary)] p-3.5 text-xs leading-5 text-[var(--emos-text-secondary)]"><strong className="text-[var(--emos-text-primary)]">Current Beta Boundary:</strong> Header capitalization, spaces and hyphens are normalized automatically. Arbitrary ServiceNow, LeanIX or spreadsheet column names still need to be mapped to the EMOS template before upload.</div>
+            </div>
+          )}
+        </div>
+
+        {/* Modal Footer */}
+        <div className="px-5 sm:px-6 py-4 border-t border-[var(--emos-border-subtle)] bg-[var(--emos-bg-secondary)] flex items-center justify-between">
+          <div className="text-xs text-[var(--emos-text-secondary)]">
+            {validationResult ? (
+              <span>
+                Ready to import{' '}
+                <strong className="text-[var(--emos-text-primary)]">{validationResult.validRecords.length}</strong> validated workloads.
+              </span>
+            ) : (
+              <span>Upload a CSV or JSON file to preview workloads.</span>
+            )}
+          </div>
+
+          <div className="flex items-center space-x-3">
+            <button
+              onClick={handleClose}
+              disabled={isSubmitting}
+              className="px-4 py-2 rounded-xl text-xs font-medium text-[var(--emos-text-secondary)] hover:text-[var(--emos-text-primary)] hover:bg-[var(--emos-surface-hover)] transition-colors cursor-pointer"
+            >
+              Cancel
+            </button>
+
+            {validationResult && validationResult.validRecords.length > 0 && (
+              <button
+                onClick={handleConfirmImport}
+                disabled={isSubmitting}
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[#A88554] hover:bg-[#BCA075] dark:hover:bg-[#E5C492] text-black text-xs font-semibold shadow-md transition-all disabled:opacity-50 cursor-pointer"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="w-3.5 h-3.5 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                    Saving to Portfolio...
+                  </>
+                ) : (
+                  <>
+                    Review Portfolio ({validationResult.validRecords.length})
+                    <ArrowRight className="w-4 h-4" />
+                  </>
+                )}
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
