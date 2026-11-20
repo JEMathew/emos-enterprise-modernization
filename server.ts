@@ -785,10 +785,18 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (_req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
+    // Buildpacks normalize file timestamps. Equal-sized HTML shells can otherwise
+    // share an ETag across releases and retain references to removed JS bundles.
+    const sendAppShell = (_req: express.Request, res: express.Response) => {
+      res.sendFile(path.join(distPath, "index.html"), {
+        etag: false,
+        lastModified: false,
+        headers: { "Cache-Control": "no-store" },
+      });
+    };
+    app.get(["/", "/index.html"], sendAppShell);
+    app.use(express.static(distPath, { index: false }));
+    app.get("*", sendAppShell);
   }
 
   app.listen(PORT, HOST, () => {
