@@ -1,0 +1,1392 @@
+{
+  "schemaVersion": 1,
+  "status": "completed",
+  "product": "EMOS V2",
+  "project": {
+    "id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+    "folderId": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+    "workspaceId": "157259f9-4e66-44b0-aec6-44027591e3ea"
+  },
+  "voice": {
+    "name": "Cillian",
+    "id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+    "type": "preset",
+    "selection": "Explicitly selected by user; exact Killian absent from 115-voice catalog."
+  },
+  "production": {
+    "engine": "Higgsfield Seedance 2.5 and Seed Audio 1.0",
+    "finishing": "Local composition of Higgsfield motion, narration, unchanged real current EMOS captures, and burned-in phrase captions.",
+    "videoSecondsPerMaster": 5,
+    "captionStyle": {
+      "maximumLines": 2,
+      "font": "Arial",
+      "foreground": "white",
+      "background": "navy opaque",
+      "safeBottomPercent": 8
+    },
+    "generatedUi": false
+  },
+  "masters": [
+    {
+      "id": "orientation",
+      "title": "What is EMOS V2?",
+      "maxSeconds": 75,
+      "sources": [
+        "src/App.tsx",
+        "EMOS_V2_PRODUCT_CONTRACT.md"
+      ],
+      "narration": [
+        "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes.",
+        "Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision.",
+        "Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent.",
+        "Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload."
+      ],
+      "wordCount": 138,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Five understated geometric stages linked left to right; evidence cards pass through a gate and stop at a human decision marker. Conceptual diagram, no product interface."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "workspace",
+      "title": "Navigate EMOS and your workspace",
+      "maxSeconds": 45,
+      "sources": [
+        "src/components/WorkspaceShell.tsx",
+        "src/components/CommandCenterView.tsx",
+        "src/components/ThemeSelector.tsx"
+      ],
+      "narration": [
+        "Where should you begin? Open EMOS and choose your workspace context. The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention.",
+        "Use Understand to explore the portfolio and Enterprise DNA. Decide brings assessment and recommendations into focus. Governance remains a required checkpoint before approved transformation.",
+        "Transform organizes the execution plan. Outcomes presents representative measurement and learning views. Keep the same estate and workload context as you move between these areas.",
+        "Sign in for the private, owner-bound workspace. Use the appearance control for light, dark, or system themes, and adapt the layout to your screen. Next, select one workload and inspect its evidence."
+      ],
+      "wordCount": 109,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Calm geometric navigation path with a single highlighted context marker; no words, no invented software screens."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "Where should you begin? Open EMOS and choose your workspace context. The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Use Understand to explore the portfolio and Enterprise DNA. Decide brings assessment and recommendations into focus. Governance remains a required checkpoint before approved transformation.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Transform organizes the execution plan. Outcomes presents representative measurement and learning views. Keep the same estate and workload context as you move between these areas.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Sign in for the private, owner-bound workspace. Use the appearance control for light, dark, or system themes, and adapt the layout to your screen. Next, select one workload and inspect its evidence.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "title": "Portfolio Discovery and its specialist",
+      "maxSeconds": 45,
+      "sources": [
+        "src/components/SamplePortfolioView.tsx",
+        "src/lib/agents/geminiDiscoveryAgent.ts"
+      ],
+      "narration": [
+        "What do we know about the estate, and what should we investigate next? Portfolio Discovery helps you examine sample or imported workloads in the context of their enterprise evidence.",
+        "The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts. Ask EMOS provides access to this reasoning.",
+        "Structured output is validated before it reaches the workflow. Missing evidence remains a gap; a plausible explanation is not a verified fact. This is not an automatic connection to your live enterprise systems.",
+        "Review dependencies and prioritized investigations, then inspect Enterprise DNA for the selected workload. Next, verify the highest-value missing facts before moving into a six R decision."
+      ],
+      "wordCount": 111,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Abstract portfolio tiles with fine dependency connections; a few incomplete tiles pause for review, no simulated dashboards."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "What do we know about the estate, and what should we investigate next? Portfolio Discovery helps you examine sample or imported workloads in the context of their enterprise evidence.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts. Ask EMOS provides access to this reasoning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Structured output is validated before it reaches the workflow. Missing evidence remains a gap; a plausible explanation is not a verified fact. This is not an automatic connection to your live enterprise systems.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Review dependencies and prioritized investigations, then inspect Enterprise DNA for the selected workload. Next, verify the highest-value missing facts before moving into a six R decision.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "dna",
+      "title": "Enterprise DNA and evidence readiness",
+      "maxSeconds": 45,
+      "sources": [
+        "src/lib/readiness.ts",
+        "src/components/EnterpriseDnaView.tsx"
+      ],
+      "narration": [
+        "Is the workload evidence sufficient for a decision? Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state.",
+        "Inspect the values and verification status. Relationship views support context, while missing and incomplete fields show where further investigation is needed.",
+        "The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps. Confidence, completeness, and readiness are different signals. A high confidence score cannot override missing critical evidence.",
+        "Verify facts using appropriate evidence. Load Sample Evidence is a labeled demo shortcut, not external verification. Next, carry the workload context into assessment; readiness still requires separate human approval."
+      ],
+      "wordCount": 106,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Six groups of three evidence cards, some unresolved, moving toward a closed review gate; conceptual only."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "Is the workload evidence sufficient for a decision? Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Inspect the values and verification status. Relationship views support context, while missing and incomplete fields show where further investigation is needed.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps. Confidence, completeness, and readiness are different signals. A high confidence score cannot override missing critical evidence.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Verify facts using appropriate evidence. Load Sample Evidence is a labeled demo shortcut, not external verification. Next, carry the workload context into assessment; readiness still requires separate human approval.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "decision",
+      "title": "6R decisions and the Enterprise Architect",
+      "maxSeconds": 60,
+      "sources": [
+        "src/lib/agents/geminiArchitectAgent.ts",
+        "src/lib/guardrails.ts",
+        "src/lib/agents/schemas.ts"
+      ],
+      "narration": [
+        "Which modernization path fits this workload? The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience.",
+        "Retain means Govern and Monitor. Retire means Safely Decommission. Rehost means Migrate Infrastructure. Replatform means Transition Platform. Refactor means Transform Architecture. Repurchase means Replace and Adopt.",
+        "Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision. Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice.",
+        "New evidence can inform a follow-up assessment. Confidence does not equal readiness, and readiness does not equal approval. Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human."
+      ],
+      "wordCount": 113,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Six restrained geometric branches from one evidence stack, equal weight, one branch softly emphasized; no cloud logos or interface."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "Which modernization path fits this workload? The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Retain means Govern and Monitor. Retire means Safely Decommission. Rehost means Migrate Infrastructure. Replatform means Transition Platform. Refactor means Transform Architecture. Repurchase means Replace and Adopt.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision. Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "New evidence can inform a follow-up assessment. Confidence does not equal readiness, and readiness does not equal approval. Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "ask",
+      "title": "Ask EMOS and governed AI",
+      "maxSeconds": 60,
+      "sources": [
+        "src/components/ModernizationAgentPanel.tsx",
+        "src/lib/agents/geminiOrchestrator.ts",
+        "src/lib/agents/orchestrator.ts"
+      ],
+      "narration": [
+        "How can you ask a useful question about the selected workload? Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step.",
+        "Ask EMOS is an interface, not a third specialist. A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context.",
+        "Portfolio Discovery investigates ambiguity and evidence gaps. Enterprise Architect reasons across the six R choices. Deterministic validation and governance check the response, and explicit human approval retains authority.",
+        "If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback. It does not pretend that a model answered. Agents for ambiguity. Workflows for predictability. Rules for governance. Humans for authority. Next, ask what evidence is missing."
+      ],
+      "wordCount": 119,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. One incoming question routes to exactly two abstract specialist blocks, rejoins at a validation gate, then reaches a human approval marker. No text or fake UI."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "How can you ask a useful question about the selected workload? Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Ask EMOS is an interface, not a third specialist. A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Portfolio Discovery investigates ambiguity and evidence gaps. Enterprise Architect reasons across the six R choices. Deterministic validation and governance check the response, and explicit human approval retains authority.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback. It does not pretend that a model answered. Agents for ambiguity. Workflows for predictability. Rules for governance. Humans for authority. Next, ask what evidence is missing.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Evidence gates and explicit human approval",
+      "maxSeconds": 45,
+      "sources": [
+        "src/lib/readiness.ts",
+        "src/lib/transformationEngine.ts",
+        "src/components/PortfolioPlanView.tsx"
+      ],
+      "narration": [
+        "Can AI approve its own recommendation? No. EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution.",
+        "Readiness requires at least seventy percent evidence completeness and zero critical gaps. Needs Evidence blocks approval and execution progression. Ready does not mean Approved.",
+        "The governed workflow requires explicit human sign-off. An AI request to bypass approval cannot change these rules. Even complete evidence does not remove the human decision.",
+        "Inspect the evidence gaps, recommendation, alternatives, and risks before approval. Next, obtain accountable human review, then follow the disposition-specific plan. EMOS tracks governed work; it does not autonomously change production infrastructure."
+      ],
+      "wordCount": 104,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Evidence gate followed by a separate human decision gate, both visually distinct, no automatic passage."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "Can AI approve its own recommendation? No. EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Readiness requires at least seventy percent evidence completeness and zero critical gaps. Needs Evidence blocks approval and execution progression. Ready does not mean Approved.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The governed workflow requires explicit human sign-off. An AI request to bypass approval cannot change these rules. Even complete evidence does not remove the human decision.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Inspect the evidence gaps, recommendation, alternatives, and risks before approval. Next, obtain accountable human review, then follow the disposition-specific plan. EMOS tracks governed work; it does not autonomously change production infrastructure.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "privacy-history",
+      "title": "Private workspace and assessment history",
+      "maxSeconds": 45,
+      "sources": [
+        "firestore.rules",
+        "src/components/HistorySidebar.tsx",
+        "src/App.tsx"
+      ],
+      "narration": [
+        "How do you return to previous assessments while keeping workspace data separated? Sign in to use the owner-bound workspace and its assessment history.",
+        "EMOS uses authenticated access and owner-scoped Firestore rules for persisted user records. Public examples remain demonstration material. Avoid importing credentials, secrets, or confidential customer data into demonstrations.",
+        "Search assessment titles and content, filter the available history, and reopen a prior decision to review its evidence and recommendation. History helps you examine previous work in context.",
+        "Revisiting an assessment is not a fresh approval or evidence verification. Next, check whether its facts remain current, supply updated evidence where needed, and follow the same readiness and human-governance checkpoints."
+      ],
+      "wordCount": 109,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Separate private document collections with a simple review timeline; no locks implying certifications, no UI."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "How do you return to previous assessments while keeping workspace data separated? Sign in to use the owner-bound workspace and its assessment history.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "EMOS uses authenticated access and owner-scoped Firestore rules for persisted user records. Public examples remain demonstration material. Avoid importing credentials, secrets, or confidential customer data into demonstrations.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Search assessment titles and content, filter the available history, and reopen a prior decision to review its evidence and recommendation. History helps you examine previous work in context.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Revisiting an assessment is not a fresh approval or evidence verification. Next, check whether its facts remain current, supply updated evidence where needed, and follow the same readiness and human-governance checkpoints.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "import",
+      "title": "Import and assess a portfolio",
+      "maxSeconds": 45,
+      "sources": [
+        "src/components/SamplePortfolioView.tsx",
+        "src/components/ImportPortfolioModal.tsx"
+      ],
+      "narration": [
+        "How do you bring your own workload inventory into EMOS? Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio.",
+        "The import path checks the schema and applies input-safety controls. Review the imported workload records and the evidence they contain before drawing conclusions.",
+        "Importing a row does not verify every claim or make the workload ready. Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that context into assessment.",
+        "Use the sample estates for representative demonstrations. Imported data is not live CMDB or telemetry discovery. Next, select an imported workload, close its critical gaps, and review its six R recommendation."
+      ],
+      "wordCount": 110,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Structured file cards become an orderly workload collection, incomplete evidence stays visibly unresolved; no interface."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "How do you bring your own workload inventory into EMOS? Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The import path checks the schema and applies input-safety controls. Review the imported workload records and the evidence they contain before drawing conclusions.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Importing a row does not verify every claim or make the workload ready. Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that context into assessment.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Use the sample estates for representative demonstrations. Imported data is not live CMDB or telemetry discovery. Next, select an imported workload, close its critical gaps, and review its six R recommendation.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Trust, guardrails, and evaluation",
+      "maxSeconds": 45,
+      "sources": [
+        "src/lib/guardrails.ts",
+        "src/lib/agents/geminiOrchestrator.ts",
+        "tests",
+        "evals"
+      ],
+      "narration": [
+        "What keeps an AI answer from becoming an unsafe action? EMOS places deterministic controls around model reasoning, including input fencing, output validation, canonical six R checks, and secret redaction.",
+        "Adversarial requests to bypass governance are intercepted. Evidence requirements and explicit human approval remain authoritative, regardless of the wording or confidence of a model response.",
+        "Software tests, deterministic evaluations, and recorded live checks provide bounded evidence about tested behavior. They do not prove perfect AI, zero hallucinations, or universal safety.",
+        "When AI reasoning is unavailable, the interface discloses a deterministic fallback. Next, inspect the Evaluation Evidence and the workload's actual evidence gaps before relying on a recommendation."
+      ],
+      "wordCount": 106,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. A bounded reasoning area surrounded by validation checkpoints, with a separate fallback route; quiet technical schematic."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "What keeps an AI answer from becoming an unsafe action? EMOS places deterministic controls around model reasoning, including input fencing, output validation, canonical six R checks, and secret redaction.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Adversarial requests to bypass governance are intercepted. Evidence requirements and explicit human approval remain authoritative, regardless of the wording or confidence of a model response.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Software tests, deterministic evaluations, and recorded live checks provide bounded evidence about tested behavior. They do not prove perfect AI, zero hallucinations, or universal safety.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "When AI reasoning is unavailable, the interface discloses a deterministic fallback. Next, inspect the Evaluation Evidence and the workload's actual evidence gaps before relying on a recommendation.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "execution",
+      "title": "Wave planning and governed execution",
+      "maxSeconds": 45,
+      "sources": [
+        "src/lib/wavePlanner.ts",
+        "src/lib/transformationEngine.ts",
+        "src/components/PortfolioPlanView.tsx"
+      ],
+      "narration": [
+        "How does an approved decision become organized delivery work? EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps.",
+        "Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements. The chosen six R disposition determines the downstream playbook.",
+        "Needs Evidence and unapproved workloads cannot enter or advance governed execution. Resolve evidence gaps and record explicit human approval before progressing through the workflow.",
+        "These are planning and tracking controls. EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover. Next, review the current blocker and assign the required evidence or delivery action to its accountable owner."
+      ],
+      "wordCount": 104,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Ordered work packages pass through review milestones, blocked packages remain behind a gate; no infrastructure movement animation."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "How does an approved decision become organized delivery work? EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements. The chosen six R disposition determines the downstream playbook.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Needs Evidence and unapproved workloads cannot enter or advance governed execution. Resolve evidence gaps and record explicit human approval before progressing through the workflow.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "These are planning and tracking controls. EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover. Next, review the current blocker and assign the required evidence or delivery action to its accountable owner.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "outcomes",
+      "title": "Measure and Learn: V2 boundaries",
+      "maxSeconds": 60,
+      "sources": [
+        "src/components/PortfolioPlanView.tsx",
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "What can outcomes tell you about a modernization plan? Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context.",
+        "In V2, these values are representative synthetic benchmarks. They are not readings from a live production telemetry, billing, or benefits-realization integration.",
+        "Learn presents representative archetype lessons and lets you capture a session-only note. Describe the assumption, observed difference, lesson, and possible relevance to future work.",
+        "Session notes do not retrain the agents or automatically change recommendations. Next, use these views to structure a review, then validate real outcomes in your approved systems. Any future recommendation still requires current evidence and human authority."
+      ],
+      "wordCount": 110,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Three comparison columns followed by a lesson note; stylized conceptual forms without invented metrics or charts."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "What can outcomes tell you about a modernization plan? Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "In V2, these values are representative synthetic benchmarks. They are not readings from a live production telemetry, billing, or benefits-realization integration.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Learn presents representative archetype lessons and lets you capture a session-only note. Describe the assumption, observed difference, lesson, and possible relevance to future work.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Session notes do not retrain the agents or automatically change recommendations. Next, use these views to structure a review, then validate real outcomes in your approved systems. Any future recommendation still requires current evidence and human authority.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "retain",
+      "title": "Retain \u2014 Govern & Monitor",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When is staying in place a valid modernization choice? Retain means Govern and Monitor when the evidence supports keeping the workload.",
+        "The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning.",
+        "These are governed planning stages, not a live telemetry integration or automatic infrastructure changes.",
+        "Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment."
+      ],
+      "wordCount": 62,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. A stable architecture block with periodic review rings; minimal restrained motion."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When is staying in place a valid modernization choice? Retain means Govern and Monitor when the evidence supports keeping the workload.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "These are governed planning stages, not a live telemetry integration or automatic infrastructure changes.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "retire",
+      "title": "Retire \u2014 Safely Decommission",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When should a workload be removed? Retire means Safely Decommission when verified evidence supports its removal.",
+        "The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning.",
+        "EMOS tracks these checkpoints; it does not shut down production systems for you.",
+        "Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning."
+      ],
+      "wordCount": 57,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Dependency lines are reviewed before a retired block is archived; no autonomous deletion."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When should a workload be removed? Retire means Safely Decommission when verified evidence supports its removal.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "EMOS tracks these checkpoints; it does not shut down production systems for you.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "rehost",
+      "title": "Rehost \u2014 Migrate Infrastructure",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When does a workload need a change of infrastructure? Rehost means Migrate Infrastructure while preserving much of the existing application.",
+        "The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning.",
+        "EMOS plans and tracks this work; it does not perform the migration or cutover.",
+        "Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed."
+      ],
+      "wordCount": 62,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Same application block depicted within two infrastructure frames connected by a planned dotted route."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When does a workload need a change of infrastructure? Rehost means Migrate Infrastructure while preserving much of the existing application.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "EMOS plans and tracks this work; it does not perform the migration or cutover.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "replatform",
+      "title": "Replatform \u2014 Transition Platform",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When is a platform change appropriate? Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence.",
+        "The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning.",
+        "EMOS does not provision a managed platform or execute a live migration.",
+        "Next, verify compatibility, target constraints, and accountable human approval before following the plan."
+      ],
+      "wordCount": 60,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. An unchanged workload rests on an evolving platform foundation; conceptual no provider logos."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When is a platform change appropriate? Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "EMOS does not provision a managed platform or execute a live migration.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify compatibility, target constraints, and accountable human approval before following the plan.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "refactor",
+      "title": "Refactor \u2014 Transform Architecture",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When does the architecture itself need to change? Refactor means Transform Architecture when the evidence justifies redesign.",
+        "The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning.",
+        "These stages organize governed delivery. EMOS does not autonomously rewrite or deploy your production application.",
+        "Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition."
+      ],
+      "wordCount": 58,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. One block separates into a few connected modules under an explicit review gate; no generated code."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When does the architecture itself need to change? Refactor means Transform Architecture when the evidence justifies redesign.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "These stages organize governed delivery. EMOS does not autonomously rewrite or deploy your production application.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    },
+    {
+      "id": "repurchase",
+      "title": "Repurchase \u2014 Replace & Adopt",
+      "maxSeconds": 30,
+      "sources": [
+        "src/lib/transformationEngine.ts"
+      ],
+      "narration": [
+        "When is buying a replacement the right path? Repurchase means Replace and Adopt when evidence supports moving to a commercial product.",
+        "The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning.",
+        "EMOS tracks the plan; it does not purchase software or migrate users automatically.",
+        "Next, verify fit, compliance, data portability, and human approval before adoption."
+      ],
+      "wordCount": 65,
+      "status": "rendered_verified",
+      "asset": null,
+      "videoParams": {
+        "model": "seedance_2_5",
+        "mode": "t2v",
+        "duration": 5,
+        "resolution": "1080p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "count": 1,
+        "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba",
+        "prompt": "16:9 1080p premium enterprise motion graphic. Dark navy, muted purple, cool neutral, restrained lavender. Minimal, calm, precise. Slow subtle seamless-loop motion. NO text, letters, captions, logos, numbers, robots, AI brains, neon, glow, particles, dashboards, software UI, or screenshots. Leave lower 20 percent clean for final burned-in captions. Two distinct product blocks with a reviewed adoption bridge and an archived previous block."
+      },
+      "audioParams": [
+        {
+          "model": "seed_audio",
+          "prompt": "When is buying a replacement the right path? Repurchase means Replace and Adopt when evidence supports moving to a commercial product.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "EMOS tracks the plan; it does not purchase software or migrate users automatically.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        },
+        {
+          "model": "seed_audio",
+          "prompt": "Next, verify fit, compliance, data portability, and human approval before adoption.",
+          "voice_id": "d8ba9f14-8a24-44db-932b-99e16c45bd32",
+          "voice_type": "preset",
+          "format": "wav",
+          "sample_rate": 48000,
+          "speech_rate": 0,
+          "count": 1,
+          "folder_id": "eb5097a5-ac65-4ba1-b214-057bb8aa5cba"
+        }
+      ]
+    }
+  ],
+  "costApproval": {
+    "status": "approved",
+    "visualCredits": 1440,
+    "audioConservativeMaximumCredits": 151.2,
+    "totalMaximumCredits": 1591.2,
+    "requestedBudgetCredits": 1600,
+    "method": "18 visual loops at quoted 80 credits each; 72 narration segments conservatively capped at the quote for the longest segment (2.1 credits each). No paid generations submitted.",
+    "approvedCapCredits": 1600
+  }
+}

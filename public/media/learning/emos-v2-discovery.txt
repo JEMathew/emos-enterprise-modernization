@@ -1,0 +1,9 @@
+Portfolio Discovery and its specialist
+
+What do we know about the estate, and what should we investigate next? Portfolio Discovery helps you examine sample or imported workloads in the context of their enterprise evidence.
+
+The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts. Ask EMOS provides access to this reasoning.
+
+Structured output is validated before it reaches the workflow. Missing evidence remains a gap; a plausible explanation is not a verified fact. This is not an automatic connection to your live enterprise systems.
+
+Review dependencies and prioritized investigations, then inspect Enterprise DNA for the selected workload. Next, verify the highest-value missing facts before moving into a six R decision.

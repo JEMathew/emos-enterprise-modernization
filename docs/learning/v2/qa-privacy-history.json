@@ -1,0 +1,110 @@
+{
+  "id": "privacy-history",
+  "durationSeconds": 44.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 11,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.1286995515695069,
+  "alignmentRatios": [
+    0.9166666666666666,
+    0.9230769230769231,
+    1.0,
+    0.9230769230769231
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 8.98
+    },
+    {
+      "start": 9.9,
+      "end": 25.2
+    },
+    {
+      "start": 0,
+      "end": 10.96
+    },
+    {
+      "start": 0.6799999999999975,
+      "end": 15.78
+    }
+  ],
+  "captions": [
+    {
+      "text": "How do you return to previous assessments while keeping workspace data separated?",
+      "start": 0,
+      "end": 4.553913388955104,
+      "chapter": 0
+    },
+    {
+      "text": "Sign in to use the owner-bound workspace and its assessment history.",
+      "start": 4.553913388955104,
+      "end": 7.956058800158919,
+      "chapter": 0
+    },
+    {
+      "text": "EMOS uses authenticated access and owner-scoped Firestore rules for persisted user",
+      "start": 7.956058800158919,
+      "end": 12.846642828764402,
+      "chapter": 1
+    },
+    {
+      "text": "records. Public examples remain demonstration material.",
+      "start": 12.846642828764402,
+      "end": 16.585458879618592,
+      "chapter": 1
+    },
+    {
+      "text": "Avoid importing credentials, secrets, or confidential customer data into demonstrations.",
+      "start": 16.585458879618592,
+      "end": 21.511481922924116,
+      "chapter": 1
+    },
+    {
+      "text": "Search assessment titles and content, filter the available history, and reopen a prior",
+      "start": 21.511481922924116,
+      "end": 25.728724672228843,
+      "chapter": 2
+    },
+    {
+      "text": "decision to review its evidence and recommendation.",
+      "start": 25.728724672228843,
+      "end": 28.91823599523242,
+      "chapter": 2
+    },
+    {
+      "text": "History helps you examine previous work in context.",
+      "start": 28.91823599523242,
+      "end": 31.221771950735,
+      "chapter": 2
+    },
+    {
+      "text": "Revisiting an assessment is not a fresh approval or evidence verification.",
+      "start": 31.221771950735,
+      "end": 36.3958680969408,
+      "chapter": 3
+    },
+    {
+      "text": "Next, check whether its facts remain current, supply updated evidence where needed, and",
+      "start": 36.3958680969408,
+      "end": 41.64084227254668,
+      "chapter": 3
+    },
+    {
+      "text": "follow the same readiness and human-governance checkpoints.",
+      "start": 41.64084227254668,
+      "end": 44.607417,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-privacy-history.mp4",
+  "bytes": 1929076,
+  "sha256": "1bbac03dfaab375c832e66ca7bad2c26c8a096fe826542115253ed99e16ef302",
+  "realScreens": [
+    "history",
+    "history",
+    "workspace"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

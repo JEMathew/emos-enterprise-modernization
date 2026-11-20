@@ -1,0 +1,116 @@
+{
+  "id": "execution",
+  "durationSeconds": 44.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 12,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.0816143497757846,
+  "alignmentRatios": [
+    0.9333333333333333,
+    0.9743589743589743,
+    1.0,
+    0.9743589743589743
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 10.4
+    },
+    {
+      "start": 0,
+      "end": 10.42
+    },
+    {
+      "start": 0,
+      "end": 11.34
+    },
+    {
+      "start": 0,
+      "end": 16.08
+    }
+  ],
+  "captions": [
+    {
+      "text": "How does an approved decision become organized delivery work?",
+      "start": 0,
+      "end": 3.8276119402985076,
+      "chapter": 0
+    },
+    {
+      "text": "EMOS uses deterministic wave planning and disposition-specific workflows to structure",
+      "start": 3.8276119402985076,
+      "end": 8.635240464344943,
+      "chapter": 0
+    },
+    {
+      "text": "the next steps.",
+      "start": 8.635240464344943,
+      "end": 9.61525704809287,
+      "chapter": 0
+    },
+    {
+      "text": "Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint",
+      "start": 9.61525704809287,
+      "end": 14.792703150912107,
+      "chapter": 1
+    },
+    {
+      "text": "requirements. The chosen six R disposition determines the downstream playbook.",
+      "start": 14.792703150912107,
+      "end": 19.24900497512438,
+      "chapter": 1
+    },
+    {
+      "text": "Needs Evidence and unapproved workloads cannot enter or advance governed execution.",
+      "start": 19.24900497512438,
+      "end": 24.999668325041462,
+      "chapter": 2
+    },
+    {
+      "text": "Resolve evidence gaps and record explicit human approval before progressing through the",
+      "start": 24.999668325041462,
+      "end": 29.308043117744614,
+      "chapter": 2
+    },
+    {
+      "text": "workflow.",
+      "start": 29.308043117744614,
+      "end": 29.733333333333334,
+      "chapter": 2
+    },
+    {
+      "text": "These are planning and tracking controls.",
+      "start": 29.733333333333334,
+      "end": 32.525456053068,
+      "chapter": 3
+    },
+    {
+      "text": "EMOS does not run a real cloud migration, provision infrastructure, or perform a",
+      "start": 32.525456053068,
+      "end": 37.37006633499171,
+      "chapter": 3
+    },
+    {
+      "text": "production cutover. Next, review the current blocker and assign the required evidence or",
+      "start": 37.37006633499171,
+      "end": 42.62147595356551,
+      "chapter": 3
+    },
+    {
+      "text": "delivery action to its accountable owner.",
+      "start": 42.62147595356551,
+      "end": 44.612792,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-execution.mp4",
+  "bytes": 2033613,
+  "sha256": "f81466dab066e6f365a64e27e50ea8e4dfd0c9fd5e5e63ccf087103da15990a0",
+  "realScreens": [
+    "plan",
+    "execution",
+    "execution"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

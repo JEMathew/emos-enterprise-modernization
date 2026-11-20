@@ -1,300 +1,804 @@
-export const CANONICAL_DRIVE_LIBRARY_URL =
-  'https://drive.google.com/drive/folders/1ONwIDuVpKqu3DJzmHgzrtYTeJaOUXqQ1?usp=drive_link';
-
 export const LEARNING_CATEGORIES = [
-  'Start Here',
-  'Assess and Decide',
-  'Trust and Governance',
-  'Portfolio and Enterprise DNA',
-  'Product Experience and Security',
-  'Plan and Mobilize',
+  "Start Here",
+  "Assess and Decide",
+  "Trust and Governance",
+  "Portfolio and Enterprise DNA",
+  "Product Experience and Security",
+  "Plan and Mobilize"
 ] as const;
-
 export type LearningCategory = (typeof LEARNING_CATEGORIES)[number];
-
 export interface LearningVideo {
   sequence: string;
+  masterId: string;
   title: string;
   description: string;
   category: LearningCategory;
   tags: string[];
   fileName: string;
-  driveFileId?: string;
+  mediaUrl?: string;
   thumbnailUrl: string;
-  duration?: string;
+  transcriptUrl?: string;
+  duration: string;
+  durationSeconds: number;
+  version: 'V2';
+  burnedInCaptions: boolean;
 }
-
-export const getDrivePreviewUrl = (driveFileId?: string) =>
-  driveFileId
-    ? `https://drive.google.com/file/d/${encodeURIComponent(driveFileId)}/preview`
-    : undefined;
-
-export const getDriveViewUrl = (driveFileId?: string) =>
-  driveFileId
-    ? `https://drive.google.com/file/d/${encodeURIComponent(driveFileId)}/view`
-    : undefined;
-
-const THUMBNAILS = {
-  '00': new URL('../../docs/learning/thumbnails/00-beta-introduction.svg', import.meta.url).href,
-  F01: new URL('../../docs/learning/thumbnails/f01-sign-in.svg', import.meta.url).href,
-  F02: new URL('../../docs/learning/thumbnails/f02-product-tour.svg', import.meta.url).href,
-  F03: new URL('../../docs/learning/thumbnails/f03-6r-assessment.svg', import.meta.url).href,
-  F04: new URL('../../docs/learning/thumbnails/f04-executive-decision.svg', import.meta.url).href,
-  F05: new URL('../../docs/learning/thumbnails/f05-new-evidence.svg', import.meta.url).href,
-  F06: new URL('../../docs/learning/thumbnails/f06-persistence-privacy.svg', import.meta.url).href,
-  F07: new URL('../../docs/learning/thumbnails/f07-assessment-history.svg', import.meta.url).href,
-  F08: new URL('../../docs/learning/thumbnails/f08-platform-neutrality.svg', import.meta.url).href,
-  F09: new URL('../../docs/learning/thumbnails/f09-score-consistency.svg', import.meta.url).href,
-  F10: new URL('../../docs/learning/thumbnails/f10-sample-portfolio.svg', import.meta.url).href,
-  F11: new URL('../../docs/learning/thumbnails/f11-evidence-gaps.svg', import.meta.url).href,
-  F12: new URL('../../docs/learning/thumbnails/f12-dna-to-assessment.svg', import.meta.url).href,
-  F13: new URL('../../docs/learning/thumbnails/f13-import-portfolio.svg', import.meta.url).href,
-  F14: new URL('../../docs/learning/thumbnails/f14-sample-dataset.svg', import.meta.url).href,
-  F15: new URL('../../docs/learning/thumbnails/f15-imported-workloads.svg', import.meta.url).href,
-  F16: new URL('../../docs/learning/thumbnails/f16-responsive-layouts.svg', import.meta.url).href,
-  F17: new URL('../../docs/learning/thumbnails/f17-prompt-security.svg', import.meta.url).href,
-  F18: new URL('../../docs/learning/thumbnails/f18-6r-readiness.svg', import.meta.url).href,
-  F19: new URL('../../docs/learning/thumbnails/f19-plan-mobilize.svg', import.meta.url).href,
-} as const;
-
-export const LEARNING_HERO_IMAGE = new URL(
-  '../../docs/learning/emos-learning-background.png',
-  import.meta.url,
-).href;
-
+export const LEARNING_MASTERS: Record<string, LearningVideo> = {
+  "orientation": {
+    "sequence": "V2-01",
+    "masterId": "orientation",
+    "title": "What is EMOS V2?",
+    "description": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "category": "Start Here",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-orientation.mp4",
+    "mediaUrl": "/media/learning/emos-v2-orientation.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-orientation.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-orientation.txt",
+    "duration": "1:15",
+    "durationSeconds": 74.597146,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "workspace": {
+    "sequence": "V2-02",
+    "masterId": "workspace",
+    "title": "Navigate EMOS and your workspace",
+    "description": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "category": "Start Here",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-workspace.mp4",
+    "mediaUrl": "/media/learning/emos-v2-workspace.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-workspace.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-workspace.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "discovery": {
+    "sequence": "V2-03",
+    "masterId": "discovery",
+    "title": "Portfolio Discovery and its specialist",
+    "description": "Use Portfolio Discovery to examine workload evidence, dependencies, ambiguity, and prioritized investigations through Ask EMOS.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-discovery.mp4",
+    "mediaUrl": "/media/learning/emos-v2-discovery.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-discovery.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-discovery.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "dna": {
+    "sequence": "V2-04",
+    "masterId": "dna",
+    "title": "Enterprise DNA and evidence readiness",
+    "description": "Inspect 18 attributes across six dimensions. Resolve critical gaps and distinguish completeness, confidence, and readiness.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-dna.mp4",
+    "mediaUrl": "/media/learning/emos-v2-dna.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-dna.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-dna.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "decision": {
+    "sequence": "V2-05",
+    "masterId": "decision",
+    "title": "6R decisions and the Enterprise Architect",
+    "description": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-decision.mp4",
+    "mediaUrl": "/media/learning/emos-v2-decision.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-decision.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-decision.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "ask": {
+    "sequence": "V2-06",
+    "masterId": "ask",
+    "title": "Ask EMOS and governed AI",
+    "description": "Ask EMOS routes questions to Portfolio Discovery and Enterprise Architect through deterministic orchestration, validation, and governance.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-ask.mp4",
+    "mediaUrl": "/media/learning/emos-v2-ask.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-ask.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-ask.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "governance": {
+    "sequence": "V2-07",
+    "masterId": "governance",
+    "title": "Evidence gates and explicit human approval",
+    "description": "At least 70% completeness and zero critical gaps establish readiness. Explicit human approval remains a separate requirement.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-governance.mp4",
+    "mediaUrl": "/media/learning/emos-v2-governance.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-governance.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-governance.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.6025,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "privacy-history": {
+    "sequence": "V2-08",
+    "masterId": "privacy-history",
+    "title": "Private workspace and assessment history",
+    "description": "Review owner-bound persistence and privacy, search assessment history, and revisit evidence before making a new decision.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-privacy-history.mp4",
+    "mediaUrl": "/media/learning/emos-v2-privacy-history.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-privacy-history.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-privacy-history.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "import": {
+    "sequence": "V2-09",
+    "masterId": "import",
+    "title": "Import and assess a portfolio",
+    "description": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-import.mp4",
+    "mediaUrl": "/media/learning/emos-v2-import.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-import.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-import.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602583,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "security": {
+    "sequence": "V2-10",
+    "masterId": "security",
+    "title": "Trust, guardrails, and evaluation",
+    "description": "Understand deterministic guardrails, bounded evaluation evidence, input fencing, secret redaction, and the disclosed AI fallback.",
+    "category": "Product Experience and Security",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-security.mp4",
+    "mediaUrl": "/media/learning/emos-v2-security.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-security.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-security.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602542,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "execution": {
+    "sequence": "V2-11",
+    "masterId": "execution",
+    "title": "Wave planning and governed execution",
+    "description": "Sequence waves and follow disposition-specific stages, owners, blockers, and gates. EMOS does not execute live migrations.",
+    "category": "Plan and Mobilize",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-execution.mp4",
+    "mediaUrl": "/media/learning/emos-v2-execution.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-execution.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-execution.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "outcomes": {
+    "sequence": "V2-12",
+    "masterId": "outcomes",
+    "title": "Measure and Learn: V2 boundaries",
+    "description": "Measure uses representative synthetic benchmarks. Learn uses representative lessons and session-only notes, with no automated retraining.",
+    "category": "Plan and Mobilize",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-outcomes.mp4",
+    "mediaUrl": "/media/learning/emos-v2-outcomes.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-outcomes.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-outcomes.txt",
+    "duration": "0:53",
+    "durationSeconds": 52.934854,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "retain": {
+    "sequence": "V2-13",
+    "masterId": "retain",
+    "title": "Retain — Govern & Monitor",
+    "description": "Govern & Monitor: retain the workload with accountable oversight and evidence-based reassessment.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-retain.mp4",
+    "mediaUrl": "/media/learning/emos-v2-retain.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-retain.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-retain.txt",
+    "duration": "0:30",
+    "durationSeconds": 29.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "retire": {
+    "sequence": "V2-14",
+    "masterId": "retire",
+    "title": "Retire — Safely Decommission",
+    "description": "Safely Decommission: verify consumers, archive requirements, human approval, and closure checkpoints.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-retire.mp4",
+    "mediaUrl": "/media/learning/emos-v2-retire.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-retire.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-retire.txt",
+    "duration": "0:30",
+    "durationSeconds": 29.598479,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "rehost": {
+    "sequence": "V2-15",
+    "masterId": "rehost",
+    "title": "Rehost — Migrate Infrastructure",
+    "description": "Migrate Infrastructure: plan destination, validation, rollback, cutover, and stabilization with human authority.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-rehost.mp4",
+    "mediaUrl": "/media/learning/emos-v2-rehost.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-rehost.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-rehost.txt",
+    "duration": "0:30",
+    "durationSeconds": 29.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "replatform": {
+    "sequence": "V2-16",
+    "masterId": "replatform",
+    "title": "Replatform — Transition Platform",
+    "description": "Transition Platform: review compatibility and target constraints before governed platform delivery.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-replatform.mp4",
+    "mediaUrl": "/media/learning/emos-v2-replatform.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-replatform.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-replatform.txt",
+    "duration": "0:29",
+    "durationSeconds": 28.75,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "refactor": {
+    "sequence": "V2-17",
+    "masterId": "refactor",
+    "title": "Refactor — Transform Architecture",
+    "description": "Transform Architecture: organize decomposition, implementation, testing, and incremental transition.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-refactor.mp4",
+    "mediaUrl": "/media/learning/emos-v2-refactor.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-refactor.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-refactor.txt",
+    "duration": "0:30",
+    "durationSeconds": 29.602563,
+    "version": "V2",
+    "burnedInCaptions": true
+  },
+  "repurchase": {
+    "sequence": "V2-18",
+    "masterId": "repurchase",
+    "title": "Repurchase — Replace & Adopt",
+    "description": "Replace & Adopt: review fit, compliance, data portability, user transition, and retirement of the previous system.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-repurchase.mp4",
+    "mediaUrl": "/media/learning/emos-v2-repurchase.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-repurchase.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-repurchase.txt",
+    "duration": "0:30",
+    "durationSeconds": 29.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  }
+};
 export const LEARNING_VIDEOS: LearningVideo[] = [
   {
-    sequence: '00',
-    title: 'EMOS Beta Introduction',
-    description:
-      'See the full enterprise modernization journey, the evidence, decision, and planning foundation delivered in Beta v1.0, and the product vision beyond it.',
-    category: 'Start Here',
-    tags: ['Introduction'],
-    fileName: 'EMOS-Beta-Introduction.mp4',
-    driveFileId: '1I5DLsarRnhBbxMUS-GpO5ew7WLZ2Gt6t',
-    thumbnailUrl: THUMBNAILS['00'],
-    duration: '4:17',
+    "sequence": "00",
+    "masterId": "orientation",
+    "title": "What is EMOS V2?",
+    "description": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "category": "Start Here",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-orientation.mp4",
+    "mediaUrl": "/media/learning/emos-v2-orientation.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-orientation.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-orientation.txt",
+    "duration": "1:15",
+    "durationSeconds": 74.597146,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F01',
-    title: 'Sign in and enter the private workspace',
-    description:
-      'See the Firebase Google Sign-In entry point and the owner-bound EMOS workspace.',
-    category: 'Start Here',
-    tags: ['Getting Started', 'Authentication'],
-    fileName: 'F01-sign-in-enter-the-private-workspace.mp4',
-    driveFileId: '1PRAQZP4pQYggRhFAyhWe18A2q55E-0BX',
-    thumbnailUrl: THUMBNAILS.F01,
+    "sequence": "F01",
+    "masterId": "workspace",
+    "title": "Sign in and enter the private workspace",
+    "description": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "category": "Start Here",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-workspace.mp4",
+    "mediaUrl": "/media/learning/emos-v2-workspace.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-workspace.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-workspace.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F02',
-    title: 'Take the guided product tour',
-    description: 'Orient yourself to the beta experience and the major product areas.',
-    category: 'Start Here',
-    tags: ['Getting Started', 'Product Tour'],
-    fileName: 'F02-take-the-guided-product-tour.mp4',
-    driveFileId: '1M6IJtGqJ629ovhjdUo_HrxXusIWo_8r3',
-    thumbnailUrl: THUMBNAILS.F02,
+    "sequence": "F02",
+    "masterId": "workspace",
+    "title": "Take the guided product tour",
+    "description": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "category": "Start Here",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-workspace.mp4",
+    "mediaUrl": "/media/learning/emos-v2-workspace.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-workspace.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-workspace.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F03',
-    title: 'Submit a workload for a 6R assessment',
-    description:
-      'Send structured workload evidence through the authenticated assessment workflow.',
-    category: 'Assess and Decide',
-    tags: ['Decision Intelligence', 'Canonical 6R'],
-    fileName: 'F03-submit-a-workload-for-a-6r-assessment.mp4',
-    driveFileId: '1ydFW2t4JMMdNjknaqAvZrtWB4tUe92GT',
-    thumbnailUrl: THUMBNAILS.F03,
+    "sequence": "F03",
+    "masterId": "decision",
+    "title": "Submit a workload for a 6R assessment",
+    "description": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-decision.mp4",
+    "mediaUrl": "/media/learning/emos-v2-decision.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-decision.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-decision.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F04',
-    title: 'Explore options and generate an executive decision',
-    description:
-      'Review the recommended disposition, rationale, alternatives, risks, and decision output.',
-    category: 'Assess and Decide',
-    tags: ['Decision Intelligence', 'Explainability'],
-    fileName: 'F04-explore-options-generate-an-executive-decision.mp4',
-    driveFileId: '1eu_L9GN7YkdncjOHeNvCqoB2VI3fuev-',
-    thumbnailUrl: THUMBNAILS.F04,
+    "sequence": "F04",
+    "masterId": "decision",
+    "title": "Explore options and generate an executive decision",
+    "description": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-decision.mp4",
+    "mediaUrl": "/media/learning/emos-v2-decision.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-decision.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-decision.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F05',
-    title: 'Refine an assessment with new evidence',
-    description:
-      'Use a multi-turn follow-up to improve the recommendation as evidence changes.',
-    category: 'Assess and Decide',
-    tags: ['Decision Intelligence', 'Gemini Follow-up'],
-    fileName: 'F05-refine-an-assessment-with-new-evidence.mp4',
-    driveFileId: '17DflA2QwWNSDup7RO3rkD58nIDumK49T',
-    thumbnailUrl: THUMBNAILS.F05,
+    "sequence": "F05",
+    "masterId": "ask",
+    "title": "Refine an assessment with new evidence",
+    "description": "Ask EMOS routes questions to Portfolio Discovery and Enterprise Architect through deterministic orchestration, validation, and governance.",
+    "category": "Assess and Decide",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-ask.mp4",
+    "mediaUrl": "/media/learning/emos-v2-ask.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-ask.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-ask.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F06',
-    title: 'Verify owner-bound persistence and privacy',
-    description:
-      'Understand how authenticated user data remains isolated in Cloud Firestore.',
-    category: 'Trust and Governance',
-    tags: ['Trust & Governance', 'Firestore'],
-    fileName: 'F06-verify-owner-bound-persistence-privacy.mp4',
-    driveFileId: '14r-JcDRJJ2kOSugSPBMWhS6_BW5yZT47',
-    thumbnailUrl: THUMBNAILS.F06,
+    "sequence": "F06",
+    "masterId": "privacy-history",
+    "title": "Verify owner-bound persistence and privacy",
+    "description": "Review owner-bound persistence and privacy, search assessment history, and revisit evidence before making a new decision.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-privacy-history.mp4",
+    "mediaUrl": "/media/learning/emos-v2-privacy-history.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-privacy-history.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-privacy-history.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F07',
-    title: 'Search, filter, and manage assessment history',
-    description: 'Find and revisit persisted modernization assessments.',
-    category: 'Trust and Governance',
-    tags: ['Trust & Governance', 'History'],
-    fileName: 'F07-search-filter-manage-assessment-history.mp4',
-    driveFileId: '1mf5Wu4J2zddYcOYI25CHyfjULn-9Urf0',
-    thumbnailUrl: THUMBNAILS.F07,
+    "sequence": "F07",
+    "masterId": "privacy-history",
+    "title": "Search, filter, and manage assessment history",
+    "description": "Review owner-bound persistence and privacy, search assessment history, and revisit evidence before making a new decision.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-privacy-history.mp4",
+    "mediaUrl": "/media/learning/emos-v2-privacy-history.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-privacy-history.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-privacy-history.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F08',
-    title: 'Preserve cloud-platform neutrality',
-    description:
-      'See how EMOS avoids inventing a hyperscaler choice when target-state evidence is missing.',
-    category: 'Trust and Governance',
-    tags: ['Trust & Governance', 'Vendor Neutrality'],
-    fileName: 'F08-preserve-cloud-platform-neutrality.mp4',
-    driveFileId: '14MqrVx4ohNT2DoULGq7wNuV8MSdGEb_5',
-    thumbnailUrl: THUMBNAILS.F08,
+    "sequence": "F08",
+    "masterId": "decision",
+    "title": "Preserve cloud-platform neutrality",
+    "description": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-decision.mp4",
+    "mediaUrl": "/media/learning/emos-v2-decision.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-decision.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-decision.txt",
+    "duration": "1:00",
+    "durationSeconds": 59.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F09',
-    title: 'Validate assessment-score consistency',
-    description:
-      'Compare evidence completeness, recommendation confidence, and decision readiness without conflating them.',
-    category: 'Trust and Governance',
-    tags: ['Trust & Governance', 'Consistency'],
-    fileName: 'F09-validate-assessment-score-consistency.mp4',
-    driveFileId: '1A-s4cJh5frA_tO7BhAw1C00oG5hnjEUv',
-    thumbnailUrl: THUMBNAILS.F09,
+    "sequence": "F09",
+    "masterId": "governance",
+    "title": "Validate assessment-score consistency",
+    "description": "At least 70% completeness and zero critical gaps establish readiness. Explicit human approval remains a separate requirement.",
+    "category": "Trust and Governance",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-governance.mp4",
+    "mediaUrl": "/media/learning/emos-v2-governance.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-governance.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-governance.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.6025,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F10',
-    title: 'Explore the sample enterprise portfolio',
-    description: 'Start with representative enterprise workloads and modernization signals.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'Discovery'],
-    fileName: 'F10-explore-the-sample-enterprise-portfolio.mp4',
-    driveFileId: '1thTOicdmNhgKBUbDo_chi49E9K6v3oYe',
-    thumbnailUrl: THUMBNAILS.F10,
+    "sequence": "F10",
+    "masterId": "discovery",
+    "title": "Explore the sample enterprise portfolio",
+    "description": "Use Portfolio Discovery to examine workload evidence, dependencies, ambiguity, and prioritized investigations through Ask EMOS.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-discovery.mp4",
+    "mediaUrl": "/media/learning/emos-v2-discovery.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-discovery.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-discovery.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F11',
-    title: 'Inspect Enterprise DNA and evidence gaps',
-    description:
-      'Review known, incomplete, and missing evidence across the six DNA dimensions.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'Evidence Gaps'],
-    fileName: 'F11-inspect-enterprise-dna-evidence-gaps.mp4',
-    driveFileId: '1Dzt4Eylca78TNs5h4ADYZ1HAmMSu0I6N',
-    thumbnailUrl: THUMBNAILS.F11,
+    "sequence": "F11",
+    "masterId": "dna",
+    "title": "Inspect Enterprise DNA and evidence gaps",
+    "description": "Inspect 18 attributes across six dimensions. Resolve critical gaps and distinguish completeness, confidence, and readiness.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-dna.mp4",
+    "mediaUrl": "/media/learning/emos-v2-dna.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-dna.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-dna.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F12',
-    title: 'Go from Enterprise DNA to assessment in one click',
-    description:
-      'Carry structured context directly into assessment without re-entering evidence.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'Guided Flow'],
-    fileName: 'F12-go-from-enterprise-dna-to-assessment-in-one-click.mp4',
-    driveFileId: '1WWd0pDY65tR9w_0TFVK592Vnf7ObpdLY',
-    thumbnailUrl: THUMBNAILS.F12,
+    "sequence": "F12",
+    "masterId": "dna",
+    "title": "From Enterprise DNA to assessment",
+    "description": "Inspect 18 attributes across six dimensions. Resolve critical gaps and distinguish completeness, confidence, and readiness.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-dna.mp4",
+    "mediaUrl": "/media/learning/emos-v2-dna.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-dna.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-dna.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F13',
-    title: 'Import a CSV or JSON portfolio',
-    description:
-      'Bring a controlled workload inventory into EMOS with schema and input-safety checks.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'BYOP'],
-    fileName: 'F13-import-a-csv-or-json-portfolio.mp4',
-    driveFileId: '1cEEOiEqP9nc1-_JFGRjqIiP5YcRa-qeT',
-    thumbnailUrl: THUMBNAILS.F13,
+    "sequence": "F13",
+    "masterId": "import",
+    "title": "Import a CSV or JSON portfolio",
+    "description": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-import.mp4",
+    "mediaUrl": "/media/learning/emos-v2-import.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-import.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-import.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602583,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F14',
-    title: 'Download a sample enterprise dataset',
-    description: 'Use a benchmark portfolio to evaluate the import and assessment experience.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'Sample Data'],
-    fileName: 'F14-download-a-sample-enterprise-dataset.mp4',
-    driveFileId: '13vtt5oLqqkPTQSbVT4EM-_ktlUL6ubX8',
-    thumbnailUrl: THUMBNAILS.F14,
+    "sequence": "F14",
+    "masterId": "import",
+    "title": "Download a sample enterprise dataset",
+    "description": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-import.mp4",
+    "mediaUrl": "/media/learning/emos-v2-import.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-import.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-import.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602583,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F15',
-    title: 'Assess and manage imported workloads',
-    description: 'Move imported portfolio records through Enterprise DNA and 6R assessment.',
-    category: 'Portfolio and Enterprise DNA',
-    tags: ['Portfolio & DNA', 'BYOP'],
-    fileName: 'F15-assess-manage-imported-workloads.mp4',
-    driveFileId: '17uiUFzV-YAm059DrpxkR0DIlHUCm-DK-',
-    thumbnailUrl: THUMBNAILS.F15,
+    "sequence": "F15",
+    "masterId": "import",
+    "title": "Assess and manage imported workloads",
+    "description": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "category": "Portfolio and Enterprise DNA",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-import.mp4",
+    "mediaUrl": "/media/learning/emos-v2-import.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-import.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-import.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602583,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F16',
-    title: 'Switch appearance and use responsive layouts',
-    description:
-      'Explore light, dark, and system themes across responsive product layouts.',
-    category: 'Product Experience and Security',
-    tags: ['Product Experience', 'Accessibility'],
-    fileName: 'F16-switch-appearance-use-responsive-layouts.mp4',
-    driveFileId: '1uWNSBy0U5hdXE8xup9zXUISnVVioz5Vn',
-    thumbnailUrl: THUMBNAILS.F16,
+    "sequence": "F16",
+    "masterId": "workspace",
+    "title": "Switch appearance and use responsive layouts",
+    "description": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "category": "Product Experience and Security",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-workspace.mp4",
+    "mediaUrl": "/media/learning/emos-v2-workspace.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-workspace.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-workspace.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F17',
-    title: 'Fence adversarial prompts and redact secrets',
-    description:
-      'See the input guardrails and output-redaction controls applied around Gemini.',
-    category: 'Product Experience and Security',
-    tags: ['Security', 'AI Guardrails'],
-    fileName: 'F17-fence-adversarial-prompts-redact-secrets.mp4',
-    driveFileId: '1ngfDnl0APUqLquIFzCoVbfP5smNs7B5I',
-    thumbnailUrl: THUMBNAILS.F17,
+    "sequence": "F17",
+    "masterId": "security",
+    "title": "Fence adversarial prompts and redact secrets",
+    "description": "Understand deterministic guardrails, bounded evaluation evidence, input fencing, secret redaction, and the disclosed AI fallback.",
+    "category": "Product Experience and Security",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-security.mp4",
+    "mediaUrl": "/media/learning/emos-v2-security.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-security.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-security.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.602542,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F18',
-    title: 'Enforce canonical 6R and evidence readiness',
-    description:
-      'Review deterministic taxonomy repair and evidence-gated readiness behavior.',
-    category: 'Product Experience and Security',
-    tags: ['Security', 'Release Controls'],
-    fileName: 'F18-enforce-canonical-6r-evidence-readiness.mp4',
-    driveFileId: '103c_WhQGhG1ygK_Y8w6E3J3Ca2xRDUBR',
-    thumbnailUrl: THUMBNAILS.F18,
+    "sequence": "F18",
+    "masterId": "governance",
+    "title": "Enforce canonical 6R and evidence readiness",
+    "description": "At least 70% completeness and zero critical gaps establish readiness. Explicit human approval remains a separate requirement.",
+    "category": "Product Experience and Security",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-governance.mp4",
+    "mediaUrl": "/media/learning/emos-v2-governance.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-governance.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-governance.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.6025,
+    "version": "V2",
+    "burnedInCaptions": true
   },
   {
-    sequence: 'F19',
-    title: 'Plan and mobilize the modernization program',
-    description:
-      'Translate assessed workloads into preliminary modernization waves, readiness actions, and an executive decision pack.',
-    category: 'Plan and Mobilize',
-    tags: ['Planning & Mobilization', 'Wave Planning'],
-    fileName: 'F19-plan-mobilize-the-modernization-program.mp4',
-    driveFileId: '1CcbmWr2GPGRc-7BlUiesR7skhcJkXOA9',
-    thumbnailUrl: THUMBNAILS.F19,
-  },
+    "sequence": "F19",
+    "masterId": "execution",
+    "title": "Plan and mobilize the modernization program",
+    "description": "Sequence waves and follow disposition-specific stages, owners, blockers, and gates. EMOS does not execute live migrations.",
+    "category": "Plan and Mobilize",
+    "tags": [
+      "V2",
+      "Cillian",
+      "Burned-in captions"
+    ],
+    "fileName": "emos-v2-execution.mp4",
+    "mediaUrl": "/media/learning/emos-v2-execution.mp4",
+    "thumbnailUrl": "/media/learning/emos-v2-execution.jpg",
+    "transcriptUrl": "/media/learning/emos-v2-execution.txt",
+    "duration": "0:45",
+    "durationSeconds": 44.625,
+    "version": "V2",
+    "burnedInCaptions": true
+  }
 ];
-
-export const CURRENT_BETA_CAPABILITIES = [
-  'Portfolio discovery with sample and CSV/JSON-imported workloads',
-  'Structured Enterprise DNA with deterministic evidence completeness',
-  'Gemini-powered, explainable canonical 6R assessments',
-  'Evidence-gap, confidence, risk, and readiness distinctions',
-  'Preliminary modernization wave planning and mobilization readiness',
-  'Owner-isolated Firestore persistence and tested security controls',
+export const CURRENT_V2_CAPABILITIES = [
+  "Portfolio Discovery and Enterprise Architect: two Gemini-backed reasoning specialists behind Ask EMOS",
+  "Enterprise DNA: 18 attributes and deterministic evidence readiness",
+  "Canonical 6R recommendations, alternatives, risks, and explainability",
+  "Readiness requires ≥70% completeness and zero critical gaps; explicit human approval remains separate",
+  "Deterministic wave planning and disposition-specific execution tracking",
+  "Owner-bound persistence, history, and tested input/output controls",
+  "Measure: representative synthetic benchmarks; Learn: session-only notes with no automated retraining"
 ] as const;
-
 export const FUTURE_ROADMAP_CAPABILITIES = [
-  'Automated CMDB and telemetry discovery',
-  'Organization-wide governance and approval workflows',
-  'Disposition-specific governed execution agents',
-  'Autonomous validation and parity verification',
-  'Benefits-realization and continuous outcome tracking',
-  'Continuous modernization and marketplace distribution',
+  "Live enterprise CMDB, telemetry, billing, and FinOps ingestion",
+  "Persistent multi-user learning and governed feedback into future scoring",
+  "Live cloud migration, infrastructure provisioning, and automated cutover",
+  "Enterprise SSO/RBAC approval workflows with external change-management integration"
 ] as const;

@@ -1,0 +1,122 @@
+{
+  "id": "import",
+  "durationSeconds": 44.602583,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 13,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.1286995515695069,
+  "alignmentRatios": [
+    0.9642857142857143,
+    0.9166666666666666,
+    0.9310344827586207,
+    0.9333333333333333
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 14.620000000000001
+    },
+    {
+      "start": 0,
+      "end": 10.24
+    },
+    {
+      "start": 0,
+      "end": 11.82
+    },
+    {
+      "start": 0,
+      "end": 13.66
+    }
+  ],
+  "captions": [
+    {
+      "text": "How do you bring your own workload inventory into EMOS?",
+      "start": 0,
+      "end": 5.563925307906237,
+      "chapter": 0
+    },
+    {
+      "text": "Start with the sample dataset to understand the structure, or choose a sanitized CSV or",
+      "start": 5.563925307906237,
+      "end": 11.960667461263407,
+      "chapter": 0
+    },
+    {
+      "text": "JSON portfolio.",
+      "start": 11.960667461263407,
+      "end": 12.952959872864518,
+      "chapter": 0
+    },
+    {
+      "text": "The import path checks the schema and applies input-safety controls.",
+      "start": 12.952959872864518,
+      "end": 17.258800158919346,
+      "chapter": 1
+    },
+    {
+      "text": "Review the imported workload records and the evidence they contain before drawing",
+      "start": 17.258800158919346,
+      "end": 21.58235995232419,
+      "chapter": 1
+    },
+    {
+      "text": "conclusions.",
+      "start": 21.58235995232419,
+      "end": 22.025347636074688,
+      "chapter": 1
+    },
+    {
+      "text": "Importing a row does not verify every claim or make the workload ready.",
+      "start": 22.025347636074688,
+      "end": 26.189431863329354,
+      "chapter": 2
+    },
+    {
+      "text": "Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that",
+      "start": 26.189431863329354,
+      "end": 31.363528009535155,
+      "chapter": 2
+    },
+    {
+      "text": "context into assessment.",
+      "start": 31.363528009535155,
+      "end": 32.49757647993643,
+      "chapter": 2
+    },
+    {
+      "text": "Use the sample estates for representative demonstrations.",
+      "start": 32.49757647993643,
+      "end": 35.7756853396901,
+      "chapter": 3
+    },
+    {
+      "text": "Imported data is not live CMDB or telemetry discovery.",
+      "start": 35.7756853396901,
+      "end": 39.39932459276916,
+      "chapter": 3
+    },
+    {
+      "text": "Next, select an imported workload, close its critical gaps, and review its six R",
+      "start": 39.39932459276916,
+      "end": 44.52912197059992,
+      "chapter": 3
+    },
+    {
+      "text": "recommendation.",
+      "start": 44.52912197059992,
+      "end": 44.602583,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-import.mp4",
+  "bytes": 2312973,
+  "sha256": "f519c692c6f83ddbe28408831e1255a61b42b050f81f3d3515e0cec4a19d2d14",
+  "realScreens": [
+    "import",
+    "portfolio",
+    "dna"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

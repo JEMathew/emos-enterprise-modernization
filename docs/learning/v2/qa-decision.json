@@ -1,0 +1,134 @@
+{
+  "id": "decision",
+  "durationSeconds": 59.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 15,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.1248322147651006,
+  "alignmentRatios": [
+    1.0,
+    0.9811320754716981,
+    0.8333333333333334,
+    0.9393939393939394
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 15.76
+    },
+    {
+      "start": 0,
+      "end": 18.44
+    },
+    {
+      "start": 0,
+      "end": 17.9
+    },
+    {
+      "start": 0,
+      "end": 14.94
+    }
+  ],
+  "captions": [
+    {
+      "text": "Which modernization path fits this workload?",
+      "start": 0,
+      "end": 4.160620525059666,
+      "chapter": 0
+    },
+    {
+      "text": "The Enterprise Architect specialist compares the evidence across six canonical",
+      "start": 4.160620525059666,
+      "end": 8.89021479713604,
+      "chapter": 0
+    },
+    {
+      "text": "dispositions, through Ask EMOS and the governed assessment experience.",
+      "start": 8.89021479713604,
+      "end": 14.010978520286397,
+      "chapter": 0
+    },
+    {
+      "text": "Retain means Govern and Monitor. Retire means Safely Decommission.",
+      "start": 14.010978520286397,
+      "end": 19.896300715990456,
+      "chapter": 1
+    },
+    {
+      "text": "Rehost means Migrate Infrastructure.",
+      "start": 19.896300715990456,
+      "end": 23.09677804295943,
+      "chapter": 1
+    },
+    {
+      "text": "Replatform means Transition Platform.",
+      "start": 23.09677804295943,
+      "end": 25.781622911694512,
+      "chapter": 1
+    },
+    {
+      "text": "Refactor means Transform Architecture.",
+      "start": 25.781622911694512,
+      "end": 28.537589498806682,
+      "chapter": 1
+    },
+    {
+      "text": "Repurchase means Replace and Adopt.",
+      "start": 28.537589498806682,
+      "end": 30.404534606205253,
+      "chapter": 1
+    },
+    {
+      "text": "Review the recommendation, rationale, alternatives, risks, constraints, and the evidence",
+      "start": 30.404534606205253,
+      "end": 37.90787589498807,
+      "chapter": 2
+    },
+    {
+      "text": "that could change the decision. Target-platform claims must follow verified target-state",
+      "start": 37.90787589498807,
+      "end": 43.22422434367542,
+      "chapter": 2
+    },
+    {
+      "text": "evidence; EMOS should not invent a cloud choice.",
+      "start": 43.22422434367542,
+      "end": 46.31801909307876,
+      "chapter": 2
+    },
+    {
+      "text": "New evidence can inform a follow-up assessment.",
+      "start": 46.31801909307876,
+      "end": 49.19844868735084,
+      "chapter": 3
+    },
+    {
+      "text": "Confidence does not equal readiness, and readiness does not equal approval.",
+      "start": 49.19844868735084,
+      "end": 53.48353221957041,
+      "chapter": 3
+    },
+    {
+      "text": "Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an",
+      "start": 53.48353221957041,
+      "end": 58.69319809069213,
+      "chapter": 3
+    },
+    {
+      "text": "accountable human.",
+      "start": 58.69319809069213,
+      "end": 59.607083,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-decision.mp4",
+  "bytes": 2880126,
+  "sha256": "8366eaff51f5e1ae5c4e686aaccce4679c27b235df32cb711db757862ed24a7d",
+  "realScreens": [
+    "decision",
+    "governance",
+    "dna"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "retain",
+  "durationSeconds": 29.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 8,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.075,
+  "alignmentRatios": [
+    0.9767441860465116,
+    0.9565217391304348,
+    0.9655172413793104,
+    0.9375
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 9.14
+    },
+    {
+      "start": 0,
+      "end": 6.36
+    },
+    {
+      "start": 0,
+      "end": 6.12
+    },
+    {
+      "start": 0,
+      "end": 10.2
+    }
+  ],
+  "captions": [
+    {
+      "text": "When is staying in place a valid modernization choice?",
+      "start": 0,
+      "end": 3.832558139534884,
+      "chapter": 0
+    },
+    {
+      "text": "Retain means Govern and Monitor when the evidence supports keeping the workload.",
+      "start": 3.832558139534884,
+      "end": 8.50232558139535,
+      "chapter": 0
+    },
+    {
+      "text": "The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and",
+      "start": 8.50232558139535,
+      "end": 13.990697674418607,
+      "chapter": 1
+    },
+    {
+      "text": "learning.",
+      "start": 13.990697674418607,
+      "end": 14.418604651162793,
+      "chapter": 1
+    },
+    {
+      "text": "These are governed planning stages, not a live telemetry integration or automatic",
+      "start": 14.418604651162793,
+      "end": 18.753488372093024,
+      "chapter": 2
+    },
+    {
+      "text": "infrastructure changes.",
+      "start": 18.753488372093024,
+      "end": 20.111627906976747,
+      "chapter": 2
+    },
+    {
+      "text": "Next, verify the supporting evidence, retain human oversight, and identify the",
+      "start": 20.111627906976747,
+      "end": 27.10697674418605,
+      "chapter": 3
+    },
+    {
+      "text": "conditions that would justify reassessment.",
+      "start": 27.10697674418605,
+      "end": 29.61025,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-retain.mp4",
+  "bytes": 1727569,
+  "sha256": "f8916c1809babbe4c801e53c15f49419fe82e7398c123c25d5a8013968125813",
+  "realScreens": [
+    "retain",
+    "retain",
+    "retain"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

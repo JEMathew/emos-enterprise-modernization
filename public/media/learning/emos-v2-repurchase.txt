@@ -1,0 +1,9 @@
+Repurchase — Replace & Adopt
+
+When is buying a replacement the right path? Repurchase means Replace and Adopt when evidence supports moving to a commercial product.
+
+The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning.
+
+EMOS tracks the plan; it does not purchase software or migrate users automatically.
+
+Next, verify fit, compliance, data portability, and human approval before adoption.

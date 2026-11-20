@@ -1,0 +1,122 @@
+{
+  "id": "outcomes",
+  "durationSeconds": 52.934854,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 13,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1,
+  "alignmentRatios": [
+    0.9818181818181818,
+    0.9302325581395349,
+    0.88,
+    0.9444444444444444
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 12.1
+    },
+    {
+      "start": 0,
+      "end": 10.3
+    },
+    {
+      "start": 0,
+      "end": 12.16
+    },
+    {
+      "start": 0,
+      "end": 18.38
+    }
+  ],
+  "captions": [
+    {
+      "text": "What can outcomes tell you about a modernization plan?",
+      "start": 0,
+      "end": 3.73,
+      "chapter": 0
+    },
+    {
+      "text": "Measure presents Baseline, Target, and Observed values so you can discuss assumptions",
+      "start": 3.73,
+      "end": 8.98,
+      "chapter": 0
+    },
+    {
+      "text": "and differences in the chosen disposition's context.",
+      "start": 8.98,
+      "end": 12.1,
+      "chapter": 0
+    },
+    {
+      "text": "In V2, these values are representative synthetic benchmarks.",
+      "start": 12.1,
+      "end": 16.96,
+      "chapter": 1
+    },
+    {
+      "text": "They are not readings from a live production telemetry, billing, or benefits-realization",
+      "start": 16.96,
+      "end": 21.32,
+      "chapter": 1
+    },
+    {
+      "text": "integration.",
+      "start": 21.32,
+      "end": 22.4,
+      "chapter": 1
+    },
+    {
+      "text": "Learn presents representative archetype lessons and lets you capture a session-only",
+      "start": 22.4,
+      "end": 27.919999999999998,
+      "chapter": 2
+    },
+    {
+      "text": "note. Describe the assumption, observed difference, lesson, and possible relevance to",
+      "start": 27.919999999999998,
+      "end": 33.739999999999995,
+      "chapter": 2
+    },
+    {
+      "text": "future work.",
+      "start": 33.739999999999995,
+      "end": 34.56,
+      "chapter": 2
+    },
+    {
+      "text": "Session notes do not retrain the agents or automatically change recommendations.",
+      "start": 34.56,
+      "end": 41.14,
+      "chapter": 3
+    },
+    {
+      "text": "Next, use these views to structure a review, then validate real outcomes in your",
+      "start": 41.14,
+      "end": 46.36,
+      "chapter": 3
+    },
+    {
+      "text": "approved systems. Any future recommendation still requires current evidence and human",
+      "start": 46.36,
+      "end": 52.46,
+      "chapter": 3
+    },
+    {
+      "text": "authority.",
+      "start": 52.46,
+      "end": 52.934854,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-outcomes.mp4",
+  "bytes": 2574778,
+  "sha256": "bec17339b31cefaf0bab6eb551fd1cdd9bbba6f33be9d1bdebc9618bc44bd078",
+  "realScreens": [
+    "measure",
+    "learn",
+    "learn"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

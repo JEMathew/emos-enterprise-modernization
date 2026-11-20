@@ -4,36 +4,13 @@ import React from 'react';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { LearningCenterPage } from '../src/components/LearningCenterPage';
+import { LearningVideoModal } from '../src/components/LearningVideoModal';
 import {
-  getDrivePreviewUrl,
-  getDriveViewUrl,
+  LEARNING_MASTERS,
   LEARNING_VIDEOS,
   type LearningVideo,
 } from '../src/data/learningVideos';
 import { ThemeProvider } from '../src/lib/theme';
-
-const EXPECTED_DRIVE_IDS: Record<string, string> = {
-  'EMOS-Beta-Introduction.mp4': '1I5DLsarRnhBbxMUS-GpO5ew7WLZ2Gt6t',
-  'F01-sign-in-enter-the-private-workspace.mp4': '1PRAQZP4pQYggRhFAyhWe18A2q55E-0BX',
-  'F02-take-the-guided-product-tour.mp4': '1M6IJtGqJ629ovhjdUo_HrxXusIWo_8r3',
-  'F03-submit-a-workload-for-a-6r-assessment.mp4': '1ydFW2t4JMMdNjknaqAvZrtWB4tUe92GT',
-  'F04-explore-options-generate-an-executive-decision.mp4': '1eu_L9GN7YkdncjOHeNvCqoB2VI3fuev-',
-  'F05-refine-an-assessment-with-new-evidence.mp4': '17DflA2QwWNSDup7RO3rkD58nIDumK49T',
-  'F06-verify-owner-bound-persistence-privacy.mp4': '14r-JcDRJJ2kOSugSPBMWhS6_BW5yZT47',
-  'F07-search-filter-manage-assessment-history.mp4': '1mf5Wu4J2zddYcOYI25CHyfjULn-9Urf0',
-  'F08-preserve-cloud-platform-neutrality.mp4': '14MqrVx4ohNT2DoULGq7wNuV8MSdGEb_5',
-  'F09-validate-assessment-score-consistency.mp4': '1A-s4cJh5frA_tO7BhAw1C00oG5hnjEUv',
-  'F10-explore-the-sample-enterprise-portfolio.mp4': '1thTOicdmNhgKBUbDo_chi49E9K6v3oYe',
-  'F11-inspect-enterprise-dna-evidence-gaps.mp4': '1Dzt4Eylca78TNs5h4ADYZ1HAmMSu0I6N',
-  'F12-go-from-enterprise-dna-to-assessment-in-one-click.mp4': '1WWd0pDY65tR9w_0TFVK592Vnf7ObpdLY',
-  'F13-import-a-csv-or-json-portfolio.mp4': '1cEEOiEqP9nc1-_JFGRjqIiP5YcRa-qeT',
-  'F14-download-a-sample-enterprise-dataset.mp4': '13vtt5oLqqkPTQSbVT4EM-_ktlUL6ubX8',
-  'F15-assess-manage-imported-workloads.mp4': '17uiUFzV-YAm059DrpxkR0DIlHUCm-DK-',
-  'F16-switch-appearance-use-responsive-layouts.mp4': '1uWNSBy0U5hdXE8xup9zXUISnVVioz5Vn',
-  'F17-fence-adversarial-prompts-redact-secrets.mp4': '1ngfDnl0APUqLquIFzCoVbfP5smNs7B5I',
-  'F18-enforce-canonical-6r-evidence-readiness.mp4': '103c_WhQGhG1ygK_Y8w6E3J3Ca2xRDUBR',
-  'F19-plan-mobilize-the-modernization-program.mp4': '1CcbmWr2GPGRc-7BlUiesR7skhcJkXOA9',
-};
 
 class MockIntersectionObserver {
   observe() {}
@@ -72,31 +49,27 @@ describe('EMOS Learning Center embedded video playback', () => {
     vi.restoreAllMocks();
   });
 
-  it('maps every documented filename to its exact verified public Drive file ID', () => {
-    expect(Object.fromEntries(LEARNING_VIDEOS.map((video) => [video.fileName, video.driveFileId]))).toEqual(
-      EXPECTED_DRIVE_IDS,
-    );
-    expect(new Set(LEARNING_VIDEOS.map((video) => video.driveFileId)).size).toBe(20);
+  it('maps every lesson and master to a V2 asset with on-video captions', () => {
+    expect(LEARNING_VIDEOS).toHaveLength(20);
+    expect(Object.keys(LEARNING_MASTERS)).toHaveLength(18);
+    for (const video of [...LEARNING_VIDEOS, ...Object.values(LEARNING_MASTERS)]) {
+      expect(video.mediaUrl).toMatch(/^\/media\/learning\/emos-v2-[a-z-]+\.mp4$/);
+      expect(video.version).toBe('V2');
+      expect(video.burnedInCaptions).toBe(true);
+      expect(video.durationSeconds).toBeGreaterThan(0);
+      expect(video.durationSeconds).toBeLessThanOrEqual(90);
+      expect(LEARNING_MASTERS[video.masterId].mediaUrl).toBe(video.mediaUrl);
+    }
   });
 
-  it('loads the selected Drive preview only after the user chooses Play', () => {
+  it('loads the selected native video only after the user chooses Play', () => {
     renderLearningCenter();
-
-    expect(screen.queryByTitle(/video player/i)).not.toBeInTheDocument();
-
+    expect(screen.queryByLabelText(/video player/i)).not.toBeInTheDocument();
     const video = LEARNING_VIDEOS[3];
     fireEvent.click(screen.getByRole('button', { name: `Play ${video.sequence}: ${video.title} in EMOS` }));
-
-    const dialog = screen.getByRole('dialog', { name: video.title });
-    expect(dialog).toHaveAttribute('aria-modal', 'true');
-    expect(screen.getByTitle(`${video.sequence}: ${video.title} video player`)).toHaveAttribute(
-      'src',
-      getDrivePreviewUrl(video.driveFileId),
-    );
-    expect(screen.getByRole('link', { name: /Open in Google Drive/i })).toHaveAttribute(
-      'href',
-      getDriveViewUrl(video.driveFileId),
-    );
+    expect(screen.getByRole('dialog', { name: video.title })).toHaveAttribute('aria-modal', 'true');
+    expect(screen.getByLabelText(`${video.sequence}: ${video.title} video player`)).toHaveAttribute('src', video.mediaUrl);
+    expect(document.querySelector('iframe')).toBeNull();
   });
 
   it('closes with Escape and restores focus to the originating Play button', () => {
@@ -125,11 +98,11 @@ describe('EMOS Learning Center embedded video playback', () => {
     );
 
     const closeButton = screen.getByRole('button', { name: `Close video: ${video.title}` });
-    const driveLink = screen.getByRole('link', { name: /Open in Google Drive/i });
+    const finalButton = screen.getByRole('button', { name: 'Full screen' });
     expect(closeButton).toHaveFocus();
 
     fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
-    expect(driveLink).toHaveFocus();
+    expect(finalButton).toHaveFocus();
 
     fireEvent.keyDown(document, { key: 'Tab' });
     expect(closeButton).toHaveFocus();
@@ -152,10 +125,10 @@ describe('EMOS Learning Center embedded video playback', () => {
     expect(requestFullscreen).toHaveBeenCalledTimes(1);
   });
 
-  it('marks a video without a verified file ID as unavailable and creates no iframe', () => {
+  it('marks a video without a verified media URL as unavailable and creates no iframe', () => {
     const unavailableVideo: LearningVideo = {
       ...LEARNING_VIDEOS[0],
-      driveFileId: undefined,
+      mediaUrl: undefined,
     };
     renderLearningCenter([unavailableVideo]);
 
@@ -166,5 +139,53 @@ describe('EMOS Learning Center embedded video playback', () => {
     ).toBeDisabled();
     expect(screen.queryByRole('button', { name: /Play .* in EMOS/i })).not.toBeInTheDocument();
     expect(screen.queryByTitle(/video player/i)).not.toBeInTheDocument();
+  });
+
+  it('plays direct media inside EMOS with accessible controls, loading, and error recovery', () => {
+    const load = vi.spyOn(HTMLMediaElement.prototype, 'load').mockImplementation(() => {});
+    const video: LearningVideo = {
+      ...LEARNING_VIDEOS[0],
+      mediaUrl: '/media/learning/emos-v2-orientation.mp4',
+      version: 'V2',
+      burnedInCaptions: true,
+    };
+    renderLearningCenter([video]);
+    fireEvent.click(screen.getByRole('button', { name: 'Start Guided Journey' }));
+    const player = screen.getByLabelText(`${video.sequence}: ${video.title} video player`);
+    expect(player.tagName).toBe('VIDEO');
+    expect(player).toHaveAttribute('controls');
+    expect(player).toHaveAttribute('playsinline');
+    expect(player).toHaveAttribute('src', video.mediaUrl);
+    expect(screen.queryByRole('link', { name: /Open in Google Drive/i })).not.toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveTextContent('Loading video');
+    fireEvent.loadedData(player);
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
+    fireEvent.waiting(player);
+    expect(screen.getByRole('status')).toHaveTextContent('Loading video');
+    fireEvent.error(player);
+    expect(screen.getByRole('alert')).toHaveTextContent('could not load');
+    fireEvent.click(screen.getByRole('button', { name: 'Retry video' }));
+    expect(load).toHaveBeenCalledOnce();
+    fireEvent.canPlay(player);
+    expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
+  });
+
+  it('unmounts direct media and restores trigger focus when closed', () => {
+    const trigger = document.createElement('button');
+    document.body.append(trigger);
+    const onClose = vi.fn();
+    const { unmount } = render(<LearningVideoModal
+      video={{ ...LEARNING_VIDEOS[0], mediaUrl: '/media/learning/emos-v2-orientation.mp4', version: 'V2' }}
+      onClose={onClose}
+      returnFocusTo={trigger}
+    />);
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(onClose).toHaveBeenCalledOnce();
+    unmount();
+    expect(document.querySelector('video')).toBeNull();
+    expect(trigger).toHaveFocus();
+    expect(document.body.style.overflow).not.toBe('hidden');
+    trigger.remove();
   });
 });

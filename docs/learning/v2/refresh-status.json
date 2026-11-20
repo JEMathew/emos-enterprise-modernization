@@ -1,0 +1,67 @@
+{
+  "repository": "emos-enterprise-modernization",
+  "productVersion": "V2",
+  "inventory": {
+    "catalog": 20,
+    "topicGuides": 16,
+    "stageLinks": 4,
+    "heroLinks": 1,
+    "totalPlacements": 41,
+    "plannedUniqueMasters": 18
+  },
+  "voice": {
+    "requested": "Killian",
+    "exactMatchAvailable": false,
+    "selectedByUser": "Cillian",
+    "catalogVoicesInspected": 115
+  },
+  "generation": {
+    "projectName": "EMOS V2 Learning Videos",
+    "visualsCompleted": 18,
+    "audioSegmentsCompleted": 72,
+    "mastersCompleted": 18,
+    "failedAttemptsRecovered": 6,
+    "unresolvedFailures": 0,
+    "creditsUsed": 1526.2,
+    "creditMeasurement": "Observed balance change: 1800 to 273.8",
+    "approvedCap": 1600,
+    "budgetApproval": "Explicit user approval",
+    "generationWallTimeApproxMinutes": 8
+  },
+  "validation": {
+    "lint": "PASS",
+    "build": "PASS",
+    "tests": {
+      "passed": 292,
+      "total": 292
+    },
+    "liveGeminiSuite": "not_run",
+    "technicalMedia": "18/18 PASS",
+    "sampledVisualFrames": "18/18 PASS",
+    "localNativePlayback": "PASS",
+    "mobile390": "PASS",
+    "keyboardAndFocus": "PASS"
+  },
+  "hostingPlan": "Use existing Vite public assets and Express static serving under /media/learning/; same-origin HTTPS on existing Cloud Run service, no new hosting service or security policy change.",
+  "production": {
+    "observedRevision": "emos-modernization-00002-nnw",
+    "url": "https://emos-modernization-1027874783780.asia-southeast1.run.app",
+    "inventoryInspected": true,
+    "newLibraryDeployed": false
+  },
+  "movebooks": {
+    "source": "/Users/jincenmathew/.codex/worktrees/evergreen-landing/movebooks-audit-main/apps/web/components/academy/AcademyPlayer.tsx",
+    "pattern": "Native inline player in modal; controls, poster, metadata preload, keyboard play/mute/seek, Escape/focus return, loading and retry."
+  },
+  "git": {
+    "baseCommit": "6af718f",
+    "taskCommitted": false,
+    "taskPushed": false
+  },
+  "remaining": [
+    "Commit and push",
+    "Deploy existing service",
+    "Verify every production placement and all master assets"
+  ],
+  "readyForSubmission": false
+}

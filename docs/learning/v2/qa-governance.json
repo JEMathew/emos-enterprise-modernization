@@ -1,0 +1,116 @@
+{
+  "id": "governance",
+  "durationSeconds": 44.6025,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 12,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.199103139013453,
+  "alignmentRatios": [
+    0.9565217391304348,
+    0.9583333333333334,
+    0.9433962264150944,
+    0.9206349206349206
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 12.86
+    },
+    {
+      "start": 0,
+      "end": 12.1
+    },
+    {
+      "start": 0,
+      "end": 11.0
+    },
+    {
+      "start": 0,
+      "end": 17.52
+    }
+  ],
+  "captions": [
+    {
+      "text": "Can AI approve its own recommendation?",
+      "start": 0,
+      "end": 2.8604712041884817,
+      "chapter": 0
+    },
+    {
+      "text": "No. EMOS separates reasoning, deterministic readiness, and human authority so that a",
+      "start": 2.8604712041884817,
+      "end": 8.739865370231863,
+      "chapter": 0
+    },
+    {
+      "text": "confident answer cannot authorize execution.",
+      "start": 8.739865370231863,
+      "end": 10.724682124158562,
+      "chapter": 0
+    },
+    {
+      "text": "Readiness requires at least seventy percent evidence completeness and zero critical",
+      "start": 10.724682124158562,
+      "end": 15.0112191473448,
+      "chapter": 1
+    },
+    {
+      "text": "gaps. Needs Evidence blocks approval and execution progression.",
+      "start": 15.0112191473448,
+      "end": 19.481226626776362,
+      "chapter": 1
+    },
+    {
+      "text": "Ready does not mean Approved.",
+      "start": 19.481226626776362,
+      "end": 20.815557217651456,
+      "chapter": 1
+    },
+    {
+      "text": "The governed workflow requires explicit human sign-off.",
+      "start": 20.815557217651456,
+      "end": 23.93455497382199,
+      "chapter": 2
+    },
+    {
+      "text": "An AI request to bypass approval cannot change these rules.",
+      "start": 23.93455497382199,
+      "end": 27.487210172026924,
+      "chapter": 2
+    },
+    {
+      "text": "Even complete evidence does not remove the human decision.",
+      "start": 27.487210172026924,
+      "end": 29.989080029917723,
+      "chapter": 2
+    },
+    {
+      "text": "Inspect the evidence gaps, recommendation, alternatives, and risks before approval.",
+      "start": 29.989080029917723,
+      "end": 35.52655198204936,
+      "chapter": 3
+    },
+    {
+      "text": "Next, obtain accountable human review, then follow the disposition-specific plan.",
+      "start": 35.52655198204936,
+      "end": 40.363500373971576,
+      "chapter": 3
+    },
+    {
+      "text": "EMOS tracks governed work; it does not autonomously change production infrastructure.",
+      "start": 40.363500373971576,
+      "end": 44.6025,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-governance.mp4",
+  "bytes": 2850661,
+  "sha256": "788161f880284865612f52763f77bd7d2aad48d91ee88b05310424ce737889e8",
+  "realScreens": [
+    "governance",
+    "execution",
+    "governance"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

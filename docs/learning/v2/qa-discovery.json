@@ -1,0 +1,116 @@
+{
+  "id": "discovery",
+  "durationSeconds": 44.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 12,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.1201793721973092,
+  "alignmentRatios": [
+    1.0,
+    0.8444444444444444,
+    0.9696969696969697,
+    0.8627450980392157
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 10.58
+    },
+    {
+      "start": 0,
+      "end": 11.120000000000001
+    },
+    {
+      "start": 3.939999999999999,
+      "end": 17.04
+    },
+    {
+      "start": 0,
+      "end": 15.16
+    }
+  ],
+  "captions": [
+    {
+      "text": "What do we know about the estate, and what should we investigate next?",
+      "start": 0,
+      "end": 3.785108086469176,
+      "chapter": 0
+    },
+    {
+      "text": "Portfolio Discovery helps you examine sample or imported workloads in the context of",
+      "start": 3.785108086469176,
+      "end": 8.462930344275422,
+      "chapter": 0
+    },
+    {
+      "text": "their enterprise evidence.",
+      "start": 8.462930344275422,
+      "end": 9.444915932746198,
+      "chapter": 0
+    },
+    {
+      "text": "The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence,",
+      "start": 9.444915932746198,
+      "end": 13.997758206565255,
+      "chapter": 1
+    },
+    {
+      "text": "relationships, ambiguity, and missing facts.",
+      "start": 13.997758206565255,
+      "end": 16.943714971977585,
+      "chapter": 1
+    },
+    {
+      "text": "Ask EMOS provides access to this reasoning.",
+      "start": 16.943714971977585,
+      "end": 19.371897518014414,
+      "chapter": 1
+    },
+    {
+      "text": "Structured output is validated before it reaches the workflow.",
+      "start": 19.371897518014414,
+      "end": 23.799759807846282,
+      "chapter": 2
+    },
+    {
+      "text": "Missing evidence remains a gap; a plausible explanation is not a verified fact.",
+      "start": 23.799759807846282,
+      "end": 28.209767814251407,
+      "chapter": 2
+    },
+    {
+      "text": "This is not an automatic connection to your live enterprise systems.",
+      "start": 28.209767814251407,
+      "end": 31.066453162530028,
+      "chapter": 2
+    },
+    {
+      "text": "Review dependencies and prioritized investigations, then inspect Enterprise DNA for the",
+      "start": 31.066453162530028,
+      "end": 37.779663730984794,
+      "chapter": 3
+    },
+    {
+      "text": "selected workload. Next, verify the highest-value missing facts before moving into a six",
+      "start": 37.779663730984794,
+      "end": 44.00485721910863,
+      "chapter": 3
+    },
+    {
+      "text": "R decision.",
+      "start": 44.00485721910863,
+      "end": 44.611458,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-discovery.mp4",
+  "bytes": 3156235,
+  "sha256": "a1c28e989373f3d584cf3802eb77d1b58f2dd206110b89b5ef048b6f70bfcc3d",
+  "realScreens": [
+    "portfolio",
+    "dna",
+    "ask"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

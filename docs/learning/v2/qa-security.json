@@ -1,0 +1,116 @@
+{
+  "id": "security",
+  "durationSeconds": 44.602542,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 12,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.3098654708520179,
+  "alignmentRatios": [
+    0.9473684210526315,
+    0.96,
+    0.9803921568627451,
+    0.9629629629629629
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 16.04
+    },
+    {
+      "start": 0,
+      "end": 12.86
+    },
+    {
+      "start": 0,
+      "end": 15.28
+    },
+    {
+      "start": 0,
+      "end": 14.24
+    }
+  ],
+  "captions": [
+    {
+      "text": "What keeps an AI answer from becoming an unsafe action?",
+      "start": 0,
+      "end": 3.1758986648408083,
+      "chapter": 0
+    },
+    {
+      "text": "EMOS places deterministic controls around model reasoning, including input fencing,",
+      "start": 3.1758986648408083,
+      "end": 8.275659020883259,
+      "chapter": 0
+    },
+    {
+      "text": "output validation, canonical six R checks, and secret redaction.",
+      "start": 8.275659020883259,
+      "end": 12.24553235193427,
+      "chapter": 0
+    },
+    {
+      "text": "Adversarial requests to bypass governance are intercepted.",
+      "start": 12.24553235193427,
+      "end": 15.558849709003766,
+      "chapter": 1
+    },
+    {
+      "text": "Evidence requirements and explicit human approval remain authoritative, regardless of",
+      "start": 15.558849709003766,
+      "end": 19.95624786032181,
+      "chapter": 1
+    },
+    {
+      "text": "the wording or confidence of a model response.",
+      "start": 19.95624786032181,
+      "end": 22.063334474495036,
+      "chapter": 1
+    },
+    {
+      "text": "Software tests, deterministic evaluations, and recorded live checks provide bounded",
+      "start": 22.063334474495036,
+      "end": 27.34631975350907,
+      "chapter": 2
+    },
+    {
+      "text": "evidence about tested behavior. They do not prove perfect AI, zero hallucinations, or",
+      "start": 27.34631975350907,
+      "end": 32.73618623758987,
+      "chapter": 2
+    },
+    {
+      "text": "universal safety.",
+      "start": 32.73618623758987,
+      "end": 33.72865457035262,
+      "chapter": 2
+    },
+    {
+      "text": "When AI reasoning is unavailable, the interface discloses a deterministic fallback.",
+      "start": 33.72865457035262,
+      "end": 38.72153372132831,
+      "chapter": 3
+    },
+    {
+      "text": "Next, inspect the Evaluation Evidence and the workload's actual evidence gaps before",
+      "start": 38.72153372132831,
+      "end": 43.50065046217049,
+      "chapter": 3
+    },
+    {
+      "text": "relying on a recommendation.",
+      "start": 43.50065046217049,
+      "end": 44.602542,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-security.mp4",
+  "bytes": 2048934,
+  "sha256": "b4b239b8e59929551c87041a7190d0afd30d4fb4a34884092a1676ded8f0fb00",
+  "realScreens": [
+    "governance",
+    "execution",
+    "ask"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

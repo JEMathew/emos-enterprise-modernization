@@ -1,0 +1,9 @@
+Navigate EMOS and your workspace
+
+Where should you begin? Open EMOS and choose your workspace context. The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention.
+
+Use Understand to explore the portfolio and Enterprise DNA. Decide brings assessment and recommendations into focus. Governance remains a required checkpoint before approved transformation.
+
+Transform organizes the execution plan. Outcomes presents representative measurement and learning views. Keep the same estate and workload context as you move between these areas.
+
+Sign in for the private, owner-bound workspace. Use the appearance control for light, dark, or system themes, and adapt the layout to your screen. Next, select one workload and inspect its evidence.

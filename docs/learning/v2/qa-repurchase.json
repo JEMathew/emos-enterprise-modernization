@@ -1,0 +1,86 @@
+{
+  "id": "repurchase",
+  "durationSeconds": 29.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 7,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.079054054054054,
+  "alignmentRatios": [
+    1.0,
+    1.0,
+    1.0,
+    0.9565217391304348
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 7.98
+    },
+    {
+      "start": 0,
+      "end": 11.72
+    },
+    {
+      "start": 3.4,
+      "end": 9.56
+    },
+    {
+      "start": 0,
+      "end": 6.08
+    }
+  ],
+  "captions": [
+    {
+      "text": "When is buying a replacement the right path?",
+      "start": 0,
+      "end": 2.2797745773324984,
+      "chapter": 0
+    },
+    {
+      "text": "Repurchase means Replace and Adopt when evidence supports moving to a commercial",
+      "start": 2.2797745773324984,
+      "end": 6.839323731997495,
+      "chapter": 0
+    },
+    {
+      "text": "product.",
+      "start": 6.839323731997495,
+      "end": 7.395366311834691,
+      "chapter": 0
+    },
+    {
+      "text": "The playbook structures approval, replacement selection, configuration, data and user",
+      "start": 7.395366311834691,
+      "end": 13.029931120851597,
+      "chapter": 1
+    },
+    {
+      "text": "migration, transition, retirement of the previous system, measurement, and learning.",
+      "start": 13.029931120851597,
+      "end": 18.25673137132123,
+      "chapter": 1
+    },
+    {
+      "text": "EMOS tracks the plan; it does not purchase software or migrate users automatically.",
+      "start": 18.25673137132123,
+      "end": 23.965435190983097,
+      "chapter": 2
+    },
+    {
+      "text": "Next, verify fit, compliance, data portability, and human approval before adoption.",
+      "start": 23.965435190983097,
+      "end": 29.606958,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-repurchase.mp4",
+  "bytes": 1603069,
+  "sha256": "609de15df68c58eda1342968541c61a8df5f5a08b75e84596bf9c6fa939820b4",
+  "realScreens": [
+    "repurchase",
+    "repurchase",
+    "repurchase"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

@@ -15,10 +15,11 @@ import {
 import { LearningVideoModal } from './LearningVideoModal';
 import { ThemeSelector } from './ThemeSelector';
 import {
-  CURRENT_BETA_CAPABILITIES,
+  CURRENT_V2_CAPABILITIES,
   FUTURE_ROADMAP_CAPABILITIES,
   LEARNING_CATEGORIES,
   LEARNING_VIDEOS,
+  LEARNING_MASTERS,
   type LearningCategory,
   type LearningVideo,
 } from '../data/learningVideos';
@@ -32,22 +33,118 @@ interface LearningCenterPageProps {
 }
 
 const LIFECYCLE_TOPIC_GUIDES = [
-  { id: 'what-is-emos', title: 'What is EMOS?', duration: '1:30', summary: 'Overview of the vendor-neutral Enterprise Modernization Operating System.', videoSeq: '00', transcript: 'EMOS connects fragmented estate evidence, deterministic readiness scoring, governed 6R decisions, wave planning, execution tracking, and outcome measurement in one operating system.' },
-  { id: 'product-vision', title: 'Product Vision', duration: '1:45', summary: 'How EMOS governs the full Strategy → Discover → DNA → Decide → Execute → Measure → Learn loop.', videoSeq: '00', transcript: 'Rather than stopping at static assessment decks, EMOS treats the 6R disposition as a routing decision into governed execution, benefit realization, and continuous learning.' },
-  { id: 'getting-started', title: 'Getting Started', duration: '1:15', summary: 'Choose Apex Aerospace, Financial Services, or upload your own CSV/JSON portfolio.', videoSeq: 'F01', transcript: 'Start immediately with the 10,000+ asset Apex Aerospace estate, the Financial Services estate, or upload a sanitized CSV/JSON inventory.' },
-  { id: 'portfolio-upload', title: 'Portfolio Upload', duration: '1:30', summary: 'How EMOS validates CSV/JSON facts and summarizes what it understood before showing tables.', videoSeq: 'F13', transcript: 'EMOS checks required schema keys, neutralizes spreadsheet formula injection, and displays Systems Discovered, Business Capabilities, Completeness, Ready count, and Missing Evidence.' },
-  { id: 'enterprise-dna', title: 'Enterprise DNA', duration: '1:40', summary: '18 attributes across 6 dimensions in 2D list and interactive Spatial Relationship views.', videoSeq: 'F11', transcript: 'Enterprise DNA structures Business, Technology, Dependency, Economics, Data & Risk, and Target-State evidence and lets you verify high-value attributes.' },
-  { id: 'modernization-agent', title: 'Modernization Agent', duration: '1:50', summary: 'How one governed Modernization Agent investigates evidence and answers contextual questions.', videoSeq: 'F03', transcript: 'The Modernization Agent inspects DNA, evaluates the readiness gate, compares all 6 dispositions, and returns 1 concise conclusion, up to 3 bullets, and 1 next action.' },
-  { id: '6r-overview', title: '6R Overview', duration: '1:35', summary: 'Plain-English actions mapped to Retain, Retire, Rehost, Replatform, Refactor, and Repurchase.', videoSeq: 'F18', transcript: 'Every recommendation is presented in plain English first—Keep it as-is, Safely shut it down, Move it largely unchanged, Move it to a better platform, Redesign parts of it, or Replace it.' },
-  { id: 'retain', title: 'Retain (Keep it as-is)', duration: '1:20', summary: 'Keep → Optimize → Monitor → Review Outcome → Learn workflow for hardware-bound or stable systems.', videoSeq: 'F08', transcript: 'Retain protects mission-critical shop-floor MES and vault systems where migration introduces latency risk or negative ROI.' },
-  { id: 'retire', title: 'Retire (Safely shut it down)', duration: '1:30', summary: 'Approve → Consumer Transition → Archive → Decommission → Validate Closure → Measure Savings → Learn.', videoSeq: 'F04', transcript: 'Retire verifies downstream consumers are transitioned and historical archives are secured before shutting down redundant servers.' },
-  { id: 'rehost', title: 'Rehost (Move it largely unchanged)', duration: '1:25', summary: 'Approve → Prepare Destination → Move → Validate → Cutover → Stabilize → Measure → Learn.', videoSeq: 'F03', transcript: 'Rehost accelerates data-center and colocation exits for modern Linux/VM workloads without risky code rewrites.' },
-  { id: 'replatform', title: 'Replatform (Move it to a better platform)', duration: '1:45', summary: 'Approve → Prepare Target Platform → Transform/Migrate → Validate → Cutover → Optimize → Measure → Learn.', videoSeq: 'F04', transcript: 'Replatform shifts legacy data warehouses and databases to managed cloud platforms like Google Cloud BigQuery once target-state evidence is verified.' },
-  { id: 'refactor', title: 'Refactor (Redesign parts of it)', duration: '1:40', summary: 'Approve → Redesign/Decompose → Implement → Test → Transition → Stabilize → Measure → Learn.', videoSeq: 'F05', transcript: 'Refactor decomposes high-criticality monoliths into cloud-native and event-driven services with strangler-fig safety gates.' },
-  { id: 'repurchase', title: 'Repurchase (Replace it with another product)', duration: '1:25', summary: 'Approve → Select Replacement → Configure → Migrate Data/Users → Transition → Retire Previous → Measure → Learn.', videoSeq: 'F04', transcript: 'Repurchase replaces high-maintenance custom commodity tools with compliant commercial SaaS platforms.' },
-  { id: 'governance', title: 'Governance', duration: '1:30', summary: 'Agent Recommends → EMOS Validates → Human Approves → Action Proceeds.', videoSeq: 'F06', transcript: 'Model confidence cannot override the deterministic 70% completeness and zero-critical-gap readiness gate.' },
-  { id: 'execution', title: 'Execution', duration: '1:40', summary: 'Track disposition-specific transformation stages, active blockers, and checkpoint gates.', videoSeq: 'F19', transcript: 'The Execution Workspace highlights the current transformation phase, surfaces blockers, and recedes completed milestones.' },
-  { id: 'outcomes-learning', title: 'Outcomes & Learning', duration: '1:45', summary: 'Compare Baseline vs. Target vs. Observed metrics and record lessons for future waves.', videoSeq: 'F19', transcript: 'Measure compares expected and observed results, while Learn captures assumption variances into the governance playbook.' },
+  {
+    "id": "what-is-emos",
+    "title": "What is EMOS V2?",
+    "summary": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "masterId": "orientation",
+    "transcript": "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes. Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent. Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload."
+  },
+  {
+    "id": "product-vision",
+    "title": "End-to-end V2 journey",
+    "summary": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "masterId": "orientation",
+    "transcript": "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes. Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent. Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload."
+  },
+  {
+    "id": "getting-started",
+    "title": "Getting started with EMOS V2",
+    "summary": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "masterId": "workspace",
+    "transcript": "Where should you begin? Open EMOS and choose your workspace context. The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention. Use Understand to explore the portfolio and Enterprise DNA. Decide brings assessment and recommendations into focus. Governance remains a required checkpoint before approved transformation. Transform organizes the execution plan. Outcomes presents representative measurement and learning views. Keep the same estate and workload context as you move between these areas. Sign in for the private, owner-bound workspace. Use the appearance control for light, dark, or system themes, and adapt the layout to your screen. Next, select one workload and inspect its evidence."
+  },
+  {
+    "id": "portfolio-upload",
+    "title": "Import and assess a portfolio",
+    "summary": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "masterId": "import",
+    "transcript": "How do you bring your own workload inventory into EMOS? Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio. The import path checks the schema and applies input-safety controls. Review the imported workload records and the evidence they contain before drawing conclusions. Importing a row does not verify every claim or make the workload ready. Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that context into assessment. Use the sample estates for representative demonstrations. Imported data is not live CMDB or telemetry discovery. Next, select an imported workload, close its critical gaps, and review its six R recommendation."
+  },
+  {
+    "id": "enterprise-dna",
+    "title": "Enterprise DNA and evidence readiness",
+    "summary": "Inspect 18 attributes across six dimensions. Resolve critical gaps and distinguish completeness, confidence, and readiness.",
+    "masterId": "dna",
+    "transcript": "Is the workload evidence sufficient for a decision? Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state. Inspect the values and verification status. Relationship views support context, while missing and incomplete fields show where further investigation is needed. The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps. Confidence, completeness, and readiness are different signals. A high confidence score cannot override missing critical evidence. Verify facts using appropriate evidence. Load Sample Evidence is a labeled demo shortcut, not external verification. Next, carry the workload context into assessment; readiness still requires separate human approval."
+  },
+  {
+    "id": "modernization-agent",
+    "title": "Ask EMOS and governed AI",
+    "summary": "Ask EMOS routes questions to Portfolio Discovery and Enterprise Architect through deterministic orchestration, validation, and governance.",
+    "masterId": "ask",
+    "transcript": "How can you ask a useful question about the selected workload? Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step. Ask EMOS is an interface, not a third specialist. A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context. Portfolio Discovery investigates ambiguity and evidence gaps. Enterprise Architect reasons across the six R choices. Deterministic validation and governance check the response, and explicit human approval retains authority. If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback. It does not pretend that a model answered. Agents for ambiguity. Workflows for predictability. Rules for governance. Humans for authority. Next, ask what evidence is missing."
+  },
+  {
+    "id": "6r-overview",
+    "title": "6R decisions and the Enterprise Architect",
+    "summary": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "masterId": "decision",
+    "transcript": "Which modernization path fits this workload? The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience. Retain means Govern and Monitor. Retire means Safely Decommission. Rehost means Migrate Infrastructure. Replatform means Transition Platform. Refactor means Transform Architecture. Repurchase means Replace and Adopt. Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision. Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice. New evidence can inform a follow-up assessment. Confidence does not equal readiness, and readiness does not equal approval. Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human."
+  },
+  {
+    "id": "retain",
+    "title": "Retain — Govern & Monitor",
+    "summary": "Govern & Monitor: retain the workload with accountable oversight and evidence-based reassessment.",
+    "masterId": "retain",
+    "transcript": "When is staying in place a valid modernization choice? Retain means Govern and Monitor when the evidence supports keeping the workload. The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning. These are governed planning stages, not a live telemetry integration or automatic infrastructure changes. Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment."
+  },
+  {
+    "id": "retire",
+    "title": "Retire — Safely Decommission",
+    "summary": "Safely Decommission: verify consumers, archive requirements, human approval, and closure checkpoints.",
+    "masterId": "retire",
+    "transcript": "When should a workload be removed? Retire means Safely Decommission when verified evidence supports its removal. The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning. EMOS tracks these checkpoints; it does not shut down production systems for you. Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning."
+  },
+  {
+    "id": "rehost",
+    "title": "Rehost — Migrate Infrastructure",
+    "summary": "Migrate Infrastructure: plan destination, validation, rollback, cutover, and stabilization with human authority.",
+    "masterId": "rehost",
+    "transcript": "When does a workload need a change of infrastructure? Rehost means Migrate Infrastructure while preserving much of the existing application. The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning. EMOS plans and tracks this work; it does not perform the migration or cutover. Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed."
+  },
+  {
+    "id": "replatform",
+    "title": "Replatform — Transition Platform",
+    "summary": "Transition Platform: review compatibility and target constraints before governed platform delivery.",
+    "masterId": "replatform",
+    "transcript": "When is a platform change appropriate? Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence. The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning. EMOS does not provision a managed platform or execute a live migration. Next, verify compatibility, target constraints, and accountable human approval before following the plan."
+  },
+  {
+    "id": "refactor",
+    "title": "Refactor — Transform Architecture",
+    "summary": "Transform Architecture: organize decomposition, implementation, testing, and incremental transition.",
+    "masterId": "refactor",
+    "transcript": "When does the architecture itself need to change? Refactor means Transform Architecture when the evidence justifies redesign. The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning. These stages organize governed delivery. EMOS does not autonomously rewrite or deploy your production application. Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition."
+  },
+  {
+    "id": "repurchase",
+    "title": "Repurchase — Replace & Adopt",
+    "summary": "Replace & Adopt: review fit, compliance, data portability, user transition, and retirement of the previous system.",
+    "masterId": "repurchase",
+    "transcript": "When is buying a replacement the right path? Repurchase means Replace and Adopt when evidence supports moving to a commercial product. The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning. EMOS tracks the plan; it does not purchase software or migrate users automatically. Next, verify fit, compliance, data portability, and human approval before adoption."
+  },
+  {
+    "id": "governance",
+    "title": "Evidence gates and explicit human approval",
+    "summary": "At least 70% completeness and zero critical gaps establish readiness. Explicit human approval remains a separate requirement.",
+    "masterId": "governance",
+    "transcript": "Can AI approve its own recommendation? No. EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution. Readiness requires at least seventy percent evidence completeness and zero critical gaps. Needs Evidence blocks approval and execution progression. Ready does not mean Approved. The governed workflow requires explicit human sign-off. An AI request to bypass approval cannot change these rules. Even complete evidence does not remove the human decision. Inspect the evidence gaps, recommendation, alternatives, and risks before approval. Next, obtain accountable human review, then follow the disposition-specific plan. EMOS tracks governed work; it does not autonomously change production infrastructure."
+  },
+  {
+    "id": "execution",
+    "title": "Wave planning and governed execution",
+    "summary": "Sequence waves and follow disposition-specific stages, owners, blockers, and gates. EMOS does not execute live migrations.",
+    "masterId": "execution",
+    "transcript": "How does an approved decision become organized delivery work? EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps. Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements. The chosen six R disposition determines the downstream playbook. Needs Evidence and unapproved workloads cannot enter or advance governed execution. Resolve evidence gaps and record explicit human approval before progressing through the workflow. These are planning and tracking controls. EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover. Next, review the current blocker and assign the required evidence or delivery action to its accountable owner."
+  },
+  {
+    "id": "outcomes-learning",
+    "title": "Measure and Learn: V2 boundaries",
+    "summary": "Measure uses representative synthetic benchmarks. Learn uses representative lessons and session-only notes, with no automated retraining.",
+    "masterId": "outcomes",
+    "transcript": "What can outcomes tell you about a modernization plan? Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context. In V2, these values are representative synthetic benchmarks. They are not readings from a live production telemetry, billing, or benefits-realization integration. Learn presents representative archetype lessons and lets you capture a session-only note. Describe the assumption, observed difference, lesson, and possible relevance to future work. Session notes do not retrain the agents or automatically change recommendations. Next, use these views to structure a review, then validate real outcomes in your approved systems. Any future recommendation still requires current evidence and human authority."
+  }
 ] as const;
 
 type CategoryFilter = 'All Categories' | LearningCategory;
@@ -158,20 +255,20 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
             <div className="max-w-4xl space-y-5">
               <div className="inline-flex items-center gap-2 rounded-full border border-[var(--emos-accent-border)] bg-[var(--emos-accent-subtle)] px-3 py-1.5 text-xs font-semibold text-[var(--emos-accent-text)]">
                 <Library className="h-3.5 w-3.5" aria-hidden="true" />
-                Beta v1.0 Publicly Live · No EMOS Sign-In Required
+                EMOS V2 Learning Library · No EMOS Sign-In Required
               </div>
               <h1 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
                 See EMOS in Motion
               </h1>
               <p className="max-w-3xl text-base leading-8 text-[var(--emos-text-secondary)]">
-                Follow the evidence-to-decision journey from portfolio discovery and Enterprise DNA through explainable 6R recommendations, governance, wave planning and mobilization readiness.
+                Follow the evidence-to-decision journey from portfolio discovery and Enterprise DNA through explainable 6R recommendations, governance, governed transformation and representative outcomes.
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
                   onClick={(e) => {
                     const introVideo = videos.find((v) => v.sequence === '00') || videos[0];
-                    if (introVideo?.driveFileId) {
+                    if (introVideo?.mediaUrl) {
                       openVideo(introVideo, e.currentTarget);
                     }
                   }}
@@ -225,10 +322,10 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                 stage: '04 · Outcomes',
                 role: 'Executives & Delivery Leads',
                 desc: 'Measure Baseline vs. Target vs. Observed impact and capture wave lessons.',
-                seq: 'F04',
+                seq: 'outcomes',
               },
             ].map((path) => {
-              const targetVideo = videos.find((v) => v.sequence === path.seq) || videos[0];
+              const targetVideo = path.seq === 'outcomes' ? LEARNING_MASTERS.outcomes : videos.find((v) => v.sequence === path.seq);
               return (
                 <div
                   key={path.stage}
@@ -241,14 +338,14 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                     </div>
                     <p className="text-xs text-[var(--emos-text-secondary)] leading-relaxed">{path.desc}</p>
                   </div>
-                  {targetVideo?.driveFileId && (
+                  {targetVideo?.mediaUrl && (
                     <button
                       type="button"
                       onClick={(e) => openVideo(targetVideo, e.currentTarget)}
                       className="self-start inline-flex items-center gap-1.5 text-xs font-semibold text-[#4648D4] dark:text-[#818CF8] hover:underline cursor-pointer"
                     >
                       <Play className="w-3 h-3" />
-                      <span>Watch {path.seq} Lesson</span>
+                      <span>Watch lesson</span>
                     </button>
                   )}
                 </div>
@@ -261,7 +358,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
           <div className="mb-7 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--emos-accent-text)]">
-                Beta Walkthrough Catalogue
+                V2 Walkthrough Catalogue
               </p>
               <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight">Choose a Learning Path</h2>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--emos-text-secondary)]">
@@ -351,7 +448,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                                 {video.sequence}
                               </span>
                               <span className="rounded-full border border-[var(--emos-border-subtle)] bg-[var(--emos-bg-tertiary)] px-2 py-1 text-[var(--emos-text-secondary)]">
-                                Beta v1.0
+                                EMOS V2
                               </span>
                               {video.duration && (
                                 <span className="inline-flex items-center gap-1 text-[var(--emos-text-muted)]">
@@ -385,7 +482,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                                 File: {video.fileName}
                               </code>
                             </details>
-                            {video.driveFileId ? (
+                            {video.mediaUrl ? (
                               <button
                                 type="button"
                                 onClick={(event) => openVideo(video, event.currentTarget)}
@@ -425,20 +522,20 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
           </div>
         </section>
 
-        <section aria-label="90-Second Capability and 6R Topic Guides" className="mx-auto max-w-[88rem] px-4 pb-12 sm:px-6 lg:px-8">
+        <section aria-label="V2 Capability and 6R Topic Guides" className="mx-auto max-w-[88rem] px-4 pb-12 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-[var(--emos-border-strong)] bg-[var(--emos-surface)] p-6 space-y-5">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--emos-accent-text)]">
-                90-Second Capability &amp; 6R Topic Guides
+                V2 Capability &amp; 6R Topic Guides
               </p>
               <h2 className="mt-1 font-serif text-2xl font-bold">
-                Full Lifecycle &amp; 6R Reference (With Captions &amp; Transcripts)
+                Full Lifecycle &amp; 6R Reference
               </h2>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
               {LIFECYCLE_TOPIC_GUIDES.map((guide) => {
-                const matchedVideo = videos.find((v) => v.sequence === guide.videoSeq) || videos[0];
+                const matchedVideo = LEARNING_MASTERS[guide.masterId];
                 const isTranscriptOpen = activeTranscriptId === guide.id;
                 return (
                   <div
@@ -448,9 +545,9 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                     <div className="space-y-1.5">
                       <div className="flex items-center justify-between text-[10px] font-mono text-[var(--emos-text-muted)]">
                         <span className="px-2 py-0.5 rounded bg-[var(--emos-accent-subtle)] text-[var(--emos-accent-text)] font-bold">
-                          CC · Captions
+                          Captions in video
                         </span>
-                        <span>{guide.duration}</span>
+                        <span>{matchedVideo.duration}</span>
                       </div>
                       <h3 className="text-sm font-bold text-[var(--emos-text-primary)]">{guide.title}</h3>
                       <p className="text-xs text-[var(--emos-text-secondary)] leading-relaxed">{guide.summary}</p>
@@ -458,7 +555,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
 
                     <div className="space-y-2 pt-2 border-t border-[var(--emos-border-subtle)]">
                       <div className="flex items-center justify-between gap-2">
-                        {matchedVideo?.driveFileId && (
+                        {matchedVideo?.mediaUrl && (
                           <button
                             type="button"
                             onClick={(e) => openVideo(matchedVideo, e.currentTarget)}
@@ -496,10 +593,10 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
             <motion.article initial={reduceMotion ? false : { opacity: 0, x: -16 }} whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.45 }} className="rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-6">
               <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-300">
                 <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold">Implemented in Beta v1.0</h2>
+                <h2 className="font-serif text-xl font-bold">Implemented in EMOS V2</h2>
               </div>
               <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[var(--emos-text-secondary)]">
-                {CURRENT_BETA_CAPABILITIES.map((item) => (
+                {CURRENT_V2_CAPABILITIES.map((item) => (
                   <li key={item} className="flex gap-2.5">
                     <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-300" aria-hidden="true" />
                     <span>{item}</span>
@@ -514,7 +611,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                 <h2 className="font-serif text-xl font-bold">Future EMOS Roadmap</h2>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-[var(--emos-text-muted)]">
-                These capabilities describe the broader product direction and are not claimed as implemented in this beta.
+                These capabilities describe the broader product direction and are not claimed as implemented in V2.
               </p>
               <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[var(--emos-text-secondary)]">
                 {FUTURE_ROADMAP_CAPABILITIES.map((item) => (
@@ -532,7 +629,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
       <footer className="border-t border-[var(--emos-border-subtle)] bg-[var(--emos-bg-secondary)] px-4 py-8 text-xs text-[var(--emos-text-muted)] sm:px-6">
         <div className="mx-auto flex max-w-[88rem] flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-center sm:text-left">
-            <span className="font-serif font-bold text-[var(--emos-text-primary)]">EMOS</span> — Enterprise Modernization Operating System · Public Beta v1.0
+            <span className="font-serif font-bold text-[var(--emos-text-primary)]">EMOS</span> — Enterprise Modernization Operating System · EMOS V2
           </p>
           <nav aria-label="Learning Center footer" className="flex flex-wrap justify-center gap-5">
             <a href="/" onClick={navigate('/')} className="font-medium hover:text-[var(--emos-text-primary)] hover:underline">Home</a>

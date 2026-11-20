@@ -1,0 +1,9 @@
+Measure and Learn: V2 boundaries
+
+What can outcomes tell you about a modernization plan? Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context.
+
+In V2, these values are representative synthetic benchmarks. They are not readings from a live production telemetry, billing, or benefits-realization integration.
+
+Learn presents representative archetype lessons and lets you capture a session-only note. Describe the assumption, observed difference, lesson, and possible relevance to future work.
+
+Session notes do not retrain the agents or automatically change recommendations. Next, use these views to structure a review, then validate real outcomes in your approved systems. Any future recommendation still requires current evidence and human authority.

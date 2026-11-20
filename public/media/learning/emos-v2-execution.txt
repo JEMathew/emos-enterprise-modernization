@@ -1,0 +1,9 @@
+Wave planning and governed execution
+
+How does an approved decision become organized delivery work? EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps.
+
+Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements. The chosen six R disposition determines the downstream playbook.
+
+Needs Evidence and unapproved workloads cannot enter or advance governed execution. Resolve evidence gaps and record explicit human approval before progressing through the workflow.
+
+These are planning and tracking controls. EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover. Next, review the current blocker and assign the required evidence or delivery action to its accountable owner.

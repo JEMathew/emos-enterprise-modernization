@@ -1,10 +1,6 @@
-import React, { useEffect, useId, useRef } from 'react';
-import { Clock3, ExternalLink, Maximize2, X } from 'lucide-react';
-import {
-  getDrivePreviewUrl,
-  getDriveViewUrl,
-  type LearningVideo,
-} from '../data/learningVideos';
+import React, { useEffect, useId, useRef, useState } from 'react';
+import { Clock3, Maximize2, X } from 'lucide-react';
+import type { LearningVideo } from '../data/learningVideos';
 
 interface LearningVideoModalProps {
   video: LearningVideo;
@@ -15,7 +11,7 @@ interface LearningVideoModalProps {
 const FOCUSABLE_SELECTOR = [
   'button:not([disabled])',
   'a[href]',
-  'iframe',
+  'video[controls]',
   '[tabindex]:not([tabindex="-1"])',
 ].join(',');
 
@@ -28,8 +24,12 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
-  const previewUrl = getDrivePreviewUrl(video.driveFileId);
-  const driveViewUrl = getDriveViewUrl(video.driveFileId);
+  const mediaRef = useRef<HTMLVideoElement>(null);
+  const [playbackState, setPlaybackState] = useState<'loading' | 'ready' | 'error'>('loading');
+
+  useEffect(() => {
+    setPlaybackState('loading');
+  }, [video.mediaUrl]);
 
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
@@ -103,7 +103,7 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
                 {video.sequence}
               </span>
               <span className="rounded-full border border-white/15 bg-white/5 px-2 py-1">
-                Beta v1.0
+                EMOS V2
               </span>
               {video.duration && (
                 <span className="inline-flex items-center gap-1">
@@ -129,16 +129,65 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
         </div>
 
         <div className="overflow-y-auto">
-          <div ref={playerContainerRef} className="aspect-video w-full bg-black">
-            {previewUrl && (
-              <iframe
-                src={previewUrl}
-                title={`${video.sequence}: ${video.title} video player`}
-                className="h-full w-full border-0"
-                allow="encrypted-media; picture-in-picture; fullscreen"
-                allowFullScreen
-                referrerPolicy="strict-origin-when-cross-origin"
-              />
+          <div ref={playerContainerRef} className="relative aspect-video w-full bg-black">
+            {video.mediaUrl ? (
+              <>
+                <video
+                  ref={mediaRef}
+                  src={video.mediaUrl}
+                  poster={video.thumbnailUrl}
+                  aria-label={`${video.sequence}: ${video.title} video player`}
+                  controls
+                  tabIndex={0}
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full object-contain"
+                  onKeyDown={(event) => {
+                    if (event.target !== event.currentTarget) return;
+                    const player = event.currentTarget;
+                    if (event.key.toLowerCase() === 'k') {
+                      event.preventDefault();
+                      if (player.paused) void player.play().catch(() => setPlaybackState('error'));
+                      else player.pause();
+                    }
+                    if (event.key.toLowerCase() === 'm') {
+                      event.preventDefault();
+                      player.muted = !player.muted;
+                    }
+                    if (['ArrowLeft', 'ArrowRight'].includes(event.key) && Number.isFinite(player.duration)) {
+                      event.preventDefault();
+                      player.currentTime = Math.max(0, Math.min(player.duration, player.currentTime + (event.key === 'ArrowLeft' ? -5 : 5)));
+                    }
+                  }}
+                  onLoadedData={() => setPlaybackState('ready')}
+                  onCanPlay={() => setPlaybackState('ready')}
+                  onPlaying={() => setPlaybackState('ready')}
+                  onWaiting={() => setPlaybackState('loading')}
+                  onError={() => setPlaybackState('error')}
+                />
+                {playbackState === 'loading' && (
+                  <div role="status" className="pointer-events-none absolute inset-x-0 top-4 text-center">
+                    <span className="rounded-lg bg-slate-950/90 px-3 py-2 text-sm text-white">Loading video…</span>
+                  </div>
+                )}
+                {playbackState === 'error' && (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-slate-950/95 p-6 text-center">
+                    <p role="alert">This video could not load. Check your connection and try again.</p>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setPlaybackState('loading');
+                        mediaRef.current?.load();
+                      }}
+                      className="min-h-11 rounded-xl border border-white/30 px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    >
+                      Retry video
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : (
+              <p role="alert" className="p-6 text-center">This video is temporarily unavailable.</p>
             )}
           </div>
 
@@ -153,16 +202,8 @@ export const LearningVideoModal: React.FC<LearningVideoModalProps> = ({
                 <Maximize2 className="h-4 w-4" aria-hidden="true" />
                 Full screen
               </button>
-              {driveViewUrl && (
-                <a
-                  href={driveViewUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-10 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#A88554] to-[#E5C492] px-4 text-xs font-bold text-black transition-opacity hover:opacity-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Open in Google Drive
-                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                </a>
+              {video.burnedInCaptions && (
+                <span className="inline-flex min-h-10 items-center text-xs text-slate-300">Captions in video · Cillian narration</span>
               )}
             </div>
           </div>

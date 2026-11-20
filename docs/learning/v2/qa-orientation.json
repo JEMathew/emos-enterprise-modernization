@@ -1,0 +1,158 @@
+{
+  "id": "orientation",
+  "durationSeconds": 74.597146,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 19,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.0265415549597856,
+  "alignmentRatios": [
+    0.96875,
+    0.9333333333333333,
+    0.9117647058823529,
+    0.8888888888888888
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 18.72
+    },
+    {
+      "start": 0,
+      "end": 17.76
+    },
+    {
+      "start": 0,
+      "end": 17.54
+    },
+    {
+      "start": 0,
+      "end": 22.56
+    }
+  ],
+  "captions": [
+    {
+      "text": "What should your enterprise modernize, and what evidence supports that choice?",
+      "start": 0,
+      "end": 5.533141812483676,
+      "chapter": 0
+    },
+    {
+      "text": "EMOS is the Enterprise Modernization Operating System.",
+      "start": 5.533141812483676,
+      "end": 9.74144685296422,
+      "chapter": 0
+    },
+    {
+      "text": "It connects workload evidence, six R decisions, human governance, execution planning,",
+      "start": 9.74144685296422,
+      "end": 16.22925045703839,
+      "chapter": 0
+    },
+    {
+      "text": "and representative outcomes.",
+      "start": 16.22925045703839,
+      "end": 18.235988508749017,
+      "chapter": 0
+    },
+    {
+      "text": "Follow Understand, Decide, Govern, Transform, and Outcomes.",
+      "start": 18.235988508749017,
+      "end": 23.38921389396709,
+      "chapter": 1
+    },
+    {
+      "text": "Begin with a sample estate or a sanitized portfolio.",
+      "start": 23.38921389396709,
+      "end": 27.70467484983024,
+      "chapter": 1
+    },
+    {
+      "text": "Inspect Enterprise DNA, identify missing facts, and compare the recommendation with",
+      "start": 27.70467484983024,
+      "end": 33.39367981196134,
+      "chapter": 1
+    },
+    {
+      "text": "alternatives before making a decision.",
+      "start": 33.39367981196134,
+      "end": 35.53679811961347,
+      "chapter": 1
+    },
+    {
+      "text": "Ask EMOS is the conversational interface.",
+      "start": 35.53679811961347,
+      "end": 38.800182815356486,
+      "chapter": 2
+    },
+    {
+      "text": "A deterministic orchestrator routes reasoning to two Gemini-backed specialists:",
+      "start": 38.800182815356486,
+      "end": 43.95340820057456,
+      "chapter": 2
+    },
+    {
+      "text": "Portfolio Discovery and Enterprise Architect.",
+      "start": 43.95340820057456,
+      "end": 46.91480804387568,
+      "chapter": 2
+    },
+    {
+      "text": "Deterministic validation and governance enforce the rules.",
+      "start": 46.91480804387568,
+      "end": 50.11000261164794,
+      "chapter": 2
+    },
+    {
+      "text": "The orchestrator is not a third agent.",
+      "start": 50.11000261164794,
+      "end": 52.623295899712716,
+      "chapter": 2
+    },
+    {
+      "text": "Evidence readiness never grants approval.",
+      "start": 52.623295899712716,
+      "end": 55.360642465395664,
+      "chapter": 3
+    },
+    {
+      "text": "A human must explicitly approve governed progression.",
+      "start": 55.360642465395664,
+      "end": 59.637137633846955,
+      "chapter": 3
+    },
+    {
+      "text": "Transform tracks disposition-specific workflows;",
+      "start": 59.637137633846955,
+      "end": 62.96871245756071,
+      "chapter": 3
+    },
+    {
+      "text": "it does not perform live cloud migrations.",
+      "start": 62.96871245756071,
+      "end": 66.02752676939149,
+      "chapter": 3
+    },
+    {
+      "text": "Measure and Learn show representative benchmarks and session-only notes.",
+      "start": 66.02752676939149,
+      "end": 71.08333768607991,
+      "chapter": 3
+    },
+    {
+      "text": "Next, choose an estate and inspect one workload.",
+      "start": 71.08333768607991,
+      "end": 74.597146,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-orientation.mp4",
+  "bytes": 3764075,
+  "sha256": "533be28a1313d0a823760d4a5bd826baed9f0894a4080f8b43ec9bf4a4e7ab61",
+  "realScreens": [
+    "workspace",
+    "dna",
+    "governance"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

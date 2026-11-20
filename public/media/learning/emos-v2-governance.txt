@@ -1,0 +1,9 @@
+Evidence gates and explicit human approval
+
+Can AI approve its own recommendation? No. EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution.
+
+Readiness requires at least seventy percent evidence completeness and zero critical gaps. Needs Evidence blocks approval and execution progression. Ready does not mean Approved.
+
+The governed workflow requires explicit human sign-off. An AI request to bypass approval cannot change these rules. Even complete evidence does not remove the human decision.
+
+Inspect the evidence gaps, recommendation, alternatives, and risks before approval. Next, obtain accountable human review, then follow the disposition-specific plan. EMOS tracks governed work; it does not autonomously change production infrastructure.

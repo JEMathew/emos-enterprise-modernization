@@ -1,0 +1,9 @@
+Rehost — Migrate Infrastructure
+
+When does a workload need a change of infrastructure? Rehost means Migrate Infrastructure while preserving much of the existing application.
+
+The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning.
+
+EMOS plans and tracks this work; it does not perform the migration or cutover.
+
+Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed.

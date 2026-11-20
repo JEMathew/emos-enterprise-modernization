@@ -1,0 +1,116 @@
+{
+  "id": "workspace",
+  "durationSeconds": 44.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 12,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.1071748878923766,
+  "alignmentRatios": [
+    0.9090909090909091,
+    1.0,
+    0.9615384615384616,
+    0.9206349206349206
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 11.56
+    },
+    {
+      "start": 0,
+      "end": 13.78
+    },
+    {
+      "start": 0,
+      "end": 10.18
+    },
+    {
+      "start": 0.6199999999999994,
+      "end": 14.48
+    }
+  ],
+  "captions": [
+    {
+      "text": "Where should you begin? Open EMOS and choose your workspace context.",
+      "start": 0,
+      "end": 4.0463345484001625,
+      "chapter": 0
+    },
+    {
+      "text": "The Command Center summarizes the selected estate so you can identify workloads and",
+      "start": 4.0463345484001625,
+      "end": 9.122316727420008,
+      "chapter": 0
+    },
+    {
+      "text": "evidence that need attention.",
+      "start": 9.122316727420008,
+      "end": 10.440988254353991,
+      "chapter": 0
+    },
+    {
+      "text": "Use Understand to explore the portfolio and Enterprise DNA.",
+      "start": 10.440988254353991,
+      "end": 15.065370595382749,
+      "chapter": 1
+    },
+    {
+      "text": "Decide brings assessment and recommendations into focus.",
+      "start": 15.065370595382749,
+      "end": 19.238153098420415,
+      "chapter": 1
+    },
+    {
+      "text": "Governance remains a required checkpoint before approved transformation.",
+      "start": 19.238153098420415,
+      "end": 22.887079789388416,
+      "chapter": 1
+    },
+    {
+      "text": "Transform organizes the execution plan.",
+      "start": 22.887079789388416,
+      "end": 25.361846901579586,
+      "chapter": 2
+    },
+    {
+      "text": "Outcomes presents representative measurement and learning views.",
+      "start": 25.361846901579586,
+      "end": 28.486917780477928,
+      "chapter": 2
+    },
+    {
+      "text": "Keep the same estate and workload context as you move between these areas.",
+      "start": 28.486917780477928,
+      "end": 32.081652490886995,
+      "chapter": 2
+    },
+    {
+      "text": "Sign in for the private, owner-bound workspace.",
+      "start": 32.081652490886995,
+      "end": 35.32413932766302,
+      "chapter": 3
+    },
+    {
+      "text": "Use the appearance control for light, dark, or system themes, and adapt the layout to",
+      "start": 35.32413932766302,
+      "end": 40.48140947752126,
+      "chapter": 3
+    },
+    {
+      "text": "your screen. Next, select one workload and inspect its evidence.",
+      "start": 40.48140947752126,
+      "end": 44.613813,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-workspace.mp4",
+  "bytes": 2322725,
+  "sha256": "5cf0bb75f6aff7379197197a7f76128e7e5aef4b814b775024a18df7523de288",
+  "realScreens": [
+    "workspace",
+    "portfolio",
+    "workspace"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

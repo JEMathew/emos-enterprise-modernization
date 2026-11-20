@@ -1,0 +1,37 @@
+{
+  "jobs": [
+    {
+      "index": 112,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 113,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 114,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 115,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 116,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 117,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    }
+  ],
+  "submitted_count": 0,
+  "failed_count": 6,
+  "error_code": "INVALID_ARGUMENT"
+}

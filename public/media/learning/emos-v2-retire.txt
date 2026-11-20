@@ -1,0 +1,9 @@
+Retire — Safely Decommission
+
+When should a workload be removed? Retire means Safely Decommission when verified evidence supports its removal.
+
+The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning.
+
+EMOS tracks these checkpoints; it does not shut down production systems for you.
+
+Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning.

@@ -474,15 +474,15 @@ describe('EMOS v2 Full-Lifecycle Autonomous Implementation', () => {
     expect(screen.getAllByText(/Select Replacement/i).length).toBeGreaterThan(0);
   });
 
-  it('renders Learning Center with 16 90-second capability & 6R topic guides, interactive transcripts, and responsive viewports', () => {
+  it('renders Learning Center with 16 V2 capability & 6R topic guides, interactive transcripts, and responsive viewports', () => {
     withTheme(<LearningCenterPage onNavigate={vi.fn()} />);
 
-    expect(screen.getByLabelText('90-Second Capability and 6R Topic Guides')).toBeInTheDocument();
-    expect(screen.getByText('What is EMOS?')).toBeInTheDocument();
-    expect(screen.getByText('Modernization Agent')).toBeInTheDocument();
-    expect(screen.getByText('Replatform (Move it to a better platform)')).toBeInTheDocument();
-    expect(screen.getByText('Retire (Safely shut it down)')).toBeInTheDocument();
-    expect(screen.getByText('Outcomes & Learning')).toBeInTheDocument();
+    expect(screen.getByLabelText('V2 Capability and 6R Topic Guides')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'End-to-end V2 journey' })).toBeInTheDocument();
+    expect(screen.getByText('Ask EMOS and governed AI')).toBeInTheDocument();
+    expect(screen.getByText('Replatform — Transition Platform')).toBeInTheDocument();
+    expect(screen.getByText('Retire — Safely Decommission')).toBeInTheDocument();
+    expect(screen.getByText('Measure and Learn: V2 boundaries')).toBeInTheDocument();
 
     // Toggle interactive transcript on a topic guide
     const transcriptButtons = screen.getAllByRole('button', { name: /Transcript/i });
@@ -494,7 +494,7 @@ describe('EMOS v2 Full-Lifecycle Autonomous Implementation', () => {
     for (const width of [1440, 1280, 1024, 768, 375]) {
       window.innerWidth = width;
       fireEvent(window, new Event('resize'));
-      expect(screen.getByLabelText('90-Second Capability and 6R Topic Guides')).toBeInTheDocument();
+      expect(screen.getByLabelText('V2 Capability and 6R Topic Guides')).toBeInTheDocument();
     }
   });
 });

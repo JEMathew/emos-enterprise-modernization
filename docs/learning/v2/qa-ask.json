@@ -1,0 +1,134 @@
+{
+  "id": "ask",
+  "durationSeconds": 59.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 15,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.0731543624161073,
+  "alignmentRatios": [
+    0.96,
+    0.9615384615384616,
+    0.9824561403508771,
+    0.96
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 10.78
+    },
+    {
+      "start": 0,
+      "end": 12.76
+    },
+    {
+      "start": 0,
+      "end": 19.56
+    },
+    {
+      "start": 0,
+      "end": 20.86
+    }
+  ],
+  "captions": [
+    {
+      "text": "How can you ask a useful question about the selected workload?",
+      "start": 0,
+      "end": 3.1868667917448406,
+      "chapter": 0
+    },
+    {
+      "text": "Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next",
+      "start": 3.1868667917448406,
+      "end": 9.225140712945592,
+      "chapter": 0
+    },
+    {
+      "text": "governed step.",
+      "start": 9.225140712945592,
+      "end": 10.045153220762977,
+      "chapter": 0
+    },
+    {
+      "text": "Ask EMOS is an interface, not a third specialist.",
+      "start": 10.045153220762977,
+      "end": 13.716572858036272,
+      "chapter": 1
+    },
+    {
+      "text": "A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise",
+      "start": 13.716572858036272,
+      "end": 18.67392120075047,
+      "chapter": 1
+    },
+    {
+      "text": "Architect, or both, using the current context.",
+      "start": 18.67392120075047,
+      "end": 21.935334584115072,
+      "chapter": 1
+    },
+    {
+      "text": "Portfolio Discovery investigates ambiguity and evidence gaps.",
+      "start": 21.935334584115072,
+      "end": 26.836772983114447,
+      "chapter": 2
+    },
+    {
+      "text": "Enterprise Architect reasons across the six R choices.",
+      "start": 26.836772983114447,
+      "end": 33.86278924327705,
+      "chapter": 2
+    },
+    {
+      "text": "Deterministic validation and governance check the response, and explicit human approval",
+      "start": 33.86278924327705,
+      "end": 39.08105065666041,
+      "chapter": 2
+    },
+    {
+      "text": "retains authority.",
+      "start": 39.08105065666041,
+      "end": 40.161976235146966,
+      "chapter": 2
+    },
+    {
+      "text": "If AI reasoning is unavailable, EMOS labels the deterministic status and evidence",
+      "start": 40.161976235146966,
+      "end": 45.436147592245156,
+      "chapter": 3
+    },
+    {
+      "text": "fallback. It does not pretend that a model answered.",
+      "start": 45.436147592245156,
+      "end": 49.405753595997496,
+      "chapter": 3
+    },
+    {
+      "text": "Agents for ambiguity. Workflows for predictability.",
+      "start": 49.405753595997496,
+      "end": 53.692182614133834,
+      "chapter": 3
+    },
+    {
+      "text": "Rules for governance. Humans for authority.",
+      "start": 53.692182614133834,
+      "end": 57.19587242026267,
+      "chapter": 3
+    },
+    {
+      "text": "Next, ask what evidence is missing.",
+      "start": 57.19587242026267,
+      "end": 59.607104,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-ask.mp4",
+  "bytes": 3678437,
+  "sha256": "84aaee183351e28d5dc5aa502646f00b4bde94786cc0ab38bdd3f195a41d95af",
+  "realScreens": [
+    "ask",
+    "ask",
+    "governance"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

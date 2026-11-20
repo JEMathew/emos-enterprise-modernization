@@ -1,0 +1,122 @@
+{
+  "id": "dna",
+  "durationSeconds": 44.625,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 13,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.3139013452914796,
+  "alignmentRatios": [
+    0.9615384615384616,
+    0.975609756097561,
+    0.9666666666666667,
+    0.9310344827586207
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 16.52
+    },
+    {
+      "start": 0,
+      "end": 11.040000000000001
+    },
+    {
+      "start": 0,
+      "end": 15.540000000000001
+    },
+    {
+      "start": 0,
+      "end": 15.5
+    }
+  ],
+  "captions": [
+    {
+      "text": "Is the workload evidence sufficient for a decision?",
+      "start": 0,
+      "end": 2.8312627986348127,
+      "chapter": 0
+    },
+    {
+      "text": "Enterprise DNA organizes eighteen attributes across six dimensions:",
+      "start": 2.8312627986348127,
+      "end": 7.276040955631401,
+      "chapter": 0
+    },
+    {
+      "text": "business, technology, dependencies, economics, data and risk, and target state.",
+      "start": 7.276040955631401,
+      "end": 12.573242320819114,
+      "chapter": 0
+    },
+    {
+      "text": "Inspect the values and verification status.",
+      "start": 12.573242320819114,
+      "end": 15.199010238907851,
+      "chapter": 1
+    },
+    {
+      "text": "Relationship views support context, while missing and incomplete fields show where",
+      "start": 15.199010238907851,
+      "end": 19.51440273037543,
+      "chapter": 1
+    },
+    {
+      "text": "further investigation is needed.",
+      "start": 19.51440273037543,
+      "end": 20.97569965870307,
+      "chapter": 1
+    },
+    {
+      "text": "The deterministic readiness gate requires at least seventy percent completeness and zero",
+      "start": 20.97569965870307,
+      "end": 25.298703071672357,
+      "chapter": 2
+    },
+    {
+      "text": "critical gaps. Confidence, completeness, and readiness are different signals.",
+      "start": 25.298703071672357,
+      "end": 29.850034129692833,
+      "chapter": 2
+    },
+    {
+      "text": "A high confidence score cannot override missing critical evidence.",
+      "start": 29.850034129692833,
+      "end": 32.803071672354946,
+      "chapter": 2
+    },
+    {
+      "text": "Verify facts using appropriate evidence.",
+      "start": 32.803071672354946,
+      "end": 35.14723549488055,
+      "chapter": 3
+    },
+    {
+      "text": "Load Sample Evidence is a labeled demo shortcut, not external verification.",
+      "start": 35.14723549488055,
+      "end": 39.40935153583617,
+      "chapter": 3
+    },
+    {
+      "text": "Next, carry the workload context into assessment;",
+      "start": 39.40935153583617,
+      "end": 42.484163822525595,
+      "chapter": 3
+    },
+    {
+      "text": "readiness still requires separate human approval.",
+      "start": 42.484163822525595,
+      "end": 44.606125,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-dna.mp4",
+  "bytes": 1774045,
+  "sha256": "b08f5a56f197c1f32022a665a4f3e1c1a84eb2227c73c5e7a3e355ba75b9fe4b",
+  "realScreens": [
+    "dna",
+    "dna",
+    "governance"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

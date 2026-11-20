@@ -1,0 +1,92 @@
+{
+  "id": "refactor",
+  "durationSeconds": 29.602563,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 8,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.2364864864864864,
+  "alignmentRatios": [
+    0.9411764705882353,
+    1.0,
+    0.9032258064516129,
+    0.9285714285714286
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 10.96
+    },
+    {
+      "start": 0,
+      "end": 9.7
+    },
+    {
+      "start": 0,
+      "end": 7.22
+    },
+    {
+      "start": 0,
+      "end": 8.72
+    }
+  ],
+  "captions": [
+    {
+      "text": "When does the architecture itself need to change?",
+      "start": 0,
+      "end": 2.9923497267759567,
+      "chapter": 0
+    },
+    {
+      "text": "Refactor means Transform Architecture when the evidence justifies redesign.",
+      "start": 2.9923497267759567,
+      "end": 8.863825136612023,
+      "chapter": 0
+    },
+    {
+      "text": "The playbook covers approval, decomposition, implementation, testing, transition,",
+      "start": 8.863825136612023,
+      "end": 14.2824043715847,
+      "chapter": 1
+    },
+    {
+      "text": "stabilization, measurement, and learning.",
+      "start": 14.2824043715847,
+      "end": 16.708633879781424,
+      "chapter": 1
+    },
+    {
+      "text": "These stages organize governed delivery.",
+      "start": 16.708633879781424,
+      "end": 19.151038251366124,
+      "chapter": 2
+    },
+    {
+      "text": "EMOS does not autonomously rewrite or deploy your production application.",
+      "start": 19.151038251366124,
+      "end": 22.547759562841534,
+      "chapter": 2
+    },
+    {
+      "text": "Next, verify architectural drivers, dependencies, risks, and human approval, then plan",
+      "start": 22.547759562841534,
+      "end": 28.483934426229514,
+      "chapter": 3
+    },
+    {
+      "text": "an incremental transition.",
+      "start": 28.483934426229514,
+      "end": 29.602563,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-refactor.mp4",
+  "bytes": 1297853,
+  "sha256": "8882f10038ab2bc6bb685e325795f8529572153c2492974f55552d33d7341bfc",
+  "realScreens": [
+    "refactor",
+    "refactor",
+    "refactor"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

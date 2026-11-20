@@ -1,0 +1,9 @@
+Trust, guardrails, and evaluation
+
+What keeps an AI answer from becoming an unsafe action? EMOS places deterministic controls around model reasoning, including input fencing, output validation, canonical six R checks, and secret redaction.
+
+Adversarial requests to bypass governance are intercepted. Evidence requirements and explicit human approval remain authoritative, regardless of the wording or confidence of a model response.
+
+Software tests, deterministic evaluations, and recorded live checks provide bounded evidence about tested behavior. They do not prove perfect AI, zero hallucinations, or universal safety.
+
+When AI reasoning is unavailable, the interface discloses a deterministic fallback. Next, inspect the Evaluation Evidence and the workload's actual evidence gaps before relying on a recommendation.

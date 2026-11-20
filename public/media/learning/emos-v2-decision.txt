@@ -1,0 +1,9 @@
+6R decisions and the Enterprise Architect
+
+Which modernization path fits this workload? The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience.
+
+Retain means Govern and Monitor. Retire means Safely Decommission. Rehost means Migrate Infrastructure. Replatform means Transition Platform. Refactor means Transform Architecture. Repurchase means Replace and Adopt.
+
+Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision. Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice.
+
+New evidence can inform a follow-up assessment. Confidence does not equal readiness, and readiness does not equal approval. Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human.

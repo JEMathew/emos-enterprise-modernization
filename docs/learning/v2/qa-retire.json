@@ -1,0 +1,86 @@
+{
+  "id": "retire",
+  "durationSeconds": 29.598479,
+  "voice": "Cillian",
+  "burnedInCaptions": true,
+  "captionCount": 7,
+  "maxCaptionLines": 2,
+  "narrationTempo": 1.089864864864865,
+  "alignmentRatios": [
+    0.9090909090909091,
+    0.9629629629629629,
+    1.0,
+    0.9655172413793104
+  ],
+  "audioTrims": [
+    {
+      "start": 0,
+      "end": 7.12
+    },
+    {
+      "start": 0,
+      "end": 9.96
+    },
+    {
+      "start": 0,
+      "end": 5.38
+    },
+    {
+      "start": 0,
+      "end": 9.8
+    }
+  ],
+  "captions": [
+    {
+      "text": "When should a workload be removed? Retire means Safely Decommission when verified",
+      "start": 0,
+      "end": 4.8629882207067565,
+      "chapter": 0
+    },
+    {
+      "text": "evidence supports its removal.",
+      "start": 4.8629882207067565,
+      "end": 6.5329200247985115,
+      "chapter": 0
+    },
+    {
+      "text": "The playbook covers approval, consumer transition, archiving, decommissioning, closure",
+      "start": 6.5329200247985115,
+      "end": 12.93738375697458,
+      "chapter": 1
+    },
+    {
+      "text": "validation, measurement, and learning.",
+      "start": 12.93738375697458,
+      "end": 15.671667699938002,
+      "chapter": 1
+    },
+    {
+      "text": "EMOS tracks these checkpoints; it does not shut down production systems for you.",
+      "start": 15.671667699938002,
+      "end": 20.608059516429012,
+      "chapter": 2
+    },
+    {
+      "text": "Next, verify dependencies and retention requirements, obtain human approval, and confirm",
+      "start": 20.608059516429012,
+      "end": 27.1042777433354,
+      "chapter": 3
+    },
+    {
+      "text": "accountable owners before decommissioning.",
+      "start": 27.1042777433354,
+      "end": 29.598479,
+      "chapter": 3
+    }
+  ],
+  "file": "emos-v2-retire.mp4",
+  "bytes": 1278087,
+  "sha256": "c7eed230231d59a573299e0703a0291e6b0285a27b90c0fe974889cb489f62c4",
+  "realScreens": [
+    "retire",
+    "retire",
+    "retire"
+  ],
+  "qa": "PASS: full decode, source/script review, word-aligned narration, burned-in captions and sampled frame review"
+}

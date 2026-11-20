@@ -12,7 +12,7 @@ import {
 import { ThemeProvider } from '../src/lib/theme';
 
 const expectedTitles = [
-  'EMOS Beta Introduction',
+  'What is EMOS V2?',
   'Sign in and enter the private workspace',
   'Take the guided product tour',
   'Submit a workload for a 6R assessment',
@@ -24,7 +24,7 @@ const expectedTitles = [
   'Validate assessment-score consistency',
   'Explore the sample enterprise portfolio',
   'Inspect Enterprise DNA and evidence gaps',
-  'Go from Enterprise DNA to assessment in one click',
+  'From Enterprise DNA to assessment',
   'Import a CSV or JSON portfolio',
   'Download a sample enterprise dataset',
   'Assess and manage imported workloads',
@@ -98,7 +98,7 @@ describe('Public EMOS Learning Center (/learn)', () => {
     const videoCards = screen.getAllByTestId(/^video-/);
     expect(videoCards).toHaveLength(20);
     for (const card of videoCards) {
-      expect(within(card).getByText('Beta v1.0', { exact: true })).toBeInTheDocument();
+      expect(within(card).getByText('EMOS V2', { exact: true })).toBeInTheDocument();
     }
   });
 
@@ -107,8 +107,8 @@ describe('Public EMOS Learning Center (/learn)', () => {
 
     expect(LEARNING_VIDEOS.map((video) => video.title)).toEqual(expectedTitles);
     for (const video of LEARNING_VIDEOS) {
-      expect(screen.getByRole('heading', { name: video.title })).toBeInTheDocument();
-      expect(screen.getByText(`File: ${video.fileName}`)).toBeInTheDocument();
+      expect(within(screen.getByTestId(`video-${video.sequence.toLowerCase()}`)).getByRole('heading', { name: video.title })).toBeInTheDocument();
+      expect(within(screen.getByTestId(`video-${video.sequence.toLowerCase()}`)).getByText(`File: ${video.fileName}`)).toBeInTheDocument();
     }
   });
 
@@ -174,12 +174,12 @@ describe('Public EMOS Learning Center (/learn)', () => {
   it('clearly separates implemented beta capabilities from future scope', () => {
     renderLearningCenter();
 
-    expect(screen.getByRole('heading', { name: 'Implemented in Beta v1.0' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Implemented in EMOS V2' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Future EMOS Roadmap' })).toBeInTheDocument();
     expect(
-      screen.getByText(/not claimed as implemented in this beta/i),
+      screen.getByText(/not claimed as implemented in V2/i),
     ).toBeInTheDocument();
-    expect(screen.getByText('Disposition-specific governed execution agents')).toBeInTheDocument();
+    expect(screen.getByText('Live cloud migration, infrastructure provisioning, and automated cutover')).toBeInTheDocument();
   });
 
   it('navigates to public and home routes through the supplied client router', () => {

@@ -1,0 +1,36 @@
+{
+  "jobs": [
+    {
+      "index": 147,
+      "status": "submission_failed",
+      "error": "seed_audio backend request failed (429): rate_limit_reached"
+    },
+    {
+      "index": 148,
+      "job_id": "20a2cbb7-9a5b-4ae3-b653-42572aa5b6d0",
+      "status": "pending"
+    },
+    {
+      "index": 149,
+      "job_id": "2de32cc9-ef54-41df-8d04-5ac9d04f38bd",
+      "status": "pending"
+    },
+    {
+      "index": 150,
+      "job_id": "4df2aab9-95f8-4800-97cb-7ce7b1e8ce78",
+      "status": "pending"
+    },
+    {
+      "index": 151,
+      "job_id": "220e1a6e-b22c-4637-a06c-166952bdd8c3",
+      "status": "pending"
+    },
+    {
+      "index": 152,
+      "job_id": "1d10acaa-43a1-4ea1-ba9d-3dfe91ba10af",
+      "status": "pending"
+    }
+  ],
+  "submitted_count": 5,
+  "failed_count": 1
+}
