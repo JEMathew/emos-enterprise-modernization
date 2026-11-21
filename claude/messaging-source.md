@@ -65,3 +65,15 @@ The canonical short video is **EMOS V2 — Product Walkthrough**, duration **2:5
 Runtime: Gemini API, Cloud Run, Secret Manager, Firebase Authentication and Cloud Firestore. Google Stitch and Google Antigravity are build/design tools, not runtime components.
 
 The existing public landing page retains earlier Beta v1.0 copy. That authentic source is not retouched in the walkthrough; changing production copy is outside this repository-presentation update.
+
+## Preserved company and full-vision facts
+
+Founder experience: **15+ years**. Evidence model: **18 attributes across six dimensions**. The full architecture is designed to remain model-agnostic; the current implementation uses Gemini.
+
+The authoritative lifecycle contains fifteen stages. The five-stage product narrative summarizes Align · Discover · Understand · Assess · Decide · Govern · Prioritize · Plan · Define Target State · Execute · Validate · Transition · Measure Benefits · Learn · Reassess. This full-vision lifecycle does not claim that every stage is implemented at enterprise scale.
+
+The preserved public tagline is “AI-Native Modernization, Governed by Evidence—From First Signal to Proven Outcome.” The full-vision statement remains: “EMOS is designed to govern the full enterprise modernization lifecycle—from business alignment and estate discovery through evidence-based decisions and planning, into governed execution, validation, transition to live operations, measured benefits, learning and reassessment.” Current V2.0 availability is defined above.
+
+## Dated public-copy history
+
+The September 2026 Beta v1.0 messaging used “Beta v1.0 delivers the evidence, decision and planning foundation today” and “The current beta does not execute migrations”. These quotations explain the unchanged public landing copy and retained historical materials; they are not the current V2.0 capability definition. Use the Current V2.0 and Future / Full EMOS Vision sections above for new product education.

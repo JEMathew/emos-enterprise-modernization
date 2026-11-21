@@ -20,7 +20,7 @@ The current product follows Understand → Decide → Govern → Transform → O
 
 ## Verification at implementation commit 321478f
 
-Verified 21 November 2026. The [machine-readable verification record](verification/v2-2026-11-21.json) retains provenance and hashes.
+Verified 21 November 2026; dated results are recorded against the implementation commit rather than treated as permanent product totals. The [machine-readable verification record](verification/v2-2026-11-21.json) retains provenance and hashes.
 
 | Layer | Result | Source |
 | --- | --- | --- |
