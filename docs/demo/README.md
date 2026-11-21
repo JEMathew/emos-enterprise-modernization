@@ -1,4 +1,7 @@
-# EMOS Beta Introduction Demo
+# Historical Beta v1.0 Introduction
+
+For the current product, use **[EMOS V2 — Product Walkthrough (2:57)](../product-walkthrough/README.md)**. The recording below is preserved as historical Beta v1.0 material; its earlier scope statements do not define current V2.0.
+
 
 The narrated introduction presents EMOS as a vendor-neutral operating system
 designed for the entire enterprise modernization journey. It clearly separates

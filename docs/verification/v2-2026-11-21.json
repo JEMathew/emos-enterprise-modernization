@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-11-21",
+  "implementation_commit": "321478f369914db9418b2a2f5afe2711338a38f3",
+  "scope": "Documentation and approved walkthrough publication; no runtime changes or paid live rerun",
+  "local": {
+    "lint": "passed",
+    "build": "passed",
+    "software_tests": {
+      "passed": 311,
+      "files": 19,
+      "command": "npm run test:unit"
+    },
+    "deterministic_evals": {
+      "passed": 52,
+      "total": 52,
+      "suites": 6,
+      "command": "node --import tsx evals/runEvals.ts (isolated report output)"
+    }
+  },
+  "ci": {
+    "url": "https://github.com/JEMathew/emos-enterprise-modernization/actions/runs/44837986000",
+    "job_id": 136639052572,
+    "conclusion": "success",
+    "software_tests": 311,
+    "firestore_rules_tests": 8
+  },
+  "retained_reports": [
+    {
+      "path": "evals/reports/latest-eval-report.json",
+      "sha256": "fd6491bcf154d3c8becdf305886531fc77021d1c9d42a167a93b0d95b188772f"
+    },
+    {
+      "path": "evals/reports/baseline-run2-paid-tier-live-eval-report.json",
+      "sha256": "3a6dcf35eb687ab3a84dddfddee32feb8778427630ae7c15ca9bf954dc500ec4"
+    },
+    {
+      "path": "evals/reports/targeted-live-verify-report.json",
+      "sha256": "c6404a37a6e79cf7368a2ed6d52661f3adf278e5472188c660bb2a1d12aada47"
+    }
+  ],
+  "live_baseline": {
+    "successful_calls": 48,
+    "specialist_calls": 25,
+    "independent_model_checks": 23,
+    "discovery_scenarios": "4/4",
+    "architect_scenarios": "12/12",
+    "six_r_agreement": "12/12",
+    "conversational_scenarios": "6/7",
+    "governance": "6/6",
+    "governance_model_calls": 0,
+    "later_targeted_checks": "3/3"
+  },
+  "walkthrough": {
+    "path": "docs/product-walkthrough/emos-v2-product-walkthrough.mp4",
+    "sha256": "8f6965313d2a761a9fec348d70c3c635f50955f578360fc80ba5cb79ba0c92ee",
+    "duration_seconds": 177,
+    "real_ui_percent_conservative": 95.17,
+    "copied_without_reencoding": true
+  }
+}

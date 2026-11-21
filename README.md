@@ -1,198 +1,141 @@
-# EMOS
-**Enterprise Modernization Operating System (V2)**
+# EMOS — Enterprise Modernization Operating System
 
-> **AGENTS FOR AMBIGUITY · WORKFLOWS FOR PREDICTABILITY · RULES FOR GOVERNANCE · HUMANS FOR AUTHORITY.**
+EMOS connects enterprise evidence, governed AI decisions, disposition-specific execution workflows, outcomes and learning in one workload-first modernization lifecycle.
 
----
+**[LIVE PRODUCT](https://emos-modernization-1027874783780.asia-southeast1.run.app/)** · **[PRODUCT WALKTHROUGH · 2:57](docs/product-walkthrough/README.md)** · **[PRODUCT / TECHNICAL DOCUMENTATION](EMOS_V2_PRODUCT_CONTRACT.md)**
 
-## What is EMOS?
+**UNDERSTAND → DECIDE → GOVERN → TRANSFORM → OUTCOMES & LEARN**
 
-**EMOS** is a governed, evidence-first Enterprise Modernization Operating System built on Google Cloud and Gemini. It turns fragmented application and data-platform evidence into auditable **6R** modernization decisions, disposition-specific execution plans, and structured outcome/learning workflows—while enforcing deterministic readiness gates and explicit human approval authority.
+Modernization teams need to decide what should change, why, and in what order. EMOS connects fragmented portfolio evidence to accountable decisions and the operating workflow that follows each decision. Retain and Retire are first-class paths alongside platform change. Google Cloud powers the current V2.0 reference implementation; the full EMOS vision is vendor-agnostic.
 
----
+## Current V2.0
 
-## Live Product
+| Capability | Available behavior |
+| --- | --- |
+| Understand | Command Center, Portfolio Discovery, CSV/JSON import, 18-attribute Enterprise DNA, dependency context and evidence readiness. |
+| Decide | Canonical 6R recommendations with evidence, rationale, risks, alternatives, proof points and counterfactual explanations. |
+| Govern | Deterministic evidence gates, canonical 6R reconciliation and explicit Human Approval. Readiness never grants approval. |
+| Transform | Program Alignment, Wave Planning, Plan and all-six-6R Execute workflows with owners, checkpoints and approval gates. |
+| Outcomes & Learn | Measure compares baseline, target and observed reference values. Learn provides contextual lessons and session-scoped notes. |
+| Ask EMOS | One interface to exactly two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. |
+| Identity & persistence | Firebase Authentication and owner-bound Firestore records for assessments, imported workloads and program alignment. |
 
-- **Production Application**: [https://emos-modernization-1027874783780.asia-southeast1.run.app](https://emos-modernization-1027874783780.asia-southeast1.run.app)
-- **Trust & Evaluation Surface**: [https://emos-modernization-1027874783780.asia-southeast1.run.app/trust](https://emos-modernization-1027874783780.asia-southeast1.run.app/trust)
-- **Public Evaluation Sandbox**: [https://emos-modernization-1027874783780.asia-southeast1.run.app/sandbox](https://emos-modernization-1027874783780.asia-southeast1.run.app/sandbox)
-- **Canonical Repository**: [https://github.com/JEMathew/emos-enterprise-modernization](https://github.com/JEMathew/emos-enterprise-modernization)
+V2.0 orchestrates governed work; it does not autonomously change external production infrastructure. Measure's reference values are not live customer telemetry, and Learn's session notes are not persistent autonomous organizational learning. These are data and persistence boundaries within current V2.0, not separate product-status categories.
 
----
+Apex Aerospace and Global Financial Services are reference enterprise estates, not customers. The 10,420+ asset Aerospace context does not represent that many live-connected production systems.
 
-## The Problem
+## AI architecture
 
-Large enterprises manage thousands of interconnected applications and data platforms. Modernization programs routinely stall or overspend because:
-
-- **Fragmented evidence**: Business criticality, stack lifecycle, TCO baselines, and target-state constraints live across disconnected spreadsheets and teams.
-- **Hidden dependencies & risk**: Downstream integrations and cutover tolerances are often unverified when migration commitments are made.
-- **Opaque decision rationale**: 6R recommendations are debated subjectively without traceable evidence or explicit alternative trade-offs.
-- **Weak governance**: Unconstrained AI assistants can hallucinate missing financial/technical facts or recommend action without readiness gates.
-- **Execution disconnect**: A 6R label rarely drives disposition-specific execution gates, wave sequencing, and outcome tracking.
-
----
-
-## How EMOS Works
-
-```
-UNDERSTAND  →  DECIDE  →  GOVERN  →  TRANSFORM  →  OUTCOMES
+```text
+User → Ask EMOS → Deterministic Orchestrator
+                   ├─ Portfolio Discovery (Gemini)
+                   └─ Enterprise Architect (Gemini)
+     → Deterministic Governance → Human Approval → Governed 6R Workflow
 ```
 
-1. **UNDERSTAND**: Inspect estate posture in the Command Center, browse or import portfolios (BYOP CSV/JSON), and audit each workload's 18-attribute **Enterprise DNA** (and Spatial DNA Mesh) against the deterministic **Evidence Readiness Gate** (`≥ 70%` completeness and `0` critical gaps).
-2. **DECIDE**: Generate and explain canonical **6R** recommendations with supporting evidence, rejected alternatives, architectural risks, and counterfactual triggers (*"What evidence would change this recommendation?"*).
-3. **GOVERN**: Enforce hard readiness gates (`NEEDS EVIDENCE` workloads cannot be approved or enter execution), prohibit auto-approval (`READY` never implies approval), and require explicit **Human-in-the-Loop (HITL)** sign-off.
-4. **TRANSFORM**: Sequence approved workloads into deterministic modernization waves and progress through 6R-specific execution pipelines and checkpoint gates.
-5. **OUTCOMES**: Compare Baseline → Target → Observed KPIs (**Measure**) and record playbook lessons (**Learn**), transparently scoped as representative/session-only views in V2.
+**Portfolio Discovery** identifies missing evidence, dependencies and the next investigation. **Enterprise Architect** reasons through modernization choices, alternatives and workload-specific trade-offs. Ask EMOS is the interface. The deterministic orchestrator routes requests, preserves workload context and blocks unsafe requests before a model call; it is **not a third agent**.
 
----
+[Architecture and implementation map](docs/ARCHITECTURE.md)
 
-## AI Architecture
+## Six 6Rs, six operating workflows
 
-```
-User
-  → Ask EMOS (single conversational interface)
-  → Deterministic Orchestrator (routing, context lock, governance pre-check)
-  → Portfolio Discovery Specialist and/or Enterprise Architect Specialist (Gemini)
-  → Deterministic Validation & Governance (Zod schemas, 6R & readiness guardrails)
-  → Explicit Human Approval (HITL)
-  → Governed Modernization Workflow
-```
+| 6R | Downstream workflow |
+| --- | --- |
+| Retain | Govern & Monitor |
+| Retire | Safely Decommission |
+| Rehost | Migrate Infrastructure |
+| Replatform | Transition Platform |
+| Refactor | Transform Architecture |
+| Repurchase | Replace & Adopt |
 
-EMOS V2 deliberately uses **TWO Gemini-backed specialist reasoning components** rather than an unconstrained multi-agent swarm:
-
-- **Portfolio Discovery** (`src/lib/agents/geminiDiscoveryAgent.ts`): Reasons over heterogeneous Enterprise DNA evidence, synthesizes dependency relationships, detects ambiguities, identifies missing evidence, and prioritizes next investigations.
-- **Enterprise Architect** (`src/lib/agents/geminiArchitectAgent.ts`): Reasons over multi-factor modernization options, trade-offs across all six canonical 6Rs, architectural risks, counterfactual change triggers, and premise-aware outcome questions.
-- **Ask EMOS** (`src/components/ModernizationAgentPanel.tsx` → `POST /api/ask-emos`): One user-facing conversational interface (`Ask EMOS ⌘J`) with zero separate agent-picker buttons. If AI reasoning is unavailable or unauthenticated, it displays an explicit deterministic fallback banner (`"AI reasoning unavailable. Showing deterministic EMOS status/evidence instead."`).
-- **Orchestrator** (`src/lib/agents/orchestrator.ts`, `src/lib/agents/geminiOrchestrator.ts`): A **deterministic coordination layer — NOT a third Agent**. It classifies intent, preserves estate/workload/stage context, coordinates Discovery → Architect handoff when needed, and intercepts governance/safety violations before any model call.
-
----
-
-## Governed 6R Decisioning
-
-EMOS enforces the six canonical modernization dispositions:
-
-| Disposition | Plain-English Action | Downstream Operating Track |
-| :--- | :--- | :--- |
-| **Retain** | Keep it as-is | Govern & Monitor (Keep → Optimize → Monitor → Review Outcome) |
-| **Retire** | Safely shut it down | Decommission & Archive (Consumer Transition → Archive → Decommission → Closure) |
-| **Rehost** | Move it as-is | Infrastructure Migration (Prepare Destination → Move → Validate → Cutover → Stabilize) |
-| **Replatform** | Move it to a better platform | Platform Transition (Prepare Target Platform → Transform/Migrate → Validate → Cutover) |
-| **Refactor** | Redesign & modernize | Architecture Transformation (Redesign/Decompose → Implement → Test → Transition) |
-| **Repurchase** | Replace with commercial SaaS | SaaS Replacement & Adoption (Select Replacement → Configure → Migrate Data/Users → Retire Legacy) |
-
-Every recommendation surfaces evidence readiness, rationale, rejected alternatives, key risks, and requires explicit human approval before governed execution unlocks.
-
----
+A recommendation selects the downstream governed operating workflow, not merely a classification. The [product walkthrough](docs/product-walkthrough/README.md) follows Aerospace's Enterprise Data Warehouse through Replatform → Transition Platform, then Banking's ATM/HSM Switch through Retain → Govern & Monitor.
 
 ## Governance
 
-- **Deterministic Evidence Readiness**: `evaluateEvidenceReadiness()` (`src/lib/readiness.ts`) enforces `≥ 70%` completeness and `0` critical gaps across Dependency, TCO Baseline (`e3`), and Target State.
-- **Deterministic Gates**: `NEEDS EVIDENCE` workloads cannot be approved, cannot enter governed execution, and cannot advance stages—enforced across UI, `Dashboard`, `PortfolioPlanView`, and `transformationEngine`.
-- **Explicit HITL Authority**: Evidence completeness (`85%`, `94%`, `100%`) **never** auto-approves a workload; explicit human sign-off is mandatory.
-- **AI Cannot Self-Approve**: Model outputs are treated as untrusted advisory input, validated against strict Zod schemas and canonical 6R rules.
-- **Fail-Closed Safety**: Adversarial bypass requests (gate bypass, HITL bypass, unsupported overrides, cross-workload evidence leakage, fabricated cost requests) and invalid API payloads fail closed before model execution.
+**Agents reason. Rules validate. Humans approve.**
 
----
+- Readiness requires **≥70% evidence completeness and zero critical gaps**. Dependency evidence, detailed TCO baseline and target-state fields participate in critical-gap checks.
+- Model output is untrusted: schemas, canonical 6R reconciliation and deterministic validation constrain the result.
+- `NEEDS EVIDENCE` blocks approval and governed progression. `READY` still requires explicit Human Approval; auto-approval is never allowed.
+- Applicable adversarial requests are blocked by the orchestrator before Gemini is called. Failed authentication and invalid request schemas also fail closed.
 
-## Evaluation
+See the [product contract](EMOS_V2_PRODUCT_CONTRACT.md), [implementation evidence](docs/EVIDENCE_INDEX.md), [live Trust page](https://emos-modernization-1027874783780.asia-southeast1.run.app/trust) and [public sandbox](https://emos-modernization-1027874783780.asia-southeast1.run.app/sandbox).
 
-Software verification, local deterministic evals, paid-tier live Gemini evals, and post-fix targeted live verification are tracked separately:
+## Future / Full EMOS Vision
 
-| Evidence Layer | Verified Result | Source Artifact |
-| :--- | :--- | :--- |
-| **Software Tests (`npx vitest run`)** | **248 / 248 tests PASS** (`19 / 19` test files) | `tests/` |
-| **Local Deterministic Evals (`npm run evals`)** | **52 / 52 cases PASS** (`6 / 6` suites) | [latest-eval-report.json](./evals/reports/latest-eval-report.json) |
-| **Paid-Tier Live Gemini Run 2 (`npm run evals:live`)** | **48 / 48 live Gemini calls succeeded** (`gemini-flash-latest`, `0` timeouts, `0` 429s, `0` fallbacks) | [baseline-run2-paid-tier-live-eval-report.json](./evals/reports/baseline-run2-paid-tier-live-eval-report.json) |
-| ↳ **Portfolio Discovery (Live)** | **4 / 4 live scenarios PASS** | Run 2 report |
-| ↳ **Enterprise Architect (Live)** | **12 / 12 live scenarios PASS** | Run 2 report |
-| ↳ **6R Agreement (Live)** | **12 / 12 across all six dispositions** (`2/2` each for Retain, Retire, Rehost, Replatform, Refactor, Repurchase) | Run 2 report |
-| ↳ **Governance / Safety** | **6 / 6 tested adversarial scenarios blocked** (`0` model calls) | Run 2 report |
-| **Targeted Post-Fix Live Verify (`npm run evals:live:targeted`)** | **3 / 3 PASS** (`LIVE-ASK-06` false-premise correction via `POST /api/ask-emos`, governance block, `400` schema fail-closed) | [targeted-live-verify-report.json](./evals/reports/targeted-live-verify-report.json) |
+The full vision extends unified coverage across **applications, data and infrastructure**, while retaining workload-first decisions and accountable governance:
 
-*(Evaluation scores reflect bounded synthetic benchmark scenarios and live API observations—not production throughput benchmarks or claims of infallible AI.)*
+- Automated CMDB, APM, cloud, repository and FinOps discovery; deep dependency intelligence.
+- Target Architecture generation, portfolio optimization and enterprise policy packs.
+- Execution integrations and a vendor-neutral, multi-cloud execution ecosystem.
+- Production outcome telemetry and persistent organizational learning.
+- Enterprise-controlled/private/on-premises deployment and managed SaaS deployment.
 
----
+These are planned capabilities, not claims that the current V2.0 reference implementation provides those integrations or deployment products.
 
-## Google Cloud Architecture
+## Verified V2.0 evidence
 
-Deployed architecture on Google Cloud (`project: emos-enterprise-modernization`, `region: asia-southeast1`):
+Rechecked against implementation commit `321478f` on 21 November 2026. Documentation and walkthrough publication do not change the implementation. [Verification record](docs/verification/v2-2026-11-21.json) · [Evidence index](docs/EVIDENCE_INDEX.md)
 
-- **Cloud Run**: Hosts the unified Node.js/Express API and React 19 production bundle (`service: emos-modernization`).
-- **Gemini API (`@google/genai`)**: Server-side specialist reasoning for Portfolio Discovery, Enterprise Architect, `POST /api/ask-emos` (45s timeout), and `POST /api/chat`.
-- **Google Cloud Secret Manager**: Stores `emos-gemini-api-key` and injects `GEMINI_API_KEY` server-side only (never exposed to browser bundles).
-- **Firebase Authentication**: Google Sign-In and verified Firebase ID token validation on protected AI endpoints.
-- **Cloud Firestore**: Per-user isolated persistence for assessments, imported workloads, and program alignment governed by [firestore.rules](./firestore.rules).
+| Evidence | Result | Provenance |
+| --- | --- | --- |
+| Software tests | **311/311**, **19/19 files** | Current local run and [CI](https://github.com/JEMathew/emos-enterprise-modernization/actions/runs/44837986000) |
+| Firestore security rules | **8/8**, separate from the 311 tests | Same CI run, Java 21 emulator |
+| Local deterministic evals | **52/52**, six suites | Current local rerun; [retained report](evals/reports/latest-eval-report.json) |
+| Full paid-tier live Gemini run | **48/48 successful calls** | [Recorded baseline](evals/reports/baseline-run2-paid-tier-live-eval-report.json) |
+| Portfolio Discovery / Enterprise Architect | **4/4 / 12/12** scenarios | Same recorded baseline |
+| All-six-6R live agreement | **12/12**, two per disposition | Same recorded baseline |
+| Governance / safety | **6/6** adversarial requests blocked; **0 model calls** | Same recorded baseline |
+| Targeted post-fix verification | **3/3** checks | [Separate later report](evals/reports/targeted-live-verify-report.json) |
 
----
+The 48 calls comprise 25 specialist calls and 23 independent model-based checks. Successful calls do not imply universal answer correctness: the original conversational suite passed 6/7; the later targeted checks passed 3/3. These are bounded verification observations, not production-scale performance or real-customer outcome claims. No paid live evals were rerun for this documentation update.
 
-## Trust & Evaluation
+## Technology
 
-Evaluators can inspect live trust and governance posture directly at **[Trust & Evaluation](/trust)** ([https://emos-modernization-1027874783780.asia-southeast1.run.app/trust](https://emos-modernization-1027874783780.asia-southeast1.run.app/trust)):
+| Current runtime | Role |
+| --- | --- |
+| Google Gemini API | Server-side specialist reasoning |
+| Google Cloud Run | Node.js/Express API and React application hosting |
+| Google Cloud Secret Manager | Server-side Gemini credential injection |
+| Firebase Authentication | Google Sign-In and verified identity |
+| Cloud Firestore | Owner-bound application records and security rules |
 
-- **Identity & Data Isolation**: Firebase Auth boundaries and user-scoped Firestore rules.
-- **Evidence & Readiness Rules**: Deterministic `≥ 70%` + zero critical-gap conformance tests (`tests/readiness.evals.test.ts`).
-- **AI Boundaries & Governance**: Untrusted-output validation, canonical 6R repair, secret redaction, and explicit HITL enforcement.
-- **Implementation Limitations**: Explicit disclosure of synthetic demo evidence and representative Measure/Learn scope.
+Cloud Build/Buildpacks and Artifact Registry support the recorded deployment workflow. Google Stitch and Google Antigravity belong to the build/design workflow; they are not runtime dependencies. See [architecture](docs/ARCHITECTURE.md) for trust boundaries and code references.
 
----
+## Run locally
 
-## Current Product Boundary
-
-Authoritative scope is defined in [EMOS_V2_PRODUCT_CONTRACT.md](./EMOS_V2_PRODUCT_CONTRACT.md):
-
-- **IMPLEMENTED**: 4-job OS workspace (`Understand / Decide / Transform / Outcomes`), BYOP CSV/JSON import, 18-attribute Enterprise DNA + Spatial Mesh, deterministic readiness gate, two Gemini-backed specialist agents behind `POST /api/ask-emos`, single `Ask EMOS ⌘J` UI with explicit fallback, explicit HITL approval, deterministic Wave Planning, 6R-specific execution pipelines, and `248` automated tests + local/live eval suites.
-- **REPRESENTATIVE / PROTOTYPE**: `Load Sample Evidence (Demo)` vendor-neutral sandbox shortcut; archetype-level Baseline → Target → Observed benchmarks in **Measure**; archetype lessons and session-only notes in **Learn** (`Representative archetype lesson · Session-only note`).
-- **FUTURE VISION**: Automated CMDB/APM/FinOps ingestion, persistent multi-user organizational learning feedback into scoring, live cloud migration execution/IaC provisioning, and enterprise ServiceNow/Jira approval integrations.
-
----
-
-## Run Locally
+Requires Node.js 20+ and npm. Java 21 is required for Firestore emulator tests.
 
 ```bash
 git clone https://github.com/JEMathew/emos-enterprise-modernization.git
 cd emos-enterprise-modernization
 npm ci
 cp .env.example .env
-# Set GEMINI_API_KEY=<your-server-side-key> in .env (never commit .env)
+# Configure the server-side GEMINI_API_KEY in .env; never commit it.
 npm run dev
 ```
 
----
-
-## Verification
+The authenticated AI path also requires the existing Firebase project configuration. Without authenticated AI access, Ask EMOS explicitly identifies its deterministic fallback; it does not present fallback output as a live Gemini response.
 
 ```bash
-npm run lint        # Expected: PASS (0 TypeScript errors)
-npm run build       # Expected: PASS (Vite client + esbuild server bundle)
-npx vitest run      # Expected: PASS (19/19 files, 248/248 tests)
-npm run evals       # Expected: PASS (6/6 suites, 52/52 local deterministic evals)
+npm run lint
+npm run test:unit       # 311 tests in 19 files
+npm run test:firestore  # 8 security-rule tests; Java 21 required
+npm run evals           # 52 local cases; no live model calls
+npm run build
 ```
 
-Live Gemini evals (require `GEMINI_API_KEY` in `.env`):
+`npm test` runs both software and Firestore-rule tests. Paid live checks are opt-in through `npm run evals:live` and `npm run evals:live:targeted`; they require server-side credentials and consume Gemini quota.
 
-```bash
-npm run evals:live
-npm run evals:live:targeted
-```
+## Repository guide
 
----
+- [Product contract](EMOS_V2_PRODUCT_CONTRACT.md) — current V2.0 and full-vision boundaries.
+- [Architecture](docs/ARCHITECTURE.md) — two specialists, deterministic orchestration, governance and persistence.
+- [Product walkthrough](docs/product-walkthrough/README.md) — final 2:57 video, captions and transcript.
+- [Walkthrough route](docs/DEMO_FLOW.md) — the demonstrated product journey.
+- [Evidence index](docs/EVIDENCE_INDEX.md) — implementation and verification sources.
+- [Canonical messaging](claude/messaging-source.md) — product terminology and capability boundaries.
+- [Security constitution](docs/AI_STUDIO_SECURITY_CONSTITUTION.md) — preserved builder-security requirements and dated configuration evidence.
+- `src/` — product UI, deterministic engines and specialist implementations; `server.ts` — API/authentication boundary; `tests/` and `evals/` — distinct verification layers.
 
-## Repository Structure
-
-- `src/components/` — React 19 UI views (Command Center, Portfolio, Enterprise DNA, Decision Workspace, Plan/Execute/Measure/Learn, Ask EMOS, Trust & Evaluation, Learning Center).
-- `src/lib/agents/` — Deterministic orchestrator, Gemini runtime, Zod schemas, Portfolio Discovery specialist, and Enterprise Architect specialist.
-- `src/lib/` — Deterministic readiness engine (`readiness.ts`), 6R/security guardrails (`guardrails.ts`), transformation engine, wave planner, and Firebase/Gemini clients.
-- `server.ts` — Express server, Firebase ID token verification, `POST /api/ask-emos`, `POST /api/chat`, and static production serving.
-- `tests/` — 19 Vitest software, API contract, governance, fallback, and provenance test suites (`248` tests).
-- `evals/` — Separate local deterministic eval suite (`52` cases), 18-scenario 6R dataset, paid-tier live Gemini eval runner, and preserved JSON reports.
-- `firestore.rules` — User-isolated Cloud Firestore security rules.
-
----
-
-## Product Contract & Engineering References
-
-- **[EMOS_V2_PRODUCT_CONTRACT.md](./EMOS_V2_PRODUCT_CONTRACT.md)** — Authoritative V2 scope contract:
-  > *"Implementation does not redefine product scope. Any proposed scope change requires explicit product-owner approval."*
-- [AI Studio Security Constitution](./docs/AI_STUDIO_SECURITY_CONSTITUTION.md) — Trust boundaries, Firebase Auth, Secret Manager, and model-output guardrails.
-- [Evidence Index](./docs/EVIDENCE_INDEX.md) — Dated verification and security audit log.
-- [Canonical Messaging Source](./claude/messaging-source.md) — Capability-honest product messaging reference.
+[Canonical GitHub repository](https://github.com/JEMathew/emos-enterprise-modernization)

@@ -1,70 +1,83 @@
-# EMOS V2 Product Contract
+# EMOS V2.0 Product Contract
 
-> **Scope-Control Rule**:  
-> *"Implementation does not redefine product scope. Any proposed scope change requires explicit product-owner approval."*
-
----
-
-## 1. Product
 **EMOS — Enterprise Modernization Operating System**
 
-## 2. Version
-**V2**
+[Live product](https://emos-modernization-1027874783780.asia-southeast1.run.app/) · [Canonical repository](https://github.com/JEMathew/emos-enterprise-modernization) · [Product walkthrough](docs/product-walkthrough/README.md) · [Architecture](docs/ARCHITECTURE.md)
 
-## 3. Canonical Repository
-**`JEMathew/emos-enterprise-modernization`** (`https://github.com/JEMathew/emos-enterprise-modernization`)
+> Implementation does not redefine product scope. Any proposed scope change requires explicit product-owner approval.
 
-## 4. Core User Journey
-**`Understand → Decide → Govern → Transform → Outcomes`**
-- **Understand**: Command Center, Portfolio Discovery, BYOP CSV/JSON import, Enterprise DNA (18 attributes + Spatial DNA Mesh), deterministic Evidence Readiness Gate (`≥ 70%` completeness and `0` critical gaps).
-- **Decide**: Canonical 6R assessment, plain-English recommendations, rejected alternatives, counterfactual triggers, risks/constraints, and evidence-grounded explainability.
-- **Govern**: Hard-enforced deterministic readiness gate (`NEEDS EVIDENCE` cannot be approved or enter/advance execution), zero auto-approval (`READY` never implies approval), explicit Human-in-the-Loop (HITL) approval authority.
-- **Transform**: Deterministic Wave Planning and 6R-specific downstream execution playbooks (`Retain`, `Retire`, `Rehost`, `Replatform`, `Refactor`, `Repurchase`).
-- **Outcomes**: Baseline → Target → Observed outcome tracking (`Measure`) and playbook lesson capture (`Learn`), transparently scoped as representative/session-only in V2.
+This contract describes the current repository implementation and the planned full EMOS vision. It has two scope categories: **Current V2.0** and **Future / Full EMOS Vision**. Descriptions of reference data and session persistence qualify current behavior; they do not form another product status.
 
-## 5. Six Canonical 6R Dispositions
-1. **Retain** — Govern & Monitor in place
-2. **Retire** — Safely Decommission & Archive
-3. **Rehost** — Migrate Infrastructure (Lift-and-Shift)
-4. **Replatform** — Transition to Managed Platform
-5. **Refactor** — Transform Architecture (Cloud-Native Decomposition)
-6. **Repurchase** — Replace with Commercial SaaS & Adopt
+## Product principle
 
-## 6. AI & Governance Architecture
-Design principle: **AGENTS FOR AMBIGUITY · WORKFLOWS FOR PREDICTABILITY · RULES FOR GOVERNANCE · HUMANS FOR AUTHORITY.**
+**UNDERSTAND → DECIDE → GOVERN → TRANSFORM → OUTCOMES & LEARN**
 
-- **Portfolio Discovery Specialist Agent** (`src/lib/agents/geminiDiscoveryAgent.ts`): Server-side Gemini reasoning over heterogeneous Enterprise DNA evidence, dependency/relationship synthesis, ambiguity detection, missing-evidence identification, and prioritized next investigations, validated against strict Zod output schemas (`portfolioDiscoveryOutputSchema`).
-- **Enterprise Architect Specialist Agent** (`src/lib/agents/geminiArchitectAgent.ts`): Server-side Gemini multi-factor reasoning across all six canonical 6R dispositions, alternative comparisons, risks/constraints, counterfactual triggers (`recommendationChangeTriggers`), and premise-aware outcome reasoning (`directAnswer`), validated against strict Zod output schemas (`enterpriseArchitectOutputSchema`) and canonical 6R guardrails.
-- **Ask EMOS Conversational Interface** (`src/components/ModernizationAgentPanel.tsx` → `POST /api/ask-emos`): Single user-facing conversational experience (`Ask EMOS ⌘J`) with zero separate user-selectable agent buttons, authenticated server-side execution, and explicit deterministic fallback semantics when AI reasoning is unavailable.
-- **Deterministic Orchestration** (`src/lib/agents/orchestrator.ts`, `src/lib/agents/geminiOrchestrator.ts`): Intent classification, estate/workload/stage context isolation, Discovery → Architect handoff, and pre-model adversarial governance interception (`0` LLM calls on blocked prompts).
-- **Deterministic Governance & Readiness** (`src/lib/readiness.ts`, `src/lib/guardrails.ts`, `src/lib/transformationEngine.ts`): Authoritative `≥ 70%` + `0` critical-gap readiness gate, canonical 6R taxonomy enforcement, input fencing, secret redaction, and hard-blocked execution for `NEEDS EVIDENCE` or unapproved workloads.
-- **Explicit Human Approval (HITL)**: Human approval is never inferred from evidence completeness (`85%`, `94%`, `100%` still require explicit human sign-off).
+EMOS is workload-first and governed. Its full vision is vendor-agnostic. The current reference implementation uses Google Cloud and Gemini while keeping Retain, Retire and evidence-led target selection first-class.
 
-## 7. Implemented & Verified V2 Capabilities
-- 4-job governed OS workspace (`Understand`, `Decide`, `Transform`, `Outcomes`) with persistent estate and workload context.
-- Synthetic reference estates (Apex Aerospace, Global Financial Services) + Bring-Your-Own-Portfolio (BYOP) CSV/JSON import with schema sanitization.
-- 18-attribute Enterprise DNA inspector with manual per-field verification and explicitly labeled vendor-neutral demo shortcut (`Load Sample Evidence (Demo)`).
-- Deterministic Evidence Readiness Gate (`≥ 70%` + `0` critical gaps) enforced across UI, `Dashboard`, `PortfolioPlanView`, and `transformationEngine`.
-- Two Gemini-backed specialist agents (`Portfolio Discovery` and `Enterprise Architect`) orchestrated deterministically behind authenticated `POST /api/ask-emos` (45s production timeout) and `POST /api/chat`.
-- Single `Ask EMOS ⌘J` conversational drawer with explicit fallback banner (`"AI reasoning unavailable. Showing deterministic EMOS status/evidence instead."`).
-- Deterministic Wave Planning and 6R-specific execution pipelines gated behind `READY` + explicit Human Approval.
-- History, Learning Center, Evaluation Evidence, Data Access Controls, and Firestore Security Rules (`firestore.rules`).
-- Automated verification: `248/248` Vitest tests (`19/19` files), `52/52` local deterministic evals, `48/48` paid-tier live Gemini evals (all 6 canonical 6Rs live-verified), and `3/3` post-fix targeted live verification.
+## Current V2.0
 
-## 8. Representative / Demo Capabilities (Explicitly Disclosed)
-- **Measure**: Archetype-level Baseline → Target → Observed benchmarks (`src/lib/transformationEngine.ts`), labeled in UI as representative synthetic benchmarks.
-- **Learn**: Archetype lessons + session-only user lesson notes (`useState`), labeled in UI as `Representative archetype lesson · Session-only note (No automated retraining)`.
-- **Demo Evidence Shortcut**: `Load Sample Evidence (Demo)` loads vendor-neutral synthetic sample values for sandbox evaluation without claiming external verification.
+| Area | Available behavior and implementation boundary |
+| --- | --- |
+| Portfolio Discovery | Command Center, reference enterprise portfolios, CSV/JSON import and workload prioritization. Import limits are 5 MB and 200 workloads, validated without silent partial ingestion. |
+| Enterprise DNA | Eighteen attributes across six dimensions, evidence verification, dependency context and Spatial DNA Mesh. |
+| Evidence Readiness | `READY` requires ≥70% completeness and zero critical gaps. Otherwise the state is `NEEDS EVIDENCE`. |
+| 6R decisioning | Canonical recommendations, evidence, rationale, proof points, alternatives, risks and counterfactual explanations. |
+| Ask EMOS | One interface to Portfolio Discovery and Enterprise Architect, with explicit fallback when live AI reasoning is unavailable. |
+| Governance | Deterministic validation and canonical 6R reconciliation, pre-model blocking where applicable, explicit Human Approval and zero auto-approval. |
+| Program Alignment and Wave Planning | Owner-bound program context, deterministic sequencing and visible readiness/dependency constraints. |
+| Plan / Execute | Six disposition-specific operating playbooks with owners, prerequisites, checkpoints, deliverables and approval gates. No autonomous external infrastructure mutation. |
+| Measure | Current baseline, target and observed reference values where applicable. These are not live customer telemetry or demonstrated customer ROI. |
+| Learn | Contextual lessons and session-scoped notes where applicable. No persistent autonomous learning or automated retraining. |
+| Identity and persistence | Firebase Authentication; owner-bound Firestore assessments, imported workloads and program alignment; history and access rules. Session-scoped UI state is not represented as durable enterprise workflow storage. |
+| Verification and education | Software/API/UI/security tests, local and live eval evidence, public Trust/sandbox surfaces and the Learning Center. |
 
-## 9. Future / Full-Vision Capabilities (Out of V2 Scope)
-- Automated enterprise CMDB, APM, cloud billing, and FinOps telemetry ingestion.
-- Persistent multi-user organizational learning store and governed feedback into future portfolio scoring.
-- Live cloud migration execution, IaC provisioning, and CI/CD cutover automation.
-- Enterprise SSO/RBAC approval workflows with external change-management (ServiceNow/Jira) integration.
+Apex Aerospace and Global Financial Services are reference estates, not actual customers. The 10,420+ asset context is not a claim of 10,420 live production connections. The real `Load Sample Evidence (Demo)` control fills reference values; it does not perform external verification. Its authentic label remains unchanged.
 
-## 10. Production URL
-**`https://emos-modernization-1027874783780.asia-southeast1.run.app`**  
-*(Google Cloud Project: `emos-enterprise-modernization` · Region: `asia-southeast1` · Service: `emos-modernization`)*
+## Six 6Rs select six workflows
 
-## 11. Scope-Control Rule
-> **Implementation does not redefine product scope. Any proposed scope change requires explicit product-owner approval.**
+| Disposition | Execute workflow |
+| --- | --- |
+| Retain | Govern & Monitor |
+| Retire | Safely Decommission |
+| Rehost | Migrate Infrastructure |
+| Replatform | Transition Platform |
+| Refactor | Transform Architecture |
+| Repurchase | Replace & Adopt |
+
+These are the current titles in [`PortfolioPlanView.tsx`](src/components/PortfolioPlanView.tsx). A 6R is an operating-workflow choice, not only a classification. Governed workflow orchestration does not imply live migrations or external provisioning.
+
+## Two Gemini specialists and deterministic authority
+
+```text
+User → Ask EMOS → Deterministic Orchestrator
+                 → Portfolio Discovery and/or Enterprise Architect
+                 → Deterministic Governance → Human Approval
+                 → Governed 6R Workflow
+```
+
+- **Portfolio Discovery**: missing evidence, dependency interpretation, ambiguity and next investigations; [`geminiDiscoveryAgent.ts`](src/lib/agents/geminiDiscoveryAgent.ts).
+- **Enterprise Architect**: 6R reasoning, alternatives, risks, counterfactuals and premise-aware explanations; [`geminiArchitectAgent.ts`](src/lib/agents/geminiArchitectAgent.ts).
+- **Ask EMOS** is the interface. The orchestrator is deterministic coordination, **not a third agent**; [`geminiOrchestrator.ts`](src/lib/agents/geminiOrchestrator.ts).
+- Model output is advisory and schema-validated. Readiness and approval authority remain in code and explicit human action.
+
+**Agents reason. Rules validate. Humans approve.**
+
+[`readiness.ts`](src/lib/readiness.ts) checks the threshold and critical dependency, detailed TCO baseline and target-state evidence. [`guardrails.ts`](src/lib/guardrails.ts) constrains canonical output. [`transformationEngine.ts`](src/lib/transformationEngine.ts) and the UI preserve evidence and approval gates. High completeness or confidence never substitutes for Human Approval.
+
+## Future / Full EMOS Vision
+
+- Unified end-to-end enterprise coverage across applications, data and infrastructure.
+- Automated CMDB/APM/cloud/repository/FinOps discovery and deep dependency intelligence.
+- Target Architecture generation, portfolio optimization and enterprise policy packs.
+- Execution integrations, automated provisioning/cutover and a vendor-neutral, multi-cloud execution ecosystem.
+- Production outcome telemetry and persistent organizational learning.
+- Enterprise-controlled/private/on-premises deployment and managed SaaS deployment.
+- Enterprise approval integrations and broader organizational access-policy support.
+
+These remain planned product capabilities. Current reference architecture, source availability or example workflow steps do not establish that these integrations or deployment offerings are implemented.
+
+## Verification and deployment reference
+
+The [evidence index](docs/EVIDENCE_INDEX.md) records the implementation commit and dated checks: 311 software tests in 19 files, 8 separate Firestore-rule tests, 52 local cases, the retained 48-call live baseline and 3 targeted post-fix checks. Call success and scenario correctness are distinct measures.
+
+Current production: Cloud Run service `emos-modernization`, project `emos-enterprise-modernization`, region `asia-southeast1`. This documentation update does not change application behavior, runtime configuration or deployment.

@@ -1,5 +1,7 @@
 # Google AI Studio Security Constitution for EMOS
 
+This is a preserved, dated builder-security configuration record. For current V2.0 architecture and capability boundaries, use the [product contract](../EMOS_V2_PRODUCT_CONTRACT.md) and [architecture](ARCHITECTURE.md). The quoted configuration below is not a current capability roadmap.
+
 ## Purpose
 
 This is the canonical instruction set for the Google AI Studio workspace used to build EMOS. It tells the builder how to treat identity, enterprise evidence, generative output, persistence and secrets before producing code.

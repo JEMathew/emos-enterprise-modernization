@@ -1,224 +1,67 @@
 # EMOS — Canonical Messaging Source
 
-*Single source for positioning, messaging and facts. Every surface—landing page,
-Product Tour, deck, README, demo script and application—draws from this document.
-Do not compose new positioning ad hoc; edit here and propagate.*
+Updated 21 November 2026 against the current V2.0 implementation. This document governs repository presentation; it does not authorize application behavior or scope changes. [Product contract](../EMOS_V2_PRODUCT_CONTRACT.md) · [Architecture](../docs/ARCHITECTURE.md)
 
-Last updated 14 September 2026.
+## Product statement
 
----
+**EMOS — Enterprise Modernization Operating System** connects enterprise evidence, governed AI decisions, disposition-specific operating workflows, outcomes and learning.
 
-## 0. The Rule
+**UNDERSTAND → DECIDE → GOVERN → TRANSFORM → OUTCOMES & LEARN**
 
-**Scope claims describe what EMOS is for. Capability claims describe what EMOS
-demonstrably does today.** Tense is the primary control; visual state labels
-reinforce it.
+EMOS is workload-first and governed. Its full vision is vendor-agnostic. Google Cloud powers the current reference implementation; EMOS is not limited to cloud migration, assessment, planning or a conversational interface.
 
-| Vision voice | Shipped voice |
-|---|---|
-| is designed to · is built to · will · is being built toward | does · delivers · produces · calculates · enforces |
+## Two scope categories
 
-Never mix the two in one sentence without an explicit **Available in Beta**,
-**Building Next** or **Product Vision** marker.
+### Current V2.0
 
----
+Command Center and Portfolio Discovery; CSV/JSON import; 18-attribute Enterprise DNA; evidence readiness; canonical 6R recommendations, explainability and alternatives; deterministic evidence gates; Human Approval; Program Alignment; Wave Planning; all-six-6R Plan/Execute workflows; Ask EMOS; Measure; Learn; evaluation/safety; identity and owner-bound persistence.
 
-## 1. Canonical Statement — Long
+Measure uses current reference values where applicable. Learn includes session-scoped notes where applicable. These qualify data and persistence within V2.0 and are not a separate product status. V2.0 orchestrates governed workflows; it does not autonomously modify external production infrastructure.
 
-> EMOS is a vendor-neutral operating system for enterprise modernization,
-> designed to govern the entire journey—from the business initiative that
-> triggers modernization, through portfolio evidence and the 6R decision, into
-> sequencing, delivery and proof that the promised outcome was achieved. Beta
-> v1.0 delivers the evidence, decision and planning foundation today using
-> deterministic scoring, governed Gemini analysis and synthetic reference data.
-> Its governance architecture is designed to remain model-agnostic as EMOS
-> expands toward governed execution and outcome measurement.
+### Future / Full EMOS Vision
 
-## 2. Canonical Product Vision — Locked
+Unified enterprise coverage across applications, data and infrastructure; automated CMDB/APM/cloud/repository/FinOps discovery; deep dependency intelligence; Target Architecture generation; portfolio optimization; enterprise policy packs; execution integrations; production telemetry; persistent organizational learning; vendor-neutral/multi-cloud execution ecosystems; enterprise-controlled/private/on-premises deployment; managed SaaS deployment.
 
-> EMOS is designed to govern the full enterprise modernization lifecycle—from
-> business alignment and estate discovery through evidence-based decisions and
-> planning, into governed execution, validation, transition to live operations,
-> measured benefits, learning and reassessment.
+Use planned or future tense for these capabilities. Do not present them as implemented integrations or deployment offerings.
 
-Do not paraphrase this sentence on public product surfaces. Quote it verbatim and
-pair it with the shipped-scope sentence below.
+## AI and authority
 
-## 3. Canonical Shipped Scope — Locked
+User → Ask EMOS → Deterministic Orchestrator → Portfolio Discovery and/or Enterprise Architect → Deterministic Governance → Human Approval → Governed 6R Workflow.
 
-> Beta v1.0 delivers the evidence, decision and planning foundation today.
+There are exactly two Gemini-backed specialist reasoning components: **Portfolio Discovery** and **Enterprise Architect**. Ask EMOS is the interface. The orchestrator is deterministic coordination, not a third agent. When live reasoning is unavailable, the product identifies its deterministic fallback explicitly.
 
-## 4. Hero — Locked
+**Agents reason. Rules validate. Humans approve.**
 
-> AI-Native Modernization, Governed by Evidence—From First Signal to Proven
-> Outcome.
+Readiness requires **≥70% completeness and zero critical gaps**. Confidence is not readiness; readiness is not approval. Canonical 6R reconciliation and deterministic validation constrain model advice. Applicable adversarial bypass requests are blocked before a model call.
 
-The hero must be immediately supported by the product-vision and shipped-
-scope statements so "AI-native" and "proven outcome" are not mistaken for
-unshipped execution or outcome-measurement claims.
+## Canonical workflow names
 
-## 5. What It Is and Who It Is For
+| 6R | Workflow |
+| --- | --- |
+| Retain | Govern & Monitor |
+| Retire | Safely Decommission |
+| Rehost | Migrate Infrastructure |
+| Replatform | Transition Platform |
+| Refactor | Transform Architecture |
+| Repurchase | Replace & Adopt |
 
-> EMOS is a vendor-neutral decision and governance layer for enterprise
-> modernization. It is for enterprise architects and modernization leads who
-> must decide which legacy applications and data platforms to modernize first—and
-> for CIOs who must defend that investment and prove the resulting outcome.
+The selected 6R determines the downstream operating workflow. Target-platform choices must follow evidence; Retain and Retire remain first-class options.
 
----
+## Factual boundaries
 
-## 6. Hero Block
+- Apex Aerospace and Global Financial Services are reference enterprise estates, not customers.
+- The 10,420+ asset context is not a live-connected inventory claim.
+- The genuine `Load Sample Evidence (Demo)` control supplies reference values, not external verification. Preserve authentic UI labels in product recordings.
+- Measure does not establish real customer ROI or live telemetry. Learn does not establish persistent autonomous learning or retraining.
+- No autonomous external migration, multi-cloud execution integration, private/on-premises deployment product or managed SaaS product is claimed for current V2.0.
+- Use the [evidence index](../docs/EVIDENCE_INDEX.md) for dated counts. Separate software tests, rule tests, local evals, successful live calls and scenario correctness.
 
-**Headline:** AI-Native Modernization, Governed by Evidence—From First Signal to
-Proven Outcome.
+## Presentation rules
 
-Do not place status badges above the headline. The Product Vision paragraph
-directly below it provides the scope distinction.
+Use natural product language: workload, portfolio, enterprise evidence, reference estate and governed workflow. Avoid repetitive simulation framing, unsupported superlatives and internal event terminology. Keep qualifications close to the claims they constrain.
 
-**Product vision paragraph:** EMOS is designed to govern the full enterprise
-modernization lifecycle—from business alignment and estate discovery through
-evidence-based decisions and planning, into governed execution, validation,
-transition to live operations, measured benefits, learning and reassessment.
-**Beta v1.0 delivers the evidence, decision and planning foundation today.**
+The canonical short video is **EMOS V2 — Product Walkthrough**, duration **2:57**. It uses real light-mode product UI, the two specialists, governance, six workflows, Measure/Learn and bounded verification evidence. [Watch the walkthrough](../docs/product-walkthrough/README.md).
 
-**Card:** Evidence Before Action
+Runtime: Gemini API, Cloud Run, Secret Manager, Firebase Authentication and Cloud Firestore. Google Stitch and Google Antigravity are build/design tools, not runtime components.
 
-**Capability horizon:**
-
-> One Lifecycle. Three Honest Delivery States.
-
-- **Available in Beta:** Align · Discover · Understand · Assess · Decide · Plan · Mobilize
-- **Building Next:** Govern · Prioritize · Define Target State
-- **Product Vision:** Execute · Validate · Transition · Measure Benefits · Learn · Reassess
-- **Cross-cutting:** Trust · Security · Governance · Human Accountability
-
-The authoritative lifecycle contains fifteen stages. **Mobilize** is the current
-beta's governed handoff from planning and is displayed in addition to those
-fifteen lifecycle stages.
-
----
-
-## 7. Agentic Register
-
-*Use for agentic-AI and investor audiences. Same facts, different
-emphasis.*
-
-> EMOS is designed to become the governance envelope within which modernization
-> agents operate. Those agents can gather evidence, pursue missing attributes,
-> reassess a changing estate and reconcile realized outcomes against an approved
-> case. EMOS defines what counts as evidence, calculates completeness
-> deterministically, enforces canonical outcomes at the data layer and determines
-> when a human must approve.
-
-**Honest beta voice:**
-
-> EMOS puts Gemini analysis inside a governance envelope it cannot override:
-> completeness calculated in code, six canonical outcomes enforced by validation
-> and a readiness gate that model confidence cannot bypass.
-
-**Not claimable today:** “orchestrates agents,” “agentic platform,” “supports
-multiple model providers” or any equivalent shipped-capability claim.
-
----
-
-## 8. Two-Axis Neutrality
-
-> EMOS is vendor-neutral in its current 6R reasoning: Retain and Retire remain
-> first-class options, and target-platform recommendations must follow the
-> supplied evidence rather than provider incentives. The governance architecture
-> is designed to remain model-agnostic as additional AI providers are supported.
-> The beta's decision guarantees already live in validation and deterministic
-> code rather than in Gemini output; future provider integrations are intended to
-> operate within those same controls.
-
----
-
-## 9. Standard Answers
-
-**What Does EMOS Actually Do Today?**
-
-> It structures portfolio evidence across eighteen attributes, calculates
-> completeness deterministically, produces an explainable 6R disposition with
-> alternatives and risks, and turns approved decisions into sequenced,
-> implementation-ready plans.
-
-**What Happens After the 6R Decision?**
-
-> Beta v1.0 supports planning and mobilization. EMOS is being built toward
-> governed execution, validation, transition to live operations, benefits
-> measurement and continuous reassessment.
-
-**Does EMOS Execute Migrations?**
-
-> No. The current beta does not execute migrations. It produces governed
-> decisions and implementation-ready plans; governed execution, transition to
-> live operations and outcome measurement remain the product vision.
-
-**Why Call It an Operating System?**
-
-> Because evidence, decisions, plans, delivery controls and realized outcomes
-> belong to one governed lifecycle. EMOS is being built in stages so each
-> capability remains defensible before the next one depends on it.
-
-**How Is This Different from Cloud-Provider Tooling?**
-
-> Provider tooling can support discovery, assessment and migration planning.
-> EMOS differentiates through a vendor-neutral, decision-grade evidence record
-> that connects completeness, critical gaps, considered 6R alternatives, human
-> review and the implementation-ready plan.
-
-Do not claim that no competing product offers completeness, 6R assessment,
-alternatives, decision records or roadmaps. Describe the EMOS mechanism and
-allow evidence to establish differentiation.
-
----
-
-## 10. Canonical Facts
-
-Render from one constants definition. These values are authoritative everywhere.
-
-- Portfolio scale: **5,000+ applications**
-- Founder experience: **15+ years**
-- Evidence model: **18 attributes across 6 dimensions**—Business 3, Technology 4,
-  Dependency 2, Economics 3, Data & Risk 3, Target State 3
-- Readiness rule: **70% completeness and no unresolved critical evidence gaps.**
-  Always state that the threshold is necessary, not sufficient.
-- Shipped decision-readiness states: **READY / NEEDS EVIDENCE** only
-- Canonical 6R: Retain, Retire, Rehost, Replatform, Refactor, **Repurchase**
-- Lifecycle: Align · Discover · Understand · Assess · Decide · Govern · Prioritize ·
-  Plan · Define Target State · Execute · Validate · Transition · Measure Benefits ·
-  Learn · Reassess
-- Current beta also names **Mobilize** as the governed handoff from planning
-- Customer-facing grouping: Understand the Estate · Choose the Disposition ·
-  Prepare the Journey · Deliver with Control · Prove and Improve Value
-- Walkthroughs: **19 + 1 introduction = 20**; use “19 Walkthroughs + Introduction”
-- Named artifact: **decision-grade evidence record**
-
----
-
-## 11. Search, Answer and Language Controls
-
-The positioning layer explains the category. A separate discovery layer uses the
-language customers already search for: **application rationalization, 6R
-assessment, legacy application modernization, application portfolio management,
-data-platform modernization, modernization portfolio planning** and **cloud
-migration assessment**.
-
-Use these concepts naturally in page titles, descriptions, headings, visible
-answers and supporting pages. Concise, self-contained answers improve clarity for
-people and machine systems. Accurate structured data may help search engines
-understand visible content and enable eligible search features; it does not
-guarantee ranking, inclusion or citation in generated answers.
-
-### Words to Avoid
-
-- “executes,” “executed outcomes” or “executable journey” as current-beta claims
-- “world's first,” “only vendor-neutral” or unsupported competitor absolutes
-- “AI-native” without explaining what the AI does and what constrains it
-- “model-agnostic” as a shipped capability until another provider is supported
-- “real logic”; say deterministic scoring and governed AI analysis
-- Decimal scores without a defined rubric
-- “more than 5,000+”; use **5,000+**
-
----
-
-*Related: `claude/open-items-register.md` for backlog and open decisions.*
+The existing public landing page retains earlier Beta v1.0 copy. That authentic source is not retouched in the walkthrough; changing production copy is outside this repository-presentation update.

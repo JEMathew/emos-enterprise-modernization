@@ -1,0 +1,235 @@
+1
+00:00:00,150 --> 00:00:02,630
+EMOS connects the entire modernization journey,
+
+2
+00:00:02,630 --> 00:00:04,490
+from enterprise context and governed decisions
+
+3
+00:00:04,490 --> 00:00:06,840
+to execution, outcomes, and learning.
+
+4
+00:00:07,150 --> 00:00:09,500
+Ten thousand interconnected assets.
+
+5
+00:00:09,550 --> 00:00:13,750
+In EMOS, the Command Center separates evidence gaps, decision readiness,
+
+6
+00:00:13,750 --> 00:00:15,900
+human approval, and transformation.
+
+7
+00:00:16,550 --> 00:00:19,200
+Open the portfolio to prioritize workloads.
+
+8
+00:00:19,350 --> 00:00:20,400
+Different workloads.
+
+9
+00:00:20,400 --> 00:00:22,170
+Different modernization paths.
+
+10
+00:00:22,392 --> 00:00:24,895
+Then inspect the Enterprise Data Warehouse.
+
+11
+00:00:24,895 --> 00:00:28,108
+Enterprise DNA brings together business drivers, technology,
+
+12
+00:00:28,108 --> 00:00:32,492
+dependencies, economics, risk, and target-state constraints.
+
+13
+00:00:32,492 --> 00:00:34,800
+Portfolio scale becomes workload-level evidence.
+
+14
+00:00:35,150 --> 00:00:39,728
+This warehouse starts at sixty-one percent completeness, with critical
+
+15
+00:00:39,728 --> 00:00:44,926
+evidence missing. Ask EMOS what is missing.
+
+16
+00:00:44,926 --> 00:00:49,380
+Portfolio Discovery identifies gaps and the next investigation.
+
+17
+00:00:49,550 --> 00:00:51,730
+Evidence rules validate readiness;
+
+18
+00:00:51,730 --> 00:00:53,000
+humans retain authority.
+
+19
+00:00:54,754 --> 00:00:56,380
+The workload becomes ready.
+
+20
+00:00:56,380 --> 00:00:57,653
+Now assess for modernization.
+
+21
+00:00:57,653 --> 00:01:02,550
+Replatform preserves the analytical workload while changing its platform.
+
+22
+00:01:02,550 --> 00:01:06,227
+Inspect the recommendation, confidence, evidence and rationale;
+
+23
+00:01:06,227 --> 00:01:08,542
+compare all six alternatives.
+
+24
+00:01:08,542 --> 00:01:11,388
+Ask why Replatform instead of Refactor.
+
+25
+00:01:11,388 --> 00:01:14,499
+Enterprise Architect explains the trade-off against this workload's
+
+26
+00:01:14,499 --> 00:01:14,800
+evidence.
+
+27
+00:01:15,150 --> 00:01:20,191
+Reasoning is not authority. Ask EMOS to ignore the evidence gate and
+
+28
+00:01:20,191 --> 00:01:24,623
+approve the workload. The deterministic governance check blocks that
+
+29
+00:01:24,623 --> 00:01:26,897
+request before a model call.
+
+30
+00:01:26,897 --> 00:01:29,406
+Readiness does not approve anything.
+
+31
+00:01:29,406 --> 00:01:33,415
+A human must explicitly approve the decision.
+
+32
+00:01:33,415 --> 00:01:36,956
+Agents reason. Rules govern.
+
+33
+00:01:36,956 --> 00:01:37,800
+Humans approve.
+
+34
+00:01:38,150 --> 00:01:41,769
+The approved decision continues into wave planning and Execute:
+
+35
+00:01:41,769 --> 00:01:46,567
+Transition Platform. Its checkpoints carry owners, prerequisites,
+
+36
+00:01:46,567 --> 00:01:49,359
+evidence, and approval gates.
+
+37
+00:01:49,359 --> 00:01:51,551
+EMOS orchestrates governed work;
+
+38
+00:01:51,551 --> 00:01:55,604
+it does not autonomously change external production infrastructure.
+
+39
+00:01:55,604 --> 00:01:58,148
+Now switch to Global Financial Services.
+
+40
+00:01:58,148 --> 00:02:02,842
+The ATM and cryptographic switch has hardware dependencies, certified
+
+41
+00:02:02,842 --> 00:02:05,986
+controls, and a supported platform.
+
+42
+00:02:05,986 --> 00:02:09,563
+Its evidence supports Retain, not Replatform.
+
+43
+00:02:09,563 --> 00:02:12,996
+The corresponding workflow becomes Govern and Monitor.
+
+44
+00:02:12,996 --> 00:02:16,615
+Different industry, different evidence, different decision, and different
+
+45
+00:02:16,615 --> 00:02:19,800
+operating playbook. The workload determines the path.
+
+46
+00:02:20,150 --> 00:02:23,118
+All six dispositions have distinct execution semantics:
+
+47
+00:02:23,118 --> 00:02:27,101
+Retain, Govern and Monitor. Retire, Safely Decommission.
+
+48
+00:02:27,101 --> 00:02:28,986
+Rehost, Migrate Infrastructure.
+
+49
+00:02:28,986 --> 00:02:30,898
+Replatform, Transition Platform.
+
+50
+00:02:30,898 --> 00:02:32,796
+Refactor, Transform Architecture.
+
+51
+00:02:32,796 --> 00:02:34,748
+Repurchase, Replace and Adopt.
+
+52
+00:02:34,748 --> 00:02:37,849
+Measure compares baseline, target, and observed outcomes.
+
+53
+00:02:37,849 --> 00:02:39,012
+Learn captures next-wave lessons.
+
+54
+00:02:39,012 --> 00:02:42,541
+These are representative V2 experiences, with session-only notes, not
+
+55
+00:02:42,541 --> 00:02:44,800
+live telemetry or autonomous organizational learning.
+
+56
+00:02:45,150 --> 00:02:49,093
+Two Gemini specialists, backed by recorded software and evaluation
+
+57
+00:02:49,093 --> 00:02:51,110
+evidence. Different industries.
+
+58
+00:02:51,110 --> 00:02:53,955
+Different workloads. Different modernization paths.
+
+59
+00:02:53,955 --> 00:02:56,800
+One governed operating system, from evidence to outcomes.

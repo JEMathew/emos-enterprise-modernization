@@ -1,31 +1,26 @@
-# EMOS Polished Demo Flow
+# EMOS V2 — Product Walkthrough Route
 
-Target length: 3–4 minutes.
+[Watch the final 2:57 walkthrough](product-walkthrough/README.md) · [Product contract](../EMOS_V2_PRODUCT_CONTRACT.md)
 
-1. **Discover (30 seconds)** — Open **Portfolio**, import a CSV/JSON estate, and show the 5MB / 200-workload rejection contract, validation summary, and formula-injection defense. Explain that oversized portfolios fail as a whole rather than being silently truncated.
-2. **Understand (30 seconds)** — Open one workload's **Enterprise DNA** and point out known, incomplete, and missing evidence plus the deterministic completeness score.
-3. **Decide (60 seconds)** — Generate one governed 6R assessment. Highlight disposition, confidence, readiness, rationale, alternatives, risks, and missing evidence. Use a contextual follow-up to show that trust controls and deterministic metrics persist through the dialogue.
-4. **Plan (50 seconds)** — Open **Plan**, record the accountable program context, then review **Wave Plan**. Show deterministic sequencing and explain why assessment and evidence gates remain visible.
-5. **Mobilize (40 seconds)** — Open **Mobilize**. Review governance, people, platform, security, and delivery actions; state that EMOS prepares readiness rather than executing migrations.
-6. **Executive outcome (20 seconds)** — Export the Executive Decision Pack and open it. Close on the story: fragmented portfolio evidence becomes an explainable, governed path from discovery to mobilization.
+The walkthrough follows current light-mode EMOS through one governed modernization journey. The public landing page's authentic action is **Launch Interactive Workspace**.
 
-## Recording checklist
+| Time | Product experience |
+| --- | --- |
+| 0:00–0:07 | Real landing page, EMOS value proposition and workspace entrance. |
+| 0:07–0:22 | Apex Aerospace Command Center and 10,420+ asset reference context; Portfolio highlights Customer Analytics → Refactor, Enterprise Data Warehouse → Replatform and Document Management → Repurchase. |
+| 0:22–0:35 | Select Enterprise Data Warehouse; inspect Enterprise DNA and business, technology, dependency, economic, risk and target-state evidence. |
+| 0:35–0:57 | 61% completeness and evidence gaps; Ask EMOS uses Portfolio Discovery; complete missing evidence using the genuine product control; readiness becomes READY. |
+| 0:57–1:15 | Assess for Modernization, inspect Replatform, rationale and all six alternatives; Ask EMOS uses Enterprise Architect to explain Replatform versus Refactor. |
+| 1:15–1:38 | Deterministic governance blocks an approval-bypass request before a model call; explicit Human Approval remains separate. |
+| 1:38–1:56 | Plan shows the Modernization Wave Plan; Execute follows Replatform → Transition Platform with owners and checkpoint gates. |
+| 1:56–2:20 | Banking ATM/HSM Switch: different evidence supports Retain → Govern & Monitor. |
+| 2:20–2:35 | All six real disposition-specific workflow surfaces. |
+| 2:35–2:45 | Measure and Learn with reference-value and session-note boundaries. |
+| 2:45–2:51 | Verified V2.0 evidence, with bounded-results qualifications. |
+| 2:51–2:57 | Actual product view and full lifecycle close. |
 
-- Use a fresh signed-in user or a clean, known demo account.
-- Preload one representative imported portfolio and at least one completed assessment.
-- Record in both light and dark mode only if it does not interrupt narrative flow.
-- Avoid exposing keys, browser account lists, email notifications, or unrelated tabs.
-- End with the public URL, repository, and CI status.
+Exactly two Gemini-backed specialists appear: Portfolio Discovery and Enterprise Architect. Ask EMOS is the interface; the deterministic orchestrator is not a third agent.
 
-## Video alignment policy
+Reference estates are not customers, asset scope is not a live-connection claim, workflow orchestration is not autonomous infrastructure mutation, and Measure/Learn do not imply live customer telemetry or persistent autonomous learning. Genuine product labels are retained.
 
-The primary introduction now uses an undated, full-lifecycle opening and states the
-Beta v1.0 evidence, decision, and planning boundary before moving into the
-validated product narrative. Its captions contain the same opening language.
-
-Do not re-record a supporting clip merely because surrounding product chrome has
-changed. Refresh a clip only when its demonstrated action, label, or capability
-claim conflicts with the deployed application. In particular, visually check
-F02, F07, and F16 after navigation changes; retain them when their narrated task
-and visible controls remain accurate. This keeps the learning library useful
-without creating avoidable release drift.
+The earlier introduction remains available as a [historical Beta v1.0 recording](demo/README.md). It is not the canonical current V2.0 walkthrough.
