@@ -7,6 +7,8 @@ import App from '../src/App';
 import { LearningCenterPage } from '../src/components/LearningCenterPage';
 import {
   LEARNING_CATEGORIES,
+  CURRENT_V2_CAPABILITIES,
+  FUTURE_ROADMAP_CAPABILITIES,
   LEARNING_VIDEOS,
 } from '../src/data/learningVideos';
 import { ThemeProvider } from '../src/lib/theme';
@@ -175,6 +177,9 @@ describe('Public EMOS Learning Center (/learn)', () => {
     renderLearningCenter();
 
     expect(screen.getByRole('heading', { name: 'V2.0 Scope' })).toBeInTheDocument();
+    for (const capability of [...CURRENT_V2_CAPABILITIES, ...FUTURE_ROADMAP_CAPABILITIES]) {
+      expect(screen.getAllByText(capability, { exact: true })).toHaveLength(1);
+    }
     expect(screen.getByRole('heading', { name: 'Future / Full Vision' })).toBeInTheDocument();
     expect(
       screen.getByText(/not claimed as implemented in V2/i),

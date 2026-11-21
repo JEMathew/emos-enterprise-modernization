@@ -726,11 +726,5 @@ export const FUTURE_ROADMAP_CAPABILITIES = [
   "Live cloud migration, infrastructure provisioning, and automated cutover",
   "Enterprise SSO/RBAC approval workflows with external change-management integration",
   "Deep dependency intelligence, Target Architecture generation, portfolio optimization and policy packs",
-  "Vendor-neutral execution integrations, private/on-premises deployment and managed SaaS",
-  "Deep dependency intelligence, Target Architecture generation, portfolio optimization and policy packs",
-  "Vendor-neutral execution integrations, private/on-premises deployment and managed SaaS",
-  "Deep dependency intelligence, Target Architecture generation, portfolio optimization and policy packs",
-  "Vendor-neutral execution integrations, private/on-premises deployment and managed SaaS",
-  "Deep dependency intelligence, Target Architecture generation, portfolio optimization and policy packs",
   "Vendor-neutral execution integrations, private/on-premises deployment and managed SaaS"
 ] as const;
