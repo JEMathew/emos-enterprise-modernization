@@ -1,0 +1,288 @@
+{
+  "duration": 47.995188,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.92,
+      "text": "How does an approved decision become organized delivery work?"
+    },
+    {
+      "start": 4.14,
+      "end": 9.34,
+      "text": "EMOS uses deterministic wave planning and disposition-specific workflows to structure"
+    },
+    {
+      "start": 9.34,
+      "end": 10.34,
+      "text": "the next steps."
+    },
+    {
+      "start": 10.34,
+      "end": 15.94,
+      "text": "Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint"
+    },
+    {
+      "start": 15.94,
+      "end": 16.76,
+      "text": "requirements."
+    },
+    {
+      "start": 17.28,
+      "end": 20.7,
+      "text": "The chosen six R disposition determines the downstream playbook."
+    },
+    {
+      "start": 20.7,
+      "end": 26.24,
+      "text": "Needs Evidence and unapproved workloads cannot enter or advance governed execution."
+    },
+    {
+      "start": 26.919999999999998,
+      "end": 31.46,
+      "text": "Resolve evidence gaps and record explicit human approval before progressing through"
+    },
+    {
+      "start": 31.46,
+      "end": 31.979999999999997,
+      "text": "the workflow."
+    },
+    {
+      "start": 31.979999999999997,
+      "end": 34.459999999999994,
+      "text": "These are planning and tracking controls."
+    },
+    {
+      "start": 35.0,
+      "end": 40.239999999999995,
+      "text": "EMOS does not run a real cloud migration, provision infrastructure, or perform a"
+    },
+    {
+      "start": 40.239999999999995,
+      "end": 41.379999999999995,
+      "text": "production cutover."
+    },
+    {
+      "start": 41.839999999999996,
+      "end": 46.66,
+      "text": "Next, review the current blocker and assign the required evidence or delivery action"
+    },
+    {
+      "start": 46.66,
+      "end": 48.019999999999996,
+      "text": "to its accountable owner."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/140.wav",
+      "start": 0,
+      "end": 10.34,
+      "text": "How does an approved decision become organized delivery work?  EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/141.wav",
+      "start": 0,
+      "end": 10.36,
+      "text": "Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements.  The chosen six R disposition determines the downstream playbook."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/142.wav",
+      "start": 0,
+      "end": 11.28,
+      "text": "Needs Evidence and unapproved workloads cannot enter or advance governed execution.  Resolve evidence gaps and record explicit human approval before progressing through the workflow."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/143.wav",
+      "start": 0,
+      "end": 16.02,
+      "text": "These are planning and tracking controls.  EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover.  Next, review the current blocker and assign the required evidence or delivery action to its accountable owner."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 17.28,
+      "name": "aerospace-plan",
+      "label": "TRANSFORM / Wave Planning",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0000.png",
+          "t": 0.416
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0001.png",
+          "t": 0.476
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0002.png",
+          "t": 0.536
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0004.png",
+          "t": 0.665
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0005.png",
+          "t": 0.727
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0006.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0007.png",
+          "t": 0.866
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0008.png",
+          "t": 0.932
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0009.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0010.png",
+          "t": 1.06
+        }
+      ]
+    },
+    {
+      "start": 17.28,
+      "end": 20.7,
+      "name": "aerospace-execute",
+      "label": "TRANSFORM / Transition Platform",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0001.png",
+          "t": 0.499
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0002.png",
+          "t": 0.554
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0003.png",
+          "t": 0.618
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0004.png",
+          "t": 0.674
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0005.png",
+          "t": 0.738
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0006.png",
+          "t": 0.8
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0007.png",
+          "t": 0.86
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0008.png",
+          "t": 0.92
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0010.png",
+          "t": 1.04
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0011.png",
+          "t": 1.1
+        }
+      ]
+    },
+    {
+      "start": 20.7,
+      "end": 29,
+      "name": "human-approval-before",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 29,
+      "end": 31.98,
+      "name": "human-approved",
+      "label": "GOVERN / Approved Workload",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0001.png",
+          "t": 0.518
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0002.png",
+          "t": 0.602
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0003.png",
+          "t": 0.675
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0004.png",
+          "t": 0.756
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0005.png",
+          "t": 0.837
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0006.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0007.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0008.png",
+          "t": 1.073
+        }
+      ]
+    },
+    {
+      "start": 31.98,
+      "end": 47.995188,
+      "name": "banking-execute",
+      "label": "TRANSFORM / Govern & Monitor",
+      "detail": true,
+      "recording": null
+    }
+  ],
+  "id": "execution",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 48.0,
+  "sha256": "1d3691e1ac72ba25239c3e077836873b77fc15b19e493921a7447a8ab92be3ef",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

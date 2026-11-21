@@ -1,0 +1,292 @@
+{
+  "duration": 40.031271,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.84,
+      "text": "What do we know about the estate, and what should we investigate next?"
+    },
+    {
+      "start": 3.84,
+      "end": 7.88,
+      "text": "The Portfolio Discovery specialist uses Gemini to reason about heterogeneous"
+    },
+    {
+      "start": 7.88,
+      "end": 11.94,
+      "text": "evidence, relationships, ambiguity, and missing facts."
+    },
+    {
+      "start": 11.955,
+      "end": 16.375000000000004,
+      "text": "Structured output is validated before it reaches the workflow."
+    },
+    {
+      "start": 16.855,
+      "end": 21.335000000000004,
+      "text": "Missing evidence remains a gap; a plausible explanation is not a verified fact."
+    },
+    {
+      "start": 21.795,
+      "end": 24.935000000000002,
+      "text": "This is not an automatic connection to your live enterprise systems."
+    },
+    {
+      "start": 24.935000000000002,
+      "end": 32.355000000000004,
+      "text": "Review dependencies and prioritized investigations, then inspect Enterprise DNA for"
+    },
+    {
+      "start": 32.355000000000004,
+      "end": 33.355,
+      "text": "the selected workload."
+    },
+    {
+      "start": 34.455,
+      "end": 40.055,
+      "text": "Next, verify the highest-value missing facts before moving into a six R decision."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/108.wav",
+      "start": 0,
+      "end": 3.8400000000000003,
+      "text": "What do we know about the estate, and what should we investigate next?"
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/109.wav",
+      "start": 0,
+      "end": 8.08,
+      "text": "The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/110.wav",
+      "start": 3.964999999999999,
+      "end": 16.98,
+      "text": "Structured output is validated before it reaches the workflow.  Missing evidence remains a gap; a plausible explanation is not a verified fact.  This is not an automatic connection to your live enterprise systems."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/111.wav",
+      "start": 0,
+      "end": 15.1,
+      "text": "Review dependencies and prioritized investigations, then inspect Enterprise DNA for the selected workload.  Next, verify the highest-value missing facts before moving into a six R decision."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 9.20719233,
+      "name": "portfolio",
+      "label": "UNDERSTAND / Portfolio Discovery",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0000.png",
+          "t": 0.446
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0001.png",
+          "t": 0.507
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0002.png",
+          "t": 0.571
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0003.png",
+          "t": 0.629
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0004.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0005.png",
+          "t": 0.762
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0006.png",
+          "t": 0.829
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0007.png",
+          "t": 0.897
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0008.png",
+          "t": 0.961
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0009.png",
+          "t": 1.024
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0010.png",
+          "t": 1.093
+        }
+      ]
+    },
+    {
+      "start": 9.20719233,
+      "end": 16.813133819999997,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Enterprise DNA",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    },
+    {
+      "start": 16.813133819999997,
+      "end": 28.822515119999995,
+      "name": "discovery-live",
+      "label": "AI REASONING / Portfolio Discovery Specialist",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0000.png",
+          "t": 0.521
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0001.png",
+          "t": 0.631
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0002.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0003.png",
+          "t": 0.851
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0004.png",
+          "t": 0.952
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0005.png",
+          "t": 1.064
+        }
+      ]
+    },
+    {
+      "start": 28.822515119999995,
+      "end": 36.028143899999996,
+      "name": "aerospace-attributes",
+      "label": "UNDERSTAND / Evidence Context",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 36.028143899999996,
+      "end": 40.031271,
+      "name": "aerospace-ready",
+      "label": "UNDERSTAND / Next Evidence Action",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0000.png",
+          "t": 0.443
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0001.png",
+          "t": 0.533
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0002.png",
+          "t": 0.622
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0003.png",
+          "t": 0.715
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0004.png",
+          "t": 0.808
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0005.png",
+          "t": 0.901
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0006.png",
+          "t": 0.987
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0007.png",
+          "t": 1.075
+        }
+      ]
+    }
+  ],
+  "id": "discovery",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 40.031271,
+  "sha256": "5cc791ecdd12c9ea10002bda53805c75a81ba0943416f2404c7e78e26bca0d2c",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

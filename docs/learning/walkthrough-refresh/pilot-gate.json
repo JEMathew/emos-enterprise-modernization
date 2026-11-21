@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-11-21T01:36:13.417384+00:00",
+  "pilots": [
+    "dna",
+    "decision",
+    "governance"
+  ],
+  "route": "http://localhost:3010/learn",
+  "desktopViewport": [
+    1280,
+    720
+  ],
+  "responsiveEvidence": [
+    {
+      "duration": 60.362938,
+      "headings": 1,
+      "overflow": false,
+      "title": "Inspect Enterprise DNA and evidence gaps",
+      "videoReady": 4,
+      "width": 390
+    },
+    {
+      "duration": 66.833333,
+      "headings": 1,
+      "overflow": false,
+      "title": "Submit a workload for a 6R assessment",
+      "videoReady": 4,
+      "width": 390
+    },
+    {
+      "duration": 51.015604,
+      "headings": 1,
+      "overflow": false,
+      "title": "Enforce canonical 6R and evidence readiness",
+      "videoReady": 4,
+      "width": 390
+    }
+  ],
+  "responsiveMethod": "Actual /learn document in 390px iframe; browser viewport override did not apply",
+  "nativePlayback": true,
+  "fullscreen": true,
+  "escapeClose": true,
+  "keyboardSeeking": true,
+  "singleTitle": true,
+  "loadingCleared": true,
+  "realLightUi": true,
+  "captionMaxLines": 2,
+  "captionControlCollisions": 0,
+  "cillianReuse": true,
+  "newCredits": 0,
+  "learningRegressionTests": "20/20 passed",
+  "creativeCorrections": [
+    "Measured scene alignment",
+    "Removed low-confidence trailing narration boundaries before final pilot validation"
+  ]
+}

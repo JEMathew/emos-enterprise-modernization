@@ -36,114 +36,114 @@ const LIFECYCLE_TOPIC_GUIDES = [
   {
     "id": "what-is-emos",
     "title": "What is EMOS V2?",
-    "summary": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "summary": "Follow evidence through decisions, human approval, governed execution, Measure and Learn.",
     "masterId": "orientation",
-    "transcript": "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes. Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent. Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload."
+    "transcript": "What should your enterprise modernize, and what evidence supports that choice?  EMOS is the Enterprise Modernization Operating System. Follow Understand, Decide, Govern, Transform, and Outcomes. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface.  A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect.  Deterministic validation and governance enforce the rules.  The orchestrator is not a third agent. Evidence readiness never grants approval.  A human must explicitly approve governed progression.  Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Next, choose an estate and inspect one workload."
   },
   {
     "id": "product-vision",
     "title": "End-to-end V2 journey",
-    "summary": "Follow Understand → Decide → Govern → Transform → Outcomes, with two reasoning specialists and explicit human authority.",
+    "summary": "Follow evidence through decisions, human approval, governed execution, Measure and Learn.",
     "masterId": "orientation",
-    "transcript": "What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes. Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent. Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload."
+    "transcript": "What should your enterprise modernize, and what evidence supports that choice?  EMOS is the Enterprise Modernization Operating System. Follow Understand, Decide, Govern, Transform, and Outcomes. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface.  A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect.  Deterministic validation and governance enforce the rules.  The orchestrator is not a third agent. Evidence readiness never grants approval.  A human must explicitly approve governed progression.  Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Next, choose an estate and inspect one workload."
   },
   {
     "id": "getting-started",
     "title": "Getting started with EMOS V2",
-    "summary": "Navigate the Command Center, estate and workload context, private workspace, and appearance controls.",
+    "summary": "Find the Command Center, choose an estate and workload, and navigate your workspace.",
     "masterId": "workspace",
-    "transcript": "Where should you begin? Open EMOS and choose your workspace context. The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention. Use Understand to explore the portfolio and Enterprise DNA. Decide brings assessment and recommendations into focus. Governance remains a required checkpoint before approved transformation. Transform organizes the execution plan. Outcomes presents representative measurement and learning views. Keep the same estate and workload context as you move between these areas. Sign in for the private, owner-bound workspace. Use the appearance control for light, dark, or system themes, and adapt the layout to your screen. Next, select one workload and inspect its evidence."
+    "transcript": "Where should you begin?  Open EMOS and choose your workspace context.  The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention. Use Understand to explore the portfolio and Enterprise DNA.  Decide brings assessment and recommendations into focus.  Governance remains a required checkpoint before approved transformation. Transform organizes the execution plan. Keep the same estate and workload context as you move between these areas. Sign in for the private, owner-bound workspace.  Use the appearance control for light, dark, or system themes, and adapt the layout to your screen.  Next, select one workload and inspect its evidence."
   },
   {
     "id": "portfolio-upload",
     "title": "Import and assess a portfolio",
-    "summary": "Download sample data, validate a sanitized CSV/JSON portfolio, and carry imported evidence into DNA and assessment.",
+    "summary": "Use the template, validate a CSV or JSON portfolio and inspect the resulting workload evidence.",
     "masterId": "import",
-    "transcript": "How do you bring your own workload inventory into EMOS? Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio. The import path checks the schema and applies input-safety controls. Review the imported workload records and the evidence they contain before drawing conclusions. Importing a row does not verify every claim or make the workload ready. Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that context into assessment. Use the sample estates for representative demonstrations. Imported data is not live CMDB or telemetry discovery. Next, select an imported workload, close its critical gaps, and review its six R recommendation."
+    "transcript": "How do you bring your own workload inventory into EMOS?  Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio. The import path checks the schema and applies input-safety controls.  Review the imported workload records and the evidence they contain before drawing conclusions. Importing a row does not verify every claim or make the workload ready.  Open Enterprise DNA to inspect known, incomplete, and missing evidence. Imported data is not live CMDB or telemetry discovery.  Next, select an imported workload, close its critical gaps."
   },
   {
     "id": "enterprise-dna",
     "title": "Enterprise DNA and evidence readiness",
-    "summary": "Inspect 18 attributes across six dimensions. Resolve critical gaps and distinguish completeness, confidence, and readiness.",
+    "summary": "Open workload DNA, inspect 18 attributes, ask about missing evidence and prepare for assessment.",
     "masterId": "dna",
-    "transcript": "Is the workload evidence sufficient for a decision? Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state. Inspect the values and verification status. Relationship views support context, while missing and incomplete fields show where further investigation is needed. The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps. Confidence, completeness, and readiness are different signals. A high confidence score cannot override missing critical evidence. Verify facts using appropriate evidence. Load Sample Evidence is a labeled demo shortcut, not external verification. Next, carry the workload context into assessment; readiness still requires separate human approval."
+    "transcript": "Open the portfolio to prioritize workloads. Is the workload evidence sufficient for a decision?  Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state. Inspect the values and verification status.  Relationship views support context, while missing and incomplete fields show where further investigation is needed. The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps.  Confidence, completeness, and readiness are different signals. Next, ask what evidence is missing. The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts. Verify facts using appropriate evidence. Next, carry the workload context into assessment; readiness still requires separate human approval."
   },
   {
     "id": "modernization-agent",
     "title": "Ask EMOS and governed AI",
-    "summary": "Ask EMOS routes questions to Portfolio Discovery and Enterprise Architect through deterministic orchestration, validation, and governance.",
+    "summary": "Ask the two specialists about missing evidence, modernization choices and the next governed step.",
     "masterId": "ask",
-    "transcript": "How can you ask a useful question about the selected workload? Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step. Ask EMOS is an interface, not a third specialist. A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context. Portfolio Discovery investigates ambiguity and evidence gaps. Enterprise Architect reasons across the six R choices. Deterministic validation and governance check the response, and explicit human approval retains authority. If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback. It does not pretend that a model answered. Agents for ambiguity. Workflows for predictability. Rules for governance. Humans for authority. Next, ask what evidence is missing."
+    "transcript": "How can you ask a useful question about the selected workload?  Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step. Ask EMOS is an interface, not a third specialist.  A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context. Portfolio Discovery investigates ambiguity and evidence gaps.  Enterprise Architect reasons across the six R choices.  Deterministic validation and governance check the response, and explicit human approval retains authority. If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback.  It does not pretend that a model answered.  Agents for ambiguity.  Workflows for predictability.  Rules for governance.  Humans for authority.  Next, ask what evidence is missing."
   },
   {
     "id": "6r-overview",
     "title": "6R decisions and the Enterprise Architect",
-    "summary": "Review the Enterprise Architect specialist’s 6R rationale, alternatives, risks, and change triggers without inventing target-platform facts.",
+    "summary": "Review a recommendation, compare all six paths and examine the evidence behind the decision.",
     "masterId": "decision",
-    "transcript": "Which modernization path fits this workload? The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience. Retain means Govern and Monitor. Retire means Safely Decommission. Rehost means Migrate Infrastructure. Replatform means Transition Platform. Refactor means Transform Architecture. Repurchase means Replace and Adopt. Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision. Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice. New evidence can inform a follow-up assessment. Confidence does not equal readiness, and readiness does not equal approval. Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human."
+    "transcript": "Which modernization path fits this workload?  The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience. Retain means Govern and Monitor.  Retire means Safely Decommission.  Rehost means Migrate Infrastructure.  Replatform means Transition Platform.  Refactor means Transform Architecture.  Repurchase means Replace and Adopt. Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision.  Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice. New evidence can inform a follow-up assessment.  Confidence does not equal readiness, and readiness does not equal approval.  Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human."
   },
   {
     "id": "retain",
     "title": "Retain — Govern & Monitor",
     "summary": "Govern & Monitor: retain the workload with accountable oversight and evidence-based reassessment.",
     "masterId": "retain",
-    "transcript": "When is staying in place a valid modernization choice? Retain means Govern and Monitor when the evidence supports keeping the workload. The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning. These are governed planning stages, not a live telemetry integration or automatic infrastructure changes. Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment."
+    "transcript": "When is staying in place a valid modernization choice?  Retain means Govern and Monitor when the evidence supports keeping the workload. The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning. These are governed planning stages, not a live telemetry integration or automatic infrastructure changes. Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment."
   },
   {
     "id": "retire",
     "title": "Retire — Safely Decommission",
     "summary": "Safely Decommission: verify consumers, archive requirements, human approval, and closure checkpoints.",
     "masterId": "retire",
-    "transcript": "When should a workload be removed? Retire means Safely Decommission when verified evidence supports its removal. The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning. EMOS tracks these checkpoints; it does not shut down production systems for you. Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning."
+    "transcript": "When should a workload be removed?  Retire means Safely Decommission when verified evidence supports its removal. The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning. EMOS tracks these checkpoints; it does not shut down production systems for you. Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning."
   },
   {
     "id": "rehost",
     "title": "Rehost — Migrate Infrastructure",
     "summary": "Migrate Infrastructure: plan destination, validation, rollback, cutover, and stabilization with human authority.",
     "masterId": "rehost",
-    "transcript": "When does a workload need a change of infrastructure? Rehost means Migrate Infrastructure while preserving much of the existing application. The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning. EMOS plans and tracks this work; it does not perform the migration or cutover. Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed."
+    "transcript": "When does a workload need a change of infrastructure?  Rehost means Migrate Infrastructure while preserving much of the existing application. The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning. EMOS plans and tracks this work; it does not perform the migration or cutover. Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed."
   },
   {
     "id": "replatform",
     "title": "Replatform — Transition Platform",
     "summary": "Transition Platform: review compatibility and target constraints before governed platform delivery.",
     "masterId": "replatform",
-    "transcript": "When is a platform change appropriate? Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence. The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning. EMOS does not provision a managed platform or execute a live migration. Next, verify compatibility, target constraints, and accountable human approval before following the plan."
+    "transcript": "When is a platform change appropriate?  Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence. The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning. EMOS does not provision a managed platform or execute a live migration. Next, verify compatibility, target constraints, and accountable human approval before following the plan."
   },
   {
     "id": "refactor",
     "title": "Refactor — Transform Architecture",
     "summary": "Transform Architecture: organize decomposition, implementation, testing, and incremental transition.",
     "masterId": "refactor",
-    "transcript": "When does the architecture itself need to change? Refactor means Transform Architecture when the evidence justifies redesign. The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning. These stages organize governed delivery. EMOS does not autonomously rewrite or deploy your production application. Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition."
+    "transcript": "When does the architecture itself need to change?  Refactor means Transform Architecture when the evidence justifies redesign. The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning. These stages organize governed delivery.  EMOS does not autonomously rewrite or deploy your production application. Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition."
   },
   {
     "id": "repurchase",
     "title": "Repurchase — Replace & Adopt",
     "summary": "Replace & Adopt: review fit, compliance, data portability, user transition, and retirement of the previous system.",
     "masterId": "repurchase",
-    "transcript": "When is buying a replacement the right path? Repurchase means Replace and Adopt when evidence supports moving to a commercial product. The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning. EMOS tracks the plan; it does not purchase software or migrate users automatically. Next, verify fit, compliance, data portability, and human approval before adoption."
+    "transcript": "When is buying a replacement the right path?  Repurchase means Replace and Adopt when evidence supports moving to a commercial product. The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning. EMOS tracks the plan; it does not purchase software or migrate users automatically. Next, verify fit, compliance, data portability, and human approval before adoption."
   },
   {
     "id": "governance",
-    "title": "Evidence gates and explicit human approval",
-    "summary": "At least 70% completeness and zero critical gaps establish readiness. Explicit human approval remains a separate requirement.",
+    "title": "Evidence gates and human approval",
+    "summary": "Distinguish readiness from approval and follow the explicit human decision into governed execution.",
     "masterId": "governance",
-    "transcript": "Can AI approve its own recommendation? No. EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution. Readiness requires at least seventy percent evidence completeness and zero critical gaps. Needs Evidence blocks approval and execution progression. Ready does not mean Approved. The governed workflow requires explicit human sign-off. An AI request to bypass approval cannot change these rules. Even complete evidence does not remove the human decision. Inspect the evidence gaps, recommendation, alternatives, and risks before approval. Next, obtain accountable human review, then follow the disposition-specific plan. EMOS tracks governed work; it does not autonomously change production infrastructure."
+    "transcript": "Can AI approve its own recommendation?  No.  EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution. Readiness requires at least seventy percent evidence completeness and zero critical gaps.  Needs Evidence blocks approval and execution progression. The governed workflow requires explicit human sign-off.  An AI request to bypass approval cannot change these rules.  Even complete evidence does not remove the human decision. Inspect the evidence gaps, recommendation, alternatives, and risks before approval.  Next, obtain accountable human review, then follow the disposition-specific plan.  EMOS tracks governed work; it does not autonomously change production infrastructure."
   },
   {
     "id": "execution",
     "title": "Wave planning and governed execution",
-    "summary": "Sequence waves and follow disposition-specific stages, owners, blockers, and gates. EMOS does not execute live migrations.",
+    "summary": "Review a wave plan, follow the selected 6R workflow and identify the next accountable action.",
     "masterId": "execution",
-    "transcript": "How does an approved decision become organized delivery work? EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps. Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements. The chosen six R disposition determines the downstream playbook. Needs Evidence and unapproved workloads cannot enter or advance governed execution. Resolve evidence gaps and record explicit human approval before progressing through the workflow. These are planning and tracking controls. EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover. Next, review the current blocker and assign the required evidence or delivery action to its accountable owner."
+    "transcript": "How does an approved decision become organized delivery work?  EMOS uses deterministic wave planning and disposition-specific workflows to structure the next steps. Review wave sequencing, readiness actions, stage owners, blockers, and checkpoint requirements.  The chosen six R disposition determines the downstream playbook. Needs Evidence and unapproved workloads cannot enter or advance governed execution.  Resolve evidence gaps and record explicit human approval before progressing through the workflow. These are planning and tracking controls.  EMOS does not run a real cloud migration, provision infrastructure, or perform a production cutover.  Next, review the current blocker and assign the required evidence or delivery action to its accountable owner."
   },
   {
     "id": "outcomes-learning",
     "title": "Measure and Learn: V2 boundaries",
-    "summary": "Measure uses representative synthetic benchmarks. Learn uses representative lessons and session-only notes, with no automated retraining.",
+    "summary": "Compare reference outcomes and record a session note to inform the next review.",
     "masterId": "outcomes",
-    "transcript": "What can outcomes tell you about a modernization plan? Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context. In V2, these values are representative synthetic benchmarks. They are not readings from a live production telemetry, billing, or benefits-realization integration. Learn presents representative archetype lessons and lets you capture a session-only note. Describe the assumption, observed difference, lesson, and possible relevance to future work. Session notes do not retrain the agents or automatically change recommendations. Next, use these views to structure a review, then validate real outcomes in your approved systems. Any future recommendation still requires current evidence and human authority."
+    "transcript": "What can outcomes tell you about a modernization plan?  Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context. They are not readings from a live production telemetry, billing, or benefits-realization integration. Learn presents representative archetype lessons and lets you capture a session-only note.  Describe the assumption, observed difference, lesson, and possible relevance to future work. Session notes do not retrain the agents or automatically change recommendations.  Next, use these views to structure a review, then validate real outcomes in your approved systems.  Any future recommendation still requires current evidence and human authority."
   }
 ] as const;
 
@@ -261,7 +261,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                 See EMOS in Motion
               </h1>
               <p className="max-w-3xl text-base leading-8 text-[var(--emos-text-secondary)]">
-                Follow the evidence-to-decision journey from portfolio discovery and Enterprise DNA through explainable 6R recommendations, governance, governed transformation and representative outcomes.
+                Follow the evidence-to-decision journey from portfolio discovery and Enterprise DNA through explainable 6R recommendations, governance, governed transformation, outcomes and learning.
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <button
@@ -464,24 +464,6 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
                             <p className="text-sm leading-relaxed text-[var(--emos-text-secondary)]">
                               {video.description}
                             </p>
-                            <div className="flex flex-wrap gap-1.5">
-                              {video.tags.map((tag) => (
-                                <span
-                                  key={tag}
-                                  className="rounded-md bg-[var(--emos-bg-tertiary)] px-2 py-1 text-[10px] font-medium text-[var(--emos-text-muted)]"
-                                >
-                                  {tag}
-                                </span>
-                              ))}
-                            </div>
-                            <details className="mt-auto text-[11px] text-[var(--emos-text-muted)]">
-                              <summary className="cursor-pointer font-medium hover:text-[var(--emos-text-secondary)]">
-                                Reference metadata
-                              </summary>
-                              <code className="mt-1.5 block break-all rounded-md border border-[var(--emos-code-border)] bg-[var(--emos-code-bg)] px-2.5 py-1.5 text-[11px] text-[var(--emos-text-muted)]">
-                                File: {video.fileName}
-                              </code>
-                            </details>
                             {video.mediaUrl ? (
                               <button
                                 type="button"
@@ -593,7 +575,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
             <motion.article initial={reduceMotion ? false : { opacity: 0, x: -16 }} whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.45 }} className="rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-6">
               <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-300">
                 <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold">Implemented in EMOS V2</h2>
+                <h2 className="font-serif text-xl font-bold">V2.0 Scope</h2>
               </div>
               <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[var(--emos-text-secondary)]">
                 {CURRENT_V2_CAPABILITIES.map((item) => (
@@ -608,7 +590,7 @@ export const LearningCenterPage: React.FC<LearningCenterPageProps> = ({
             <motion.article initial={reduceMotion ? false : { opacity: 0, x: 16 }} whileInView={reduceMotion ? undefined : { opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.45 }} className="rounded-2xl border border-violet-500/25 bg-violet-500/5 p-6">
               <div className="flex items-center gap-2 text-violet-700 dark:text-violet-300">
                 <Map className="h-5 w-5" aria-hidden="true" />
-                <h2 className="font-serif text-xl font-bold">Future EMOS Roadmap</h2>
+                <h2 className="font-serif text-xl font-bold">Future / Full Vision</h2>
               </div>
               <p className="mt-3 text-xs leading-relaxed text-[var(--emos-text-muted)]">
                 These capabilities describe the broader product direction and are not claimed as implemented in V2.

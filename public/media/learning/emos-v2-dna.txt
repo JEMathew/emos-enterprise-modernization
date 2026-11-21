@@ -1,9 +1,1 @@
-Enterprise DNA and evidence readiness
-
-Is the workload evidence sufficient for a decision? Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state.
-
-Inspect the values and verification status. Relationship views support context, while missing and incomplete fields show where further investigation is needed.
-
-The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps. Confidence, completeness, and readiness are different signals. A high confidence score cannot override missing critical evidence.
-
-Verify facts using appropriate evidence. Load Sample Evidence is a labeled demo shortcut, not external verification. Next, carry the workload context into assessment; readiness still requires separate human approval.
+Open the portfolio to prioritize workloads. Is the workload evidence sufficient for a decision?  Enterprise DNA organizes eighteen attributes across six dimensions: business, technology, dependencies, economics, data and risk, and target state. Inspect the values and verification status.  Relationship views support context, while missing and incomplete fields show where further investigation is needed. The deterministic readiness gate requires at least seventy percent completeness and zero critical gaps.  Confidence, completeness, and readiness are different signals. Next, ask what evidence is missing. The Portfolio Discovery specialist uses Gemini to reason about heterogeneous evidence, relationships, ambiguity, and missing facts. Verify facts using appropriate evidence. Next, carry the workload context into assessment; readiness still requires separate human approval.

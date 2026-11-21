@@ -1,0 +1,258 @@
+{
+  "duration": 48.231896,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.38,
+      "text": "What can outcomes tell you about a modernization plan?"
+    },
+    {
+      "start": 4.2,
+      "end": 8.98,
+      "text": "Measure presents Baseline, Target, and Observed values so you can discuss assumptions"
+    },
+    {
+      "start": 8.98,
+      "end": 12.435792,
+      "text": "and differences in the chosen disposition's context."
+    },
+    {
+      "start": 12.435792,
+      "end": 16.175792,
+      "text": "They are not readings from a live production telemetry, billing, or"
+    },
+    {
+      "start": 16.982715076923075,
+      "end": 17.815792,
+      "text": "benefits-realization integration."
+    },
+    {
+      "start": 17.815792,
+      "end": 23.335791999999998,
+      "text": "Learn presents representative archetype lessons and lets you capture a session-only"
+    },
+    {
+      "start": 23.335791999999998,
+      "end": 23.895792,
+      "text": "note."
+    },
+    {
+      "start": 24.375791999999997,
+      "end": 29.155791999999998,
+      "text": "Describe the assumption, observed difference, lesson, and possible relevance to"
+    },
+    {
+      "start": 29.155791999999998,
+      "end": 29.915791999999996,
+      "text": "future work."
+    },
+    {
+      "start": 29.915791999999996,
+      "end": 35.275791999999996,
+      "text": "Session notes do not retrain the agents or automatically change recommendations."
+    },
+    {
+      "start": 36.495791999999994,
+      "end": 41.71579199999999,
+      "text": "Next, use these views to structure a review, then validate real outcomes in your"
+    },
+    {
+      "start": 41.71579199999999,
+      "end": 42.675791999999994,
+      "text": "approved systems."
+    },
+    {
+      "start": 43.375792,
+      "end": 48.25579199999999,
+      "text": "Any future recommendation still requires current evidence and human authority."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/144.wav",
+      "start": 0,
+      "end": 12.400792000000001,
+      "text": "What can outcomes tell you about a modernization plan?  Measure presents Baseline, Target, and Observed values so you can discuss assumptions and differences in the chosen disposition's context."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/145.wav",
+      "start": 4.825,
+      "end": 10.24,
+      "text": "They are not readings from a live production telemetry, billing, or benefits-realization integration."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/146.wav",
+      "start": 0,
+      "end": 12.1,
+      "text": "Learn presents representative archetype lessons and lets you capture a session-only note.  Describe the assumption, observed difference, lesson, and possible relevance to future work."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/147.wav",
+      "start": 0,
+      "end": 18.32,
+      "text": "Session notes do not retrain the agents or automatically change recommendations.  Next, use these views to structure a review, then validate real outcomes in your approved systems.  Any future recommendation still requires current evidence and human authority."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 10,
+      "name": "measure",
+      "label": "OUTCOMES / Measure",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 10,
+      "end": 17.45,
+      "name": "measure",
+      "label": "OUTCOMES / Reference Values",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 17.45,
+      "end": 29.55,
+      "name": "learn",
+      "label": "LEARN / Lessons & Session Notes",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0000.png",
+          "t": 0.409
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0001.png",
+          "t": 0.459
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0002.png",
+          "t": 0.509
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0003.png",
+          "t": 0.56
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0004.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0005.png",
+          "t": 0.657
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0006.png",
+          "t": 0.71
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0007.png",
+          "t": 0.759
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0008.png",
+          "t": 0.808
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0009.png",
+          "t": 0.862
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0010.png",
+          "t": 0.909
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0011.png",
+          "t": 0.967
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0012.png",
+          "t": 1.016
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0013.png",
+          "t": 1.067
+        }
+      ]
+    },
+    {
+      "start": 29.55,
+      "end": 48.231896,
+      "name": "learn-recorded",
+      "label": "LEARN / Session Note",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0000.png",
+          "t": 0.427
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0001.png",
+          "t": 0.479
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0002.png",
+          "t": 0.527
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0003.png",
+          "t": 0.58
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0004.png",
+          "t": 0.631
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0005.png",
+          "t": 0.677
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0006.png",
+          "t": 0.735
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0007.png",
+          "t": 0.785
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0008.png",
+          "t": 0.834
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0009.png",
+          "t": 0.886
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0010.png",
+          "t": 0.935
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0011.png",
+          "t": 0.996
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0012.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn-recorded/0013.png",
+          "t": 1.094
+        }
+      ]
+    }
+  ],
+  "id": "outcomes",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 48.25,
+  "sha256": "809e2c0156fcb0f86a239a4111a1ffc87a84ac8623d9cfac1144aee692045d9e",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:02,160
+When should a workload be removed?
+
+2
+00:00:02,840 --> 00:00:07,060
+Retire means Safely Decommission when verified evidence supports its removal.
+
+3
+00:00:07,060 --> 00:00:13,440
+The playbook covers approval, consumer transition, archiving, decommissioning,
+
+4
+00:00:13,700 --> 00:00:16,960
+closure validation, measurement, and learning.
+
+5
+00:00:16,960 --> 00:00:22,280
+EMOS tracks these checkpoints; it does not shut down production systems for you.
+
+6
+00:00:22,280 --> 00:00:28,860
+Next, verify dependencies and retention requirements, obtain human approval, and
+
+7
+00:00:28,860 --> 00:00:32,140
+confirm accountable owners before decommissioning.

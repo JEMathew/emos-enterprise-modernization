@@ -1,9 +1,1 @@
-Replatform — Transition Platform
-
-When is a platform change appropriate? Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence.
-
-The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning.
-
-EMOS does not provision a managed platform or execute a live migration.
-
-Next, verify compatibility, target constraints, and accountable human approval before following the plan.
+When is a platform change appropriate?  Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence. The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning. EMOS does not provision a managed platform or execute a live migration. Next, verify compatibility, target constraints, and accountable human approval before following the plan.

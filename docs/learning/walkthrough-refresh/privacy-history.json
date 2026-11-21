@@ -1,0 +1,186 @@
+{
+  "duration": 41.58025,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 4.62,
+      "text": "How do you return to previous assessments while keeping workspace data separated?"
+    },
+    {
+      "start": 5.14,
+      "end": 8.94,
+      "text": "Sign in to use the owner-bound workspace and its assessment history."
+    },
+    {
+      "start": 9.255,
+      "end": 14.715,
+      "text": "EMOS uses authenticated access and owner-scoped Firestore rules for persisted user"
+    },
+    {
+      "start": 14.715,
+      "end": 15.375,
+      "text": "records."
+    },
+    {
+      "start": 15.375,
+      "end": 19.955,
+      "text": "Search assessment titles and content, filter the available history, and reopen a"
+    },
+    {
+      "start": 19.955,
+      "end": 22.895,
+      "text": "prior decision to review its evidence and recommendation."
+    },
+    {
+      "start": 23.735,
+      "end": 26.295,
+      "text": "History helps you examine previous work in context."
+    },
+    {
+      "start": 26.61,
+      "end": 31.330000000000002,
+      "text": "Revisiting an assessment is not a fresh approval or evidence verification."
+    },
+    {
+      "start": 32.39,
+      "end": 37.61,
+      "text": "Next, check whether its facts remain current, supply updated evidence where needed,"
+    },
+    {
+      "start": 38.27,
+      "end": 41.61,
+      "text": "and follow the same readiness and human-governance checkpoints."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/128.wav",
+      "start": 0,
+      "end": 9.22,
+      "text": "How do you return to previous assessments while keeping workspace data separated?  Sign in to use the owner-bound workspace and its assessment history."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/129.wav",
+      "start": 9.925,
+      "end": 16.080000000000002,
+      "text": "EMOS uses authenticated access and owner-scoped Firestore rules for persisted user records."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/130.wav",
+      "start": 0,
+      "end": 11.200000000000001,
+      "text": "Search assessment titles and content, filter the available history, and reopen a prior decision to review its evidence and recommendation.  History helps you examine previous work in context."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/131.wav",
+      "start": 0.7049999999999975,
+      "end": 15.719999999999999,
+      "text": "Revisiting an assessment is not a fresh approval or evidence verification.  Next, check whether its facts remain current, supply updated evidence where needed, and follow the same readiness and human-governance checkpoints."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 13.30568,
+      "name": "workspace-history",
+      "label": "WORKSPACE / Assessment History",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 13.30568,
+      "end": 24.116545,
+      "name": "history-filter",
+      "label": "WORKSPACE / Find a Previous Assessment",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 24.116545,
+      "end": 34.5116075,
+      "name": "history-open",
+      "label": "WORKSPACE / Review a Decision",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 34.5116075,
+      "end": 41.58025,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Recheck the Evidence",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    }
+  ],
+  "id": "privacy-history",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 41.583333,
+  "sha256": "84b69f9d1fe253f963572fd0e6bfb1cb5931a6158533ec9e03e4776c20e443d6",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

@@ -1,0 +1,344 @@
+{
+  "duration": 51.015604,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.3600000000000003,
+      "text": "Can AI approve its own recommendation?"
+    },
+    {
+      "start": 3.84,
+      "end": 3.98,
+      "text": "No."
+    },
+    {
+      "start": 4.62,
+      "end": 10.48,
+      "text": "EMOS separates reasoning, deterministic readiness, and human authority so that a"
+    },
+    {
+      "start": 10.48,
+      "end": 12.8,
+      "text": "confident answer cannot authorize execution."
+    },
+    {
+      "start": 12.8,
+      "end": 17.94,
+      "text": "Readiness requires at least seventy percent evidence completeness and zero critical"
+    },
+    {
+      "start": 17.94,
+      "end": 18.580000000000002,
+      "text": "gaps."
+    },
+    {
+      "start": 19.26,
+      "end": 22.62,
+      "text": "Needs Evidence blocks approval and execution progression."
+    },
+    {
+      "start": 22.62,
+      "end": 25.685384615384617,
+      "text": "The governed workflow requires explicit human sign-off."
+    },
+    {
+      "start": 26.36,
+      "end": 29.880000000000003,
+      "text": "An AI request to bypass approval cannot change these rules."
+    },
+    {
+      "start": 30.62,
+      "end": 33.56,
+      "text": "Even complete evidence does not remove the human decision."
+    },
+    {
+      "start": 33.56,
+      "end": 39.74,
+      "text": "Inspect the evidence gaps, recommendation, alternatives, and risks before approval."
+    },
+    {
+      "start": 40.36,
+      "end": 45.56,
+      "text": "Next, obtain accountable human review, then follow the disposition-specific plan."
+    },
+    {
+      "start": 46.0,
+      "end": 51.04,
+      "text": "EMOS tracks governed work; it does not autonomously change production infrastructure."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/124.wav",
+      "start": 0,
+      "end": 12.799999999999999,
+      "text": "Can AI approve its own recommendation?  No.  EMOS separates reasoning, deterministic readiness, and human authority so that a confident answer cannot authorize execution."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/125.wav",
+      "start": 0,
+      "end": 9.82,
+      "text": "Readiness requires at least seventy percent evidence completeness and zero critical gaps.  Needs Evidence blocks approval and execution progression."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/126.wav",
+      "start": 0,
+      "end": 10.94,
+      "text": "The governed workflow requires explicit human sign-off.  An AI request to bypass approval cannot change these rules.  Even complete evidence does not remove the human decision."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/127.wav",
+      "start": 0,
+      "end": 17.46,
+      "text": "Inspect the evidence gaps, recommendation, alternatives, and risks before approval.  Next, obtain accountable human review, then follow the disposition-specific plan.  EMOS tracks governed work; it does not autonomously change production infrastructure."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 12.8,
+      "name": "human-approval-before",
+      "label": "GOVERN / Human Approval",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 12.8,
+      "end": 22.6,
+      "name": "aerospace-dna",
+      "label": "GOVERN / Evidence Gate",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    },
+    {
+      "start": 22.6,
+      "end": 26.8,
+      "name": "aerospace-ready",
+      "label": "GOVERN / Readiness",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0000.png",
+          "t": 0.443
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0001.png",
+          "t": 0.533
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0002.png",
+          "t": 0.622
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0003.png",
+          "t": 0.715
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0004.png",
+          "t": 0.808
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0005.png",
+          "t": 0.901
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0006.png",
+          "t": 0.987
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-ready/0007.png",
+          "t": 1.075
+        }
+      ]
+    },
+    {
+      "start": 26.8,
+      "end": 34.0,
+      "name": "governance-zero-calls",
+      "label": "GOVERN / Deterministic Validation",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 34.0,
+      "end": 42.2,
+      "name": "human-approval-before",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 42.2,
+      "end": 46.4,
+      "name": "human-approved",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0001.png",
+          "t": 0.518
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0002.png",
+          "t": 0.602
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0003.png",
+          "t": 0.675
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0004.png",
+          "t": 0.756
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0005.png",
+          "t": 0.837
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0006.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0007.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0008.png",
+          "t": 1.073
+        }
+      ]
+    },
+    {
+      "start": 46.4,
+      "end": 51.015604,
+      "name": "aerospace-execute",
+      "label": "TRANSFORM / Transition Platform",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0001.png",
+          "t": 0.499
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0002.png",
+          "t": 0.554
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0003.png",
+          "t": 0.618
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0004.png",
+          "t": 0.674
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0005.png",
+          "t": 0.738
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0006.png",
+          "t": 0.8
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0007.png",
+          "t": 0.86
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0008.png",
+          "t": 0.92
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0010.png",
+          "t": 1.04
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0011.png",
+          "t": 1.1
+        }
+      ]
+    }
+  ],
+  "id": "governance",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 51.015604,
+  "sha256": "fb31f6f82552f216ca9f52b2128a922238080c5cf5059fe467619a439da5cee9",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

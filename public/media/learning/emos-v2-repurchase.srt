@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:02,180
+When is buying a replacement the right path?
+
+2
+00:00:02,460 --> 00:00:07,380
+Repurchase means Replace and Adopt when evidence supports moving to a commercial
+
+3
+00:00:07,380 --> 00:00:07,920
+product.
+
+4
+00:00:07,920 --> 00:00:14,000
+The playbook structures approval, replacement selection, configuration, data and user
+
+5
+00:00:14,000 --> 00:00:19,600
+migration, transition, retirement of the previous system, measurement, and learning.
+
+6
+00:00:19,615 --> 00:00:25,655
+EMOS tracks the plan; it does not purchase software or migrate users automatically.
+
+7
+00:00:25,655 --> 00:00:31,715
+Next, verify fit, compliance, data portability, and human approval before adoption.

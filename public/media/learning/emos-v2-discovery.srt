@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,840
+What do we know about the estate, and what should we investigate next?
+
+2
+00:00:03,840 --> 00:00:07,880
+The Portfolio Discovery specialist uses Gemini to reason about heterogeneous
+
+3
+00:00:07,880 --> 00:00:11,940
+evidence, relationships, ambiguity, and missing facts.
+
+4
+00:00:11,955 --> 00:00:16,375
+Structured output is validated before it reaches the workflow.
+
+5
+00:00:16,855 --> 00:00:21,335
+Missing evidence remains a gap; a plausible explanation is not a verified fact.
+
+6
+00:00:21,795 --> 00:00:24,935
+This is not an automatic connection to your live enterprise systems.
+
+7
+00:00:24,935 --> 00:00:32,355
+Review dependencies and prioritized investigations, then inspect Enterprise DNA for
+
+8
+00:00:32,355 --> 00:00:33,355
+the selected workload.
+
+9
+00:00:34,455 --> 00:00:40,055
+Next, verify the highest-value missing facts before moving into a six R decision.

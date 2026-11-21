@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:02,920
+How can you ask a useful question about the selected workload?
+
+2
+00:00:04,040 --> 00:00:09,700
+Open Ask EMOS and ask about evidence, dependencies, modernization options, or the
+
+3
+00:00:09,700 --> 00:00:10,720
+next governed step.
+
+4
+00:00:10,720 --> 00:00:14,320
+Ask EMOS is an interface, not a third specialist.
+
+5
+00:00:15,100 --> 00:00:19,980
+A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise
+
+6
+00:00:19,980 --> 00:00:23,420
+Architect, or both, using the current context.
+
+7
+00:00:23,420 --> 00:00:27,760
+Portfolio Discovery investigates ambiguity and evidence gaps.
+
+8
+00:00:28,680 --> 00:00:32,280
+Enterprise Architect reasons across the six R choices.
+
+9
+00:00:36,220 --> 00:00:41,220
+Deterministic validation and governance check the response, and explicit human
+
+10
+00:00:41,220 --> 00:00:42,920
+approval retains authority.
+
+11
+00:00:42,920 --> 00:00:48,580
+If AI reasoning is unavailable, EMOS labels the deterministic status and evidence
+
+12
+00:00:48,580 --> 00:00:49,360
+fallback.
+
+13
+00:00:49,880 --> 00:00:52,140
+It does not pretend that a model answered.
+
+14
+00:00:52,840 --> 00:00:54,420
+Agents for ambiguity.
+
+15
+00:00:55,380 --> 00:00:57,060
+Workflows for predictability.
+
+16
+00:00:57,920 --> 00:00:58,800
+Rules for governance.
+
+17
+00:00:59,840 --> 00:01:00,840
+Humans for authority.
+
+18
+00:01:01,680 --> 00:01:03,740
+Next, ask what evidence is missing.

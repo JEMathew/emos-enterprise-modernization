@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:03,380
+What can outcomes tell you about a modernization plan?
+
+2
+00:00:04,200 --> 00:00:08,980
+Measure presents Baseline, Target, and Observed values so you can discuss assumptions
+
+3
+00:00:08,980 --> 00:00:12,436
+and differences in the chosen disposition's context.
+
+4
+00:00:12,436 --> 00:00:16,176
+They are not readings from a live production telemetry, billing, or
+
+5
+00:00:16,983 --> 00:00:17,816
+benefits-realization integration.
+
+6
+00:00:17,816 --> 00:00:23,336
+Learn presents representative archetype lessons and lets you capture a session-only
+
+7
+00:00:23,336 --> 00:00:23,896
+note.
+
+8
+00:00:24,376 --> 00:00:29,156
+Describe the assumption, observed difference, lesson, and possible relevance to
+
+9
+00:00:29,156 --> 00:00:29,916
+future work.
+
+10
+00:00:29,916 --> 00:00:35,276
+Session notes do not retrain the agents or automatically change recommendations.
+
+11
+00:00:36,496 --> 00:00:41,716
+Next, use these views to structure a review, then validate real outcomes in your
+
+12
+00:00:41,716 --> 00:00:42,676
+approved systems.
+
+13
+00:00:43,376 --> 00:00:48,256
+Any future recommendation still requires current evidence and human authority.

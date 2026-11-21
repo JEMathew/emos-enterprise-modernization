@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:01,900
+When is a platform change appropriate?
+
+2
+00:00:02,780 --> 00:00:06,680
+Replatform means Transition Platform while keeping the decision grounded in workload
+
+3
+00:00:06,680 --> 00:00:08,540
+and target-state evidence.
+
+4
+00:00:08,540 --> 00:00:12,320
+The playbook covers approval, target preparation, migration or transformation,
+
+5
+00:00:12,320 --> 00:00:15,880
+validation, cutover, optimization, measurement, and learning.
+
+6
+00:00:15,880 --> 00:00:21,660
+EMOS does not provision a managed platform or execute a live migration.
+
+7
+00:00:21,660 --> 00:00:27,640
+Next, verify compatibility, target constraints, and accountable human approval before
+
+8
+00:00:27,640 --> 00:00:28,540
+following the plan.

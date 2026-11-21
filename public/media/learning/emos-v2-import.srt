@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:05,700
+How do you bring your own workload inventory into EMOS?
+
+2
+00:00:06,280 --> 00:00:12,760
+Start with the sample dataset to understand the structure, or choose a sanitized CSV
+
+3
+00:00:12,760 --> 00:00:14,560
+or JSON portfolio.
+
+4
+00:00:14,560 --> 00:00:18,800
+The import path checks the schema and applies input-safety controls.
+
+5
+00:00:19,420 --> 00:00:24,300
+Review the imported workload records and the evidence they contain before drawing
+
+6
+00:00:24,300 --> 00:00:24,740
+conclusions.
+
+7
+00:00:24,740 --> 00:00:29,120
+Importing a row does not verify every claim or make the workload ready.
+
+8
+00:00:29,880 --> 00:00:34,080
+Open Enterprise DNA to inspect known, incomplete, and missing evidence.
+
+9
+00:00:34,095 --> 00:00:37,675
+Imported data is not live CMDB or telemetry discovery.
+
+10
+00:00:38,415 --> 00:00:42,095
+Next, select an imported workload, close its critical gaps.

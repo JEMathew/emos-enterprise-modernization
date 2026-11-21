@@ -1,0 +1,310 @@
+{
+  "duration": 31.692104,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.18,
+      "text": "When is buying a replacement the right path?"
+    },
+    {
+      "start": 2.46,
+      "end": 7.38,
+      "text": "Repurchase means Replace and Adopt when evidence supports moving to a commercial"
+    },
+    {
+      "start": 7.38,
+      "end": 7.92,
+      "text": "product."
+    },
+    {
+      "start": 7.92,
+      "end": 14.0,
+      "text": "The playbook structures approval, replacement selection, configuration, data and user"
+    },
+    {
+      "start": 14.0,
+      "end": 19.6,
+      "text": "migration, transition, retirement of the previous system, measurement, and learning."
+    },
+    {
+      "start": 19.615,
+      "end": 25.654999999999998,
+      "text": "EMOS tracks the plan; it does not purchase software or migrate users automatically."
+    },
+    {
+      "start": 25.654999999999998,
+      "end": 31.715,
+      "text": "Next, verify fit, compliance, data portability, and human approval before adoption."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/168.wav",
+      "start": 0,
+      "end": 7.92,
+      "text": "When is buying a replacement the right path?  Repurchase means Replace and Adopt when evidence supports moving to a commercial product."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/169.wav",
+      "start": 0,
+      "end": 11.66,
+      "text": "The playbook structures approval, replacement selection, configuration, data and user migration, transition, retirement of the previous system, measurement, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/170.wav",
+      "start": 3.425,
+      "end": 9.5,
+      "text": "EMOS tracks the plan; it does not purchase software or migrate users automatically."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/171.wav",
+      "start": 0,
+      "end": 6.04,
+      "text": "Next, verify fit, compliance, data portability, and human approval before adoption."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 5.70457872,
+      "name": "repurchase",
+      "label": "TRANSFORM / Replace & Adopt",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0000.png",
+          "t": 0.422
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0001.png",
+          "t": 0.482
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0002.png",
+          "t": 0.543
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0004.png",
+          "t": 0.66
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0005.png",
+          "t": 0.716
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0006.png",
+          "t": 0.774
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0007.png",
+          "t": 0.841
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0008.png",
+          "t": 0.907
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0010.png",
+          "t": 1.031
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0011.png",
+          "t": 1.095
+        }
+      ]
+    },
+    {
+      "start": 5.70457872,
+      "end": 19.649104480000002,
+      "name": "repurchase",
+      "label": "TRANSFORM / Replace & Adopt",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0000.png",
+          "t": 0.422
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0001.png",
+          "t": 0.482
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0002.png",
+          "t": 0.543
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0004.png",
+          "t": 0.66
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0005.png",
+          "t": 0.716
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0006.png",
+          "t": 0.774
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0007.png",
+          "t": 0.841
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0008.png",
+          "t": 0.907
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0010.png",
+          "t": 1.031
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0011.png",
+          "t": 1.095
+        }
+      ]
+    },
+    {
+      "start": 19.649104480000002,
+      "end": 27.25520944,
+      "name": "repurchase",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0000.png",
+          "t": 0.422
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0001.png",
+          "t": 0.482
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0002.png",
+          "t": 0.543
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0004.png",
+          "t": 0.66
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0005.png",
+          "t": 0.716
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0006.png",
+          "t": 0.774
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0007.png",
+          "t": 0.841
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0008.png",
+          "t": 0.907
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0010.png",
+          "t": 1.031
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0011.png",
+          "t": 1.095
+        }
+      ]
+    },
+    {
+      "start": 27.25520944,
+      "end": 31.692104,
+      "name": "repurchase",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0000.png",
+          "t": 0.422
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0001.png",
+          "t": 0.482
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0002.png",
+          "t": 0.543
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0004.png",
+          "t": 0.66
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0005.png",
+          "t": 0.716
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0006.png",
+          "t": 0.774
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0007.png",
+          "t": 0.841
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0008.png",
+          "t": 0.907
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0010.png",
+          "t": 1.031
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0011.png",
+          "t": 1.095
+        }
+      ]
+    }
+  ],
+  "id": "repurchase",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 31.692104,
+  "sha256": "ad7c7550774a3abb5f030f41364e57ea0af26b4b9805d3949d53a6e1d9cae6aa",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

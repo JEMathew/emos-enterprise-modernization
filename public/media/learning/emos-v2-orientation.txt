@@ -1,9 +1,1 @@
-What is EMOS V2?
-
-What should your enterprise modernize, and what evidence supports that choice? EMOS is the Enterprise Modernization Operating System. It connects workload evidence, six R decisions, human governance, execution planning, and representative outcomes.
-
-Follow Understand, Decide, Govern, Transform, and Outcomes. Begin with a sample estate or a sanitized portfolio. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision.
-
-Ask EMOS is the conversational interface. A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect. Deterministic validation and governance enforce the rules. The orchestrator is not a third agent.
-
-Evidence readiness never grants approval. A human must explicitly approve governed progression. Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Measure and Learn show representative benchmarks and session-only notes. Next, choose an estate and inspect one workload.
+What should your enterprise modernize, and what evidence supports that choice?  EMOS is the Enterprise Modernization Operating System. Follow Understand, Decide, Govern, Transform, and Outcomes. Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision. Ask EMOS is the conversational interface.  A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect.  Deterministic validation and governance enforce the rules.  The orchestrator is not a third agent. Evidence readiness never grants approval.  A human must explicitly approve governed progression.  Transform tracks disposition-specific workflows; it does not perform live cloud migrations. Next, choose an estate and inspect one workload.

@@ -1,0 +1,510 @@
+{
+  "duration": 66.795125,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.9,
+      "text": "Which modernization path fits this workload?"
+    },
+    {
+      "start": 4.68,
+      "end": 10.0,
+      "text": "The Enterprise Architect specialist compares the evidence across six canonical"
+    },
+    {
+      "start": 10.0,
+      "end": 15.7,
+      "text": "dispositions, through Ask EMOS and the governed assessment experience."
+    },
+    {
+      "start": 15.7,
+      "end": 18.2,
+      "text": "Retain means Govern and Monitor."
+    },
+    {
+      "start": 19.099999999999998,
+      "end": 21.46,
+      "text": "Retire means Safely Decommission."
+    },
+    {
+      "start": 22.32,
+      "end": 24.580000000000002,
+      "text": "Rehost means Migrate Infrastructure."
+    },
+    {
+      "start": 25.92,
+      "end": 27.94,
+      "text": "Replatform means Transition Platform."
+    },
+    {
+      "start": 28.939999999999998,
+      "end": 30.96,
+      "text": "Refactor means Transform Architecture."
+    },
+    {
+      "start": 32.04,
+      "end": 34.08,
+      "text": "Repurchase means Replace and Adopt."
+    },
+    {
+      "start": 34.08,
+      "end": 42.18,
+      "text": "Review the recommendation, rationale, alternatives, risks, constraints, and the"
+    },
+    {
+      "start": 42.18,
+      "end": 43.30758620689655,
+      "text": "evidence that could change the decision."
+    },
+    {
+      "start": 43.30758620689655,
+      "end": 50.54,
+      "text": "Target-platform claims must follow verified target-state evidence; EMOS should not"
+    },
+    {
+      "start": 50.54,
+      "end": 51.92,
+      "text": "invent a cloud choice."
+    },
+    {
+      "start": 51.92,
+      "end": 54.38,
+      "text": "New evidence can inform a follow-up assessment."
+    },
+    {
+      "start": 55.160000000000004,
+      "end": 59.4,
+      "text": "Confidence does not equal readiness, and readiness does not equal approval."
+    },
+    {
+      "start": 59.980000000000004,
+      "end": 65.74000000000001,
+      "text": "Next, resolve critical gaps, examine rejected alternatives, and bring the decision to"
+    },
+    {
+      "start": 65.74000000000001,
+      "end": 66.82000000000001,
+      "text": "an accountable human."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/116.wav",
+      "start": 0,
+      "end": 15.7,
+      "text": "Which modernization path fits this workload?  The Enterprise Architect specialist compares the evidence across six canonical dispositions, through Ask EMOS and the governed assessment experience."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/117.wav",
+      "start": 0,
+      "end": 18.380000000000003,
+      "text": "Retain means Govern and Monitor.  Retire means Safely Decommission.  Rehost means Migrate Infrastructure.  Replatform means Transition Platform.  Refactor means Transform Architecture.  Repurchase means Replace and Adopt."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/118.wav",
+      "start": 0,
+      "end": 17.84,
+      "text": "Review the recommendation, rationale, alternatives, risks, constraints, and the evidence that could change the decision.  Target-platform claims must follow verified target-state evidence; EMOS should not invent a cloud choice."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/119.wav",
+      "start": 0,
+      "end": 14.879999999999999,
+      "text": "New evidence can inform a follow-up assessment.  Confidence does not equal readiness, and readiness does not equal approval.  Next, resolve critical gaps, examine rejected alternatives, and bring the decision to an accountable human."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 8.015414999999999,
+      "name": "aerospace-assess",
+      "label": "DECIDE / Assess for Modernization",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0000.png",
+          "t": 0.413
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0001.png",
+          "t": 0.464
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0002.png",
+          "t": 0.514
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0003.png",
+          "t": 0.562
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0004.png",
+          "t": 0.615
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0005.png",
+          "t": 0.666
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0006.png",
+          "t": 0.714
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0007.png",
+          "t": 0.776
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0008.png",
+          "t": 0.827
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0009.png",
+          "t": 0.878
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0010.png",
+          "t": 0.927
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0011.png",
+          "t": 0.978
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0012.png",
+          "t": 1.025
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-assess/0013.png",
+          "t": 1.08
+        }
+      ]
+    },
+    {
+      "start": 8.015414999999999,
+      "end": 15.7,
+      "name": "aerospace-recommendation",
+      "label": "DECIDE / 6R Decision Engine",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 15.7,
+      "end": 19.099999999999998,
+      "name": "retain",
+      "label": "TRANSFORM / Govern & Monitor",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 19.099999999999998,
+      "end": 22.32,
+      "name": "retire",
+      "label": "TRANSFORM / Safely Decommission",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0000.png",
+          "t": 0.433
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0001.png",
+          "t": 0.495
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0002.png",
+          "t": 0.549
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0003.png",
+          "t": 0.611
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0004.png",
+          "t": 0.676
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0005.png",
+          "t": 0.743
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0006.png",
+          "t": 0.801
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0007.png",
+          "t": 0.864
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0008.png",
+          "t": 0.919
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0009.png",
+          "t": 0.976
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0010.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0011.png",
+          "t": 1.098
+        }
+      ]
+    },
+    {
+      "start": 22.32,
+      "end": 25.92,
+      "name": "rehost",
+      "label": "TRANSFORM / Migrate Infrastructure",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0000.png",
+          "t": 0.438
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0001.png",
+          "t": 0.5
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0002.png",
+          "t": 0.557
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0003.png",
+          "t": 0.62
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0004.png",
+          "t": 0.68
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0005.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0007.png",
+          "t": 0.87
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0008.png",
+          "t": 0.937
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0009.png",
+          "t": 0.999
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0010.png",
+          "t": 1.066
+        }
+      ]
+    },
+    {
+      "start": 25.92,
+      "end": 28.939999999999998,
+      "name": "replatform",
+      "label": "TRANSFORM / Transition Platform",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0000.png",
+          "t": 0.428
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0001.png",
+          "t": 0.49
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0002.png",
+          "t": 0.547
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0003.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0004.png",
+          "t": 0.673
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0005.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0006.png",
+          "t": 0.794
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0007.png",
+          "t": 0.861
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0008.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0009.png",
+          "t": 0.98
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0010.png",
+          "t": 1.05
+        }
+      ]
+    },
+    {
+      "start": 28.939999999999998,
+      "end": 32.04,
+      "name": "refactor",
+      "label": "TRANSFORM / Transform Architecture",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0000.png",
+          "t": 0.45
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0001.png",
+          "t": 0.505
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0002.png",
+          "t": 0.564
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0003.png",
+          "t": 0.628
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0004.png",
+          "t": 0.685
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0005.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0007.png",
+          "t": 0.868
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0008.png",
+          "t": 0.928
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0009.png",
+          "t": 0.985
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0010.png",
+          "t": 1.047
+        }
+      ]
+    },
+    {
+      "start": 32.04,
+      "end": 32.72961125,
+      "name": "repurchase",
+      "label": "TRANSFORM / Replace & Adopt",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0000.png",
+          "t": 0.422
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0001.png",
+          "t": 0.482
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0002.png",
+          "t": 0.543
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0004.png",
+          "t": 0.66
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0005.png",
+          "t": 0.716
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0006.png",
+          "t": 0.774
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0007.png",
+          "t": 0.841
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0008.png",
+          "t": 0.907
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0010.png",
+          "t": 1.031
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/repurchase/0011.png",
+          "t": 1.095
+        }
+      ]
+    },
+    {
+      "start": 32.72961125,
+      "end": 46.756587499999995,
+      "name": "aerospace-alternatives",
+      "label": "DECIDE / Compare All 6Rs",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 46.756587499999995,
+      "end": 58.11175875,
+      "name": "architect-live",
+      "label": "AI REASONING / Enterprise Architect Specialist",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 58.11175875,
+      "end": 66.795125,
+      "name": "human-approval-before",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": null
+    }
+  ],
+  "id": "decision",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 66.833333,
+  "sha256": "74588f3c865c7bd48d4fa9e82ee62891dd95c506b0aeaf1c8736a954b371bf37",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

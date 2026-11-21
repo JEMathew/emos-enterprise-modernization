@@ -1,9 +1,1 @@
-Ask EMOS and governed AI
-
-How can you ask a useful question about the selected workload? Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step.
-
-Ask EMOS is an interface, not a third specialist. A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context.
-
-Portfolio Discovery investigates ambiguity and evidence gaps. Enterprise Architect reasons across the six R choices. Deterministic validation and governance check the response, and explicit human approval retains authority.
-
-If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback. It does not pretend that a model answered. Agents for ambiguity. Workflows for predictability. Rules for governance. Humans for authority. Next, ask what evidence is missing.
+How can you ask a useful question about the selected workload?  Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step. Ask EMOS is an interface, not a third specialist.  A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context. Portfolio Discovery investigates ambiguity and evidence gaps.  Enterprise Architect reasons across the six R choices.  Deterministic validation and governance check the response, and explicit human approval retains authority. If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback.  It does not pretend that a model answered.  Agents for ambiguity.  Workflows for predictability.  Rules for governance.  Humans for authority.  Next, ask what evidence is missing.

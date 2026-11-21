@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:03,660
+What keeps an AI answer from becoming an unsafe action?
+
+2
+00:00:04,160 --> 00:00:10,180
+EMOS places deterministic controls around model reasoning, including input fencing,
+
+3
+00:00:10,840 --> 00:00:15,980
+output validation, canonical six R checks, and secret redaction.
+
+4
+00:00:15,980 --> 00:00:19,960
+Adversarial requests to bypass governance are intercepted.
+
+5
+00:00:20,800 --> 00:00:26,080
+Evidence requirements and explicit human approval remain authoritative, regardless of
+
+6
+00:00:26,080 --> 00:00:28,780
+the wording or confidence of a model response.
+
+7
+00:00:28,780 --> 00:00:34,600
+When AI reasoning is unavailable, the interface discloses a deterministic fallback.

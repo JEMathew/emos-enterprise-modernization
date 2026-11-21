@@ -1,0 +1,119 @@
+{
+  "duration": 30.881979,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.74,
+      "text": "When is staying in place a valid modernization choice?"
+    },
+    {
+      "start": 4.12,
+      "end": 9.756813,
+      "text": "Retain means Govern and Monitor when the evidence supports keeping the workload."
+    },
+    {
+      "start": 9.756813,
+      "end": 15.656813,
+      "text": "The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and"
+    },
+    {
+      "start": 15.656813,
+      "end": 16.056813,
+      "text": "learning."
+    },
+    {
+      "start": 16.056813,
+      "end": 20.716813,
+      "text": "These are governed planning stages, not a live telemetry integration or automatic"
+    },
+    {
+      "start": 20.716813,
+      "end": 22.136813,
+      "text": "infrastructure changes."
+    },
+    {
+      "start": 22.151812999999997,
+      "end": 28.271812999999995,
+      "text": "Next, verify the supporting evidence, retain human oversight, and identify the"
+    },
+    {
+      "start": 28.271812999999995,
+      "end": 30.911813,
+      "text": "conditions that would justify reassessment."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/148.wav",
+      "start": 0,
+      "end": 9.756813000000001,
+      "text": "When is staying in place a valid modernization choice?  Retain means Govern and Monitor when the evidence supports keeping the workload."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/149.wav",
+      "start": 0,
+      "end": 6.3,
+      "text": "The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/150.wav",
+      "start": 0,
+      "end": 6.06,
+      "text": "These are governed planning stages, not a live telemetry integration or automatic infrastructure changes."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/151.wav",
+      "start": 1.365,
+      "end": 10.139999999999999,
+      "text": "Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 5.55875622,
+      "name": "retain",
+      "label": "TRANSFORM / Govern & Monitor",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 5.55875622,
+      "end": 19.14682698,
+      "name": "retain",
+      "label": "TRANSFORM / Govern & Monitor",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 19.14682698,
+      "end": 26.55850194,
+      "name": "retain",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": null
+    },
+    {
+      "start": 26.55850194,
+      "end": 30.881979,
+      "name": "retain",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": null
+    }
+  ],
+  "id": "retain",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 30.916667,
+  "sha256": "cadd3ba14f81c0dc6545b621e3aeb435311d9c70b3fea5e3f7433729bde77ef3",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

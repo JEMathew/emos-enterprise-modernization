@@ -1,9 +1,1 @@
-Retain — Govern & Monitor
-
-When is staying in place a valid modernization choice? Retain means Govern and Monitor when the evidence supports keeping the workload.
-
-The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning.
-
-These are governed planning stages, not a live telemetry integration or automatic infrastructure changes.
-
-Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment.
+When is staying in place a valid modernization choice?  Retain means Govern and Monitor when the evidence supports keeping the workload. The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and learning. These are governed planning stages, not a live telemetry integration or automatic infrastructure changes. Next, verify the supporting evidence, retain human oversight, and identify the conditions that would justify reassessment.

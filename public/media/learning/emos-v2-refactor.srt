@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,140
+When does the architecture itself need to change?
+
+2
+00:00:03,700 --> 00:00:11,480
+Refactor means Transform Architecture when the evidence justifies redesign.
+
+3
+00:00:11,480 --> 00:00:17,880
+The playbook covers approval, decomposition, implementation, testing, transition,
+
+4
+00:00:18,180 --> 00:00:21,120
+stabilization, measurement, and learning.
+
+5
+00:00:21,120 --> 00:00:23,760
+These stages organize governed delivery.
+
+6
+00:00:24,140 --> 00:00:28,280
+EMOS does not autonomously rewrite or deploy your production application.
+
+7
+00:00:28,280 --> 00:00:35,360
+Next, verify architectural drivers, dependencies, risks, and human approval, then
+
+8
+00:00:35,360 --> 00:00:37,360
+plan an incremental transition.

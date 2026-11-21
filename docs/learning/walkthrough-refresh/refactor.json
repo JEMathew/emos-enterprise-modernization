@@ -1,0 +1,299 @@
+{
+  "duration": 37.255917,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.14,
+      "text": "When does the architecture itself need to change?"
+    },
+    {
+      "start": 3.7,
+      "end": 11.48,
+      "text": "Refactor means Transform Architecture when the evidence justifies redesign."
+    },
+    {
+      "start": 11.48,
+      "end": 17.880000000000003,
+      "text": "The playbook covers approval, decomposition, implementation, testing, transition,"
+    },
+    {
+      "start": 18.18,
+      "end": 21.12,
+      "text": "stabilization, measurement, and learning."
+    },
+    {
+      "start": 21.12,
+      "end": 23.76,
+      "text": "These stages organize governed delivery."
+    },
+    {
+      "start": 24.14,
+      "end": 28.28,
+      "text": "EMOS does not autonomously rewrite or deploy your production application."
+    },
+    {
+      "start": 28.28,
+      "end": 35.36,
+      "text": "Next, verify architectural drivers, dependencies, risks, and human approval, then"
+    },
+    {
+      "start": 35.36,
+      "end": 37.36,
+      "text": "plan an incremental transition."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/164.wav",
+      "start": 0,
+      "end": 11.48,
+      "text": "When does the architecture itself need to change?  Refactor means Transform Architecture when the evidence justifies redesign."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/165.wav",
+      "start": 0,
+      "end": 9.639999999999999,
+      "text": "The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/166.wav",
+      "start": 0,
+      "end": 7.159999999999999,
+      "text": "These stages organize governed delivery.  EMOS does not autonomously rewrite or deploy your production application."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/167.wav",
+      "start": 0,
+      "end": 8.98,
+      "text": "Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 6.706065059999999,
+      "name": "refactor",
+      "label": "TRANSFORM / Transform Architecture",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0000.png",
+          "t": 0.45
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0001.png",
+          "t": 0.505
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0002.png",
+          "t": 0.564
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0003.png",
+          "t": 0.628
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0004.png",
+          "t": 0.685
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0005.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0007.png",
+          "t": 0.868
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0008.png",
+          "t": 0.928
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0009.png",
+          "t": 0.985
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0010.png",
+          "t": 1.047
+        }
+      ]
+    },
+    {
+      "start": 6.706065059999999,
+      "end": 23.09866854,
+      "name": "refactor",
+      "label": "TRANSFORM / Transform Architecture",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0000.png",
+          "t": 0.45
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0001.png",
+          "t": 0.505
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0002.png",
+          "t": 0.564
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0003.png",
+          "t": 0.628
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0004.png",
+          "t": 0.685
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0005.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0007.png",
+          "t": 0.868
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0008.png",
+          "t": 0.928
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0009.png",
+          "t": 0.985
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0010.png",
+          "t": 1.047
+        }
+      ]
+    },
+    {
+      "start": 23.09866854,
+      "end": 32.04008862,
+      "name": "refactor",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0000.png",
+          "t": 0.45
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0001.png",
+          "t": 0.505
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0002.png",
+          "t": 0.564
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0003.png",
+          "t": 0.628
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0004.png",
+          "t": 0.685
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0005.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0007.png",
+          "t": 0.868
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0008.png",
+          "t": 0.928
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0009.png",
+          "t": 0.985
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0010.png",
+          "t": 1.047
+        }
+      ]
+    },
+    {
+      "start": 32.04008862,
+      "end": 37.255917,
+      "name": "refactor",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0000.png",
+          "t": 0.45
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0001.png",
+          "t": 0.505
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0002.png",
+          "t": 0.564
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0003.png",
+          "t": 0.628
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0004.png",
+          "t": 0.685
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0005.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0007.png",
+          "t": 0.868
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0008.png",
+          "t": 0.928
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0009.png",
+          "t": 0.985
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/refactor/0010.png",
+          "t": 1.047
+        }
+      ]
+    }
+  ],
+  "id": "refactor",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 37.255917,
+  "sha256": "13019529d26cec641c563c0c2effb8d3c638571056a16413d6539538ddd0b2d0",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

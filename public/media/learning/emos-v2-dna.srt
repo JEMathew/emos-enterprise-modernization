@@ -1,0 +1,63 @@
+1
+00:00:00,050 --> 00:00:02,450
+Open the portfolio to prioritize workloads.
+
+2
+00:00:02,730 --> 00:00:05,810
+Is the workload evidence sufficient for a decision?
+
+3
+00:00:06,450 --> 00:00:12,570
+Enterprise DNA organizes eighteen attributes across six dimensions: business,
+
+4
+00:00:13,030 --> 00:00:19,190
+technology, dependencies, economics, data and risk, and target state.
+
+5
+00:00:19,190 --> 00:00:22,230
+Inspect the values and verification status.
+
+6
+00:00:23,150 --> 00:00:28,310
+Relationship views support context, while missing and incomplete fields show where
+
+7
+00:00:28,310 --> 00:00:30,170
+further investigation is needed.
+
+8
+00:00:30,170 --> 00:00:35,570
+The deterministic readiness gate requires at least seventy percent completeness and
+
+9
+00:00:35,570 --> 00:00:36,990
+zero critical gaps.
+
+10
+00:00:37,650 --> 00:00:41,170
+Confidence, completeness, and readiness are different signals.
+
+11
+00:00:41,180 --> 00:00:43,220
+Next ask what evidence is missing.
+
+12
+00:00:43,220 --> 00:00:47,260
+The Portfolio Discovery Specialist uses Gemini to reason about heterogeneous
+
+13
+00:00:47,260 --> 00:00:51,320
+evidence, relationships, ambiguity, and missing facts.
+
+14
+00:00:51,370 --> 00:00:54,010
+Verify facts using appropriate evidence.
+
+15
+00:00:54,025 --> 00:00:59,565
+Next, carry the workload context into assessment; readiness still requires separate
+
+16
+00:00:59,565 --> 00:01:00,385
+human approval.

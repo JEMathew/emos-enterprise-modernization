@@ -1,0 +1,476 @@
+{
+  "duration": 56.382229,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 4.84,
+      "text": "What should your enterprise modernize, and what evidence supports that choice?"
+    },
+    {
+      "start": 5.68,
+      "end": 9.36,
+      "text": "EMOS is the Enterprise Modernization Operating System."
+    },
+    {
+      "start": 9.36,
+      "end": 14.319999999999999,
+      "text": "Follow Understand, Decide, Govern, Transform, and Outcomes."
+    },
+    {
+      "start": 14.335,
+      "end": 20.175,
+      "text": "Inspect Enterprise DNA, identify missing facts, and compare the recommendation with"
+    },
+    {
+      "start": 20.175,
+      "end": 22.315,
+      "text": "alternatives before making a decision."
+    },
+    {
+      "start": 22.315,
+      "end": 25.355,
+      "text": "Ask EMOS is the conversational interface."
+    },
+    {
+      "start": 26.095000000000002,
+      "end": 30.555000000000003,
+      "text": "A deterministic orchestrator routes reasoning to two Gemini-backed specialists:"
+    },
+    {
+      "start": 30.955000000000002,
+      "end": 33.555,
+      "text": "Portfolio Discovery and Enterprise Architect."
+    },
+    {
+      "start": 33.995000000000005,
+      "end": 37.074999999999996,
+      "text": "Deterministic validation and governance enforce the rules."
+    },
+    {
+      "start": 37.575,
+      "end": 39.795,
+      "text": "The orchestrator is not a third agent."
+    },
+    {
+      "start": 39.795,
+      "end": 42.295,
+      "text": "Evidence readiness never grants approval."
+    },
+    {
+      "start": 43.015,
+      "end": 46.035,
+      "text": "A human must explicitly approve governed progression."
+    },
+    {
+      "start": 46.995000000000005,
+      "end": 52.075,
+      "text": "Transform tracks disposition-specific workflows; it does not perform live cloud"
+    },
+    {
+      "start": 52.075,
+      "end": 53.015,
+      "text": "migrations."
+    },
+    {
+      "start": 53.03,
+      "end": 56.410000000000004,
+      "text": "Next, choose an estate and inspect one workload."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/100.wav",
+      "start": 0,
+      "end": 9.36,
+      "text": "What should your enterprise modernize, and what evidence supports that choice?  EMOS is the Enterprise Modernization Operating System."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/101.wav",
+      "start": 0,
+      "end": 4.9399999999999995,
+      "text": "Follow Understand, Decide, Govern, Transform, and Outcomes."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/101.wav",
+      "start": 9.685,
+      "end": 17.700000000000003,
+      "text": "Inspect Enterprise DNA, identify missing facts, and compare the recommendation with alternatives before making a decision."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/102.wav",
+      "start": 0,
+      "end": 17.48,
+      "text": "Ask EMOS is the conversational interface.  A deterministic orchestrator routes reasoning to two Gemini-backed specialists: Portfolio Discovery and Enterprise Architect.  Deterministic validation and governance enforce the rules.  The orchestrator is not a third agent."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/103.wav",
+      "start": 0,
+      "end": 13.2,
+      "text": "Evidence readiness never grants approval.  A human must explicitly approve governed progression.  Transform tracks disposition-specific workflows; it does not perform live cloud migrations."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/103.wav",
+      "start": 19.105,
+      "end": 22.5,
+      "text": "Next, choose an estate and inspect one workload."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 9.021156640000001,
+      "name": "command",
+      "label": "UNDERSTAND / Command Center",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 9.021156640000001,
+      "end": 16.9146687,
+      "name": "portfolio",
+      "label": "UNDERSTAND / Portfolio Discovery",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0000.png",
+          "t": 0.446
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0001.png",
+          "t": 0.507
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0002.png",
+          "t": 0.571
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0003.png",
+          "t": 0.629
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0004.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0005.png",
+          "t": 0.762
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0006.png",
+          "t": 0.829
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0007.png",
+          "t": 0.897
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0008.png",
+          "t": 0.961
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0009.png",
+          "t": 1.024
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0010.png",
+          "t": 1.093
+        }
+      ]
+    },
+    {
+      "start": 16.9146687,
+      "end": 24.24435847,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Enterprise DNA",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    },
+    {
+      "start": 24.24435847,
+      "end": 31.010225950000002,
+      "name": "discovery-live",
+      "label": "AI REASONING / Portfolio Discovery Specialist",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0000.png",
+          "t": 0.521
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0001.png",
+          "t": 0.631
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0002.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0003.png",
+          "t": 0.851
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0004.png",
+          "t": 0.952
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0005.png",
+          "t": 1.064
+        }
+      ]
+    },
+    {
+      "start": 31.010225950000002,
+      "end": 38.33991572000001,
+      "name": "architect-live",
+      "label": "AI REASONING / Enterprise Architect Specialist",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 38.33991572000001,
+      "end": 43.97813862,
+      "name": "human-approved",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0001.png",
+          "t": 0.518
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0002.png",
+          "t": 0.602
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0003.png",
+          "t": 0.675
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0004.png",
+          "t": 0.756
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0005.png",
+          "t": 0.837
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0006.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0007.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0008.png",
+          "t": 1.073
+        }
+      ]
+    },
+    {
+      "start": 43.97813862,
+      "end": 49.616361520000005,
+      "name": "aerospace-execute",
+      "label": "TRANSFORM / 6R-Specific Execute",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0001.png",
+          "t": 0.499
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0002.png",
+          "t": 0.554
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0003.png",
+          "t": 0.618
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0004.png",
+          "t": 0.674
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0005.png",
+          "t": 0.738
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0006.png",
+          "t": 0.8
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0007.png",
+          "t": 0.86
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0008.png",
+          "t": 0.92
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0009.png",
+          "t": 0.975
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0010.png",
+          "t": 1.04
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-execute/0011.png",
+          "t": 1.1
+        }
+      ]
+    },
+    {
+      "start": 49.616361520000005,
+      "end": 52.99929526,
+      "name": "measure",
+      "label": "OUTCOMES / Measure",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 52.99929526,
+      "end": 56.382229,
+      "name": "learn",
+      "label": "LEARN / Lessons & Session Notes",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0000.png",
+          "t": 0.409
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0001.png",
+          "t": 0.459
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0002.png",
+          "t": 0.509
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0003.png",
+          "t": 0.56
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0004.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0005.png",
+          "t": 0.657
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0006.png",
+          "t": 0.71
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0007.png",
+          "t": 0.759
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0008.png",
+          "t": 0.808
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0009.png",
+          "t": 0.862
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0010.png",
+          "t": 0.909
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0011.png",
+          "t": 0.967
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0012.png",
+          "t": 1.016
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/learn/0013.png",
+          "t": 1.067
+        }
+      ]
+    }
+  ],
+  "id": "orientation",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 56.416667,
+  "sha256": "aa4e7ebb18cac5c524e8629b73fec335e189f21bb6ed01ff1e27896cc8a703f1",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

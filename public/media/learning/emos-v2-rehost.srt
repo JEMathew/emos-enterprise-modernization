@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:02,900
+When does a workload need a change of infrastructure?
+
+2
+00:00:03,580 --> 00:00:08,000
+Rehost means Migrate Infrastructure while preserving much of the existing
+
+3
+00:00:08,000 --> 00:00:08,846
+application.
+
+4
+00:00:08,846 --> 00:00:14,666
+The playbook structures approval, destination preparation, movement, validation,
+
+5
+00:00:14,976 --> 00:00:18,806
+cutover, stabilization, measurement, and learning.
+
+6
+00:00:18,806 --> 00:00:23,898
+EMOS plans and tracks this work; it does not perform the migration or cutover.
+
+7
+00:00:23,898 --> 00:00:30,518
+Next, verify the target environment, dependencies, rollback plan, and human approval
+
+8
+00:00:30,518 --> 00:00:33,038
+before delivery teams proceed.

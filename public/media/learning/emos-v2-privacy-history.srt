@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:04,620
+How do you return to previous assessments while keeping workspace data separated?
+
+2
+00:00:05,140 --> 00:00:08,940
+Sign in to use the owner-bound workspace and its assessment history.
+
+3
+00:00:09,255 --> 00:00:14,715
+EMOS uses authenticated access and owner-scoped Firestore rules for persisted user
+
+4
+00:00:14,715 --> 00:00:15,375
+records.
+
+5
+00:00:15,375 --> 00:00:19,955
+Search assessment titles and content, filter the available history, and reopen a
+
+6
+00:00:19,955 --> 00:00:22,895
+prior decision to review its evidence and recommendation.
+
+7
+00:00:23,735 --> 00:00:26,295
+History helps you examine previous work in context.
+
+8
+00:00:26,610 --> 00:00:31,330
+Revisiting an assessment is not a fresh approval or evidence verification.
+
+9
+00:00:32,390 --> 00:00:37,610
+Next, check whether its facts remain current, supply updated evidence where needed,
+
+10
+00:00:38,270 --> 00:00:41,610
+and follow the same readiness and human-governance checkpoints.

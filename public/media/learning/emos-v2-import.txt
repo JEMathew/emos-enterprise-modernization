@@ -1,9 +1,1 @@
-Import and assess a portfolio
-
-How do you bring your own workload inventory into EMOS? Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio.
-
-The import path checks the schema and applies input-safety controls. Review the imported workload records and the evidence they contain before drawing conclusions.
-
-Importing a row does not verify every claim or make the workload ready. Open Enterprise DNA to inspect known, incomplete, and missing evidence, then carry that context into assessment.
-
-Use the sample estates for representative demonstrations. Imported data is not live CMDB or telemetry discovery. Next, select an imported workload, close its critical gaps, and review its six R recommendation.
+How do you bring your own workload inventory into EMOS?  Start with the sample dataset to understand the structure, or choose a sanitized CSV or JSON portfolio. The import path checks the schema and applies input-safety controls.  Review the imported workload records and the evidence they contain before drawing conclusions. Importing a row does not verify every claim or make the workload ready.  Open Enterprise DNA to inspect known, incomplete, and missing evidence. Imported data is not live CMDB or telemetry discovery.  Next, select an imported workload, close its critical gaps.

@@ -1,0 +1,51 @@
+1
+00:00:00,000 --> 00:00:01,140
+Where should you begin?
+
+2
+00:00:01,380 --> 00:00:04,040
+Open EMOS and choose your workspace context.
+
+3
+00:00:05,040 --> 00:00:10,100
+The Command Center summarizes the selected estate so you can identify workloads and
+
+4
+00:00:10,100 --> 00:00:11,500
+evidence that need attention.
+
+5
+00:00:11,500 --> 00:00:16,040
+Use Understand to explore the portfolio and Enterprise DNA.
+
+6
+00:00:16,620 --> 00:00:20,620
+Decide brings assessment and recommendations into focus.
+
+7
+00:00:21,240 --> 00:00:25,220
+Governance remains a required checkpoint before approved transformation.
+
+8
+00:00:25,220 --> 00:00:27,640
+Transform organizes the execution plan.
+
+9
+00:00:27,655 --> 00:00:31,595
+Keep the same estate and workload context as you move between these areas.
+
+10
+00:00:31,610 --> 00:00:34,690
+Sign in for the private, owner-bound workspace.
+
+11
+00:00:35,710 --> 00:00:40,850
+Use the appearance control for light, dark, or system themes, and adapt the layout to
+
+12
+00:00:40,850 --> 00:00:41,390
+your screen.
+
+13
+00:00:42,370 --> 00:00:45,370
+Next, select one workload and inspect its evidence.

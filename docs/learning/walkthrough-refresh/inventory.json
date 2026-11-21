@@ -1,0 +1,506 @@
+{
+  "route": "/learn",
+  "placements": 41,
+  "uniqueVideos": 18,
+  "architecture": "20 catalog + 16 topic + 4 lifecycle + 1 hero; existing IDs and route retained",
+  "entries": [
+    {
+      "master": "orientation",
+      "currentVideo": "/media/learning/emos-v2-orientation.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "00",
+          "master": "orientation",
+          "title": "What is EMOS V2?"
+        },
+        {
+          "placement": "topic",
+          "id": "what-is-emos",
+          "master": "orientation",
+          "title": "What is EMOS V2?"
+        },
+        {
+          "placement": "topic",
+          "id": "product-vision",
+          "master": "orientation",
+          "title": "End-to-end V2 journey"
+        },
+        {
+          "placement": "hero",
+          "id": "intro",
+          "master": "orientation",
+          "title": "Introduction"
+        }
+      ],
+      "capability": "What is EMOS V2?",
+      "currentDurationSeconds": 74.597146,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Command Center \u2192 Portfolio \u2192 DNA \u2192 Decide \u2192 Approve \u2192 Plan \u2192 Execute \u2192 Measure \u2192 Learn",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 75,
+      "originalSha256": "533be28a1313d0a823760d4a5bd826baed9f0894a4080f8b43ec9bf4a4e7ab61"
+    },
+    {
+      "master": "workspace",
+      "currentVideo": "/media/learning/emos-v2-workspace.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F01",
+          "master": "workspace",
+          "title": "Sign in and enter the private workspace"
+        },
+        {
+          "placement": "catalog",
+          "id": "F02",
+          "master": "workspace",
+          "title": "Take the guided product tour"
+        },
+        {
+          "placement": "catalog",
+          "id": "F16",
+          "master": "workspace",
+          "title": "Switch appearance and use responsive layouts"
+        },
+        {
+          "placement": "topic",
+          "id": "getting-started",
+          "master": "workspace",
+          "title": "Getting started with EMOS V2"
+        }
+      ],
+      "capability": "Navigate EMOS and your workspace",
+      "currentDurationSeconds": 44.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Command Center / navigation / appearance",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "5cf0bb75f6aff7379197197a7f76128e7e5aef4b814b775024a18df7523de288"
+    },
+    {
+      "master": "discovery",
+      "currentVideo": "/media/learning/emos-v2-discovery.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F10",
+          "master": "discovery",
+          "title": "Explore the sample enterprise portfolio"
+        },
+        {
+          "placement": "stage",
+          "id": "Understand",
+          "master": "discovery",
+          "title": "Understand"
+        }
+      ],
+      "capability": "Portfolio Discovery and its specialist",
+      "currentDurationSeconds": 44.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Portfolio \u2192 Enterprise DNA \u2192 Ask EMOS",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "a1c28e989373f3d584cf3802eb77d1b58f2dd206110b89b5ef048b6f70bfcc3d"
+    },
+    {
+      "master": "dna",
+      "currentVideo": "/media/learning/emos-v2-dna.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F11",
+          "master": "dna",
+          "title": "Inspect Enterprise DNA and evidence gaps"
+        },
+        {
+          "placement": "catalog",
+          "id": "F12",
+          "master": "dna",
+          "title": "From Enterprise DNA to assessment"
+        },
+        {
+          "placement": "topic",
+          "id": "enterprise-dna",
+          "master": "dna",
+          "title": "Enterprise DNA and evidence readiness"
+        }
+      ],
+      "capability": "Enterprise DNA and evidence readiness",
+      "currentDurationSeconds": 44.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Portfolio \u2192 Enterprise DNA \u2192 Ask EMOS \u2192 Assess",
+      "targetProductAction": "Select Enterprise Data Warehouse; inspect attributes and gaps; review Portfolio Discovery response; assess ready workload",
+      "targetNewDurationSeconds": 60,
+      "originalSha256": "b08f5a56f197c1f32022a665a4f3e1c1a84eb2227c73c5e7a3e355ba75b9fe4b"
+    },
+    {
+      "master": "decision",
+      "currentVideo": "/media/learning/emos-v2-decision.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F03",
+          "master": "decision",
+          "title": "Submit a workload for a 6R assessment"
+        },
+        {
+          "placement": "catalog",
+          "id": "F04",
+          "master": "decision",
+          "title": "Explore options and generate an executive decision"
+        },
+        {
+          "placement": "catalog",
+          "id": "F08",
+          "master": "decision",
+          "title": "Preserve cloud-platform neutrality"
+        },
+        {
+          "placement": "topic",
+          "id": "6r-overview",
+          "master": "decision",
+          "title": "6R decisions and the Enterprise Architect"
+        },
+        {
+          "placement": "stage",
+          "id": "Decide",
+          "master": "decision",
+          "title": "Decide"
+        }
+      ],
+      "capability": "6R decisions and the Enterprise Architect",
+      "currentDurationSeconds": 59.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Assess \u2192 Recommendation \u2192 Compare All 6Rs \u2192 Ask EMOS",
+      "targetProductAction": "Assess workload; inspect rationale; compare six dispositions; review Enterprise Architect answer; seek approval",
+      "targetNewDurationSeconds": 60,
+      "originalSha256": "8366eaff51f5e1ae5c4e686aaccce4679c27b235df32cb711db757862ed24a7d"
+    },
+    {
+      "master": "ask",
+      "currentVideo": "/media/learning/emos-v2-ask.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F05",
+          "master": "ask",
+          "title": "Refine an assessment with new evidence"
+        },
+        {
+          "placement": "topic",
+          "id": "modernization-agent",
+          "master": "ask",
+          "title": "Ask EMOS and governed AI"
+        }
+      ],
+      "capability": "Ask EMOS and governed AI",
+      "currentDurationSeconds": 59.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "DNA / Decision \u2192 Ask EMOS",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 60,
+      "originalSha256": "84aaee183351e28d5dc5aa502646f00b4bde94786cc0ab38bdd3f195a41d95af"
+    },
+    {
+      "master": "governance",
+      "currentVideo": "/media/learning/emos-v2-governance.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F09",
+          "master": "governance",
+          "title": "Validate assessment-score consistency"
+        },
+        {
+          "placement": "catalog",
+          "id": "F18",
+          "master": "governance",
+          "title": "Enforce canonical 6R and evidence readiness"
+        },
+        {
+          "placement": "topic",
+          "id": "governance",
+          "master": "governance",
+          "title": "Evidence gates and explicit human approval"
+        }
+      ],
+      "capability": "Evidence gates and explicit human approval",
+      "currentDurationSeconds": 44.6025,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "DNA readiness \u2192 Ask EMOS block \u2192 Approve \u2192 Execute",
+      "targetProductAction": "Inspect NEEDS EVIDENCE and READY; review blocked bypass; approve explicitly; inspect downstream workflow",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "788161f880284865612f52763f77bd7d2aad48d91ee88b05310424ce737889e8"
+    },
+    {
+      "master": "privacy-history",
+      "currentVideo": "/media/learning/emos-v2-privacy-history.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F06",
+          "master": "privacy-history",
+          "title": "Verify owner-bound persistence and privacy"
+        },
+        {
+          "placement": "catalog",
+          "id": "F07",
+          "master": "privacy-history",
+          "title": "Search, filter, and manage assessment history"
+        }
+      ],
+      "capability": "Private workspace and assessment history",
+      "currentDurationSeconds": 44.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Workspace / History",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "1bbac03dfaab375c832e66ca7bad2c26c8a096fe826542115253ed99e16ef302"
+    },
+    {
+      "master": "import",
+      "currentVideo": "/media/learning/emos-v2-import.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F13",
+          "master": "import",
+          "title": "Import a CSV or JSON portfolio"
+        },
+        {
+          "placement": "catalog",
+          "id": "F14",
+          "master": "import",
+          "title": "Download a sample enterprise dataset"
+        },
+        {
+          "placement": "catalog",
+          "id": "F15",
+          "master": "import",
+          "title": "Assess and manage imported workloads"
+        },
+        {
+          "placement": "topic",
+          "id": "portfolio-upload",
+          "master": "import",
+          "title": "Import and assess a portfolio"
+        }
+      ],
+      "capability": "Import and assess a portfolio",
+      "currentDurationSeconds": 44.602583,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Portfolio \u2192 Import \u2192 DNA",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "f519c692c6f83ddbe28408831e1255a61b42b050f81f3d3515e0cec4a19d2d14"
+    },
+    {
+      "master": "security",
+      "currentVideo": "/media/learning/emos-v2-security.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F17",
+          "master": "security",
+          "title": "Fence adversarial prompts and redact secrets"
+        }
+      ],
+      "capability": "Trust, guardrails, and evaluation",
+      "currentDurationSeconds": 44.602542,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Ask EMOS governance \u2192 Trust",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "b4b239b8e59929551c87041a7190d0afd30d4fb4a34884092a1676ded8f0fb00"
+    },
+    {
+      "master": "execution",
+      "currentVideo": "/media/learning/emos-v2-execution.mp4",
+      "currentPlacements": [
+        {
+          "placement": "catalog",
+          "id": "F19",
+          "master": "execution",
+          "title": "Plan and mobilize the modernization program"
+        },
+        {
+          "placement": "topic",
+          "id": "execution",
+          "master": "execution",
+          "title": "Wave planning and governed execution"
+        },
+        {
+          "placement": "stage",
+          "id": "Transform",
+          "master": "execution",
+          "title": "Transform"
+        }
+      ],
+      "capability": "Wave planning and governed execution",
+      "currentDurationSeconds": 44.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Plan \u2192 Execute",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "f81466dab066e6f365a64e27e50ea8e4dfd0c9fd5e5e63ccf087103da15990a0"
+    },
+    {
+      "master": "outcomes",
+      "currentVideo": "/media/learning/emos-v2-outcomes.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "outcomes-learning",
+          "master": "outcomes",
+          "title": "Measure and Learn: V2 boundaries"
+        },
+        {
+          "placement": "stage",
+          "id": "Outcomes",
+          "master": "outcomes",
+          "title": "Outcomes"
+        }
+      ],
+      "capability": "Measure and Learn: V2 boundaries",
+      "currentDurationSeconds": 52.934854,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Measure \u2192 Learn",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 45,
+      "originalSha256": "bec17339b31cefaf0bab6eb551fd1cdd9bbba6f33be9d1bdebc9618bc44bd078"
+    },
+    {
+      "master": "retain",
+      "currentVideo": "/media/learning/emos-v2-retain.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "retain",
+          "master": "retain",
+          "title": "Retain \u2014 Govern & Monitor"
+        }
+      ],
+      "capability": "Retain \u2014 Govern & Monitor",
+      "currentDurationSeconds": 29.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Retain",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "f8916c1809babbe4c801e53c15f49419fe82e7398c123c25d5a8013968125813"
+    },
+    {
+      "master": "retire",
+      "currentVideo": "/media/learning/emos-v2-retire.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "retire",
+          "master": "retire",
+          "title": "Retire \u2014 Safely Decommission"
+        }
+      ],
+      "capability": "Retire \u2014 Safely Decommission",
+      "currentDurationSeconds": 29.598479,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Retire",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "c7eed230231d59a573299e0703a0291e6b0285a27b90c0fe974889cb489f62c4"
+    },
+    {
+      "master": "rehost",
+      "currentVideo": "/media/learning/emos-v2-rehost.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "rehost",
+          "master": "rehost",
+          "title": "Rehost \u2014 Migrate Infrastructure"
+        }
+      ],
+      "capability": "Rehost \u2014 Migrate Infrastructure",
+      "currentDurationSeconds": 29.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Rehost",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "cdec43c12de84696828571b7782a07802dc2134b8d64114d9181d8fa67976215"
+    },
+    {
+      "master": "replatform",
+      "currentVideo": "/media/learning/emos-v2-replatform.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "replatform",
+          "master": "replatform",
+          "title": "Replatform \u2014 Transition Platform"
+        }
+      ],
+      "capability": "Replatform \u2014 Transition Platform",
+      "currentDurationSeconds": 28.75,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Replatform",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "d60e99ad2e51f717d78d74aa0113a159c9dbc2cb943e18c9063dfe64690e429d"
+    },
+    {
+      "master": "refactor",
+      "currentVideo": "/media/learning/emos-v2-refactor.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "refactor",
+          "master": "refactor",
+          "title": "Refactor \u2014 Transform Architecture"
+        }
+      ],
+      "capability": "Refactor \u2014 Transform Architecture",
+      "currentDurationSeconds": 29.602563,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Refactor",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "8882f10038ab2bc6bb685e325795f8529572153c2492974f55552d33d7341bfc"
+    },
+    {
+      "master": "repurchase",
+      "currentVideo": "/media/learning/emos-v2-repurchase.mp4",
+      "currentPlacements": [
+        {
+          "placement": "topic",
+          "id": "repurchase",
+          "master": "repurchase",
+          "title": "Repurchase \u2014 Replace & Adopt"
+        }
+      ],
+      "capability": "Repurchase \u2014 Replace & Adopt",
+      "currentDurationSeconds": 29.625,
+      "currentQuality": "Generated background/title card, dark UI inset, repetitive disclosure; below approved light-mode walkthrough standard",
+      "decision": "REFRESH",
+      "targetProductPage": "Transform \u2192 Execute \u2192 Repurchase",
+      "targetProductAction": "Navigate the named capability; inspect current evidence and controls; follow the next governed step",
+      "targetNewDurationSeconds": 30,
+      "originalSha256": "609de15df68c58eda1342968541c61a8df5f5a08b75e84596bf9c6fa939820b4"
+    }
+  ]
+}

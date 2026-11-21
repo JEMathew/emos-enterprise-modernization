@@ -21,12 +21,12 @@ const expectedTitles = [
   'Verify owner-bound persistence and privacy',
   'Search, filter, and manage assessment history',
   'Preserve cloud-platform neutrality',
-  'Validate assessment-score consistency',
-  'Explore the sample enterprise portfolio',
+  'Check evidence and decision consistency',
+  'Explore the enterprise portfolio',
   'Inspect Enterprise DNA and evidence gaps',
   'From Enterprise DNA to assessment',
   'Import a CSV or JSON portfolio',
-  'Download a sample enterprise dataset',
+  'Download a portfolio template and dataset',
   'Assess and manage imported workloads',
   'Switch appearance and use responsive layouts',
   'Fence adversarial prompts and redact secrets',
@@ -102,13 +102,13 @@ describe('Public EMOS Learning Center (/learn)', () => {
     }
   });
 
-  it('keeps every title and video filename aligned with docs/LEARN.md', () => {
+  it('keeps every catalogue title visible without technical metadata', () => {
     renderLearningCenter();
 
     expect(LEARNING_VIDEOS.map((video) => video.title)).toEqual(expectedTitles);
     for (const video of LEARNING_VIDEOS) {
       expect(within(screen.getByTestId(`video-${video.sequence.toLowerCase()}`)).getByRole('heading', { name: video.title })).toBeInTheDocument();
-      expect(within(screen.getByTestId(`video-${video.sequence.toLowerCase()}`)).getByText(`File: ${video.fileName}`)).toBeInTheDocument();
+      expect(within(screen.getByTestId(`video-${video.sequence.toLowerCase()}`)).queryByText(`File: ${video.fileName}`)).not.toBeInTheDocument();
     }
   });
 
@@ -171,11 +171,11 @@ describe('Public EMOS Learning Center (/learn)', () => {
     expect(screen.getByRole('navigation', { name: 'Learning Center footer' })).toBeInTheDocument();
   });
 
-  it('clearly separates implemented beta capabilities from future scope', () => {
+  it('clearly separates current V2.0 capabilities from future scope', () => {
     renderLearningCenter();
 
-    expect(screen.getByRole('heading', { name: 'Implemented in EMOS V2' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Future EMOS Roadmap' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'V2.0 Scope' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Future / Full Vision' })).toBeInTheDocument();
     expect(
       screen.getByText(/not claimed as implemented in V2/i),
     ).toBeInTheDocument();

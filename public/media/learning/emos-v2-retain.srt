@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,740
+When is staying in place a valid modernization choice?
+
+2
+00:00:04,120 --> 00:00:09,757
+Retain means Govern and Monitor when the evidence supports keeping the workload.
+
+3
+00:00:09,757 --> 00:00:15,657
+The EMOS playbook structures keeping, optimizing, monitoring, outcome review, and
+
+4
+00:00:15,657 --> 00:00:16,057
+learning.
+
+5
+00:00:16,057 --> 00:00:20,717
+These are governed planning stages, not a live telemetry integration or automatic
+
+6
+00:00:20,717 --> 00:00:22,137
+infrastructure changes.
+
+7
+00:00:22,152 --> 00:00:28,272
+Next, verify the supporting evidence, retain human oversight, and identify the
+
+8
+00:00:28,272 --> 00:00:30,912
+conditions that would justify reassessment.

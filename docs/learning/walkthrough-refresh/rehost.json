@@ -1,0 +1,299 @@
+{
+  "duration": 33.010208,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.9,
+      "text": "When does a workload need a change of infrastructure?"
+    },
+    {
+      "start": 3.58,
+      "end": 8.0,
+      "text": "Rehost means Migrate Infrastructure while preserving much of the existing"
+    },
+    {
+      "start": 8.0,
+      "end": 8.846333,
+      "text": "application."
+    },
+    {
+      "start": 8.846333,
+      "end": 14.666333,
+      "text": "The playbook structures approval, destination preparation, movement, validation,"
+    },
+    {
+      "start": 14.975563769230767,
+      "end": 18.806333000000002,
+      "text": "cutover, stabilization, measurement, and learning."
+    },
+    {
+      "start": 18.806333000000002,
+      "end": 23.897812000000002,
+      "text": "EMOS plans and tracks this work; it does not perform the migration or cutover."
+    },
+    {
+      "start": 23.897812000000002,
+      "end": 30.517812000000003,
+      "text": "Next, verify the target environment, dependencies, rollback plan, and human approval"
+    },
+    {
+      "start": 30.517812000000003,
+      "end": 33.037811999999995,
+      "text": "before delivery teams proceed."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/156.wav",
+      "start": 0,
+      "end": 8.846333,
+      "text": "When does a workload need a change of infrastructure?  Rehost means Migrate Infrastructure while preserving much of the existing application."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/157.wav",
+      "start": 0,
+      "end": 9.959999999999999,
+      "text": "The playbook structures approval, destination preparation, movement, validation, cutover, stabilization, measurement, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/158.wav",
+      "start": 0,
+      "end": 5.0914790000000005,
+      "text": "EMOS plans and tracks this work; it does not perform the migration or cutover."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/159.wav",
+      "start": 0,
+      "end": 9.12,
+      "text": "Next, verify the target environment, dependencies, rollback plan, and human approval before delivery teams proceed."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 5.94183744,
+      "name": "rehost",
+      "label": "TRANSFORM / Migrate Infrastructure",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0000.png",
+          "t": 0.438
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0001.png",
+          "t": 0.5
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0002.png",
+          "t": 0.557
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0003.png",
+          "t": 0.62
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0004.png",
+          "t": 0.68
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0005.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0007.png",
+          "t": 0.87
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0008.png",
+          "t": 0.937
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0009.png",
+          "t": 0.999
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0010.png",
+          "t": 1.066
+        }
+      ]
+    },
+    {
+      "start": 5.94183744,
+      "end": 20.46632896,
+      "name": "rehost",
+      "label": "TRANSFORM / Migrate Infrastructure",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0000.png",
+          "t": 0.438
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0001.png",
+          "t": 0.5
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0002.png",
+          "t": 0.557
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0003.png",
+          "t": 0.62
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0004.png",
+          "t": 0.68
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0005.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0007.png",
+          "t": 0.87
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0008.png",
+          "t": 0.937
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0009.png",
+          "t": 0.999
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0010.png",
+          "t": 1.066
+        }
+      ]
+    },
+    {
+      "start": 20.46632896,
+      "end": 28.388778879999997,
+      "name": "rehost",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0000.png",
+          "t": 0.438
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0001.png",
+          "t": 0.5
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0002.png",
+          "t": 0.557
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0003.png",
+          "t": 0.62
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0004.png",
+          "t": 0.68
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0005.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0007.png",
+          "t": 0.87
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0008.png",
+          "t": 0.937
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0009.png",
+          "t": 0.999
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0010.png",
+          "t": 1.066
+        }
+      ]
+    },
+    {
+      "start": 28.388778879999997,
+      "end": 33.010208,
+      "name": "rehost",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0000.png",
+          "t": 0.438
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0001.png",
+          "t": 0.5
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0002.png",
+          "t": 0.557
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0003.png",
+          "t": 0.62
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0004.png",
+          "t": 0.68
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0005.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0006.png",
+          "t": 0.805
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0007.png",
+          "t": 0.87
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0008.png",
+          "t": 0.937
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0009.png",
+          "t": 0.999
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/rehost/0010.png",
+          "t": 1.066
+        }
+      ]
+    }
+  ],
+  "id": "rehost",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 33.010208,
+  "sha256": "0196ce0fa5a29a54370cc87d42420042730599f7e81d296661b965ad5ec156ff",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

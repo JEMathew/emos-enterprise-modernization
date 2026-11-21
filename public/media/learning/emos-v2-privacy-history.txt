@@ -1,9 +1,1 @@
-Private workspace and assessment history
-
-How do you return to previous assessments while keeping workspace data separated? Sign in to use the owner-bound workspace and its assessment history.
-
-EMOS uses authenticated access and owner-scoped Firestore rules for persisted user records. Public examples remain demonstration material. Avoid importing credentials, secrets, or confidential customer data into demonstrations.
-
-Search assessment titles and content, filter the available history, and reopen a prior decision to review its evidence and recommendation. History helps you examine previous work in context.
-
-Revisiting an assessment is not a fresh approval or evidence verification. Next, check whether its facts remain current, supply updated evidence where needed, and follow the same readiness and human-governance checkpoints.
+How do you return to previous assessments while keeping workspace data separated?  Sign in to use the owner-bound workspace and its assessment history. EMOS uses authenticated access and owner-scoped Firestore rules for persisted user records. Search assessment titles and content, filter the available history, and reopen a prior decision to review its evidence and recommendation.  History helps you examine previous work in context. Revisiting an assessment is not a fresh approval or evidence verification.  Next, check whether its facts remain current, supply updated evidence where needed, and follow the same readiness and human-governance checkpoints.

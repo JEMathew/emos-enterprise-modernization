@@ -1,0 +1,165 @@
+{
+  "duration": 34.576042,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 3.66,
+      "text": "What keeps an AI answer from becoming an unsafe action?"
+    },
+    {
+      "start": 4.16,
+      "end": 10.18,
+      "text": "EMOS places deterministic controls around model reasoning, including input fencing,"
+    },
+    {
+      "start": 10.84,
+      "end": 15.98,
+      "text": "output validation, canonical six R checks, and secret redaction."
+    },
+    {
+      "start": 15.98,
+      "end": 19.96,
+      "text": "Adversarial requests to bypass governance are intercepted."
+    },
+    {
+      "start": 20.8,
+      "end": 26.08,
+      "text": "Evidence requirements and explicit human approval remain authoritative, regardless of"
+    },
+    {
+      "start": 26.08,
+      "end": 28.78,
+      "text": "the wording or confidence of a model response."
+    },
+    {
+      "start": 28.78,
+      "end": 34.6,
+      "text": "When AI reasoning is unavailable, the interface discloses a deterministic fallback."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/136.wav",
+      "start": 0,
+      "end": 15.98,
+      "text": "What keeps an AI answer from becoming an unsafe action?  EMOS places deterministic controls around model reasoning, including input fencing, output validation, canonical six R checks, and secret redaction."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/137.wav",
+      "start": 0,
+      "end": 12.799999999999999,
+      "text": "Adversarial requests to bypass governance are intercepted.  Evidence requirements and explicit human approval remain authoritative, regardless of the wording or confidence of a model response."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/139.wav",
+      "start": 0,
+      "end": 5.8,
+      "text": "When AI reasoning is unavailable, the interface discloses a deterministic fallback."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 13.830416800000002,
+      "name": "governance-zero-calls",
+      "label": "GOVERN / Deterministic Controls",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 13.830416800000002,
+      "end": 22.820187720000003,
+      "name": "governance-block",
+      "label": "GOVERN / Blocked Bypass",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 22.820187720000003,
+      "end": 29.3896357,
+      "name": "trust",
+      "label": "TRUST / Product Boundaries",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 29.3896357,
+      "end": 34.576042,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Inspect Evidence Gaps",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    }
+  ],
+  "id": "security",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 34.583333,
+  "sha256": "675d5dd9951b21993da1bc501a9638bf09f2d1b6b7ea968b244e584ab41d0a3c",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

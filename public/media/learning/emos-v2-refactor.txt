@@ -1,9 +1,1 @@
-Refactor — Transform Architecture
-
-When does the architecture itself need to change? Refactor means Transform Architecture when the evidence justifies redesign.
-
-The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning.
-
-These stages organize governed delivery. EMOS does not autonomously rewrite or deploy your production application.
-
-Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition.
+When does the architecture itself need to change?  Refactor means Transform Architecture when the evidence justifies redesign. The playbook covers approval, decomposition, implementation, testing, transition, stabilization, measurement, and learning. These stages organize governed delivery.  EMOS does not autonomously rewrite or deploy your production application. Next, verify architectural drivers, dependencies, risks, and human approval, then plan an incremental transition.

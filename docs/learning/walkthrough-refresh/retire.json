@@ -1,0 +1,310 @@
+{
+  "duration": 32.075875,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.16,
+      "text": "When should a workload be removed?"
+    },
+    {
+      "start": 2.84,
+      "end": 7.06,
+      "text": "Retire means Safely Decommission when verified evidence supports its removal."
+    },
+    {
+      "start": 7.06,
+      "end": 13.44,
+      "text": "The playbook covers approval, consumer transition, archiving, decommissioning,"
+    },
+    {
+      "start": 13.7,
+      "end": 16.96,
+      "text": "closure validation, measurement, and learning."
+    },
+    {
+      "start": 16.96,
+      "end": 22.28,
+      "text": "EMOS tracks these checkpoints; it does not shut down production systems for you."
+    },
+    {
+      "start": 22.28,
+      "end": 28.86,
+      "text": "Next, verify dependencies and retention requirements, obtain human approval, and"
+    },
+    {
+      "start": 28.86,
+      "end": 32.14,
+      "text": "confirm accountable owners before decommissioning."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/152.wav",
+      "start": 0,
+      "end": 7.06,
+      "text": "When should a workload be removed?  Retire means Safely Decommission when verified evidence supports its removal."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/153.wav",
+      "start": 0,
+      "end": 9.9,
+      "text": "The playbook covers approval, consumer transition, archiving, decommissioning, closure validation, measurement, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/154.wav",
+      "start": 0,
+      "end": 5.319999999999999,
+      "text": "EMOS tracks these checkpoints; it does not shut down production systems for you."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/155.wav",
+      "start": 0,
+      "end": 9.8,
+      "text": "Next, verify dependencies and retention requirements, obtain human approval, and confirm accountable owners before decommissioning."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 5.7736575000000006,
+      "name": "retire",
+      "label": "TRANSFORM / Safely Decommission",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0000.png",
+          "t": 0.433
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0001.png",
+          "t": 0.495
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0002.png",
+          "t": 0.549
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0003.png",
+          "t": 0.611
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0004.png",
+          "t": 0.676
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0005.png",
+          "t": 0.743
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0006.png",
+          "t": 0.801
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0007.png",
+          "t": 0.864
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0008.png",
+          "t": 0.919
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0009.png",
+          "t": 0.976
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0010.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0011.png",
+          "t": 1.098
+        }
+      ]
+    },
+    {
+      "start": 5.7736575000000006,
+      "end": 19.887042500000003,
+      "name": "retire",
+      "label": "TRANSFORM / Safely Decommission",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0000.png",
+          "t": 0.433
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0001.png",
+          "t": 0.495
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0002.png",
+          "t": 0.549
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0003.png",
+          "t": 0.611
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0004.png",
+          "t": 0.676
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0005.png",
+          "t": 0.743
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0006.png",
+          "t": 0.801
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0007.png",
+          "t": 0.864
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0008.png",
+          "t": 0.919
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0009.png",
+          "t": 0.976
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0010.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0011.png",
+          "t": 1.098
+        }
+      ]
+    },
+    {
+      "start": 19.887042500000003,
+      "end": 27.585252500000003,
+      "name": "retire",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0000.png",
+          "t": 0.433
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0001.png",
+          "t": 0.495
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0002.png",
+          "t": 0.549
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0003.png",
+          "t": 0.611
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0004.png",
+          "t": 0.676
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0005.png",
+          "t": 0.743
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0006.png",
+          "t": 0.801
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0007.png",
+          "t": 0.864
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0008.png",
+          "t": 0.919
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0009.png",
+          "t": 0.976
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0010.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0011.png",
+          "t": 1.098
+        }
+      ]
+    },
+    {
+      "start": 27.585252500000003,
+      "end": 32.075875,
+      "name": "retire",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0000.png",
+          "t": 0.433
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0001.png",
+          "t": 0.495
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0002.png",
+          "t": 0.549
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0003.png",
+          "t": 0.611
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0004.png",
+          "t": 0.676
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0005.png",
+          "t": 0.743
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0006.png",
+          "t": 0.801
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0007.png",
+          "t": 0.864
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0008.png",
+          "t": 0.919
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0009.png",
+          "t": 0.976
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0010.png",
+          "t": 1.042
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/retire/0011.png",
+          "t": 1.098
+        }
+      ]
+    }
+  ],
+  "id": "retire",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 32.083333,
+  "sha256": "6f6ab65ff83f8c02f0077a960ab8bc223874f66ba184077456c65eca3d219d58",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

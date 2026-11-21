@@ -1,0 +1,299 @@
+{
+  "duration": 28.516625,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.9,
+      "text": "When is a platform change appropriate?"
+    },
+    {
+      "start": 2.78,
+      "end": 6.68,
+      "text": "Replatform means Transition Platform while keeping the decision grounded in workload"
+    },
+    {
+      "start": 6.68,
+      "end": 8.54,
+      "text": "and target-state evidence."
+    },
+    {
+      "start": 8.54,
+      "end": 12.319999999999999,
+      "text": "The playbook covers approval, target preparation, migration or transformation,"
+    },
+    {
+      "start": 12.319999999999999,
+      "end": 15.879999999999999,
+      "text": "validation, cutover, optimization, measurement, and learning."
+    },
+    {
+      "start": 15.879999999999999,
+      "end": 21.66,
+      "text": "EMOS does not provision a managed platform or execute a live migration."
+    },
+    {
+      "start": 21.66,
+      "end": 27.64,
+      "text": "Next, verify compatibility, target constraints, and accountable human approval before"
+    },
+    {
+      "start": 27.64,
+      "end": 28.540000000000003,
+      "text": "following the plan."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/160.wav",
+      "start": 0,
+      "end": 8.54,
+      "text": "When is a platform change appropriate?  Replatform means Transition Platform while keeping the decision grounded in workload and target-state evidence."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/161.wav",
+      "start": 0,
+      "end": 7.34,
+      "text": "The playbook covers approval, target preparation, migration or transformation, validation, cutover, optimization, measurement, and learning."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/162.wav",
+      "start": 0,
+      "end": 5.779999999999999,
+      "text": "EMOS does not provision a managed platform or execute a live migration."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/163.wav",
+      "start": 0,
+      "end": 6.859999999999999,
+      "text": "Next, verify compatibility, target constraints, and accountable human approval before following the plan."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0.0,
+      "end": 5.1329925,
+      "name": "replatform",
+      "label": "TRANSFORM / Transition Platform",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0000.png",
+          "t": 0.428
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0001.png",
+          "t": 0.49
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0002.png",
+          "t": 0.547
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0003.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0004.png",
+          "t": 0.673
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0005.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0006.png",
+          "t": 0.794
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0007.png",
+          "t": 0.861
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0008.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0009.png",
+          "t": 0.98
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0010.png",
+          "t": 1.05
+        }
+      ]
+    },
+    {
+      "start": 5.1329925,
+      "end": 17.6803075,
+      "name": "replatform",
+      "label": "TRANSFORM / Transition Platform",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0000.png",
+          "t": 0.428
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0001.png",
+          "t": 0.49
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0002.png",
+          "t": 0.547
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0003.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0004.png",
+          "t": 0.673
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0005.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0006.png",
+          "t": 0.794
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0007.png",
+          "t": 0.861
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0008.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0009.png",
+          "t": 0.98
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0010.png",
+          "t": 1.05
+        }
+      ]
+    },
+    {
+      "start": 17.6803075,
+      "end": 24.5242975,
+      "name": "replatform",
+      "label": "TRANSFORM / Owners & Checkpoints",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0000.png",
+          "t": 0.428
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0001.png",
+          "t": 0.49
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0002.png",
+          "t": 0.547
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0003.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0004.png",
+          "t": 0.673
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0005.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0006.png",
+          "t": 0.794
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0007.png",
+          "t": 0.861
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0008.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0009.png",
+          "t": 0.98
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0010.png",
+          "t": 1.05
+        }
+      ]
+    },
+    {
+      "start": 24.5242975,
+      "end": 28.516625,
+      "name": "replatform",
+      "label": "TRANSFORM / Next Governed Step",
+      "detail": 2,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0000.png",
+          "t": 0.428
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0001.png",
+          "t": 0.49
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0002.png",
+          "t": 0.547
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0003.png",
+          "t": 0.612
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0004.png",
+          "t": 0.673
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0005.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0006.png",
+          "t": 0.794
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0007.png",
+          "t": 0.861
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0008.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0009.png",
+          "t": 0.98
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/replatform/0010.png",
+          "t": 1.05
+        }
+      ]
+    }
+  ],
+  "id": "replatform",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 28.516625,
+  "sha256": "5a67ecbef9a2f1e91f1e35d4cde1e65f9ac40980281434126820e26733c35dca",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

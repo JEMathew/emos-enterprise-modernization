@@ -1,0 +1,358 @@
+{
+  "duration": 63.715375,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.92,
+      "text": "How can you ask a useful question about the selected workload?"
+    },
+    {
+      "start": 4.04,
+      "end": 9.7,
+      "text": "Open Ask EMOS and ask about evidence, dependencies, modernization options, or the"
+    },
+    {
+      "start": 9.7,
+      "end": 10.72,
+      "text": "next governed step."
+    },
+    {
+      "start": 10.72,
+      "end": 14.32,
+      "text": "Ask EMOS is an interface, not a third specialist."
+    },
+    {
+      "start": 15.100000000000001,
+      "end": 19.98,
+      "text": "A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise"
+    },
+    {
+      "start": 19.98,
+      "end": 23.42,
+      "text": "Architect, or both, using the current context."
+    },
+    {
+      "start": 23.42,
+      "end": 27.76,
+      "text": "Portfolio Discovery investigates ambiguity and evidence gaps."
+    },
+    {
+      "start": 28.68,
+      "end": 32.28,
+      "text": "Enterprise Architect reasons across the six R choices."
+    },
+    {
+      "start": 36.22,
+      "end": 41.22,
+      "text": "Deterministic validation and governance check the response, and explicit human"
+    },
+    {
+      "start": 41.22,
+      "end": 42.92,
+      "text": "approval retains authority."
+    },
+    {
+      "start": 42.92,
+      "end": 48.58,
+      "text": "If AI reasoning is unavailable, EMOS labels the deterministic status and evidence"
+    },
+    {
+      "start": 48.58,
+      "end": 49.36,
+      "text": "fallback."
+    },
+    {
+      "start": 49.88,
+      "end": 52.14,
+      "text": "It does not pretend that a model answered."
+    },
+    {
+      "start": 52.84,
+      "end": 54.42,
+      "text": "Agents for ambiguity."
+    },
+    {
+      "start": 55.38,
+      "end": 57.059999999999995,
+      "text": "Workflows for predictability."
+    },
+    {
+      "start": 57.92,
+      "end": 58.8,
+      "text": "Rules for governance."
+    },
+    {
+      "start": 59.84,
+      "end": 60.839999999999996,
+      "text": "Humans for authority."
+    },
+    {
+      "start": 61.68000000000001,
+      "end": 63.74,
+      "text": "Next, ask what evidence is missing."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/120.wav",
+      "start": 0,
+      "end": 10.719999999999999,
+      "text": "How can you ask a useful question about the selected workload?  Open Ask EMOS and ask about evidence, dependencies, modernization options, or the next governed step."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/121.wav",
+      "start": 0,
+      "end": 12.7,
+      "text": "Ask EMOS is an interface, not a third specialist.  A deterministic orchestrator routes the request to Portfolio Discovery, Enterprise Architect, or both, using the current context."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/122.wav",
+      "start": 0,
+      "end": 19.5,
+      "text": "Portfolio Discovery investigates ambiguity and evidence gaps.  Enterprise Architect reasons across the six R choices.  Deterministic validation and governance check the response, and explicit human approval retains authority."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/123.wav",
+      "start": 0,
+      "end": 20.8,
+      "text": "If AI reasoning is unavailable, EMOS labels the deterministic status and evidence fallback.  It does not pretend that a model answered.  Agents for ambiguity.  Workflows for predictability.  Rules for governance.  Humans for authority.  Next, ask what evidence is missing."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.04,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Enterprise DNA",
+      "detail": false,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    },
+    {
+      "start": 4.04,
+      "end": 15.1,
+      "name": "discovery-question",
+      "label": "AI REASONING / Ask EMOS",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-question/0000.png",
+          "t": 0.634
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-question/0001.png",
+          "t": 0.734
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-question/0002.png",
+          "t": 0.836
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-question/0003.png",
+          "t": 0.94
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-question/0004.png",
+          "t": 1.052
+        }
+      ]
+    },
+    {
+      "start": 15.1,
+      "end": 28.68,
+      "name": "discovery-live",
+      "label": "AI REASONING / Portfolio Discovery Specialist",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0000.png",
+          "t": 0.521
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0001.png",
+          "t": 0.631
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0002.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0003.png",
+          "t": 0.851
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0004.png",
+          "t": 0.952
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0005.png",
+          "t": 1.064
+        }
+      ]
+    },
+    {
+      "start": 28.68,
+      "end": 36.22,
+      "name": "architect-live",
+      "label": "AI REASONING / Enterprise Architect Specialist",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 36.22,
+      "end": 59.84,
+      "name": "governance-zero-calls",
+      "label": "GOVERN / Deterministic Validation",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 59.84,
+      "end": 61.68,
+      "name": "human-approved",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0000.png",
+          "t": 0.439
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0001.png",
+          "t": 0.518
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0002.png",
+          "t": 0.602
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0003.png",
+          "t": 0.675
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0004.png",
+          "t": 0.756
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0005.png",
+          "t": 0.837
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0006.png",
+          "t": 0.917
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0007.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/human-approval/0008.png",
+          "t": 1.073
+        }
+      ]
+    },
+    {
+      "start": 61.68,
+      "end": 63.715375,
+      "name": "discovery-live",
+      "label": "AI REASONING / Next Investigation",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0000.png",
+          "t": 0.521
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0001.png",
+          "t": 0.631
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0002.png",
+          "t": 0.746
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0003.png",
+          "t": 0.851
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0004.png",
+          "t": 0.952
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/discovery-live/0005.png",
+          "t": 1.064
+        }
+      ]
+    }
+  ],
+  "id": "ask",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 63.75,
+  "sha256": "d620c907a8e4ddc1a62437cfab2da8e033e61de97d5a9e29378fa3ad89033f58",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}

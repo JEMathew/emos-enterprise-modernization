@@ -62,6 +62,33 @@ describe('EMOS Learning Center embedded video playback', () => {
     }
   });
 
+  it('opens all 41 existing placements with a single title and valid shared master', () => {
+    vi.spyOn(HTMLMediaElement.prototype, 'pause').mockImplementation(() => {});
+    renderLearningCenter();
+    const placements = [
+      screen.getByRole('button', { name: 'Start Guided Journey' }),
+      ...screen.getAllByRole('button', { name: 'Watch lesson' }),
+      ...screen.getAllByRole('button', { name: /^Play .* in EMOS$/ }),
+      ...screen.getAllByRole('button', { name: 'Watch' }),
+    ];
+    expect(placements).toHaveLength(41);
+    const sources = new Set<string>();
+    for (const placement of placements) {
+      fireEvent.click(placement);
+      const dialog = screen.getByRole('dialog');
+      expect(dialog.querySelectorAll('h2')).toHaveLength(1);
+      const player = dialog.querySelector('video')!;
+      const src = player.getAttribute('src')!;
+      expect(Object.values(LEARNING_MASTERS).some(master => master.mediaUrl === src)).toBe(true);
+      sources.add(src);
+      fireEvent.loadedData(player);
+      expect(dialog.textContent).not.toMatch(/Loading video/i);
+      fireEvent.keyDown(document, { key: 'Escape' });
+      expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    }
+    expect(sources.size).toBe(18);
+  });
+
   it('loads the selected native video only after the user chooses Play', () => {
     renderLearningCenter();
     expect(screen.queryByLabelText(/video player/i)).not.toBeInTheDocument();

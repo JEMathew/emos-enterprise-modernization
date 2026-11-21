@@ -1,0 +1,374 @@
+{
+  "duration": 45.348458,
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.1400000000000001,
+      "text": "Where should you begin?"
+    },
+    {
+      "start": 1.38,
+      "end": 4.04,
+      "text": "Open EMOS and choose your workspace context."
+    },
+    {
+      "start": 5.04,
+      "end": 10.1,
+      "text": "The Command Center summarizes the selected estate so you can identify workloads and"
+    },
+    {
+      "start": 10.1,
+      "end": 11.5,
+      "text": "evidence that need attention."
+    },
+    {
+      "start": 11.5,
+      "end": 16.04,
+      "text": "Use Understand to explore the portfolio and Enterprise DNA."
+    },
+    {
+      "start": 16.62,
+      "end": 20.62,
+      "text": "Decide brings assessment and recommendations into focus."
+    },
+    {
+      "start": 21.240000000000002,
+      "end": 25.22,
+      "text": "Governance remains a required checkpoint before approved transformation."
+    },
+    {
+      "start": 25.22,
+      "end": 27.64,
+      "text": "Transform organizes the execution plan."
+    },
+    {
+      "start": 27.654999999999998,
+      "end": 31.595,
+      "text": "Keep the same estate and workload context as you move between these areas."
+    },
+    {
+      "start": 31.609999999999996,
+      "end": 34.68999999999999,
+      "text": "Sign in for the private, owner-bound workspace."
+    },
+    {
+      "start": 35.709999999999994,
+      "end": 40.849999999999994,
+      "text": "Use the appearance control for light, dark, or system themes, and adapt the layout to"
+    },
+    {
+      "start": 40.849999999999994,
+      "end": 41.38999999999999,
+      "text": "your screen."
+    },
+    {
+      "start": 42.37,
+      "end": 45.37,
+      "text": "Next, select one workload and inspect its evidence."
+    }
+  ],
+  "provenance": [
+    {
+      "source": "/tmp/emos-v2-media/raw/104.wav",
+      "start": 0,
+      "end": 11.5,
+      "text": "Where should you begin?  Open EMOS and choose your workspace context.  The Command Center summarizes the selected estate so you can identify workloads and evidence that need attention."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/105.wav",
+      "start": 0,
+      "end": 13.719999999999999,
+      "text": "Use Understand to explore the portfolio and Enterprise DNA.  Decide brings assessment and recommendations into focus.  Governance remains a required checkpoint before approved transformation."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/106.wav",
+      "start": 0,
+      "end": 2.4,
+      "text": "Transform organizes the execution plan."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/106.wav",
+      "start": 6.165,
+      "end": 10.12,
+      "text": "Keep the same estate and workload context as you move between these areas."
+    },
+    {
+      "source": "/tmp/emos-v2-media/raw/107.wav",
+      "start": 0.6449999999999995,
+      "end": 14.42,
+      "text": "Sign in for the private, owner-bound workspace.  Use the appearance control for light, dark, or system themes, and adapt the layout to your screen.  Next, select one workload and inspect its evidence."
+    }
+  ],
+  "tempo": 1,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 11.5,
+      "name": "command",
+      "label": "UNDERSTAND / Command Center",
+      "detail": false,
+      "recording": null
+    },
+    {
+      "start": 11.5,
+      "end": 14.5,
+      "name": "portfolio",
+      "label": "UNDERSTAND / Portfolio Discovery",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0000.png",
+          "t": 0.446
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0001.png",
+          "t": 0.507
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0002.png",
+          "t": 0.571
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0003.png",
+          "t": 0.629
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0004.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0005.png",
+          "t": 0.762
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0006.png",
+          "t": 0.829
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0007.png",
+          "t": 0.897
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0008.png",
+          "t": 0.961
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0009.png",
+          "t": 1.024
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0010.png",
+          "t": 1.093
+        }
+      ]
+    },
+    {
+      "start": 14.5,
+      "end": 16.62,
+      "name": "aerospace-dna",
+      "label": "UNDERSTAND / Enterprise DNA",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0000.png",
+          "t": 0.435
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0001.png",
+          "t": 0.493
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0002.png",
+          "t": 0.544
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0003.png",
+          "t": 0.594
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0004.png",
+          "t": 0.645
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0005.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0006.png",
+          "t": 0.747
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0007.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0008.png",
+          "t": 0.847
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0009.png",
+          "t": 0.898
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0010.png",
+          "t": 0.943
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0011.png",
+          "t": 0.995
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0012.png",
+          "t": 1.045
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-dna/0013.png",
+          "t": 1.097
+        }
+      ]
+    },
+    {
+      "start": 16.62,
+      "end": 21.24,
+      "name": "aerospace-recommendation",
+      "label": "DECIDE / 6R Decision Engine",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 21.24,
+      "end": 25.22,
+      "name": "human-approval-before",
+      "label": "GOVERN / Human Approval",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 25.22,
+      "end": 35.71,
+      "name": "aerospace-plan",
+      "label": "TRANSFORM / Wave Planning",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0000.png",
+          "t": 0.416
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0001.png",
+          "t": 0.476
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0002.png",
+          "t": 0.536
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0003.png",
+          "t": 0.599
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0004.png",
+          "t": 0.665
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0005.png",
+          "t": 0.727
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0006.png",
+          "t": 0.795
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0007.png",
+          "t": 0.866
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0008.png",
+          "t": 0.932
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0009.png",
+          "t": 0.993
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/aerospace-plan/0010.png",
+          "t": 1.06
+        }
+      ]
+    },
+    {
+      "start": 35.71,
+      "end": 42.37,
+      "name": "workspace-appearance",
+      "label": "WORKSPACE / Appearance",
+      "detail": true,
+      "recording": null
+    },
+    {
+      "start": 42.37,
+      "end": 45.348458,
+      "name": "portfolio",
+      "label": "UNDERSTAND / Select a Workload",
+      "detail": true,
+      "recording": [
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0000.png",
+          "t": 0.446
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0001.png",
+          "t": 0.507
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0002.png",
+          "t": 0.571
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0003.png",
+          "t": 0.629
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0004.png",
+          "t": 0.695
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0005.png",
+          "t": 0.762
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0006.png",
+          "t": 0.829
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0007.png",
+          "t": 0.897
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0008.png",
+          "t": 0.961
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0009.png",
+          "t": 1.024
+        },
+        {
+          "file": "/tmp/emos-buildathon/recordings/portfolio/0010.png",
+          "t": 1.093
+        }
+      ]
+    }
+  ],
+  "id": "workspace",
+  "voice": "Cillian",
+  "realUiPercent": 100,
+  "lightMode": true,
+  "newCredits": 0,
+  "durationSeconds": 45.348458,
+  "sha256": "90180cb79d63dbe17102064587a1e664c5b9dc15ef4e67b477134ea5fd994984",
+  "burnedInCaptions": true,
+  "maxCaptionLines": 2,
+  "captionControlCollisions": 0,
+  "qa": "passed: scene review, audio alignment, complete decode, native in-product playback",
+  "renderFps": 24,
+  "sourceSamplingFps": 12
+}
